@@ -28,12 +28,13 @@
             <p class="text-gray-700">
               A BÜCHL HUNGARIA Kft. weboldalának (buechl.hu) továbbfejlesztése és a design tervek bemutatása érdekében készült ez a tartalmi terv. 
               A dokumentum a jelenlegi német (buechl.de) és magyar (buechl.hu) oldalak elemzése alapján készült, figyelembe véve a vállalat értékeit, 
-              szolgáltatásait és pozícióját a piacon.
+              szolgáltatásait és kizárólag ipari ügyfelekre fókuszáló piaci pozícióját.
             </p>
             
             <p class="text-gray-700 mt-4">
               A tartalmi terv célja, hogy egységes, informatív és modern weboldalt hozzon létre, amely tükrözi a BÜCHL HUNGARIA Kft. 
-              innovatív szemléletét, magas színvonalú szolgáltatásait és elkötelezettségét a fenntarthatóság és körforgásos gazdaság mellett.
+              innovatív szemléletét, az ipari hulladékgazdálkodás területén nyújtott magas színvonalú szolgáltatásait és elkötelezettségét 
+              a fenntarthatóság és körforgásos gazdaság mellett.
             </p>
           </div>
 
@@ -104,15 +105,12 @@
 │   └── Karrier
 │
 ├── Szolgáltatások
-│   ├── Ipari ügyfelek
-│   │   ├── Hulladékgyűjtés és szállítás
-│   │   ├── Hulladékkezelés és újrahasznosítás
-│   │   ├── Belső üzemi logisztika (ELOG SYSTEM®)
-│   │   └── Egyedi megoldások
-│   │
-│   └── Lakossági ügyfelek
-│       ├── Konténer szolgáltatás
-│       └── Hulladékudvar
+│   ├── Hulladékgyűjtés és szállítás
+│   ├── Hulladékkezelés és újrahasznosítás
+│   ├── Belső üzemi logisztika (ELOG SYSTEM®)
+│   ├── Speciális konténerrendszerek
+│   ├── Másodnyersanyag előállítás
+│   └── Testreszabott ipari megoldások
 │
 ├── Hulladékkezelő létesítmények
 │   ├── Győr telephely
@@ -282,10 +280,12 @@
               <ul class="list-disc list-inside text-gray-700 space-y-2">
                 <li>Magyar, német és angol nyelvi verzió</li>
                 <li>Mobilbarát, reszponzív tervezés minden oldalon</li>
-                <li>Logikus oldalstruktúra és navigáció</li>
-                <li>Interaktív térkép a telephelyek megjelenítéséhez</li>
-                <li>Fejlett keresési lehetőségek</li>
-                <li>Közösségi média integrálás és megosztási lehetőségek</li>
+                <li>Logikus, ipari fókuszú oldalstruktúra és navigáció</li>
+                <li>ELOG SYSTEM® és CleverWaste® innovációk részletes bemutatása</li>
+                <li>Ipari referenciák és esettanulmányok kiemelése</li>
+                <li>Interaktív térkép az ipari telephelyek és létesítmények megjelenítéséhez</li>
+                <li>Fejlett keresési lehetőségek az ipari hulladéktípusok szerint</li>
+                <li>Ipari ügyfeleknek dedikált ajánlatkérési felület</li>
               </ul>
             </div>
           </div>
@@ -302,11 +302,11 @@
           
           <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-buchl-blue">
             <p class="text-gray-700">
-              A javasolt weboldal struktúra és tartalmi terv a BÜCHL HUNGARIA Kft. széles szolgáltatási portfolióját, innovatív megközelítését és fenntarthatóság iránti elkötelezettségét tükrözi. A weboldal modernizálása és a német anyavállalat oldalával való vizuális-tartalmi harmonizálása erősíti a vállalati brandépítést, miközben a magyar specialitások és szolgáltatások hangsúlyozása is megvalósul.
+              A javasolt weboldal struktúra és tartalmi terv a BÜCHL HUNGARIA Kft. ipari ügyfelekre specializált szolgáltatási portfolióját, innovatív megközelítését és fenntarthatóság iránti elkötelezettségét tükrözi. A weboldal modernizálása és a német anyavállalat oldalával való vizuális-tartalmi harmonizálása erősíti a vállalati brandépítést, miközben a magyar specialitások és az ipari hulladékgazdálkodási szolgáltatások hangsúlyozása is megvalósul.
             </p>
             
             <p class="text-gray-700 mt-4">
-              A struktúra rugalmas és a jövőben könnyen bővíthető új tartalmakkal, szolgáltatásokkal vagy akár új üzletágakkal is. A design elemek és funkcionális ajánlások modern, felhasználóbarát és informatív weboldalt eredményeznek, amely méltóképpen reprezentálja a vállalatot mind a magyar, mind a nemzetközi piacon.
+              A struktúra az ipari ügyfelek igényeire koncentrál, és a jövőben könnyen bővíthető új technológiákkal, vagy ipari szolgáltatásokkal. Az új design elemek és funkcionális ajánlások modern, felhasználóbarát és informatív weboldalt eredményeznek, amely méltóképpen reprezentálja a vállalatot mint vezető ipari hulladékgazdálkodási partnert mind a magyar, mind a nemzetközi piacon.
             </p>
           </div>
 
