@@ -27,113 +27,141 @@
             A BÜCHL több mint 20 éves tapasztalattal rendelkezik a professzionális hulladékgazdálkodás területén. Teljes körű szolgáltatásaink a hulladék gyűjtésétől és szállításától kezdve a feldolgozáson át az újrahasznosításig minden területet lefednek.
           </p>
           <p class="text-lg text-gray-700">
-            Szolgáltatásainkat ipari ügyfelek és lakossági felhasználók számára egyaránt kínáljuk, mindig a legmagasabb szakmai színvonalon és környezettudatos megközelítéssel.
+            Szolgáltatásainkat kizárólag ipari ügyfelek számára kínáljuk, mindig a legmagasabb szakmai színvonalon és környezettudatos megközelítéssel. Szakértelmünk különösen az ipari hulladékkezelés speciális kihívásaira fókuszál.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Szolgáltatási kategóriák -->
+    <!-- Ipari szolgáltatási kategóriák -->
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-          Kínálatunk ügyfélcsoportok szerint
+          Ipari szolgáltatási portfóliónk
         </h2>
 
-        <div class="grid gap-8 md:grid-cols-2 items-start">
-          <!-- Ipari ügyfelek szolgáltatási kategória -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-buchl-blue text-white p-6">
-              <h3 class="text-2xl font-bold flex items-center gap-3">
-                <UIcon name="i-heroicons-building-office-2" class="w-8 h-8" />
-                Ipari ügyfelek
+        <div class="max-w-3xl mx-auto mb-16 text-center">
+          <p class="text-lg text-gray-700">
+            A BÜCHL kizárólag ipari ügyfelekre specializálódott, így minden szolgáltatásunkat a vállalati igények figyelembevételével alakítottuk ki. Csapatunk szakértő megoldásokat kínál minden iparág számára, különös tekintettel az autóiparra, elektronikai iparra, vegyiparra és feldolgozóiparra.
+          </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
+          <!-- Hulladékgyűjtés és szállítás kategória -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+            <div class="bg-buchl-blue text-white p-5">
+              <h3 class="text-xl font-bold flex items-center gap-3">
+                <UIcon name="i-heroicons-truck" class="w-7 h-7" />
+                Hulladékgyűjtés és szállítás
               </h3>
             </div>
-            <div class="p-6 space-y-4">
+            <div class="p-6 space-y-4 flex flex-col h-[calc(100%-80px)]">
               <p class="text-gray-700">
-                Ipari partnereink számára specializált, testreszabott hulladékgazdálkodási megoldásokat kínálunk, a teljes folyamat menedzselésével.
+                Specializált járműparkunk 40 különböző típusú járművel biztosítja a biztonságos és hatékony hulladékszállítást ipari partnereink számára.
               </p>
-              <ul class="space-y-3 mt-6">
+              <ul class="space-y-3 mt-4 mb-6 flex-grow">
                 <li class="flex items-start gap-3">
-                  <UIcon name="i-heroicons-truck" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
-                  <div>
-                    <h4 class="font-semibold text-buchl-blue">Hulladékgyűjtés és szállítás</h4>
-                    <p class="text-gray-700">Specializált járműparkunk 40 különböző típusú járművel biztosítja a biztonságos hulladékszállítást.</p>
-                  </div>
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Közúti és telephelyen belüli szállítás</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <UIcon name="i-heroicons-arrow-path" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
-                  <div>
-                    <h4 class="font-semibold text-buchl-blue">Hulladékkezelés és újrahasznosítás</h4>
-                    <p class="text-gray-700">Magas újrahasznosítási aránnyal rendelkező feldolgozási technológiák a fenntarthatóság érdekében.</p>
-                  </div>
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Veszélyes és nem veszélyes hulladék kezelése</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <UIcon name="i-heroicons-cog-6-tooth" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
-                  <div>
-                    <h4 class="font-semibold text-buchl-blue">Belső üzemi logisztika (ELOG SYSTEM®)</h4>
-                    <p class="text-gray-700">Innovatív üzemi logisztikai rendszer, amely optimalizálja a hulladékgazdálkodási folyamatokat.</p>
-                  </div>
-                </li>
-                <li class="flex items-start gap-3">
-                  <UIcon name="i-heroicons-wrench-screwdriver" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
-                  <div>
-                    <h4 class="font-semibold text-buchl-blue">Egyedi megoldások</h4>
-                    <p class="text-gray-700">Testreszabott hulladékgazdálkodási rendszerek tervezése és üzemeltetése az ipari partnereink számára.</p>
-                  </div>
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>ADR minősítésű fuvarozás</span>
                 </li>
               </ul>
-              <div class="mt-6">
+              <div class="mt-auto">
                 <UButton 
                   color="primary" 
                   variant="soft" 
                   size="lg" 
                   class="w-full rounded-none"
-                  to="/oldaltervek/szolgaltatasok/ipari"
+                  to="/oldaltervek/szolgaltatasok/szallitas"
                 >
-                  Ipari szolgáltatások részletesen
+                  Részletek
                 </UButton>
               </div>
             </div>
           </div>
 
-          <!-- Lakossági ügyfelek szolgáltatási kategória -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <div class="bg-buchl-green text-buchl-blue p-6">
-              <h3 class="text-2xl font-bold flex items-center gap-3">
-                <UIcon name="i-heroicons-home" class="w-8 h-8" />
-                Lakossági ügyfelek
+          <!-- Hulladékkezelés és újrahasznosítás kategória -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+            <div class="bg-buchl-blue text-white p-5">
+              <h3 class="text-xl font-bold flex items-center gap-3">
+                <UIcon name="i-heroicons-arrow-path" class="w-7 h-7" />
+                Hulladékkezelés és újrahasznosítás
               </h3>
             </div>
-            <div class="p-6 space-y-4">
+            <div class="p-6 space-y-4 flex flex-col h-[calc(100%-80px)]">
               <p class="text-gray-700">
-                Lakossági ügyfeleink számára rugalmas, egyszerű és költséghatékony hulladékkezelési megoldásokat biztosítunk.
+                Magas újrahasznosítási aránnyal rendelkező feldolgozási technológiákat alkalmazunk a fenntarthatóság és körforgásos gazdaság érdekében.
               </p>
-              <ul class="space-y-3 mt-6">
+              <ul class="space-y-3 mt-4 mb-6 flex-grow">
                 <li class="flex items-start gap-3">
-                  <UIcon name="i-heroicons-cube" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
-                  <div>
-                    <h4 class="font-semibold text-buchl-blue">Konténer szolgáltatás</h4>
-                    <p class="text-gray-700">Különböző méretű konténerek bérlése és szállítása építkezésekhez, felújításokhoz és lomtalanításhoz.</p>
-                  </div>
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Ipari hulladékok speciális kezelése</span>
                 </li>
                 <li class="flex items-start gap-3">
-                  <UIcon name="i-heroicons-building-storefront" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
-                  <div>
-                    <h4 class="font-semibold text-buchl-blue">Hulladékudvar</h4>
-                    <p class="text-gray-700">Korszerű hulladékudvarunk széleskörű lehetőséget biztosít a lakossági hulladékok szabályszerű leadására.</p>
-                  </div>
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Folyadék és emulzió újrafeldolgozás</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Másodlagos nyersanyagok előállítása</span>
                 </li>
               </ul>
-              <div class="mt-6">
+              <div class="mt-auto">
                 <UButton 
-                  color="primary"
+                  color="primary" 
                   variant="soft" 
                   size="lg" 
-                  class="w-full rounded-none bg-buchl-green text-buchl-blue hover:bg-buchl-green/90"
-                  to="/oldaltervek/szolgaltatasok/lakossagi"
+                  class="w-full rounded-none"
+                  to="/oldaltervek/szolgaltatasok/ujrahasznositas"
                 >
-                  Lakossági szolgáltatások részletesen
+                  Részletek
+                </UButton>
+              </div>
+            </div>
+          </div>
+
+          <!-- Belső üzemi logisztika kategória -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+            <div class="bg-buchl-blue text-white p-5">
+              <h3 class="text-xl font-bold flex items-center gap-3">
+                <UIcon name="i-heroicons-cog-6-tooth" class="w-7 h-7" />
+                Belső üzemi logisztika (ELOG SYSTEM®)
+              </h3>
+            </div>
+            <div class="p-6 space-y-4 flex flex-col h-[calc(100%-80px)]">
+              <p class="text-gray-700">
+                Innovatív üzemi logisztikai rendszerünk optimalizálja az ipari hulladékgazdálkodási folyamatokat és növeli a hatékonyságot.
+              </p>
+              <ul class="space-y-3 mt-4 mb-6 flex-grow">
+                <li class="flex items-start gap-3">
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Papírmentes hulladéklogisztika</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Valós idejű folyamatkövetés</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5" />
+                  <span>Testreszabható digitális megoldások</span>
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <UButton 
+                  color="primary" 
+                  variant="soft" 
+                  size="lg" 
+                  class="w-full rounded-none"
+                  to="/oldaltervek/szolgaltatasok/elog-system"
+                >
+                  Részletek
                 </UButton>
               </div>
             </div>
@@ -150,7 +178,7 @@
         </h2>
 
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
-          <!-- 1. Szolgáltatás kártya -->
+          <!-- 1. Szolgáltatás kártya - Hulladékgyűjtés és szállítás -->
           <UCard>
             <template #header>
               <div class="flex items-center gap-3">
@@ -161,20 +189,20 @@
               </div>
             </template>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Specializált járműparkunk 40 különböző típusú szállítójárművel biztosítja a biztonságos hulladékszállítást.
+              Közel 40 speciális szállítójárműből álló flottánk az ipari hulladékok biztonságos és hatékony elszállítását biztosítja egész Magyarországon.
             </p>
             <ul class="space-y-2 mb-4">
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Veszélyes hulladék szállítás</span>
+                <span>ADR minősítésű veszélyes hulladék szállítás</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>ADR képzett szakemberek</span>
+                <span>Speciális konténerrendszerek többféle hulladéktípushoz</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Konténeres megoldások</span>
+                <span>Részletes jelentéskészítés és visszakövethetőség</span>
               </li>
             </ul>
             <template #footer>
@@ -190,7 +218,7 @@
             </template>
           </UCard>
 
-          <!-- 2. Szolgáltatás kártya -->
+          <!-- 2. Szolgáltatás kártya - Hulladékkezelés és újrahasznosítás -->
           <UCard>
             <template #header>
               <div class="flex items-center gap-3">
@@ -201,20 +229,20 @@
               </div>
             </template>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Magas újrahasznosítási aránnyal rendelkező feldolgozási technológiák a fenntarthatóság érdekében.
+              Innovatív technológiákkal és magas újrahasznosítási aránnyal alakítjuk az ipari hulladékot értékes másodlagos nyersanyagokká.
             </p>
             <ul class="space-y-2 mb-4">
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Veszélyes hulladék kezelése</span>
+                <span>Emulziók és mosófolyadékok párologtatása</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Folyadék és emulzió feldolgozás</span>
+                <span>Másodlagos tüzelőanyag előállítás cementgyárak számára</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Másodlagos nyersanyagok előállítása</span>
+                <span>Fémforgácsok és egyéb fémhulladékok feldolgozása</span>
               </li>
             </ul>
             <template #footer>
@@ -230,7 +258,7 @@
             </template>
           </UCard>
 
-          <!-- 3. Szolgáltatás kártya -->
+          <!-- 3. Szolgáltatás kártya - ELOG SYSTEM -->
           <UCard>
             <template #header>
               <div class="flex items-center gap-3">
@@ -241,20 +269,20 @@
               </div>
             </template>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Innovatív üzemi logisztikai rendszer, amely optimalizálja a hulladékgazdálkodási folyamatokat.
+              ELOG SYSTEM® 4.0 innovatív logisztikai rendszerünk teljes mértékben papírmentes hulladékkezelést biztosít ipari ügyfeleink számára.
             </p>
             <ul class="space-y-2 mb-4">
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Papírmentes hulladéklogisztika</span>
+                <span>CleverWaste® platform a teljes folyamat nyomon követésére</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Digitalizált folyamatok</span>
+                <span>GYLOG 1.0 vezérlőrendszer a papírmentes szállításhoz</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Testreszabható megoldások</span>
+                <span>Speciális "Shuttle" (Q-Frame) a termelési területek elválasztására</span>
               </li>
             </ul>
             <template #footer>
@@ -270,37 +298,37 @@
             </template>
           </UCard>
 
-          <!-- 4. Szolgáltatás kártya -->
+          <!-- 4. Szolgáltatás kártya - Speciális konténerrendszerek -->
           <UCard>
             <template #header>
               <div class="flex items-center gap-3">
                 <div class="p-3 bg-yellow-100 dark:bg-yellow-900 rounded-lg">
-                  <UIcon name="i-heroicons-wrench-screwdriver" class="text-yellow-600 dark:text-yellow-400 text-2xl" />
+                  <UIcon name="i-heroicons-cube" class="text-yellow-600 dark:text-yellow-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Egyedi megoldások</h3>
+                <h3 class="text-lg font-semibold">Speciális konténerrendszerek</h3>
               </div>
             </template>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Testreszabott hulladékgazdálkodási rendszerek tervezése és üzemeltetése az ipari partnereink számára.
+              Széles választékú konténer megoldások az ipari hulladékok hatékony gyűjtésére, tárolására és szállítására.
             </p>
             <ul class="space-y-2 mb-4">
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Vállalaton belüli rendszerek</span>
+                <span>Folyadék és veszélyes anyagok tárolására alkalmas konténerek</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Szakszemélyzet biztosítása</span>
+                <span>Multifunkcionális konténerek különböző kezelőberendezésekhez</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Outsourcing lehetőségek</span>
+                <span>Nagy mennyiségű hulladék tárolására alkalmas rendszerek</span>
               </li>
             </ul>
             <template #footer>
               <UButton 
                 label="Részletek" 
-                to="/oldaltervek/szolgaltatasok/egyedi-megoldasok" 
+                to="/oldaltervek/szolgaltatasok/kontener-rendszerek" 
                 color="yellow" 
                 variant="ghost" 
                 size="sm" 
@@ -310,38 +338,38 @@
             </template>
           </UCard>
 
-          <!-- 5. Szolgáltatás kártya -->
+          <!-- 5. Szolgáltatás kártya - Másodnyersanyag előállítás -->
           <UCard>
             <template #header>
               <div class="flex items-center gap-3">
-                <div class="p-3 bg-orange-100 dark:bg-orange-900 rounded-lg">
-                  <UIcon name="i-heroicons-cube" class="text-orange-600 dark:text-orange-400 text-2xl" />
+                <div class="p-3 bg-indigo-100 dark:bg-indigo-900 rounded-lg">
+                  <UIcon name="i-heroicons-archive-box-arrow-down" class="text-indigo-600 dark:text-indigo-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Konténer szolgáltatás</h3>
+                <h3 class="text-lg font-semibold">Másodnyersanyag előállítás</h3>
               </div>
             </template>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Különböző méretű konténerek bérlése és szállítása építkezésekhez, felújításokhoz és lomtalanításhoz.
+              Az ipari hulladékok újrahasznosításával magas minőségű másodlagos nyersanyagokat állítunk elő különböző iparágak számára.
             </p>
             <ul class="space-y-2 mb-4">
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Különböző méretű konténerek</span>
+                <span>Mágneses és nem-mágneses fémforgácsok, hulladékok</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Rugalmas szállítási idők</span>
+                <span>Előfeldolgozott műanyaghulladék újrahasznosításra</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Gyors ügyintézés</span>
+                <span>Válogatott csomagolóanyagok és textil alapanyagok</span>
               </li>
             </ul>
             <template #footer>
               <UButton 
                 label="Részletek" 
-                to="/oldaltervek/szolgaltatasok/kontener" 
-                color="orange" 
+                to="/oldaltervek/szolgaltatasok/masodnyersanyag" 
+                color="indigo" 
                 variant="ghost" 
                 size="sm" 
                 block 
@@ -350,38 +378,38 @@
             </template>
           </UCard>
 
-          <!-- 6. Szolgáltatás kártya -->
+          <!-- 6. Szolgáltatás kártya - Testreszabott ipari megoldások -->
           <UCard>
             <template #header>
               <div class="flex items-center gap-3">
-                <div class="p-3 bg-purple-100 dark:bg-purple-900 rounded-lg">
-                  <UIcon name="i-heroicons-building-storefront" class="text-purple-600 dark:text-purple-400 text-2xl" />
+                <div class="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-lg">
+                  <UIcon name="i-heroicons-wrench-screwdriver" class="text-emerald-600 dark:text-emerald-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Hulladékudvar</h3>
+                <h3 class="text-lg font-semibold">Testreszabott ipari megoldások</h3>
               </div>
             </template>
             <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Korszerű hulladékudvarunk széleskörű lehetőséget biztosít a lakossági hulladékok szabályszerű leadására.
+              Egyedi, a vállalat igényeire szabott hulladékgazdálkodási rendszerek tervezése és üzemeltetése minden iparág számára.
             </p>
             <ul class="space-y-2 mb-4">
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Sokféle hulladéktípus átvétele</span>
+                <span>Komplett üzemi hulladékkezelési rendszerek</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Rugalmas nyitvatartás</span>
+                <span>Szakképzett személyzet biztosítása helyszíni munkákhoz</span>
               </li>
               <li class="flex items-center gap-2">
                 <UIcon name="i-heroicons-check-circle" class="text-green-500" />
-                <span>Környezetbarát feldolgozás</span>
+                <span>Ipari méretű hulladékgazdálkodás outsourcing</span>
               </li>
             </ul>
             <template #footer>
               <UButton 
                 label="Részletek" 
-                to="/oldaltervek/szolgaltatasok/hulladekudvar" 
-                color="purple" 
+                to="/oldaltervek/szolgaltatasok/egyedi-megoldasok" 
+                color="emerald" 
                 variant="ghost" 
                 size="sm" 
                 block 
