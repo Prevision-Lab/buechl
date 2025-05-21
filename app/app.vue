@@ -5,7 +5,7 @@ const toaster = useAppConfig().toaster as ToasterProps
 </script>
 
 <template>
-    <UApp :toaster>
+    <UApp :toaster color-mode="light">
         <NuxtRouteAnnouncer />
 
         <NuxtLayout>
