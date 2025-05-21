@@ -83,4 +83,12 @@ export default defineNuxtConfig({
         gray: 'neutral',
         icons: ['heroicons', 'simple-icons', 'lucide']
     },
+    
+    colorMode: {
+        preference: 'light',
+        fallback: 'light',
+        classSuffix: '',
+        storageKey: 'nuxt-color-mode',
+        forced: true // Force light mode
+    },
 })
