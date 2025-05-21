@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+@import '@nuxt/ui-pro';
+
+/* Force primary color to be BÜCHL blue */
+:root {
+  /* Override blue color palette */
+  --ui-color-blue-50: #e6f0f8 !important;
+  --ui-color-blue-100: #cce1f1 !important;
+  --ui-color-blue-200: #99c3e3 !important;
+  --ui-color-blue-300: #66a5d5 !important;
+  --ui-color-blue-400: #3387c7 !important;
+  --ui-color-blue-500: #002F5C !important;
+  --ui-color-blue-600: #002549 !important;
+  --ui-color-blue-700: #001c38 !important;
+  --ui-color-blue-800: #001224 !important;
+  --ui-color-blue-900: #000912 !important;
+  
+  --color-blue-50: #e6f0f8 !important;
+  --color-blue-100: #cce1f1 !important;
+  --color-blue-200: #99c3e3 !important;
+  --color-blue-300: #66a5d5 !important;
+  --color-blue-400: #3387c7 !important;
+  --color-blue-500: #002F5C !important;
+  --color-blue-600: #002549 !important;
+  --color-blue-700: #001c38 !important;
+  --color-blue-800: #001224 !important;
+  --color-blue-900: #000912 !important;
+}
+
+/* BÜCHL Design System Base Styles */
+
+/* Override Nuxt UI default blue with BÜCHL blue */
+:root {
+  /* Primary color overrides for BÜCHL blue */
+  --color-primary-50: #f0f6ff;
+  --color-primary-100: #e0edff;
+  --color-primary-200: #b3d4ff;
+  --color-primary-300: #66a7ff;
+  --color-primary-400: #003f7f;
+  --color-primary-500: #002F5C;
+  --color-primary-600: #002549;
+  --color-primary-700: #001c38;
+  --color-primary-800: #001427;
+  --color-primary-900: #000d1a;
+  
+  /* UI primary overrides */
+  --ui-primary-50: #f0f6ff;
+  --ui-primary-100: #e0edff;
+  --ui-primary-200: #b3d4ff;
+  --ui-primary-300: #66a7ff;
+  --ui-primary-400: #003f7f;
+  --ui-primary-500: #002F5C;
+  --ui-primary-600: #002549;
+  --ui-primary-700: #001c38;
+  --ui-primary-800: #001427;
+  --ui-primary-900: #000d1a;
+  
+  /* Also override blue color scale */
+  --color-blue-50: #f0f6ff;
+  --color-blue-100: #e0edff;
+  --color-blue-200: #b3d4ff;
+  --color-blue-300: #66a7ff;
+  --color-blue-400: #003f7f;
+  --color-blue-500: #002F5C;
+  --color-blue-600: #002549;
+  --color-blue-700: #001c38;
+  --color-blue-800: #001427;
+  --color-blue-900: #000d1a;
+  
+  --ui-blue-50: #f0f6ff;
+  --ui-blue-100: #e0edff;
+  --ui-blue-200: #b3d4ff;
+  --ui-blue-300: #66a7ff;
+  --ui-blue-400: #003f7f;
+  --ui-blue-500: #002F5C;
+  --ui-blue-600: #002549;
+  --ui-blue-700: #001c38;
+  --ui-blue-800: #001427;
+  --ui-blue-900: #000d1a;
+  
+  /* Override Nuxt UI primary variables */
+  --ui-color-primary-500: #002F5C;
+  --ui-color-primary-600: #002549;
+  --ui-color-primary-700: #001c38;
+  --ui-color-primary-400: #003f7f;
+  --ui-color-primary-300: #66a7ff;
+}
+
+/* Typography */
+body {
+  font-family: 'Catamaran', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* Button overrides for BÜCHL style */
+.rounded-none {
+  border-radius: 0 !important;
+}
+
+/* Utility classes */
+.text-buchl-blue {
+  color: #002F5C;
+}
+
+.text-buchl-green {
+  color: #00F189;
+}
+
+.bg-buchl-blue {
+  background-color: #002F5C;
+}
+
+.bg-buchl-green {
+  background-color: #00F189;
+}
+
+.border-buchl-green {
+  border-color: #00F189;
+}
+
+.hover\:bg-buchl-green:hover {
+  background-color: #00F189;
+}
+
+.hover\:bg-green-400:hover {
+  background-color: #4ade80;
+}
