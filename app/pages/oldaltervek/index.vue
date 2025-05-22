@@ -45,7 +45,7 @@
           >
             <template #header>
               <div class="flex items-center gap-3">
-                <UIcon :name="section.icon" class="w-8 h-8 text-primary" />
+                <UIcon :name="section.icon" class="text-primary" style="width: 32px; height: 32px;" />
                 <h3 class="text-xl font-semibold group-hover:text-primary transition-colors">
                   {{ section.title }}
                 </h3>
@@ -109,6 +109,30 @@ const sections = [
     description: 'A rólunk szekció tervei és oldalelemei',
     icon: 'i-heroicons-users',
     to: '/oldaltervek/rolunk'
+  },
+  {
+    title: 'Hulladékkezelés',
+    description: 'A hulladékkezelési szolgáltatások oldal tervei és megvalósítása',
+    icon: 'i-heroicons-cog-6-tooth',
+    to: '/oldaltervek/hulladekkezeles'
+  },
+  {
+    title: 'Fenntarthatóság',
+    description: 'A fenntarthatósági kezdeményezések oldal tervei és környezeti programok',
+    icon: 'i-heroicons-globe-alt',
+    to: '/oldaltervek/fenntarthatosag'
+  },
+  {
+    title: 'Innovációk',
+    description: 'A technológiai innovációk és fejlesztések oldal tervei',
+    icon: 'i-heroicons-light-bulb',
+    to: '/oldaltervek/innovaciok'
+  },
+  {
+    title: 'Kapcsolat',
+    description: 'Kapcsolatfelvételi lehetőségek és irodahelyszínek',
+    icon: 'i-heroicons-phone',
+    to: '/oldaltervek/kapcsolat'
   }
 ]
 
@@ -117,6 +141,10 @@ const quickLinks = [
   { label: 'Főoldal', to: '/oldaltervek/fooldal' },
   { label: 'Szolgáltatások', to: '/oldaltervek/szolgaltatasok' },
   { label: 'Rólunk', to: '/oldaltervek/rolunk' },
+  { label: 'Hulladékkezelés', to: '/oldaltervek/hulladekkezeles' },
+  { label: 'Fenntarthatóság', to: '/oldaltervek/fenntarthatosag' },
+  { label: 'Innovációk', to: '/oldaltervek/innovaciok' },
+  { label: 'Kapcsolat', to: '/oldaltervek/kapcsolat' },
   { label: 'Tartalmi terv', to: '/oldaltervek/tartalmiterv' }
 ]
 </script>

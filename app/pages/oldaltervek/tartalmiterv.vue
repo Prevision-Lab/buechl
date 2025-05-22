@@ -112,12 +112,12 @@
 │   ├── Másodnyersanyag előállítás
 │   └── Testreszabott ipari megoldások
 │
-├── Hulladékkezelő létesítmények
-│   ├── Győr telephely
-│   ├── Körösladány telephely
-│   ├── Folyékony hulladék kezelés
+├── Hulladékkezelés
+│   ├── Hulladékfeldolgozás és kezelés
 │   ├── Veszélyes hulladék kezelés
-│   └── Újrahasznosító berendezések
+│   ├── Folyékony hulladék kezelés  
+│   ├── Újrahasznosítási technológiák
+│   └── Hulladékkezelő létesítmények
 │
 ├── Innovációk
 │   ├── Technológiai fejlesztések
@@ -193,6 +193,45 @@
                   <UIcon name="i-heroicons-users" class="w-6 h-6 text-buchl-blue" />
                 </div>
                 <p class="text-gray-700 mb-4">A rólunk szekció tervei és oldalelemei</p>
+                <UButton color="primary" size="sm" class="mt-auto" icon="i-heroicons-arrow-right" :trailing="true">
+                  Megtekintés
+                </UButton>
+              </UCard>
+            </NuxtLink>
+
+            <NuxtLink to="/oldaltervek/hulladekkezeles" class="block">
+              <UCard class="h-full hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-xl font-bold text-buchl-blue">Hulladékkezelés</h3>
+                  <UIcon name="i-heroicons-cog-6-tooth" class="w-6 h-6 text-buchl-blue" />
+                </div>
+                <p class="text-gray-700 mb-4">A hulladékkezelési szolgáltatások oldal tervei és megvalósítása</p>
+                <UButton color="primary" size="sm" class="mt-auto" icon="i-heroicons-arrow-right" :trailing="true">
+                  Megtekintés
+                </UButton>
+              </UCard>
+            </NuxtLink>
+
+            <NuxtLink to="/oldaltervek/innovaciok" class="block">
+              <UCard class="h-full hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-xl font-bold text-buchl-blue">Innovációk</h3>
+                  <UIcon name="i-heroicons-lightbulb" class="w-6 h-6 text-buchl-blue" />
+                </div>
+                <p class="text-gray-700 mb-4">Technológiai fejlesztések és innovációs megoldások bemutatása</p>
+                <UButton color="primary" size="sm" class="mt-auto" icon="i-heroicons-arrow-right" :trailing="true">
+                  Megtekintés
+                </UButton>
+              </UCard>
+            </NuxtLink>
+
+            <NuxtLink to="/oldaltervek/kapcsolat" class="block">
+              <UCard class="h-full hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                  <h3 class="text-xl font-bold text-buchl-blue">Kapcsolat</h3>
+                  <UIcon name="i-heroicons-phone" class="w-6 h-6 text-buchl-blue" />
+                </div>
+                <p class="text-gray-700 mb-4">Kapcsolatfelvételi lehetőségek és irodahelyszínek</p>
                 <UButton color="primary" size="sm" class="mt-auto" icon="i-heroicons-arrow-right" :trailing="true">
                   Megtekintés
                 </UButton>
@@ -347,7 +386,7 @@
 
             <NuxtLink to="/oldaltervek">
               <UButton
-                color="gray"
+                color="neutral"
                 variant="ghost"
                 block
                 class="h-full"

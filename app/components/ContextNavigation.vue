@@ -139,6 +139,10 @@ const oldaltervekNavigation = [
   { label: 'Főoldal', to: '/oldaltervek/fooldal' },
   { label: 'Szolgáltatások', to: '/oldaltervek/szolgaltatasok' },
   { label: 'Rólunk', to: '/oldaltervek/rolunk' },
+  { label: 'Hulladékkezelés', to: '/oldaltervek/hulladekkezeles' },
+  { label: 'Fenntarthatóság', to: '/oldaltervek/fenntarthatosag' },
+  { label: 'Innovációk', to: '/oldaltervek/innovaciok' },
+  { label: 'Kapcsolat', to: '/oldaltervek/kapcsolat' },
 ]
 
 // Home navigation

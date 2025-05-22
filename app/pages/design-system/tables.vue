@@ -92,7 +92,7 @@
             }"
           />
           <div class="mt-4 flex gap-4">
-            <UButton @click="toggleLoading" color="primary">
+            <UButton color="primary" @click="toggleLoading">
               {{ isLoading ? 'Betöltés leállítása' : 'Betöltés indítása' }}
             </UButton>
           </div>

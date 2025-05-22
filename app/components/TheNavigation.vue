@@ -174,13 +174,13 @@
                   <button
                     v-for="lang in languages"
                     :key="lang.code"
-                    @click="selectLanguage(lang)"
                     :class="[
                       'px-4 py-2 rounded-md transition-colors duration-200',
                       currentLanguage === lang.code
                         ? 'bg-white text-buchl-blue'
                         : 'bg-white/10 text-white hover:bg-white/20'
                     ]"
+                    @click="selectLanguage(lang)"
                   >
                     {{ lang.code.toUpperCase() }}
                   </button>
@@ -256,7 +256,7 @@ const navigation = ref<NavItem[]>([
   {
     label: 'Szolgáltatások',
     children: [
-      { label: 'Hulladékkezelés', to: '/szolgaltatasok/hulladekkezeles' },
+      { label: 'Áttekintés', to: '/oldaltervek/szolgaltatasok' },
       { label: 'Szelektív gyűjtés', to: '/szolgaltatasok/szelektiv-gyujtes' },
       { label: 'Veszélyes hulladék', to: '/szolgaltatasok/veszelyes-hulladek' },
       { label: 'Tanácsadás', to: '/szolgaltatasok/tanacsadas' }
@@ -272,8 +272,20 @@ const navigation = ref<NavItem[]>([
     ]
   },
   {
+    label: 'Hulladékkezelés',
+    to: '/oldaltervek/hulladekkezeles'
+  },
+  {
     label: 'Fenntarthatóság',
-    to: '/fenntarthatosag'
+    to: '/oldaltervek/fenntarthatosag'
+  },
+  {
+    label: 'Innovációk',
+    to: '/oldaltervek/innovaciok'
+  },
+  {
+    label: 'Kapcsolat',
+    to: '/oldaltervek/kapcsolat'
   },
   {
     label: 'Hírek',

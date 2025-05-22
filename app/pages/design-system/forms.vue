@@ -45,7 +45,7 @@
                 <UButton type="submit" color="primary" class="rounded-none">
                   Küldés
                 </UButton>
-                <UButton type="button" variant="outline" @click="resetSimpleForm" class="rounded-none">
+                <UButton type="button" variant="outline" class="rounded-none" @click="resetSimpleForm">
                   Mégsem
                 </UButton>
               </div>

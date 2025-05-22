@@ -7,8 +7,8 @@
   >
     <!-- Icon vagy Kép -->
     <div class="mb-6 flex-shrink-0">
-      <div v-if="icon" class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-buchl-blue/10">
-        <UIcon :name="icon" class="w-8 h-8 text-buchl-blue" />
+      <div v-if="icon" class="inline-flex items-center justify-center w-24 h-24 rounded-lg bg-buchl-blue/10">
+        <UIcon :name="icon" class="text-buchl-blue" style="width: 64px; height: 64px;" />
       </div>
       <img v-else-if="image" :src="image" :alt="imageAlt" class="w-full h-48 object-cover rounded-lg" />
     </div>
@@ -25,7 +25,7 @@
       <!-- Lista (opcionális) -->
       <ul v-if="features && features.length > 0" class="space-y-2">
         <li v-for="feature in features" :key="feature" class="flex items-start">
-          <UIcon name="i-lucide-check" class="w-5 h-5 text-buchl-green mr-2 flex-shrink-0 mt-0.5" />
+          <UIcon name="i-lucide-check" class="text-buchl-green mr-2 flex-shrink-0 mt-0.5" style="width: 20px; height: 20px;" />
           <span class="text-gray-700 dark:text-gray-300">{{ feature }}</span>
         </li>
       </ul>
