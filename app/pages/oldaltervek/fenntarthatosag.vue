@@ -52,7 +52,7 @@
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
                                     <div
-                                        class="w-16 h-16 bg-gradient-to-br from-green-300 to-green-950 rounded-xl flex items-center justify-center shadow-lg"
+                                        class="w-16 h-16 bg-gradient-to-br from-blue-400 to-green-400 rounded-xl flex items-center justify-center shadow-lg"
                                     >
                                         <UIcon
                                             name="i-heroicons-sparkles"
@@ -130,7 +130,7 @@
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
                                     <div
-                                        class="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-950 rounded-xl flex items-center justify-center shadow-lg"
+                                        class="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl flex items-center justify-center shadow-lg"
                                     >
                                         <UIcon
                                             name="i-heroicons-truck"
