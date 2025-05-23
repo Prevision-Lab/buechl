@@ -416,6 +416,20 @@
         />
       </div>
     </UPageBody>
+
+    <!-- Komment szekció -->
+    <section class="bg-gray-50 py-16 mt-20">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                Visszajelzések és észrevételek
+            </h2>
+            <p class="text-gray-600 text-center mb-12 text-lg">
+                Ossza meg véleményét ezzel az oldaltervvel kapcsolatban!
+                GitHub fiókkal tud hozzászólni.
+            </p>
+            <GiscusComments />
+        </div>
+    </section>
   </UContainer>
 </template>
 

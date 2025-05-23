@@ -510,7 +510,7 @@
                         to="/fenntarthatosag/kezdemenyezesek"
                         color="primary"
                         size="xl"
-                        class="rounded-full px-8"
+                        class="rounded-none px-8"
                         icon="i-heroicons-arrow-right"
                         :trailing="true"
                     />
@@ -582,7 +582,7 @@
                             color="primary"
                             size="lg"
                             class="rounded-none"
-                            icon="i-heroicons-file-text"
+                            icon="i-heroicons-document-text"
                             :trailing="true"
                         />
                     </div>
@@ -884,17 +884,19 @@
                             <UButton
                                 label="Fenntarthatósági jelentés"
                                 to="/fenntarthatosag/jelentes"
+                                color="primary"
                                 size="xl"
-                                class="rounded-full bg-buchl-green text-buchl-blue hover:bg-buchl-green/90 px-8"
-                                icon="i-heroicons-file-text"
+                                class="rounded-none bg-buchl-green text-primary hover:bg-buchl-green/90 px-8"
+                                icon="i-heroicons-document-text"
                                 :trailing="true"
                             />
                             <UButton
                                 label="Partnerség"
                                 to="/kapcsolat"
+                                color="white"
                                 size="xl"
                                 variant="outline"
-                                class="rounded-full border-2 border-white text-white hover:bg-white/10 px-8"
+                                class="rounded-none border-2 border-white text-white hover:bg-white/10 px-8"
                                 icon="i-heroicons-users"
                                 :trailing="true"
                             />
@@ -1023,14 +1025,14 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
+                        label="Fenntarthatósági jelentés"
                         to="/fenntarthatosag"
+                        color="primary"
                         size="lg"
                         icon="i-heroicons-leaf"
                         :trailing="true"
-                        class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
-                    >
-                        Fenntarthatósági jelentés
-                    </UButton>
+                        class="rounded-none"
+                    />
                     <UButton
                         to="/oldaltervek"
                         variant="outline"
@@ -1110,6 +1112,28 @@
                             </template>
                         </UButton>
                     </NuxtLink>
+                </div>
+            </UContainer>
+        </section>
+
+        <!-- Hozzászólások szekció -->
+        <section class="py-16 bg-white border-t border-gray-200">
+            <UContainer>
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-buchl-blue mb-4">
+                            Ossza meg véleményét!
+                        </h2>
+                        <p class="text-lg text-gray-600">
+                            Fontos számunkra az Ön véleménye. Ossza meg gondolatait fenntarthatósági 
+                            kezdeményezéseinkről és tegyen javaslatokat a jövőbeli fejlesztésekhez.
+                        </p>
+                    </div>
+                    
+                    <!-- Giscus komment rendszer -->
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <GiscusComments />
+                    </div>
                 </div>
             </UContainer>
         </section>
