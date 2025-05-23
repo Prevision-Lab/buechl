@@ -30,7 +30,7 @@ async function fetchRetry(count: number, ...args: Parameters<typeof fetch>) {
     return fetchRetry(count + 1, ...args)
 }
 
-export default defineNuxtPlugin(async (nuxtApp) => {
+export default defineNuxtPlugin(async (_nuxtApp) => {
     const config = useRuntimeConfig()
     const { directusUrl } = config.public
 

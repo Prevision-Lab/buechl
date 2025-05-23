@@ -36,7 +36,7 @@
               :src="testimonial.avatar"
               :alt="testimonial.author"
               class="w-12 h-12 rounded-full mr-4"
-            />
+            >
             <div>
               <p class="font-semibold text-gray-900">{{ testimonial.author }}</p>
               <p class="text-sm text-gray-600">{{ testimonial.position }}</p>
@@ -82,7 +82,7 @@
                     :src="testimonial.avatar"
                     :alt="testimonial.author"
                     class="w-16 h-16 rounded-full mr-4"
-                  />
+                  >
                   <div class="text-left">
                     <p class="font-semibold text-gray-900">{{ testimonial.author }}</p>
                     <p class="text-gray-600">{{ testimonial.position }}</p>
@@ -96,17 +96,17 @@
 
         <!-- Navigation Buttons -->
         <button
-          @click="prevSlide"
           class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
           :disabled="currentSlide === 0"
+          @click="prevSlide"
         >
           <UIcon name="i-mdi-chevron-left" class="w-6 h-6" />
         </button>
 
         <button
-          @click="nextSlide"
           class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
           :disabled="currentSlide === testimonials.length - 1"
+          @click="nextSlide"
         >
           <UIcon name="i-mdi-chevron-right" class="w-6 h-6" />
         </button>
@@ -116,9 +116,9 @@
           <button
             v-for="(_, index) in testimonials"
             :key="index"
-            @click="currentSlide = index"
             class="w-2 h-2 rounded-full transition-all"
             :class="currentSlide === index ? 'bg-buchl-blue w-8' : 'bg-gray-300'"
+            @click="currentSlide = index"
           />
         </div>
       </div>

@@ -40,14 +40,14 @@
                   label="Jetzt kontaktieren"
                   icon="i-heroicons-arrow-right"
                   :trailing="true"
-                  color="white"
+                  color="neutral"
                   class="rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50"
                 />
                 <UButton 
                   label="Jetzt kontaktieren"
                   icon="i-heroicons-arrow-right"
                   :trailing="true"
-                  color="white"
+                  color="neutral"
                   class="rounded-none bg-gray-50 text-buchl-blue border border-gray-300 hover:bg-gray-100"
                 />
               </div>
@@ -77,14 +77,14 @@
                   label="Nachhaltigkeit"
                   icon="i-heroicons-arrow-right"
                   :trailing="true"
-                  color="white"
+                  color="neutral"
                   class="rounded-none bg-buchl-green text-buchl-blue hover:bg-green-400"
                 />
                 <UButton 
                   label="Nachhaltigkeit"
                   icon="i-heroicons-arrow-right"
                   :trailing="true"
-                  color="white"
+                  color="neutral"
                   variant="outline"
                   class="rounded-none border-2 border-buchl-green text-buchl-green hover:bg-buchl-green hover:text-white"
                 />
@@ -682,7 +682,7 @@ const buchlButtonCode = `<!-- Fehér gomb szürke kerettel -->
   label="Jetzt kontaktieren"
   icon="i-heroicons-arrow-right"
   :trailing="true"
-  color="white"
+  color="neutral"
   class="rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50"
 />
 
@@ -691,7 +691,7 @@ const buchlButtonCode = `<!-- Fehér gomb szürke kerettel -->
   label="Jetzt kontaktieren"
   icon="i-heroicons-arrow-right"
   :trailing="true"
-  color="white"
+  color="neutral"
   class="rounded-none bg-gray-50 text-buchl-blue border border-gray-300 hover:bg-gray-100"
 />
 

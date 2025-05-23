@@ -16,7 +16,7 @@
         <div>
           <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Példa</h3>
           <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg">
-            <form @submit.prevent="handleSimpleSubmit" class="space-y-6">
+            <form class="space-y-6" @submit.prevent="handleSimpleSubmit">
               <UFormField label="Név" name="name" required>
                 <UInput 
                   v-model="simpleForm.name" 
@@ -210,8 +210,8 @@
                 v-if="currentStep > 0"
                 type="button" 
                 variant="outline"
-                @click="previousStep"
                 class="rounded-none"
+                @click="previousStep"
               >
                 Vissza
               </UButton>
@@ -221,8 +221,8 @@
                   v-if="currentStep < steps.length - 1"
                   type="button" 
                   color="primary"
-                  @click="nextStep"
                   class="rounded-none"
+                  @click="nextStep"
                 >
                   Tovább
                 </UButton>

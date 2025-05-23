@@ -41,7 +41,7 @@
     <!-- Test 6: Native input for comparison -->
     <section class="mb-8">
       <h2 class="text-lg font-semibold mb-4">Test 6: Native input</h2>
-      <input v-model="test6" placeholder="Native input" class="w-full p-2 border rounded" />
+      <input v-model="test6" placeholder="Native input" class="w-full p-2 border rounded" >
     </section>
 
     <!-- Test 7: Parent element inspection -->

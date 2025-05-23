@@ -55,7 +55,7 @@
                                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=100&h=100&fit=crop&crop=center"
                                     alt="Irodaépület"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-lg font-bold text-gray-900">
                                 Központi iroda
@@ -101,7 +101,7 @@
                                     src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop&crop=center"
                                     alt="Üzleti megbeszélés"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-lg font-bold text-gray-900">
                                 Értékesítés
@@ -147,7 +147,7 @@
                                     src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=100&h=100&fit=crop&crop=center"
                                     alt="Logisztikai teherautók"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-lg font-bold text-gray-900">
                                 Logisztika
@@ -193,7 +193,7 @@
                                     src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=100&h=100&fit=crop&crop=center"
                                     alt="Zöld környezet"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-lg font-bold text-gray-900">
                                 Környezetvédelem
@@ -244,7 +244,7 @@
                 </div>
 
                 <div class="bg-white rounded-2xl shadow-lg p-8">
-                    <form @submit.prevent="submitForm" class="space-y-6">
+                    <form class="space-y-6" @submit.prevent="submitForm">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label
@@ -401,7 +401,7 @@
                                     src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=100&h=100&fit=crop&crop=center"
                                     alt="Modern irodaépület"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <div>
                                 <h3
@@ -425,7 +425,7 @@
                                     class="mr-3 mt-1 flex-shrink-0"
                                     style="width: 18px; height: 18px"
                                 />
-                                <span>9027 Győr<br />Csörgőfa sor 8</span>
+                                <span>9027 Győr<br >Csörgőfa sor 8</span>
                             </div>
                             <div class="flex items-center">
                                 <UIcon
@@ -466,7 +466,7 @@
                                     src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=100&h=100&fit=crop&crop=center"
                                     alt="Raktár és logisztika"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <div>
                                 <h3
@@ -490,7 +490,7 @@
                                     class="mr-3 mt-1 flex-shrink-0"
                                     style="width: 18px; height: 18px"
                                 />
-                                <span>9027 Győr<br />Reptéri út 2</span>
+                                <span>9027 Győr<br >Reptéri út 2</span>
                             </div>
                             <div class="flex items-center">
                                 <UIcon
@@ -531,7 +531,7 @@
                                     src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=100&h=100&fit=crop&crop=center"
                                     alt="Ipari üzem"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <div>
                                 <h3
@@ -556,7 +556,7 @@
                                     style="width: 18px; height: 18px"
                                 />
                                 <span
-                                    >5516 Körösladány<br />Szeghalmi út 0174/3
+                                    >5516 Körösladány<br >Szeghalmi út 0174/3
                                     hrsz</span
                                 >
                             </div>

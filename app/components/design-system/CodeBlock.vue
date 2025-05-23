@@ -4,9 +4,9 @@
       <code :class="`language-${language}`">{{ code }}</code>
     </pre>
     <button 
-      @click="copyCode"
       class="absolute top-2 right-2 p-2 bg-gray-700 dark:bg-gray-600 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity"
       :title="copied ? 'Másolva!' : 'Kód másolása'"
+      @click="copyCode"
     >
       <Icon :name="copied ? 'i-heroicons-check' : 'i-heroicons-clipboard-document'" class="w-4 h-4" />
     </button>

@@ -52,8 +52,8 @@
           <!-- Language Selector -->
           <div class="relative">
             <button 
-              @click="toggleLanguage"
               class="text-white hover:text-buchl-green transition-colors duration-200 flex items-center"
+              @click="toggleLanguage"
             >
               {{ currentLanguage }}
               <UIcon name="i-lucide-globe" class="ml-1 w-4 h-4" />
@@ -65,8 +65,8 @@
               <button
                 v-for="lang in languages"
                 :key="lang.code"
-                @click="selectLanguage(lang)"
                 class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-buchl-blue transition-colors duration-200"
+                @click="selectLanguage(lang)"
               >
                 {{ lang.name }}
               </button>
@@ -75,8 +75,8 @@
 
           <!-- Search Button -->
           <button 
-            @click="openSearch"
             class="text-white hover:text-buchl-green transition-colors duration-200"
+            @click="openSearch"
           >
             <UIcon name="i-lucide-search" class="w-5 h-5" />
           </button>
@@ -84,7 +84,7 @@
           <!-- Contact Button -->
           <UButton
             label="Kapcsolat"
-            color="white"
+            color="neutral"
             variant="solid"
             class="bg-buchl-green text-buchl-blue hover:bg-white hover:text-buchl-blue"
             to="/kapcsolat"
@@ -93,8 +93,8 @@
 
         <!-- Mobile Menu Button -->
         <button
-          @click="toggleMobileMenu"
           class="md:hidden text-white hover:text-buchl-green transition-colors duration-200"
+          @click="toggleMobileMenu"
         >
           <UIcon :name="mobileMenuOpen ? 'i-lucide-x' : 'i-lucide-menu'" class="w-6 h-6" />
         </button>
@@ -120,8 +120,8 @@
               <BuchlLogo variant="white" />
             </NuxtLink>
             <button
-              @click="toggleMobileMenu"
               class="text-white hover:text-buchl-green transition-colors duration-200"
+              @click="toggleMobileMenu"
             >
               <UIcon name="i-lucide-x" class="w-6 h-6" />
             </button>
@@ -190,7 +190,7 @@
               <!-- Contact Button -->
               <UButton
                 label="Kapcsolat"
-                color="white"
+                color="neutral"
                 variant="solid"
                 class="w-full bg-buchl-green text-buchl-blue hover:bg-white hover:text-buchl-blue"
                 to="/kapcsolat"

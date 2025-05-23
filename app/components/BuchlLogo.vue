@@ -7,7 +7,7 @@
       :height="height"
       :class="className"
       :style="styleObject"
-    />
+    >
   </div>
 </template>
 

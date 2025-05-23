@@ -1,8 +1,5 @@
 import type { Config } from 'tailwindcss'
 
-// Default colors
-import colors from 'tailwindcss/colors'
-
 export default <Config>{
   theme: {
     extend: {

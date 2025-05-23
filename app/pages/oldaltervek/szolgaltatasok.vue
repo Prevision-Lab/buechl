@@ -692,7 +692,7 @@
                             src="https://www.carlogos.org/logo/Audi-logo-2009-1920x1080.png"
                             alt="Audi"
                             class="h-8 w-auto"
-                        />
+                        >
                     </div>
                     <div
                         class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4"
@@ -701,7 +701,7 @@
                             src="https://upload.wikimedia.org/wikipedia/commons/1/16/Bosch-logo.svg"
                             alt="Bosch"
                             class="h-8 w-auto"
-                        />
+                        >
                     </div>
                     <div
                         class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4"
@@ -710,7 +710,7 @@
                             src="https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-1920x1080.png"
                             alt="Mercedes"
                             class="h-8 w-auto"
-                        />
+                        >
                     </div>
                     <div
                         class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4"
@@ -719,7 +719,7 @@
                             src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Opel-Logo_2017.png"
                             alt="Opel"
                             class="h-8 w-auto"
-                        />
+                        >
                     </div>
                     <div
                         class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4"
@@ -728,7 +728,7 @@
                             src="https://www.logo.wine/a/logo/Nokia/Nokia-Logo.wine.svg"
                             alt="Nokia"
                             class="h-8 w-auto"
-                        />
+                        >
                     </div>
                     <div
                         class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4"
@@ -737,7 +737,7 @@
                             src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flex_logo_%282015%29.svg"
                             alt="Flex"
                             class="h-8 w-auto"
-                        />
+                        >
                     </div>
                 </div>
 
@@ -763,7 +763,7 @@
                                 src="https://i.pravatar.cc/60?img=3"
                                 alt="Ügyfél képe"
                                 class="w-12 h-12 rounded-full mr-4"
-                            />
+                            >
                             <div class="text-left">
                                 <p class="font-semibold">Kovács János</p>
                                 <p class="text-sm text-gray-600">

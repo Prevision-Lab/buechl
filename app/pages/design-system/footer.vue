@@ -117,7 +117,7 @@
         <h2 class="text-2xl font-semibold mb-4">Reszponzív viselkedés</h2>
         <div class="grid md:grid-cols-3 gap-4">
           <div class="border rounded-lg p-4">
-            <h3 class="font-semibold mb-2">Mobil (< 768px)</h3>
+            <h3 class="font-semibold mb-2">Mobil (&lt; 768px)</h3>
             <ul class="text-sm text-gray-600 space-y-1">
               <li>1 oszlopos elrendezés</li>
               <li>Függőleges stack a fő szekcióknál</li>

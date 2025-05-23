@@ -11,7 +11,7 @@
           type="text"
           placeholder="Enter text..."
           class="block w-full rounded-md border-gray-300 shadow-sm focus:border-sapphire-500 focus:ring-sapphire-500"
-        />
+        >
         <p class="mt-2">Value: {{ inputValue }}</p>
       </div>
 
@@ -23,7 +23,7 @@
           placeholder="Enter long text..."
           rows="4"
           class="block w-full rounded-md border-gray-300 shadow-sm focus:border-sapphire-500 focus:ring-sapphire-500"
-        ></textarea>
+        />
         <p class="mt-2">Value: {{ textValue }}</p>
       </div>
 
@@ -53,7 +53,7 @@
             v-model="checkboxValue" 
             type="checkbox"
             class="h-4 w-4 text-sapphire-600 focus:ring-sapphire-500 border-gray-300 rounded"
-          />
+          >
           <label for="checkbox1" class="ml-2">
             Check me
           </label>
@@ -72,7 +72,7 @@
               type="radio"
               value="option1"
               class="h-4 w-4 text-sapphire-600 focus:ring-sapphire-500 border-gray-300"
-            />
+            >
             <label for="radio1" class="ml-2">Option 1</label>
           </div>
           <div class="flex items-center">
@@ -82,7 +82,7 @@
               type="radio"
               value="option2"
               class="h-4 w-4 text-sapphire-600 focus:ring-sapphire-500 border-gray-300"
-            />
+            >
             <label for="radio2" class="ml-2">Option 2</label>
           </div>
           <div class="flex items-center">
@@ -92,7 +92,7 @@
               type="radio"
               value="option3"
               class="h-4 w-4 text-sapphire-600 focus:ring-sapphire-500 border-gray-300"
-            />
+            >
             <label for="radio3" class="ml-2">Option 3</label>
           </div>
         </div>

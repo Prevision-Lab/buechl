@@ -148,7 +148,7 @@
       </UCard>
 
       <!-- További oldaltervek megtekintése (új, egyszerűsített szekció) -->
-      <UCard class="mb-6" id="oldaltervek">
+      <UCard id="oldaltervek" class="mb-6">
         <div class="prose dark:prose-invert max-w-none scroll-mt-24">
           <h2 class="text-2xl font-bold text-buchl-blue mb-6 flex items-center">
             <UIcon name="i-heroicons-document-text" class="mr-2 w-6 h-6" />
@@ -242,7 +242,7 @@
       </UCard>
 
       <!-- Design elemek és funkcionális ajánlások -->
-      <UCard class="mb-6" id="design">
+      <UCard id="design" class="mb-6">
         <div class="prose dark:prose-invert max-w-none scroll-mt-24">
           <h2 class="text-2xl font-bold text-buchl-blue mb-6 flex items-center">
             <UIcon name="i-heroicons-swatch" class="mr-2 w-6 h-6" />
@@ -263,12 +263,12 @@
                 <li>Kiegészítő színként sárga/narancssárga a kiemelésekhez</li>
               </ul>
               <div class="flex gap-2 mt-4">
-                <div class="w-10 h-10 bg-buchl-blue rounded-md" title="BÜCHL kék"></div>
-                <div class="w-10 h-10 bg-buchl-green rounded-md" title="BÜCHL zöld"></div>
-                <div class="w-10 h-10 bg-white border border-gray-200 rounded-md" title="Fehér"></div>
-                <div class="w-10 h-10 bg-gray-200 rounded-md" title="Világos szürke"></div>
-                <div class="w-10 h-10 bg-gray-600 rounded-md" title="Sötét szürke"></div>
-                <div class="w-10 h-10 bg-yellow-500 rounded-md" title="Sárga"></div>
+                <div class="w-10 h-10 bg-buchl-blue rounded-md" title="BÜCHL kék"/>
+                <div class="w-10 h-10 bg-buchl-green rounded-md" title="BÜCHL zöld"/>
+                <div class="w-10 h-10 bg-white border border-gray-200 rounded-md" title="Fehér"/>
+                <div class="w-10 h-10 bg-gray-200 rounded-md" title="Világos szürke"/>
+                <div class="w-10 h-10 bg-gray-600 rounded-md" title="Sötét szürke"/>
+                <div class="w-10 h-10 bg-yellow-500 rounded-md" title="Sárga"/>
               </div>
             </div>
 

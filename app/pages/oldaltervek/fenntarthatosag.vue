@@ -47,7 +47,7 @@
                     >
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-buchl-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        ></div>
+                        />
                         <div class="p-8 relative z-10">
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
@@ -116,7 +116,7 @@
                         <!-- Alsó dekoratív sáv -->
                         <div
                             class="h-1 bg-gradient-to-r from-buchl-green to-buchl-green/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                        ></div>
+                        />
                     </div>
 
                     <!-- Zöld logisztika -->
@@ -125,7 +125,7 @@
                     >
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-buchl-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        ></div>
+                        />
                         <div class="p-8 relative z-10">
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
@@ -193,7 +193,7 @@
                         </div>
                         <div
                             class="h-1 bg-gradient-to-r from-buchl-blue to-buchl-blue/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                        ></div>
+                        />
                     </div>
 
                     <!-- Vízgazdálkodás -->
@@ -202,7 +202,7 @@
                     >
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        ></div>
+                        />
                         <div class="p-8 relative z-10">
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
@@ -270,7 +270,7 @@
                         </div>
                         <div
                             class="h-1 bg-gradient-to-r from-cyan-500 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                        ></div>
+                        />
                     </div>
 
                     <!-- Biodiverzitás védelem -->
@@ -279,7 +279,7 @@
                     >
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-emerald-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        ></div>
+                        />
                         <div class="p-8 relative z-10">
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
@@ -346,7 +346,7 @@
                         </div>
                         <div
                             class="h-1 bg-gradient-to-r from-emerald-500 to-emerald-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                        ></div>
+                        />
                     </div>
 
                     <!-- Közösségi szerepvállalás -->
@@ -355,7 +355,7 @@
                     >
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        ></div>
+                        />
                         <div class="p-8 relative z-10">
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
@@ -422,7 +422,7 @@
                         </div>
                         <div
                             class="h-1 bg-gradient-to-r from-purple-500 to-purple-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                        ></div>
+                        />
                     </div>
 
                     <!-- Kutatás és fejlesztés -->
@@ -431,7 +431,7 @@
                     >
                         <div
                             class="absolute inset-0 bg-gradient-to-br from-amber-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        ></div>
+                        />
                         <div class="p-8 relative z-10">
                             <div class="flex items-start gap-6">
                                 <div class="flex-shrink-0">
@@ -499,7 +499,7 @@
                         </div>
                         <div
                             class="h-1 bg-gradient-to-r from-amber-500 to-amber-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                        ></div>
+                        />
                     </div>
                 </div>
 
@@ -592,10 +592,10 @@
                             src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop"
                             alt="Fenntartható környezet"
                             class="rounded-lg shadow-lg w-full"
-                        />
+                        >
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"
-                        ></div>
+                        />
                     </div>
                 </div>
             </UContainer>
@@ -608,9 +608,9 @@
             <!-- Háttér dekoráció -->
             <div
                 class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop')] opacity-80"
-            ></div>
+            />
             <!-- Sötétítő réteg -->
-            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="absolute inset-0 bg-black/20"/>
 
             <UContainer class="relative z-10">
                 <div class="text-center mb-16">
@@ -641,7 +641,7 @@
                             >
                                 <div
                                     class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-buchl-green to-buchl-green/70 rounded-full animate-pulse"
-                                ></div>
+                                />
                             </div>
                             <span class="text-3xl font-bold text-buchl-green"
                                 >2030</span
@@ -655,7 +655,7 @@
                         <div class="group relative">
                             <div
                                 class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl transform rotate-3 group-hover:rotate-1 transition-transform duration-300"
-                            ></div>
+                            />
                             <div
                                 class="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-buchl-green/50 transition-all duration-300"
                             >
@@ -700,7 +700,7 @@
                                     >
                                         <div
                                             class="h-full w-[35%] bg-gradient-to-r from-buchl-green to-emerald-400 rounded-full"
-                                        ></div>
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -710,7 +710,7 @@
                         <div class="group relative">
                             <div
                                 class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl transform -rotate-3 group-hover:-rotate-1 transition-transform duration-300"
-                            ></div>
+                            />
                             <div
                                 class="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-buchl-green/50 transition-all duration-300"
                             >
@@ -755,7 +755,7 @@
                                     >
                                         <div
                                             class="h-full w-[95%] bg-gradient-to-r from-cyan-500 to-blue-400 rounded-full"
-                                        ></div>
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -765,7 +765,7 @@
                         <div class="group relative">
                             <div
                                 class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl transform rotate-3 group-hover:rotate-1 transition-transform duration-300"
-                            ></div>
+                            />
                             <div
                                 class="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-buchl-green/50 transition-all duration-300"
                             >
@@ -810,7 +810,7 @@
                                     >
                                         <div
                                             class="h-full w-[50%] bg-gradient-to-r from-amber-500 to-orange-400 rounded-full"
-                                        ></div>
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -820,7 +820,7 @@
                         <div class="group relative">
                             <div
                                 class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl transform -rotate-3 group-hover:-rotate-1 transition-transform duration-300"
-                            ></div>
+                            />
                             <div
                                 class="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-buchl-green/50 transition-all duration-300"
                             >
@@ -865,7 +865,7 @@
                                     >
                                         <div
                                             class="h-full w-[25%] bg-gradient-to-r from-purple-500 to-pink-400 rounded-full"
-                                        ></div>
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -893,7 +893,7 @@
                             <UButton
                                 label="Partnerség"
                                 to="/kapcsolat"
-                                color="white"
+                                color="neutral"
                                 size="xl"
                                 variant="outline"
                                 class="rounded-none border-2 border-white text-white hover:bg-white/10 px-8"
@@ -1125,11 +1125,12 @@
                             Ossza meg véleményét!
                         </h2>
                         <p class="text-lg text-gray-600">
-                            Fontos számunkra az Ön véleménye. Ossza meg gondolatait fenntarthatósági 
-                            kezdeményezéseinkről és tegyen javaslatokat a jövőbeli fejlesztésekhez.
+                            Fontos számunkra az Ön véleménye. Ossza meg
+                            gondolatait fenntarthatósági kezdeményezéseinkről és
+                            tegyen javaslatokat a jövőbeli fejlesztésekhez.
                         </p>
                     </div>
-                    
+
                     <!-- Giscus komment rendszer -->
                     <div class="bg-gray-50 rounded-lg p-6">
                         <GiscusComments />

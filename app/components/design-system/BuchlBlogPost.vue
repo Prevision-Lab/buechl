@@ -15,7 +15,7 @@
               :alt="alt || title"
               class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
-            />
+            >
           </NuxtLink>
           <!-- Category Badge -->
           <div v-if="category" class="absolute top-4 left-4">

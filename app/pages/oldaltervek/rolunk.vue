@@ -78,7 +78,7 @@
                             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
                             alt="BÜCHL Hungaria Kft. irodaépület"
                             class="absolute inset-0 w-full h-full object-cover"
-                        />
+                        >
                         <div
                             class="absolute bottom-0 left-0 right-0 bg-buchl-blue/80 p-4 text-white"
                         >
@@ -281,7 +281,7 @@
                                     src="https://i.pravatar.cc/300?img=60"
                                     alt="Gyökeres Sándor"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-xl font-bold text-buchl-blue">
                                 Gyökeres Sándor
@@ -320,7 +320,7 @@
                                     src="https://i.pravatar.cc/300?img=4"
                                     alt="Nagy Péter"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-xl font-bold text-buchl-blue">
                                 Nagy Péter
@@ -359,7 +359,7 @@
                                     src="https://i.pravatar.cc/300?img=32"
                                     alt="Kovács Andrea"
                                     class="w-full h-full object-cover"
-                                />
+                                >
                             </div>
                             <h3 class="text-xl font-bold text-buchl-blue">
                                 Kovács Andrea
@@ -505,7 +505,7 @@
                                         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=450&fit=crop"
                                         alt="BÜCHL Cégcsoport központi épülete"
                                         class="rounded-lg object-cover w-full h-full"
-                                    />
+                                    >
                                 </div>
                             </div>
                         </div>

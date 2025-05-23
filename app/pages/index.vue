@@ -23,7 +23,7 @@
               src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&h=400&fit=crop"
               alt="BÜCHL Design System"
               class="w-full h-52 object-cover"
-            />
+            >
           </div>
         </template>
         <template #default>
@@ -62,7 +62,7 @@
               src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800&h=400&fit=crop"
               alt="BÜCHL Oldaltervek"
               class="w-full h-52 object-cover"
-            />
+            >
           </div>
         </template>
         <template #default>

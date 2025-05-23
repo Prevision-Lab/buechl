@@ -230,8 +230,8 @@
               src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop"
               alt="Hulladékkezelő berendezések"
               class="rounded-lg shadow-lg w-full"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"/>
           </div>
         </div>
       </UContainer>

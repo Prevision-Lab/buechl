@@ -33,7 +33,7 @@
         <BuchlProjectShowcase 
           :projects="featuredProjects" 
           :featured="true"
-          bgColor="gray"
+          bg-color="gray"
         />
       </div>
 
@@ -47,7 +47,7 @@
           <BuchlProjectShowcase 
             :projects="basicProjects.slice(0, 2)" 
             :columns="2"
-            :showCTA="false"
+            :show-c-t-a="false"
           />
         </div>
 
@@ -57,7 +57,7 @@
           <BuchlProjectShowcase 
             :projects="basicProjects" 
             :columns="4"
-            :showCTA="false"
+            :show-c-t-a="false"
           />
         </div>
       </div>
@@ -72,11 +72,11 @@
             <h3 class="font-semibold mb-4">Kék háttér</h3>
             <BuchlProjectShowcase 
               :projects="basicProjects.slice(0, 3)" 
-              bgColor="blue"
+              bg-color="blue"
               title="Kiváló referenciáink"
               subtitle="25 év tapasztalattal"
-              ctaText="További projektek"
-              ctaColor="white"
+              cta-text="További projektek"
+              cta-color="white"
             />
           </div>
         </div>

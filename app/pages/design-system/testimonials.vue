@@ -36,7 +36,7 @@
         <BuchlTestimonials 
           :testimonials="testimonials.slice(0, 3)" 
           layout="carousel"
-          bgColor="white"
+          bg-color="white"
         />
       </div>
 
@@ -49,7 +49,7 @@
         <BuchlTestimonials 
           :testimonials="testimonials.slice(0, 3)" 
           layout="minimal"
-          bgColor="white"
+          bg-color="white"
         />
       </div>
 
@@ -62,7 +62,7 @@
         <BuchlTestimonials 
           :testimonials="testimonials" 
           :featured="true"
-          bgColor="white"
+          bg-color="white"
         />
       </div>
 
@@ -76,7 +76,7 @@
             <h3 class="font-semibold mb-4">Kék háttér</h3>
             <BuchlTestimonials 
               :testimonials="testimonials.slice(0, 3)" 
-              bgColor="blue"
+              bg-color="blue"
               title="Partnereink véleménye"
               subtitle="25 év sikeres együttműködés"
             />

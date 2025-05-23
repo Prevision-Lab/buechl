@@ -90,7 +90,7 @@
                                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
                                 alt="Innovatív technológiák"
                                 class="w-full h-64 object-cover rounded-xl"
-                            />
+                            >
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     <!-- Timeline Line -->
                     <div
                         class="absolute left-1/2 transform -translate-x-0.5 h-full w-1 bg-buchl-blue/20"
-                    ></div>
+                    />
 
                     <!-- 2017 Innovation -->
                     <div class="relative flex items-center mb-16">
@@ -154,19 +154,19 @@
                         <!-- Timeline Dot -->
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-buchl-blue rounded-full border-4 border-white shadow-lg"
-                        ></div>
+                        />
 
-                        <div class="flex-1 pl-8"></div>
+                        <div class="flex-1 pl-8"/>
                     </div>
 
                     <!-- 2019 Innovation -->
                     <div class="relative flex items-center mb-16">
-                        <div class="flex-1 pr-8"></div>
+                        <div class="flex-1 pr-8"/>
 
                         <!-- Timeline Dot -->
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-buchl-green rounded-full border-4 border-white shadow-lg"
-                        ></div>
+                        />
 
                         <div class="flex-1 pl-8">
                             <div
@@ -242,9 +242,9 @@
                         <!-- Timeline Dot -->
                         <div
                             class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-buchl-blue rounded-full border-4 border-white shadow-lg"
-                        ></div>
+                        />
 
-                        <div class="flex-1 pl-8"></div>
+                        <div class="flex-1 pl-8"/>
                     </div>
                 </div>
             </div>
@@ -342,7 +342,7 @@
                                 src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
                                 alt="Jövő technológiái"
                                 class="w-full h-64 object-cover rounded-xl"
-                            />
+                            >
                         </div>
                     </div>
                     <div class="order-1 lg:order-2">

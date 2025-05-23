@@ -110,7 +110,7 @@
             <div 
               class="bg-buchl-500 h-6 transition-all duration-300"
               :style="{ width: space.value }"
-            ></div>
+            />
           </div>
         </div>
 
@@ -275,9 +275,9 @@ const breakpoints = [
 ]
 
 // Nuxt UI v3 columns with explicit id
-const breakpointColumns = [
-  { key: 'name', label: 'Névtér', id: 'name' },
-  { key: 'minWidth', label: 'Min. szélesség', id: 'minWidth' },
-  { key: 'usage', label: 'Használat', id: 'usage' }
-]
+// const breakpointColumns = [
+//   { key: 'name', label: 'Névtér', id: 'name' },
+//   { key: 'minWidth', label: 'Min. szélesség', id: 'minWidth' },
+//   { key: 'usage', label: 'Használat', id: 'usage' }
+// ]
 </script>

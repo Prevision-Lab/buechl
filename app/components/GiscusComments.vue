@@ -26,7 +26,7 @@ interface Props {
     lang?: string;
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
     theme: "light",
     lang: "hu",
 });

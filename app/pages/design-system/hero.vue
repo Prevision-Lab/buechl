@@ -182,7 +182,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+// import { ref, computed } from 'vue'
 
 // Ipari témájú videó URL - használjunk egy működő Google sample videót
 // Ez egy professzionális megjelenésű videó, ami jól illik az ipari témához
@@ -198,8 +198,8 @@ const industrialVideoUrl = 'https://commondatastorage.googleapis.com/gtv-videos-
 // 2. Használd így: const industrialVideoUrl = '/videos/recycling-plant.mp4'
 
 // YouTube videó beágyazás
-const youtubeVideoId = '_sNenNc3_2Q'
-const youtubeEmbedHtml = ``  // Ideiglenesen üres, amíg működő megoldást találunk
+// const youtubeVideoId = '_sNenNc3_2Q'
+// const youtubeEmbedHtml = ``  // Ideiglenesen üres, amíg működő megoldást találunk
 
 // Alternatív megoldás: töltsd le a videót és használd lokálisan
 // 1. Látogass el: https://www.y2mate.com/

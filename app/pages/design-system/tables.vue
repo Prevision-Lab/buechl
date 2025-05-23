@@ -19,9 +19,9 @@
           <UTable 
             :data="basicData" 
             :ui="{
-              td: { base: 'text-gray-900' },
-              th: { base: 'text-gray-700 font-medium uppercase text-xs' },
-              tr: { base: 'hover:bg-gray-50' }
+              td: 'text-gray-900',
+              th: 'text-gray-700 font-medium uppercase text-xs',
+              tr: 'hover:bg-gray-50'
             }"
           />
         </div>
@@ -39,16 +39,16 @@
               placeholder="Keresés..."
               icon="i-heroicons-magnifying-glass-20-solid"
               size="sm"
-              color="white"
+              color="neutral"
             />
           </div>
           
           <UTable 
             :data="filteredServiceData"
             :ui="{
-              td: { base: 'text-gray-900' },
-              th: { base: 'text-gray-700 font-medium uppercase text-xs' },
-              tr: { base: 'hover:bg-gray-50' }
+              td: 'text-gray-900',
+              th: 'text-gray-700 font-medium uppercase text-xs',
+              tr: 'hover:bg-gray-50'
             }"
           >
             <template #status-data="{ row }">
@@ -60,7 +60,7 @@
                     'bg-yellow-500': row.status === 'pending',
                     'bg-red-500': row.status === 'cancelled'
                   }"
-                ></div>
+                />
                 <span class="text-sm">
                   {{ statusLabels[row.status] }}
                 </span>
@@ -86,9 +86,9 @@
             :loading="isLoading"
             :data="isLoading ? [] : basicData"
             :ui="{
-              td: { base: 'text-gray-900' },
-              th: { base: 'text-gray-700 font-medium uppercase text-xs' },
-              tr: { base: 'hover:bg-gray-50' }
+              td: 'text-gray-900',
+              th: 'text-gray-700 font-medium uppercase text-xs',
+              tr: 'hover:bg-gray-50'
             }"
           />
           <div class="mt-4 flex gap-4">
@@ -108,9 +108,9 @@
           <UTable 
             :data="[]"
             :ui="{
-              td: { base: 'text-gray-900' },
-              th: { base: 'text-gray-700 font-medium uppercase text-xs' },
-              tr: { base: 'hover:bg-gray-50' }
+              td: 'text-gray-900',
+              th: 'text-gray-700 font-medium uppercase text-xs',
+              tr: 'hover:bg-gray-50'
             }"
           >
             <template #empty-state>
@@ -136,9 +136,9 @@
           <UTable 
             :data="employeeData"
             :ui="{
-              td: { base: 'text-gray-900' },
-              th: { base: 'text-gray-700 font-medium uppercase text-xs' },
-              tr: { base: 'hover:bg-gray-50' }
+              td: 'text-gray-900',
+              th: 'text-gray-700 font-medium uppercase text-xs',
+              tr: 'hover:bg-gray-50'
             }"
           >
             <template #role-data="{ row }">
@@ -148,7 +148,8 @@
             </template>
             
             <template #actions-data="{ row }">
-              <UDropdown :items="[[
+              <UDropdown
+:items="[[
                 { label: 'Megtekintés', icon: 'i-heroicons-eye-20-solid', click: () => viewEmployee(row) },
                 { label: 'Szerkesztés', icon: 'i-heroicons-pencil-20-solid', click: () => editEmployee(row) },
               ], [
@@ -187,24 +188,9 @@
               base: 'min-w-full',
               thead: 'bg-gray-50',
               tbody: 'bg-white divide-y divide-gray-200',
-              tr: {
-                base: 'transition-colors',
-                active: 'hover:bg-gray-50'
-              },
-              th: {
-                base: 'text-left',
-                padding: 'px-4 py-3',
-                color: 'text-gray-700',
-                font: 'font-medium uppercase tracking-wider',
-                size: 'text-xs'
-              },
-              td: {
-                base: 'whitespace-nowrap',
-                padding: 'px-4 py-3',
-                color: 'text-gray-900',
-                font: '',
-                size: 'text-sm'
-              }
+              tr: 'transition-colors hover:bg-gray-50',
+              th: 'text-left px-4 py-3 text-gray-700 font-medium uppercase tracking-wider text-xs',
+              td: 'whitespace-nowrap px-4 py-3 text-gray-900 text-sm'
             }"
           >
             <template #client-data="{ row }">
@@ -230,23 +216,23 @@
               </span>
             </template>
             
-            <template #actions-data="{ row }">
+            <template #actions-data>
               <div class="flex items-center justify-end gap-1">
                 <UButton 
+                  v-tooltip="'Számla'" 
                   color="gray" 
                   variant="ghost" 
-                  icon="i-heroicons-document-text" 
+                  icon="i-heroicons-document-text"
                   size="xs"
                   class="rounded-none"
-                  v-tooltip="'Számla'"
                 />
                 <UButton 
+                  v-tooltip="'Nyomtatás'" 
                   color="gray" 
                   variant="ghost" 
-                  icon="i-heroicons-printer" 
+                  icon="i-heroicons-printer"
                   size="xs"
                   class="rounded-none"
-                  v-tooltip="'Nyomtatás'"
                 />
                 <UButton 
                   color="gray" 
@@ -266,7 +252,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 
 // Basic table data - mezőnevek magyarul
 const basicData = [
@@ -445,15 +431,15 @@ const formatCurrency = (amount: number) => {
   }).format(amount)
 }
 
-const viewEmployee = (employee: any) => {
+const viewEmployee = (employee: unknown) => {
   console.log('View employee:', employee)
 }
 
-const editEmployee = (employee: any) => {
+const editEmployee = (employee: unknown) => {
   console.log('Edit employee:', employee)
 }
 
-const deleteEmployee = (employee: any) => {
+const deleteEmployee = (employee: unknown) => {
   console.log('Delete employee:', employee)
 }
 
@@ -461,9 +447,9 @@ const deleteEmployee = (employee: any) => {
 const basicTableCode = `<UTable 
   :data="data"
   :ui="{
-    td: { base: 'text-gray-900' },
-    th: { base: 'text-gray-700 font-medium uppercase text-xs' },
-    tr: { base: 'hover:bg-gray-50' }
+    td: 'text-gray-900',
+    th: 'text-gray-700 font-medium uppercase text-xs',
+    tr: 'hover:bg-gray-50'
   }"
 />
 
@@ -558,23 +544,9 @@ const buchlStyledTableCode = `<UTable
     base: 'min-w-full',
     thead: 'bg-gray-50',
     tbody: 'bg-white divide-y divide-gray-200',
-    tr: {
-      base: 'transition-colors',
-      active: 'hover:bg-gray-50'
-    },
-    th: {
-      base: 'text-left',
-      padding: 'px-4 py-3',
-      color: 'text-gray-700',
-      font: 'font-medium uppercase tracking-wider',
-      size: 'text-xs'
-    },
-    td: {
-      base: 'whitespace-nowrap',
-      padding: 'px-4 py-3',
-      color: 'text-gray-900',
-      size: 'text-sm'
-    }
+    tr: 'transition-colors hover:bg-gray-50',
+    th: 'text-left px-4 py-3 text-gray-700 font-medium uppercase tracking-wider text-xs',
+    td: 'whitespace-nowrap px-4 py-3 text-gray-900 text-sm'
   }"
 >
   <template #client-data="{ row }">

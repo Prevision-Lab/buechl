@@ -201,7 +201,7 @@
                 src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2560&auto=format&fit=crop"
                 alt="Fenntarthatóság"
                 class="w-full h-48 object-cover"
-              />
+              >
             </div>
           </template>
           <template #default>
@@ -230,7 +230,7 @@
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2560&auto=format&fit=crop" 
                 alt="Hulladékkezelés" 
                 class="w-full md:w-48 h-48 object-cover rounded-lg"
-              />
+              >
               <div class="flex-1">
                 <UBadge color="blue" variant="soft" size="sm" class="mb-3">
                   Technológia
@@ -241,7 +241,7 @@
                 </p>
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-3 text-sm text-gray-500">
-                    <img src="https://ui-avatars.com/api/?name=TP" alt="Avatar" class="w-8 h-8 rounded-full" />
+                    <img src="https://ui-avatars.com/api/?name=TP" alt="Avatar" class="w-8 h-8 rounded-full" >
                     <span>Tóth Péter</span>
                     <span>•</span>
                     <span>2024. márc. 10.</span>
@@ -342,7 +342,7 @@
               src="https://ui-avatars.com/api/?name=SK&size=200" 
               alt="Profil" 
               class="w-32 h-32 rounded-full mx-auto mb-4"
-            />
+            >
             <h3 class="text-xl font-semibold mb-2">Szabó Károly</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Vezérigazgató</p>
             <p class="text-gray-600 dark:text-gray-400 mb-6">

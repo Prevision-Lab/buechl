@@ -1,9 +1,7 @@
 import process from 'node:process'
 import {
     addTemplate,
-    createResolver,
     defineNuxtModule,
-    useNuxt,
 } from 'nuxt/kit'
 import { generateDirectusTypes } from 'directus-sdk-typegen'
 
@@ -12,8 +10,6 @@ export default defineNuxtModule({
         name: 'directus-local',
     },
     async setup() {
-        const nuxt = useNuxt()
-        const resolver = createResolver(import.meta.url)
 
         const types = await generateDirectusTypes({
             directusUrl: process.env.NUXT_PUBLIC_DIRECTUS_URL,

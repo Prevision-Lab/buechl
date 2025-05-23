@@ -56,7 +56,7 @@
               src="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=800&h=600&fit=crop" 
               alt="BÜCHL Hungaria Kft." 
               class="absolute inset-0 w-full h-full object-cover"
-            />
+            >
             <div class="absolute bottom-0 left-0 right-0 bg-buchl-blue/80 p-4 text-white">
               <p class="font-semibold">Győri telephely</p>
             </div>
@@ -202,7 +202,7 @@
         <div class="text-center mt-12">
           <UButton
             to="/szolgaltatasok"
-            color="white"
+            color="neutral"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
             icon="i-heroicons-arrow-right"
             :trailing="true"
@@ -305,8 +305,8 @@
             to="/hirek/uj-hulladekkezelo-berendezes"
             category="Technológia"
             date="2025-05-10"
-            readingTime="3 perc olvasás"
-            readMoreText="Tovább"
+            reading-time="3 perc olvasás"
+            read-more-text="Tovább"
           />
 
           <!-- 2. Blog poszt -->
@@ -317,8 +317,8 @@
             to="/hirek/fenntarthatosagi-expo-2025"
             category="Események"
             date="2025-04-25"
-            readingTime="4 perc olvasás"
-            readMoreText="Tovább"
+            reading-time="4 perc olvasás"
+            read-more-text="Tovább"
           />
 
           <!-- 3. Blog poszt -->
@@ -329,8 +329,8 @@
             to="/hirek/elog-system-bevezetes"
             category="Innováció"
             date="2025-04-15"
-            readingTime="5 perc olvasás"
-            readMoreText="Tovább"
+            reading-time="5 perc olvasás"
+            read-more-text="Tovább"
           />
         </div>
 
@@ -364,22 +364,22 @@
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
           <!-- Partner logók -->
           <div class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4">
-            <img src="https://www.carlogos.org/logo/Audi-logo-2009-1920x1080.png" alt="Audi" class="h-8 w-auto" />
+            <img src="https://www.carlogos.org/logo/Audi-logo-2009-1920x1080.png" alt="Audi" class="h-8 w-auto" >
           </div>
           <div class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Bosch-logo.svg" alt="Bosch" class="h-8 w-auto" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Bosch-logo.svg" alt="Bosch" class="h-8 w-auto" >
           </div>
           <div class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4">
-            <img src="https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-1920x1080.png" alt="Mercedes" class="h-8 w-auto" />
+            <img src="https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-1920x1080.png" alt="Mercedes" class="h-8 w-auto" >
           </div>
           <div class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Opel-Logo_2017.png" alt="Opel" class="h-8 w-auto" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Opel-Logo_2017.png" alt="Opel" class="h-8 w-auto" >
           </div>
           <div class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4">
-            <img src="https://www.logo.wine/a/logo/Nokia/Nokia-Logo.wine.svg" alt="Nokia" class="h-8 w-auto" />
+            <img src="https://www.logo.wine/a/logo/Nokia/Nokia-Logo.wine.svg" alt="Nokia" class="h-8 w-auto" >
           </div>
           <div class="w-32 h-16 bg-white rounded-lg shadow flex items-center justify-center p-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flex_logo_%282015%29.svg" alt="Flex" class="h-8 w-auto" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Flex_logo_%282015%29.svg" alt="Flex" class="h-8 w-auto" >
           </div>
         </div>
       </div>
@@ -397,7 +397,7 @@
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton
             to="/kapcsolat"
-            color="white"
+            color="neutral"
             size="lg"
             icon="i-heroicons-envelope"
             :trailing="true"

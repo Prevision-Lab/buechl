@@ -10,7 +10,7 @@
       <div v-if="icon" class="inline-flex items-center justify-center w-24 h-24 rounded-lg bg-buchl-blue/10">
         <UIcon :name="icon" class="text-buchl-blue" style="width: 64px; height: 64px;" />
       </div>
-      <img v-else-if="image" :src="image" :alt="imageAlt" class="w-full h-48 object-cover rounded-lg" />
+      <img v-else-if="image" :src="image" :alt="imageAlt" class="w-full h-48 object-cover rounded-lg" >
     </div>
 
     <!-- Tartalom -->
@@ -37,7 +37,7 @@
         :label="cta.label"
         :to="cta.to"
         :href="cta.href"
-        color="white"
+        color="neutral"
         size="lg"
         class="w-full sm:w-auto rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
         :icon="cta.icon || 'i-heroicons-arrow-right'"

@@ -53,7 +53,7 @@
               :src="service.image" 
               :alt="service.title"
               class="w-full h-full object-cover"
-            />
+            >
           </div>
           
           <div class="p-6">
@@ -209,7 +209,7 @@
           :visible="{ opacity: 1, y: 0 }"
           class="bg-yellow-500 text-black p-6 rounded text-center shadow-lg border-2 border-yellow-300 font-semibold"
         >
-          v-motion-slide-visible-bottom<br/>
+          v-motion-slide-visible-bottom<br>
           <small class="text-yellow-900">(Alulról csúszik be)</small>
         </div>
         

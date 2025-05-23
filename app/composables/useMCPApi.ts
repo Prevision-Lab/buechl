@@ -28,7 +28,7 @@ export const useMCPApi = () => {
 
   const generateComponentCode = async (options: {
     componentName: string
-    props?: Record<string, any>
+    props?: Record<string, unknown>
     slots?: Record<string, string>
   }) => {
     const response = await fetch(`${baseUrl}/generate`, {
