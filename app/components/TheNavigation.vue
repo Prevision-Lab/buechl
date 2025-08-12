@@ -48,39 +48,7 @@
         </div>
 
         <!-- Desktop Actions -->
-        <div class="hidden md:flex items-center space-x-4">
-          <!-- Language Selector -->
-          <div class="relative">
-            <button 
-              class="text-white hover:text-buchl-green transition-colors duration-200 flex items-center"
-              @click="toggleLanguage"
-            >
-              {{ currentLanguage }}
-              <UIcon name="i-lucide-globe" class="ml-1 w-4 h-4" />
-            </button>
-            <div 
-              v-if="languageOpen"
-              class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-2 z-50"
-            >
-              <button
-                v-for="lang in languages"
-                :key="lang.code"
-                class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-buchl-blue transition-colors duration-200"
-                @click="selectLanguage(lang)"
-              >
-                {{ lang.name }}
-              </button>
-            </div>
-          </div>
-
-          <!-- Search Button -->
-          <button 
-            class="text-white hover:text-buchl-green transition-colors duration-200"
-            @click="openSearch"
-          >
-            <UIcon name="i-lucide-search" class="w-5 h-5" />
-          </button>
-
+        <div class="hidden md:flex items-center">
           <!-- Contact Button -->
           <UButton
             label="Kapcsolat"
@@ -167,26 +135,6 @@
 
             <!-- Mobile Actions -->
             <div class="mt-8 border-t border-white/20 pt-8">
-              <!-- Language Selector -->
-              <div class="mb-4">
-                <p class="text-white/60 text-sm mb-2">Nyelv</p>
-                <div class="flex gap-2">
-                  <button
-                    v-for="lang in languages"
-                    :key="lang.code"
-                    :class="[
-                      'px-4 py-2 rounded-md transition-colors duration-200',
-                      currentLanguage === lang.code
-                        ? 'bg-white text-buchl-blue'
-                        : 'bg-white/10 text-white hover:bg-white/20'
-                    ]"
-                    @click="selectLanguage(lang)"
-                  >
-                    {{ lang.code.toUpperCase() }}
-                  </button>
-                </div>
-              </div>
-
               <!-- Contact Button -->
               <UButton
                 label="Kapcsolat"
@@ -202,38 +150,6 @@
       </div>
     </Transition>
 
-    <!-- Search Modal -->
-    <UModal 
-      v-model="searchOpen"
-      :ui="{
-        container: 'flex items-start'
-      }"
-    >
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-4">Keresés</h3>
-        <UInput
-          v-model="searchQuery"
-          placeholder="Keresés..."
-          size="lg"
-          icon="i-lucide-search"
-          class="mb-4"
-          @keyup.enter="performSearch"
-        />
-        <div class="flex justify-end gap-2">
-          <UButton
-            label="Mégse"
-            color="neutral"
-            variant="ghost"
-            @click="searchOpen = false"
-          />
-          <UButton
-            label="Keresés"
-            color="primary"
-            @click="performSearch"
-          />
-        </div>
-      </div>
-    </UModal>
   </nav>
 </template>
 
@@ -254,38 +170,20 @@ interface Language {
 // Navigation items
 const navigation = ref<NavItem[]>([
   {
+    label: 'Kezdőoldal',
+    to: '/'
+  },
+  {
     label: 'Szolgáltatások',
-    children: [
-      { label: 'Áttekintés', to: '/oldaltervek/szolgaltatasok' },
-      { label: 'Szelektív gyűjtés', to: '/szolgaltatasok/szelektiv-gyujtes' },
-      { label: 'Veszélyes hulladék', to: '/szolgaltatasok/veszelyes-hulladek' },
-      { label: 'Tanácsadás', to: '/szolgaltatasok/tanacsadas' }
-    ]
+    to: '/szolgaltatasok'
   },
   {
     label: 'Rólunk',
-    children: [
-      { label: 'Cégünkről', to: '/rolunk' },
-      { label: 'Történetünk', to: '/rolunk/tortenetek' },
-      { label: 'Csapatunk', to: '/rolunk/csapat' },
-      { label: 'Tanúsítványok', to: '/rolunk/tanusitvanyok' }
-    ]
-  },
-  {
-    label: 'Hulladékkezelés',
-    to: '/oldaltervek/hulladekkezeles'
+    to: '/rolunk'
   },
   {
     label: 'Fenntarthatóság',
-    to: '/oldaltervek/fenntarthatosag'
-  },
-  {
-    label: 'Innovációk',
-    to: '/oldaltervek/innovaciok'
-  },
-  {
-    label: 'Kapcsolat',
-    to: '/oldaltervek/kapcsolat'
+    to: '/fenntarthatosag'
   },
   {
     label: 'Hírek',

@@ -26,18 +26,10 @@
                         Átfogó hulladékgazdálkodási megoldások
                     </h2>
                     <p class="text-lg text-gray-700 mb-8">
-                        A BÜCHL több mint 20 éves tapasztalattal rendelkezik a
-                        professzionális hulladékgazdálkodás területén. Teljes
-                        körű szolgáltatásaink a hulladék gyűjtésétől és
-                        szállításától kezdve a feldolgozáson át az
-                        újrahasznosításig minden területet lefednek.
+                        Átfogó hulladékgazdálkodási megoldásokat kínálunk a hulladékkezelés, hulladékgyűjtés és -szállítás, környezetvédelmi szolgáltatások, valamint a tervezési és szaktanácsadási feladatok területén.
                     </p>
                     <p class="text-lg text-gray-700">
-                        Szolgáltatásainkat kizárólag ipari ügyfelek számára
-                        kínáljuk, mindig a legmagasabb szakmai színvonalon és
-                        környezettudatos megközelítéssel. Szakértelmünk
-                        különösen az ipari hulladékkezelés speciális kihívásaira
-                        fókuszál.
+                        Széleskörű szolgáltatási spektrumot biztosítunk ügyfeleink számára. 320 fő munkatárs, 10 db korszerű hulladékkezelő berendezés, közel 40 gépjárműből álló flotta és 25 év a piacon.
                     </p>
                 </div>
             </div>

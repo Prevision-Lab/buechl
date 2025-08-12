@@ -20,25 +20,25 @@
       }"
     />
 
-    <!-- Rólunk röviden szekció -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-              BÜCHL Hungaria Kft.
-            </h2>
-            <div class="space-y-4">
-              <p class="text-lg text-gray-700">
-                A BÜCHL Hungaria több mint 20 éves tapasztalattal rendelkező vezető hulladékgazdálkodási vállalat Magyarországon, amely átfogó megoldásokat kínál az ipari ügyfelek számára.
-              </p>
-              <p class="text-lg text-gray-700">
-                A németországi BÜCHL cégcsoport tagjaként közel 70 éves szakmai háttérrel rendelkezünk a fenntartható hulladékgazdálkodás területén.
-              </p>
-              <p class="text-lg text-gray-700">
-                Célunk, hogy innovatív megoldásainkkal hozzájáruljunk a körforgásos gazdaság megvalósításához és ügyfeleink környezetvédelmi célkitűzéseinek eléréséhez.
-              </p>
-            </div>
+        <!-- Rólunk röviden szekció -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
+                            BÜCHL Hungaria Kft.
+                        </h2>
+                        <div class="space-y-4">
+                            <p class="text-lg text-gray-700">
+                                A BÜCHL Hungaria több mint 25 éves tapasztalattal rendelkező vezető hulladékgazdálkodási vállalat Magyarországon, amely átfogó megoldásokat kínál az ipari ügyfelek számára.
+                            </p>
+                            <p class="text-lg text-gray-700">
+                                A németországi BÜCHL cégcsoport tagjaként közel 75 éves szakmai háttérrel rendelkezünk a fenntartható hulladékgazdálkodás területén.
+                            </p>
+                            <p class="text-lg text-gray-700">
+                                Célunk, hogy innovatív megoldásainkkal hozzájáruljunk a körforgásos gazdaság megvalósításához és ügyfeleink környezetvédelmi célkitűzéseinek eléréséhez.
+                            </p>
+                        </div>
             <div class="mt-8">
               <UButton
                 to="/rolunk"
@@ -229,26 +229,26 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- 1. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
-            <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">300+</div>
-            <div class="text-xl text-white/90">Munkatárs</div>
+            <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">320</div>
+            <div class="text-xl text-white/90">fő munkatárs</div>
           </div>
 
           <!-- 2. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
-            <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">40</div>
-            <div class="text-xl text-white/90">Szállítójármű</div>
+            <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">közel 40</div>
+            <div class="text-xl text-white/90">gépjárműből álló flotta</div>
           </div>
 
           <!-- 3. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
-            <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">20+</div>
-            <div class="text-xl text-white/90">Év a piacon</div>
+            <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">25</div>
+            <div class="text-xl text-white/90">év a piacon</div>
           </div>
 
           <!-- 4. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
             <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">10</div>
-            <div class="text-xl text-white/90">Hulladékkezelő berendezés</div>
+            <div class="text-xl text-white/90">korszerű hulladékkezelő berendezés</div>
           </div>
         </div>
       </div>

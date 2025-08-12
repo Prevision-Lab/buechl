@@ -89,13 +89,12 @@
             <p>
               <strong>BÜCHL Hungaria Kft.</strong>
             </p>
-            <p>1234 Budapest</p>
-            <p>Példa utca 12.</p>
+            <p>9027 Győr, Csörgőfa sor 8.</p>
             <p class="pt-2">
-              Tel: <a href="tel:+3612345678" class="hover:text-white transition-colors">+36 1 234 5678</a>
+              Tel: <a href="tel:+3696516620" class="hover:text-white transition-colors">+36 96 516-620</a>
             </p>
             <p>
-              Email: <a href="mailto:info@buchl.hu" class="hover:text-white transition-colors">info@buchl.hu</a>
+              Email: <a href="mailto:info@buechl.hu" class="hover:text-white transition-colors">info@buechl.hu</a>
             </p>
           </address>
           <div class="mt-4">
@@ -119,6 +118,9 @@
             © {{ new Date().getFullYear() }} BÜCHL Hungaria Kft. Minden jog fenntartva.
           </p>
           <nav class="flex gap-6">
+            <NuxtLink to="/design-system" class="text-sm text-white/60 hover:text-white transition-colors">
+              Design System
+            </NuxtLink>
             <NuxtLink to="/adatvedelem" class="text-sm text-white/60 hover:text-white transition-colors">
               Adatvédelem
             </NuxtLink>

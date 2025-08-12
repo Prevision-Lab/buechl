@@ -30,25 +30,13 @@
                         </h2>
                         <div class="space-y-4">
                             <p class="text-lg text-gray-700">
-                                A BÜCHL HUNGARIA Kft. a németországi székhelyű
-                                BÜCHL cégcsoport tagjaként, több mint 20 éve
-                                nyújt professzionális hulladékgazdálkodási
-                                szolgáltatásokat Magyarországon.
+                                A BÜCHL HUNGARIA Kft. Magyarország egyik meghatározó szakértője az ipari hulladékkezelés területén, különös fókuszt helyezve az autóipari partnerekre. Vállalatunk 2000 óta van jelen a hazai piacon, és azóta is elkötelezetten dolgozunk azon, hogy ügyfeleink számára megbízható, innovatív és fenntartható hulladékgazdálkodási megoldásokat kínáljunk.
                             </p>
                             <p class="text-lg text-gray-700">
-                                Tevékenységünk fókuszában az ipari ügyfelek
-                                magas színvonalú kiszolgálása áll, a
-                                hulladékgyűjtés és -szállítástól kezdve, a
-                                hulladékkezelésen és újrahasznosításon át,
-                                egészen a vállalaton belüli hulladékgazdálkodási
-                                rendszerek teljes körű üzemeltetéséig.
+                                Cégünk a bajorországi székhelyű BÜCHL cégcsoport tagja, amely immár 75 éve tevékenykedik sikeresen a hulladékgazdálkodás, környezetvédelem, szaktanácsadás és innováció területén. A családi tulajdonban lévő, tulajdonosok által irányított vállalatcsoport stabil hátteret és nemzetközi tapasztalatot biztosít számunkra.
                             </p>
                             <p class="text-lg text-gray-700">
-                                Filozófiánk – „Egy ötlettel mindig előbbre" –
-                                kifejezi innovatív szemléletünket és
-                                elkötelezettségünket a folyamatos fejlesztés
-                                mellett, hogy partnereink számára mindig a
-                                leghatékonyabb megoldásokat kínálhassuk.
+                                Magyarországon közel 300 munkatárssal, 10 korszerű hulladékkezelő berendezéssel és több mint 40 speciális járművel állunk partnereink rendelkezésére. Szolgáltatásaink teljeskörű megoldást kínálnak a veszélyes és nem veszélyes ipari hulladékok begyűjtésére, szállítására és újrahasznosítására.
                             </p>
                         </div>
                         <div class="mt-8 flex flex-wrap gap-4">
@@ -403,23 +391,15 @@
                             BÜCHL Cégcsoport
                         </h2>
                         <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-buchl-blue mb-4">EGY ÖTLETTEL ELŐRÉBB. 1951 óta.</h3>
                             <p class="text-lg text-gray-700">
-                                A BÜCHL HUNGARIA Kft. a németországi családi
-                                tulajdonban lévő BÜCHL cégcsoport tagja, amely
-                                közel 70 éves tapasztalattal rendelkezik a
-                                hulladékgazdálkodás területén.
+                                A németországi Ingolstadtban alapított, immár harmadik generációs családi vállalkozás 75 éve kínál innovatív megoldásokat a hulladékgazdálkodás, környezetvédelem és fenntarthatóság területén.
                             </p>
                             <p class="text-lg text-gray-700">
-                                A cégcsoport teljes szolgáltatási portfóliójára
-                                jellemző a magas színvonal, az innovatív
-                                szemlélet és a fenntarthatóság iránti
-                                elkötelezettség.
+                                A BÜCHL Csoport teljes szolgáltatási portfólióját a megbízható minőség, az innovatív megoldások, a bátor cselekvés, valamint az emberek és a környezet iránti felelősségtudat jellemzi.
                             </p>
                             <p class="text-lg text-gray-700">
-                                A németországi és magyarországi telephelyeken
-                                összesen több mint 500 munkatárs dolgozik azon,
-                                hogy ügyfeleink számára a legjobb
-                                hulladékgazdálkodási megoldásokat biztosítsuk.
+                                Tevékenységük lefedi a hulladékgyűjtést, -szállítást és -kezelést, valamint a tervezést és szaktanácsadást is. Küldetésük: egy ötlettel előrébb – a körforgásos gazdaságot támogató hatékony és jövőorientált szolgáltatásokkal.
                             </p>
                         </div>
                         <div class="mt-6">

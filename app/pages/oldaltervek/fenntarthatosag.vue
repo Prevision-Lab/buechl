@@ -3,14 +3,14 @@
         <!-- Hero szekció -->
         <BuchlHero
             title="Fenntarthatóság"
-            subtitle="Környezettudatos megoldásokkal építjük a jövőt és védjük bolygónkat a következő generációk számára."
+            subtitle="ESG elvek alapján építjük a jövőt - Környezet, Társadalom, Vállalatirányítás"
             :image="`https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&h=800&fit=crop`"
             image-alt="Fenntartható technológiák"
             bg-color="green"
             :skewed="true"
             :primary-cta="{
-                label: 'Kezdeményezéseink',
-                to: '/fenntarthatosag',
+                label: 'ESG Kezdeményezéseink',
+                to: '#esg-pillars',
                 icon: 'i-heroicons-leaf',
             }"
             :secondary-cta="{
