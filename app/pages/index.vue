@@ -105,9 +105,9 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           <!-- 1. Szolgáltatás kártya -->
-          <UCard>
+          <UCard class="h-full">
             <template #header>
               <div class="flex items-center gap-3">
                 <div class="p-3 bg-primary-100 dark:bg-primary-900 rounded-lg">
@@ -116,24 +116,15 @@
                 <h3 class="text-lg font-semibold">Hulladékkezelés</h3>
               </div>
             </template>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Korszerű technológiákkal biztosítjuk a hulladékok környezetbarát kezelését és feldolgozását.
-            </p>
-            <template #footer>
-              <UButton 
-                label="Részletek" 
-                to="/szolgaltatasok" 
-                color="primary" 
-                variant="ghost" 
-                size="sm" 
-                block 
-                class="rounded-none" 
-              />
-            </template>
+            <div class="flex-1 flex items-center">
+              <p class="text-gray-600 dark:text-gray-400">
+                Korszerű technológiákkal biztosítjuk a hulladékok környezetbarát kezelését és feldolgozását.
+              </p>
+            </div>
           </UCard>
 
           <!-- 2. Szolgáltatás kártya -->
-          <UCard>
+          <UCard class="h-full">
             <template #header>
               <div class="flex items-center gap-3">
                 <div class="p-3 bg-green-100 dark:bg-green-900 rounded-lg">
@@ -142,24 +133,15 @@
                 <h3 class="text-lg font-semibold">Hulladékgyűjtés és -szállítás</h3>
               </div>
             </template>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Specializált járműparkunk biztosítja a biztonságos és megbízható hulladékszállítást.
-            </p>
-            <template #footer>
-              <UButton 
-                label="Részletek" 
-                to="/szolgaltatasok" 
-                color="green" 
-                variant="ghost" 
-                size="sm" 
-                block 
-                class="rounded-none" 
-              />
-            </template>
+            <div class="flex-1 flex items-center">
+              <p class="text-gray-600 dark:text-gray-400">
+                Specializált járműparkunk biztosítja a biztonságos és megbízható hulladékszállítást.
+              </p>
+            </div>
           </UCard>
 
           <!-- 3. Szolgáltatás kártya -->
-          <UCard>
+          <UCard class="h-full">
             <template #header>
               <div class="flex items-center gap-3">
                 <div class="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg">
@@ -168,46 +150,28 @@
                 <h3 class="text-lg font-semibold">Környezetvédelmi szolgáltatások</h3>
               </div>
             </template>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Átfogó környezetvédelmi megoldások a fenntartható működésért.
-            </p>
-            <template #footer>
-              <UButton 
-                label="Részletek" 
-                to="/szolgaltatasok" 
-                color="blue" 
-                variant="ghost" 
-                size="sm" 
-                block 
-                class="rounded-none" 
-              />
-            </template>
+            <div class="flex-1 flex items-center">
+              <p class="text-gray-600 dark:text-gray-400">
+                Átfogó környezetvédelmi megoldások a fenntartható működésért.
+              </p>
+            </div>
           </UCard>
 
           <!-- 4. Szolgáltatás kártya -->
-          <UCard>
+          <UCard class="h-full">
             <template #header>
               <div class="flex items-center gap-3">
                 <div class="p-3 bg-yellow-100 dark:bg-yellow-900 rounded-lg">
                   <UIcon name="i-heroicons-light-bulb" class="text-yellow-600 dark:text-yellow-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Tervezési és szaktanácsadási feladatok</h3>
+                <h3 class="text-lg font-semibold">Tervezés és szaktanácsadás</h3>
               </div>
             </template>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Szakértői tanácsadás és tervezés a hatékony hulladékgazdálkodásért.
-            </p>
-            <template #footer>
-              <UButton 
-                label="Részletek" 
-                to="/szolgaltatasok" 
-                color="yellow" 
-                variant="ghost" 
-                size="sm" 
-                block 
-                class="rounded-none" 
-              />
-            </template>
+            <div class="flex-1 flex items-center">
+              <p class="text-gray-600 dark:text-gray-400">
+                Szakértői tanácsadás és tervezés a hatékony hulladékgazdálkodásért.
+              </p>
+            </div>
           </UCard>
         </div>
 
@@ -366,31 +330,31 @@
     <section class="py-16 bg-buchl-green text-buchl-blue">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-          Szüksége van fenntartható hulladékgazdálkodási megoldásra?
+          Ismerd meg minőségirányítási tanúsítványainkat!
         </h2>
         <p class="text-xl text-buchl-blue/80 max-w-3xl mx-auto mb-10">
-          Szakértő csapatunk személyre szabott megoldásokat kínál az Ön vállalkozása számára, függetlenül a mérettől vagy az iparágtól.
+          A BÜCHL HUNGARIA Kft. büszke ISO és EMAS tanúsítványaira, amelyek bizonyítják elkötelezettségünket a minőség és környezetvédelem iránt.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton
-            to="/kapcsolat"
+            to="/tanusitvanyok"
             color="neutral"
             size="lg"
-            icon="i-heroicons-envelope"
+            icon="i-heroicons-document-text"
             :trailing="true"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            Kapcsolatfelvétel
+            Tanúsítványok megtekintése
           </UButton>
           <UButton
-            to="/szolgaltatasok"
+            to="/fenntarthatosag"
             variant="outline"
             size="lg"
             icon="i-heroicons-arrow-right"
             :trailing="true"
             class="rounded-none border-2 border-buchl-blue text-buchl-blue"
           >
-            Szolgáltatásaink
+            Fenntarthatóság
           </UButton>
         </div>
       </div>

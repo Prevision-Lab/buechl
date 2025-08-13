@@ -174,16 +174,20 @@ const navigation = ref<NavItem[]>([
     to: '/'
   },
   {
-    label: 'Szolgáltatások',
-    to: '/szolgaltatasok'
-  },
-  {
     label: 'Rólunk',
     to: '/rolunk'
   },
   {
+    label: 'Szolgáltatások',
+    to: '/szolgaltatasok'
+  },
+  {
     label: 'Fenntarthatóság',
     to: '/fenntarthatosag'
+  },
+  {
+    label: 'Tanúsítványok',
+    to: '/tanusitvanyok'
   },
   {
     label: 'Hírek',

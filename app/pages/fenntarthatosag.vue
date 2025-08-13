@@ -32,80 +32,26 @@
             <div class="inline-flex items-center justify-center w-16 h-16 bg-buchl-green/10 rounded-full mb-6">
               <UIcon name="i-heroicons-globe-alt" class="text-buchl-green" style="width: 32px; height: 32px;" />
             </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">Környezet</h3>
-            <p class="text-gray-700">
-              Megújuló energia, zöld technológiák és karbonlábnyom csökkentés a fő céljaink.
-            </p>
+            <h3 class="text-xl font-semibold text-buchl-blue mb-3">1. Környezet</h3>
           </div>
           
           <div class="text-center p-8 bg-blue-50 rounded-lg">
             <div class="inline-flex items-center justify-center w-16 h-16 bg-buchl-blue/10 rounded-full mb-6">
               <UIcon name="i-heroicons-users" class="text-buchl-blue" style="width: 32px; height: 32px;" />
             </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">Társadalom</h3>
-            <p class="text-gray-700">
-              Oktatási kooperációk, sportszponzoráció és közösségépítés területén vagyunk aktívak.
-            </p>
+            <h3 class="text-xl font-semibold text-buchl-blue mb-3">2. Társadalmi szerepvállalás</h3>
           </div>
           
           <div class="text-center p-8 bg-gray-50 rounded-lg">
             <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-600/10 rounded-full mb-6">
               <UIcon name="i-heroicons-building-office-2" class="text-gray-600" style="width: 32px; height: 32px;" />
             </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">Vállalatirányítás</h3>
-            <p class="text-gray-700">
-              Nemzetközi partneri hálózat és felelős vállalatirányítási gyakorlatok.
-            </p>
+            <h3 class="text-xl font-semibold text-buchl-blue mb-3">3. Vállalatirányítás</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tanúsítványok szekció -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            Tanúsítványok és akkreditalt munkavégzés
-          </h2>
-          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Nemzetközi standard szerinül. Tanúsítványok és akkreditalt munkával garantáljuk a legmagasabb minőségű szolgáltatást.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-lg shadow-md text-center">
-            <div class="inline-flex items-center justify-center w-20 h-20 bg-buchl-green/10 rounded-full mb-6">
-              <UIcon name="i-heroicons-shield-check" class="text-buchl-green" style="width: 40px; height: 40px;" />
-            </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">ISO 14001:2015</h3>
-            <p class="text-gray-700">
-              Környezetirányítási rendszer tanúsítványa, amely bizonyítja környezetvédelmi elkötelezettségünket.
-            </p>
-          </div>
-
-          <div class="bg-white p-8 rounded-lg shadow-md text-center">
-            <div class="inline-flex items-center justify-center w-20 h-20 bg-buchl-blue/10 rounded-full mb-6">
-              <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-blue" style="width: 40px; height: 40px;" />
-            </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">ISO 9001:2015</h3>
-            <p class="text-gray-700">
-              Minőségirányítási rendszer tanúsítványa, amely garantiálja szolgáltatásaink folyamatos minőségét.
-            </p>
-          </div>
-
-          <div class="bg-white p-8 rounded-lg shadow-md text-center">
-            <div class="inline-flex items-center justify-center w-20 h-20 bg-green-500/10 rounded-full mb-6">
-              <UIcon name="i-heroicons-user-group" class="text-green-500" style="width: 40px; height: 40px;" />
-            </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">ISO 45001:2018</h3>
-            <p class="text-gray-700">
-              Munkahelyi egészség és biztonság irányítási rendszer a munkavállalóink védelméért.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- 1. Környezeti kezdeményezések szekció -->
     <section class="py-16 bg-buchl-blue text-white">
@@ -114,102 +60,143 @@
           <h2 class="text-3xl sm:text-4xl font-bold mb-4">
             1. Környezet
           </h2>
-          <p class="text-lg text-white/80 max-w-3xl mx-auto">
-            Fenntartható energiahasználat és környezetbarát technológiák a környezetvedlyünkért
-          </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+          <!-- Napelemrendszerek -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-sun" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Napelemrendszerek</h3>
             </div>
-            <p class="text-white/90 mb-4">
-              Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszerűsítettük. 
-              A teljesítmény 178 kW-ról 494 kW-ra nőtt.
+            <p class="text-white/90 text-sm mb-4">
+              Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszerűsítettük, a teljes 
+              tetőfelület kihasználásával maximalizáltuk az elérhető kapacitást. 
+              Kettős számú telephelyünkön egy új, 100 kW-os rendszer épült ki, igazodva a nappali időszak fogyasztásához.
             </p>
-            <div class="text-2xl font-bold text-buchl-green">494 kW</div>
-            <div class="text-sm text-white/70">napelemes kapacitás</div>
+            <div class="text-2xl font-bold text-buchl-green mb-1">494 kW</div>
+            <div class="text-sm text-white/70">napelemes kapacitás (178 kW-ról)</div>
           </div>
 
-          <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+          <!-- Földhő és napenergia -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-home-modern" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Földhő és napenergia</h3>
             </div>
-            <p class="text-white/90 mb-4">
-              2015 óta mindket győri telephelyünk fűtése és hűtése fosszilis energiahordozók nélkül működik. 
-              Talajszondás hőszivatyúokat használunk.
+            <p class="text-white/90 text-sm mb-4">
+              2015 óta mindkét győri telephelyünk fűtése és hűtése fosszilis energiahordozók nélkül működik. 
+              A szükséges energiát talajszondás hőszivattyúk biztosítják. 
+              A használati melegvíz ellátás kettős számú telephelyünkön napkollektorokkal történik.
             </p>
-            <div class="text-2xl font-bold text-buchl-green">2015 óta</div>
+            <div class="text-2xl font-bold text-buchl-green mb-1">2015 óta</div>
             <div class="text-sm text-white/70">fosszilis mentes fűtés-hűtés</div>
           </div>
 
-          <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+          <!-- Elektromos járművek -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-truck" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Elektromos járművek</h3>
             </div>
-            <p class="text-white/90 mb-4">
-              Flottánkban évről évre növekszik az elektromos személyautók száma. 
-              Egy korábbi dízel horgos konténerszállító is elektromossá alakult.
+            <p class="text-white/90 text-sm mb-4">
+              Flottánkban évről évre növekszik az elektromos személyautók száma. Emellett egy korábbi dízel 
+              horgos konténerszállító teherautót is teljesen elektromos meghajtásúvá alakítottunk. 
+              A dízel horgos konténerszállító elektromos átalakítása jelentős mérföldkő volt.
             </p>
-            <div class="text-2xl font-bold text-buchl-green">61%</div>
-            <div class="text-sm text-white/70">elektromos munkagépek aránya</div>
+            <div class="text-2xl font-bold text-buchl-green mb-1">Növekvő</div>
+            <div class="text-sm text-white/70">elektromos flotta</div>
           </div>
 
-          <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+          <!-- Elektromos munkagépek -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center mb-4">
+              <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
+              <h3 class="text-xl font-semibold text-white">Elektromos munkagépek</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4">
+              2025-ben anyagmozgató és rakodógépeink 61%-a már elektromos meghajtású. Gépparkunkon belül 
+              ez az arány folyamatosan nő. Ezzel jelentős mértékben csökkentjük az üvegházhatású gázok kibocsátását.
+            </p>
+            <div class="text-2xl font-bold text-buchl-green mb-1">61%</div>
+            <div class="text-sm text-white/70">elektromos munkagépek</div>
+          </div>
+
+          <!-- Zöld energia vásárlás -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-bolt" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Zöld energia vásárlás</h3>
             </div>
-            <p class="text-white/90 mb-4">
-              A működésünkhöz szükséges energiát teljes mértékben megújuló vagy 
-              nagy hatásfokú kapcsolt energiatermelésből fedezzük.
+            <p class="text-white/90 text-sm mb-4">
+              A működésünkhöz szükséges energiát teljes mértékben megújuló vagy nagy hatásfokú kapcsolt 
+              energiatermelésből származó energiával fedezzük. Teljes mértékben megújuló energiaforrásokra támaszkodunk.
             </p>
-            <div class="text-2xl font-bold text-buchl-green">3.500 MWh</div>
+            <div class="text-2xl font-bold text-buchl-green mb-1">3.500 MWh</div>
             <div class="text-sm text-white/70">zöld energia 2025-ben</div>
           </div>
 
-          <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+          <!-- Méhcsaládok -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-heart" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
-              <h3 class="text-xl font-semibold text-white">Méhcsaládok</h3>
+              <h3 class="text-xl font-semibold text-white">Méhcsaládok a fenntarthatóság szolgálatában</h3>
             </div>
-            <p class="text-white/90 mb-4">
-              2022-ben aktívan bekapcsolódtunk a biológiai sokféleség megőrzésébe. 
-              Három méhcsalád telepítését támogattuk.
+            <p class="text-white/90 text-sm mb-4">
+              2022-ben aktívan bekapcsolódtunk a biológiai sokféleség megőrzésébe. Ennek részeként három méhcsalád 
+              telepítését támogattuk egy szakképzett méhész állományában. Egyetlen méhcsalád hozzávetőleg 50 000 
+              méhből áll – ezek az apró beporzok kulcsszerepet játszanak az ökoszisztéma fenntartásában és a biológiai 
+              sokféleség védelmében. A méhek által megtermelt méz nem csupán a természet értékes ajándéka: 
+              lehetőséget ad arra is, hogy e fenntarthatósági törekvésünket kézzel fogható formában is megosszuk 
+              munkatársainkkal és partnereinkkel.
             </p>
-            <div class="text-2xl font-bold text-buchl-green">3</div>
-            <div class="text-sm text-white/70">méhcsalád támogatása</div>
+            <div class="text-2xl font-bold text-buchl-green mb-1">3</div>
+            <div class="text-sm text-white/70">méhcsalád (~150.000 méh összesen)</div>
           </div>
 
-          <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
+          <!-- Karbonlábnyom-elemzés -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-chart-bar" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Karbonlábnyom-elemzés</h3>
             </div>
-            <p class="text-white/90 mb-4">
-              A KÖVET Egyesület támogatásával elkészült a BÜCHL Hungaria 
-              három évet felölelő karbonlábnyom-felmérése (2019–2021).
+            <p class="text-white/90 text-sm mb-4">
+              A KÖVET Egyesület szakmai támogatásával elkészült a BÜCHL Hungaria három évet felölelő 
+              (2019–2021 között) karbonlábnyom-felmérése. Fő kibocsátási források: telephelyi energiafelhasználás, 
+              logisztikai műveletek, anyagfelhasználás. Bilan Carbone® módszertan alapján.
             </p>
-            <div class="text-2xl font-bold text-buchl-green">2019-21</div>
-            <div class="text-sm text-white/70">karbonlábnyom felmérés</div>
+            <div class="text-2xl font-bold text-buchl-green mb-1">2019-21</div>
+            <div class="text-sm text-white/70">háromèves felmérés</div>
+          </div>
+
+          <!-- KÖVET Egyesület partnerség -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center mb-4">
+              <UIcon name="i-heroicons-globe-europe-africa" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
+              <h3 class="text-xl font-semibold text-white">Partnerség a fenntarthatóságért</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4">
+              A BÜCHL Hungaria Kft. 2003 óta tagja a KÖVET Egyesületnek, amely 1995 óta dolgozik a megelőző 
+              környezetvédelem és a fenntartható vállalati működés elterjesztéséért. 
+              Közös tevékenységeink: Győri Zöld Expó részvétel, EMAS kerekasztal támogatás, "Ablakon Bedobott Pénz" program díjnyertese.
+            </p>
+            <div class="text-2xl font-bold text-buchl-green mb-1">2003 óta</div>
+            <div class="text-sm text-white/70">KÖVET tagság</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. Társadalmi szerepvállálás szekció -->
+    <!-- 2. Társadalmi szerepvállás szekció -->
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            2. Társadalom
+            2. Társadalmi szerepvállás
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            A BÜCHL HUNGARIA Kft. elkötelezett a közösség és a jövő generációk támogatása mellett.
+            A BÜCHL HUNGARIA Kft. elkötelezett a közösség és a jövő generációk támogatása mellett – legyen szó oktatásról, sportról vagy közösségi eseményekről. 
+            Vállalatunk immár 10 éve töretlenul örömmel támogatja a győri Generációk Háza által szervezett Raklapos Építőtábort.
           </p>
         </div>
 
@@ -220,8 +207,10 @@
               <h3 class="text-xl font-semibold text-buchl-blue">Oktatási kooperációk</h3>
             </div>
             <p class="text-gray-700 mb-4">
-              Együttműködünk a győri Széchenyi István Egyetemmel, a MOBILIS Interaktív Kiállítási Központtal, 
-              és minden évben fogadjuk az Audi Hungaria Iskolaközpont tanulóit egy projektnap keretében.
+              Fontos számunkra a szakmai utánpótlás és a tudásmegoztás. Együttműködünk a győri Széchenyi István Egyetemmel, 
+              valamint a MOBILIS Interaktív Kiállítási Központtal, ahol tudományos és oktatási projekteket támogatunk, 
+              valamint ösztöndíjjal segítjük a diákokat. Az Audi Hungaria Iskolaközpont tanulóit minden évben egy projektnap 
+              keretében fogadjuk vállalatunknál.
             </p>
             <div class="text-sm text-gray-500">Tudományos és oktatási projektek, ösztöndíjak</div>
           </div>
@@ -232,8 +221,12 @@
               <h3 class="text-xl font-semibold text-buchl-blue">Sportszponzoráció</h3>
             </div>
             <p class="text-gray-700 mb-4">
-              Büszkék vagyunk rá, hogy a Győri ETO HC, a Győri ETO UNI FKC és a Győri Kosárlabda Club támogatói lehetünk. 
-              Lipovics Patrik ifjú autóversenyzo sikereit is támogatjuk.
+              A BÜCHL-nél hisszük, hogy a sport támogatása nem csupán szponzoráció – hanem befektetés a jövőbe, 
+              a közösségbe és az értékteremtésbe. A kézilabda, a jégkorong, a kosárlabda dinamizmusa és csapatszelleme 
+              tökéletesen tükrözi vállalatunk értékeit. Büszkék vagyunk rá, hogy a Győri ETO HC, a Győri ETO UNI FKC 
+              és a Győri Kosárlabda Club támogatói lehetünk. A kezdetektől fogva ott vagyunk Lipovics Patrik ifjú autóversenyező 
+              sikereit is támogatjuk, mert hiszünk benne, hogy az elkötelezettség és a folyamatos fejlődés a motorsportban 
+              és az üzleti életben egyaránt kulcsfontosságú.
             </p>
             <div class="text-sm text-gray-500">Kézilabda, jégkorong, kosárlabda, motorsport</div>
           </div>
@@ -245,7 +238,8 @@
             </div>
             <p class="text-gray-700 mb-4">
               2000 óta minden évben több százan állnak rajthoz a BÜCHL Hungaria Kft. főtámogatásával 
-              megvalósuló BÜCHL Éjszakai Futóversenyen.
+              megvalósuló BÜCHL Éjszakai Futóversenyen, köztük nagy büszkeségünkre munkatársaink is, 
+              akik egyéniben és váltóban is bizonyítanak. Akik nem húztak futócipőt, önkéntesként segítették a szervezők munkáját.
             </p>
             <div class="text-sm text-gray-500">2000 óta évente megrendezésre kerül</div>
           </div>
@@ -256,8 +250,9 @@
               <h3 class="text-xl font-semibold text-buchl-blue">Közösségépítés élményekkel</h3>
             </div>
             <p class="text-gray-700 mb-4">
-              Év közben rendszeresen szervezünk munkatársi programokat: horgászversenyt, gyereknapot, 
-              közös kirándulást, retro szendvics napot és karácsonyi sütést.
+              Az erős csapat alapja a közös élmény. Év közben rendszeresen szervezünk munkatársi programokat – 
+              többek között horgászversenyt, gyereknapot, közös kirándulást, retro szendvics napot és karácsonyi sütést – 
+              melyek nemcsak kikapcsolódást, hanem valódi közösségi élményt is nyújtanak.
             </p>
             <div class="text-sm text-gray-500">Valódi közösségi élmények munkatársainknak</div>
           </div>
@@ -277,61 +272,37 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="bg-gradient-to-br from-buchl-blue to-buchl-blue/90 p-8 rounded-lg text-buchl-blue">
-              <div class="flex items-center mb-6">
-                <UIcon name="i-heroicons-building-office-2" class="text-buchl-blue mr-3" style="width: 40px; height: 40px;" />
-                <h3 class="text-2xl font-semibold">DUIHK-tagság</h3>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-gradient-to-br from-buchl-green to-buchl-green/90 p-8 rounded-lg text-buchl-blue">
+            <div class="flex items-center mb-6">
+              <UIcon name="i-heroicons-building-office-2" class="text-buchl-blue mr-3" style="width: 40px; height: 40px;" />
+              <h3 class="text-2xl font-semibold">DUIHK-tagság – Aktív kapcsolat a német gazdasággal</h3>
+            </div>
+            <p class="text-buchl-blue/90 mb-6">
+              A BÜCHL Hungaria Kft. elkötelezett a nemzetközi szakmai együttműködések és a felelős vállalati működés mellett. 
+              Ennek részeként hosszú évek óta tagjai vagyunk a Német–Magyar Ipari és Kereskedelmi Kamárának (DUIHK). 
+              A DUIHK-tagság számunkra:
+            </p>
+            
+            <div class="space-y-3 mb-6">
+              <div class="flex items-start">
+                <span class="text-buchl-blue mr-2">•</span>
+                <span class="text-sm text-buchl-blue/90">aktív kapcsolatot jelent a német gazdasági szereplőkkel,</span>
               </div>
-              <p class="text-buchl-blue/90 mb-6">
-                A BÜCHL Hungaria Kft. elkötelezett a nemzetközi szakmai együttműködések és a felelős vállalati működés mellett. 
-                Hosszu évek óta tagjai vagyunk a Német–Magyar Ipari és Kereskedelmi Kamárának (DUIHK).
-              </p>
-              
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <UIcon name="i-heroicons-check-circle" class="text-buchl-blue mr-3" style="width: 20px; height: 20px;" />
-                  <span class="text-sm">Aktív kapcsolat a német gazdasági szereplőkkel</span>
-                </div>
-                <div class="flex items-center">
-                  <UIcon name="i-heroicons-check-circle" class="text-buchl-blue mr-3" style="width: 20px; height: 20px;" />
-                  <span class="text-sm">Szakmai fejlődés és tapasztalatcsere lehetőségei</span>
-                </div>
-                <div class="flex items-center">
-                  <UIcon name="i-heroicons-check-circle" class="text-buchl-blue mr-3" style="width: 20px; height: 20px;" />
-                  <span class="text-sm">Magas német színvonal képviselet Magyarországon</span>
-                </div>
+              <div class="flex items-start">
+                <span class="text-buchl-blue mr-2">•</span>
+                <span class="text-sm text-buchl-blue/90">lehetőséget kínál a szakmai fejlődésre, tapasztalatcserére,</span>
+              </div>
+              <div class="flex items-start">
+                <span class="text-buchl-blue mr-2">•</span>
+                <span class="text-sm text-buchl-blue/90">és támogatja cégünk célját, hogy a környezetvédelmi szolgáltatások területén is magas német színvonalat képviseljünk Magyarországon.</span>
               </div>
             </div>
-          </div>
-          
-          <div>
-            <div class="bg-gradient-to-br from-buchl-green to-buchl-green/90 p-8 rounded-lg text-buchl-blue">
-              <div class="flex items-center mb-6">
-                <UIcon name="i-heroicons-globe-europe-africa" class="text-buchl-blue mr-3" style="width: 40px; height: 40px;" />
-                <h3 class="text-2xl font-semibold">KÖVET Egyesület</h3>
-              </div>
-              <p class="text-buchl-blue/90 mb-6">
-                A BÜCHL Hungaria Kft. 2003 óta tagja a KÖVET Egyesületnek, amely 1995 óta dolgozik 
-                a megelőző környezetvédelem és a fenntartható vállalati működés elterjestéséért.
-              </p>
-              
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <UIcon name="i-heroicons-trophy" class="text-buchl-blue mr-3" style="width: 20px; height: 20px;" />
-                  <span class="text-sm">Győri Zöld Expó rendszeres részveval</span>
-                </div>
-                <div class="flex items-center">
-                  <UIcon name="i-heroicons-trophy" class="text-buchl-blue mr-3" style="width: 20px; height: 20px;" />
-                  <span class="text-sm">EMAS kerekasztal rendezvények támogatása</span>
-                </div>
-                <div class="flex items-center">
-                  <UIcon name="i-heroicons-trophy" class="text-buchl-blue mr-3" style="width: 20px; height: 20px;" />
-                  <span class="text-sm">"Ablakon Bedobott Pénz" program díjnyertes</span>
-                </div>
-              </div>
-            </div>
+            <p class="text-buchl-blue/90 text-sm">
+              A kamara rendezvényein való részvétel, valamint a közös fenntarthatósági és innovációs kezdeményezések 
+              hozzájárulnak ahhoz, hogy tovább erősítsük szakmai hitelességünket és piaci jelenlétünket – mind regionálisan, 
+              mind országos szinten is.
+            </p>
           </div>
         </div>
       </div>

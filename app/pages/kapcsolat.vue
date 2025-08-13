@@ -274,7 +274,7 @@
                 <a href="mailto:info@buechl.hu" class="text-buchl-blue hover:text-buchl-green transition-colors">info@buechl.hu</a>
               </div>
             </div>
-            <div class="bg-buchl-blue/5 p-4 rounded">
+            <div class="bg-buchl-blue/5 p-4 rounded mb-4">
               <h4 class="font-medium text-buchl-blue mb-2">Nyitvatartás:</h4>
               <div class="text-sm text-gray-700 space-y-1">
                 <div class="flex justify-between">
@@ -289,6 +289,15 @@
                   <span>Szombat – Vasárnap:</span>
                   <span>Zárva</span>
                 </div>
+              </div>
+            </div>
+            
+            <!-- Térkép - Győr Központ -->
+            <div class="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+              <div class="text-center text-gray-600">
+                <UIcon name="i-heroicons-map-pin" style="width: 32px; height: 32px;" class="mx-auto mb-2 text-buchl-blue" />
+                <p class="text-sm font-medium">Győr, Csörgőfa sor 8.</p>
+                <p class="text-xs text-gray-500">Központi iroda térképe</p>
               </div>
             </div>
           </div>
@@ -313,7 +322,7 @@
                 <a href="mailto:bhk2@buechl.hu" class="text-buchl-blue hover:text-buchl-green transition-colors">bhk2@buechl.hu</a>
               </div>
             </div>
-            <div class="bg-buchl-blue/5 p-4 rounded">
+            <div class="bg-buchl-blue/5 p-4 rounded mb-4">
               <h4 class="font-medium text-buchl-blue mb-2">Nyitvatartás:</h4>
               <div class="text-sm text-gray-700 space-y-1">
                 <div class="flex justify-between">
@@ -328,6 +337,15 @@
                   <span>Szombat – Vasárnap:</span>
                   <span>Zárva</span>
                 </div>
+              </div>
+            </div>
+            
+            <!-- Térkép - Győr II-es telephely -->
+            <div class="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+              <div class="text-center text-gray-600">
+                <UIcon name="i-heroicons-map-pin" style="width: 32px; height: 32px;" class="mx-auto mb-2 text-buchl-blue" />
+                <p class="text-sm font-medium">Győr, Reptéri út 6.</p>
+                <p class="text-xs text-gray-500">II-es telephely térképe</p>
               </div>
             </div>
           </div>
@@ -352,7 +370,7 @@
                 <a href="mailto:bhk3@buechl.hu" class="text-buchl-blue hover:text-buchl-green transition-colors">bhk3@buechl.hu</a>
               </div>
             </div>
-            <div class="bg-buchl-blue/5 p-4 rounded">
+            <div class="bg-buchl-blue/5 p-4 rounded mb-4">
               <h4 class="font-medium text-buchl-blue mb-2">Nyitvatartás:</h4>
               <div class="text-sm text-gray-700 space-y-1">
                 <div class="flex justify-between">
@@ -369,16 +387,14 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Térkép placeholder -->
-        <div class="bg-white p-8 rounded-lg shadow-md">
-          <div class="bg-gray-300 h-96 rounded-lg flex items-center justify-center">
-            <div class="text-center text-gray-600">
-              <UIcon name="i-heroicons-map-pin" style="width: 48px; height: 48px;" class="mx-auto mb-4" />
-              <p class="text-lg font-medium">Interaktív térkép</p>
-              <p class="text-sm">Telephelyeink térképe</p>
+            
+            <!-- Térkép - Nyíregyháza -->
+            <div class="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
+              <div class="text-center text-gray-600">
+                <UIcon name="i-heroicons-map-pin" style="width: 32px; height: 32px;" class="mx-auto mb-2 text-buchl-blue" />
+                <p class="text-sm font-medium">Nyíregyháza, Derkovits út 132-136.</p>
+                <p class="text-xs text-gray-500">Nyíregyháza telephely térképe</p>
+              </div>
             </div>
           </div>
         </div>

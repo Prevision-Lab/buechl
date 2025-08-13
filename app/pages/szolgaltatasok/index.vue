@@ -61,12 +61,12 @@
                 <h2
                     class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center"
                 >
-                    Ipari szolgáltatási portfóliónk
+                    Szolgáltatási portfóliónk
                 </h2>
 
                 <div class="max-w-3xl mx-auto mb-16 text-center">
                     <p class="text-lg text-gray-700">
-                        A BÜCHL kizárólag ipari ügyfelekre specializálódott, így
+                        A BÜCHL ipari ügyfelekre specializálódott, így
                         minden szolgáltatásunkat a vállalati igények
                         figyelembevételével alakítottuk ki. Csapatunk szakértő
                         megoldásokat kínál minden iparág számára, különös
@@ -93,7 +93,7 @@
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                Professzionális hulladékszállítás rugalmasan és megbízhatóan, ADR-tanúsítvánnyal és részletes dokumentációval.
+                                Professzionális hulladékgyűjtés és -szállítás – rugalmasan és megbízhatóan ADR-tanúsítvánnyal és részletes dokumentációval.
                             </p>
                             <ul class="space-y-3 mb-6">
                                 <li class="flex items-start gap-3">
@@ -101,21 +101,21 @@
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Széles konténerválaszték minden ipari igényre</span>
+                                    <span>Folyékony és veszélyes hulladékok speciális tárolása és szállítása</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Folyékony és veszélyes hulladékok speciális tárolása</span>
+                                    <span>Széles választék minden ipari igényre az ipari hulladékok kezeléséhez</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Költségoptimalizálás szakértő tanácsadással</span>
+                                    <span>Szakértő segítség a hulladékkezelés optimalizálására és a szállítási költségek csökkentésére</span>
                                 </li>
                             </ul>
                             <div>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                Speciális technológiák és korszerű berendezések a győri telephelyünkön a biztonságos és hatékony kezelésre.
+                                Speciális technológiák és korszerű berendezések a hulladékok biztonságos és hatékony kezelésére.
                             </p>
                             <ul class="space-y-3 mb-6">
                                 <li class="flex items-start gap-3">
@@ -155,21 +155,21 @@
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
                                     />
-                                    <span>Emulzió- és mosólúg-kezelés, bepárló berendezések</span>
+                                    <span>Másodnyersanyagok előállítása – a körforgásos gazdaság szolgálatában</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
                                     />
-                                    <span>Másodnyersanyagok előállítása a körforgásos gazdaságért</span>
+                                    <span>Innovatív megoldások speciális ipari hulladékokra</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
                                     />
-                                    <span>Iratmegsemmisítés, válogatás és bálázás</span>
+                                    <span>Külső partnerektől érkező hulladékok komplex kezelése</span>
                                 </li>
                             </ul>
                             <div>
@@ -196,12 +196,12 @@
                                     name="i-heroicons-cpu-chip"
                                     class="w-7 h-7"
                                 />
-                                Logisztika (ELOG SYSTEM®)
+                                Logisztika
                             </h3>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                Komplex, digitális megoldások az üzemen belüli hulladéklogisztika optimalizálására, saját fejlesztésű szoftverekkel.
+                                Átfogó logisztikai megoldások az üzemen belüli hulladékkezelés optimalizálására, beleértve az ELOG SYSTEM® digitális platformot.
                             </p>
                             <ul class="space-y-3 mb-6">
                                 <li class="flex items-start gap-3">
@@ -243,106 +243,6 @@
             </div>
         </section>
 
-        <!-- Hulladékatalógus szekció -->
-        <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-                        Hulladékatalógus - Komplex hulladékkezelés
-                    </h2>
-                    <p class="text-lg text-gray-700 max-w-4xl mx-auto">
-                        Vállalatunk nemcsak saját partnerei, hanem más régiókból érkező hulladékok kezelését is vállalja. 
-                        Széles körű nem veszélyes és veszélyes hulladéktípusokat dolgozunk fel biztonságosan.
-                    </p>
-                </div>
-
-                <div class="grid gap-8 md:grid-cols-2 items-center mb-12">
-                    <div>
-                        <div class="bg-buchl-blue/5 p-8 rounded-lg">
-                            <h3 class="text-xl font-bold text-buchl-blue mb-4 flex items-center gap-3">
-                                <UIcon name="i-heroicons-rectangle-stack" class="w-6 h-6" />
-                                Nem veszélyes hulladékok
-                            </h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Műanyag hulladékok</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Fa hulladékok</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Fém hulladékok</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Csomagolóanyagok</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="bg-red-50 p-8 rounded-lg border-l-4 border-red-400">
-                            <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center gap-3">
-                                <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6" />
-                                Veszélyes hulladékok (fő szakterület)
-                            </h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Emulziók, mosólúgok</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Aeroszolok</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Fémforgácsok</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Légzsákok és HV-akkumulátorok</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-lg p-8 text-center">
-                    <h3 class="text-2xl font-bold text-buchl-blue mb-4">
-                        Teljes hulladékatalógus és kereső funkció
-                    </h3>
-                    <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
-                        Engedélyezett hulladéktípusaink teljes listája letölthető és online kereső funkcióval ellátott. 
-                        Könnyen megtalálhatja a megfelelő kezelési módot az Ön hulladékaihoz.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <UButton
-                            to="/hulladek-katalogus"
-                            size="lg"
-                            icon="i-heroicons-magnifying-glass"
-                            class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
-                        >
-                            Kereső funkció
-                        </UButton>
-                        <UButton
-                            href="/media/documents/hulladek-katalogus.pdf"
-                            variant="outline"
-                            size="lg"
-                            icon="i-heroicons-arrow-down-tray"
-                            class="rounded-none border-buchl-blue text-buchl-blue hover:bg-buchl-blue hover:text-white"
-                            target="_blank"
-                        >
-                            Katálógus letöltése
-                        </UButton>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Környezetvédelmi szolgáltatások szekció -->
         <section class="py-16 bg-gray-50">

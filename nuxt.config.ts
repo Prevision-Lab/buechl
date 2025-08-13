@@ -89,4 +89,18 @@ export default defineNuxtConfig({
         preference: 'light',
         fallback: 'light',
     },
+    
+    // Exclude directories from file watching to prevent ENFILE errors
+    nitro: {
+        ignore: ['venv/**', '**/.venv/**', '**/node_modules/**']
+    },
+    
+    // Additional watcher configuration
+    vite: {
+        server: {
+            watch: {
+                ignored: ['**/venv/**', '**/.venv/**', '**/node_modules/**']
+            }
+        }
+    }
 })
