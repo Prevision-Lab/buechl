@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="hu-HU"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="hu-HU"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="hu-HU"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="hu-HU"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="hu-HU"><!--<![endif]-->
+
+<head>
+    <title>Seite wurde nicht gefunden. - BÜCHL Hungaria</title>
+        <!-- <meta name="keywords" content="Entsorgung, Recycling, Abfall, Müll, Wertstoffe, Sortierung, Container, Abfallcontainer, Müllcontainer, Recyclinghof, Abfuhr, Müllabfuhr, Gewerbeabfall" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://www.buechl.de/wp-content/uploads/2015/03/Buechl-Logo-Favicon-16x16px.png" type="image/x-icon" />
+
+    <link rel="apple-touch-icon" href="https://www.buechl.de/wp-content/uploads/2015/03/Buechl-Logo-Favicon-16x16px.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.buechl.de/wp-content/uploads/2015/03/Buechl-Logo-Appletouch-M-76x76px.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.buechl.de/wp-content/uploads/2015/03/Buechl-Logo-Appletouch-L-120x120px.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.buechl.de/wp-content/uploads/2015/03/Buechl-Logo-Appletouch-XL-152x152px.png">
+
+    <link rel="pingback" href="https://www.buechl.hu/xmlrpc.php" />
+    <link rel="alternate" type="application/rss+xml" title="BÜCHL Hungaria" href="https://www.buechl.hu/feed/" />
+    <link rel="alternate" type="application/atom+xml" title="BÜCHL Hungaria" href="https://www.buechl.hu/feed/atom/" />
+
+    <meta name="google-site-verification" content="4uPbaBRxUTlkzWY9XCBztRsemOOMwOy7kGUlBEg_ppU" />
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0a688476-f4b7-48fa-863a-6c0309bb6c0d" data-blockingmode="auto" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var $OZY_WP_AJAX_URL = "https://www.buechl.hu/wp-admin/admin-ajax.php",
+            $OZY_WP_IS_HOME = false,
+            $OZY_WP_HOME_URL = "https://www.buechl.hu";
+    </script>
+        <meta name='robots' content='noindex, follow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v25.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Seite wurde nicht gefunden. - BÜCHL Hungaria</title>
+	<meta property="og:locale" content="hu_HU" />
+	<meta property="og:title" content="Seite wurde nicht gefunden. - BÜCHL Hungaria" />
+	<meta property="og:site_name" content="BÜCHL Hungaria" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.buechl.hu/#website","url":"https://www.buechl.hu/","name":"BÜCHL Hungaria","description":"Egy gondolat előre","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.buechl.hu/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"hu"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.buechl.hu/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='datetimepicker-css' href='https://www.buechl.hu/wp-content/themes/logistic//css/datetimepicker.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.buechl.hu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='page-list-style-css' href='https://www.buechl.hu/wp-content/plugins/page-list/css/page-list.css?ver=5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-dropdown-click-0-css' href='https://www.buechl.hu/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/style.min.css?ver=1' type='text/css' media='all' />
+<style id='wpml-legacy-dropdown-click-0-inline-css' type='text/css'>
+.wpml-ls-statics-shortcode_actions{background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#000000;background-color:#000000;}.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:hover,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:focus, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:hover, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:focus {color:#000000;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a {color:#0059aa;background-color:#000000;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;}
+</style>
+<link rel='stylesheet' id='wpml-menu-item-0-css' href='https://www.buechl.hu/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='logistic-style-css' href='https://www.buechl.hu/wp-content/themes/logistic/style.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='logistic-child-css' href='https://www.buechl.hu/wp-content/themes/logistic-child/style.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='chld_thm_cfg_parent-css' href='https://www.buechl.hu/wp-content/themes/logistic/style.css?v=1.2&#038;ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css' href='https://www.buechl.hu/wp-content/plugins/masterslider/public/assets/css/masterslider.main.css?ver=3.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css' href='https://www.buechl.hu/wp-content/uploads/masterslider/custom.css?ver=26.8' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://www.buechl.hu/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://www.buechl.hu/wp-content/themes/logistic-child/style.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ozy-fontset-css' href='https://www.buechl.hu/wp-content/themes/logistic/font/font.min.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://www.buechl.hu/wp-content/themes/logistic/scripts/fancybox/jquery.fancybox.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.buechl.hu/wp-content/themes/logistic/framework/public/css/vendor/font-awesome.min.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='animsition-css' href='https://www.buechl.hu/wp-content/themes/logistic/css/animsition.min.css?ver=6.8.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.buechl.hu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/datetimepicker/datetimepicker.js?ver=6.8.2" id="datetimepicker-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown-click/script.min.js?ver=1" id="wpml-legacy-dropdown-click-0-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/modernizr.js?ver=6.8.2" id="modernizr-js"></script>
+<script type="text/javascript" id="starfield-js-extra">
+/* <![CDATA[ */
+var ozy404assets = {"path":"https:\/\/www.buechl.hu\/wp-content\/themes\/logistic\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/404/starfield.min.js?ver=6.8.2" id="starfield-js"></script>
+<script></script><meta name="generator" content="WPML ver:4.7.6 stt:1,3,23;" />
+<script>var ms_grabbing_curosr='https://www.buechl.hu/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='https://www.buechl.hu/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.7.8 - Responsive Touch Image Slider" />
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://www.buechl.hu/wp-content/uploads/2018/11/cropped-Büchl-Logo-hungaria-rgb-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.buechl.hu/wp-content/uploads/2018/11/cropped-Büchl-Logo-hungaria-rgb-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.buechl.hu/wp-content/uploads/2018/11/cropped-Büchl-Logo-hungaria-rgb-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.buechl.hu/wp-content/uploads/2018/11/cropped-Büchl-Logo-hungaria-rgb-270x270.png" />
+ <style type="text/css"> @media only screen and (min-width: 1212px) { .container{padding:0;width:1212px;} #content{width:792px;} #sidebar{width:312px;} } /* Body Background Styling */ body{background-color:#f5f5f6;background-size:cover;background-repeat:inherit;} /* Layout and Layout Styling */ #main, .main-bg-color{ background-color:rgba(255,255,255,1); } #main.header-slider-active>.container, #main.footer-slider-active>.container{ margin-top:0px; } #footer .container>div, #footer .container, #footer{ height:56px;min-height:56px; } #footer,#footer>footer .container{ line-height:56px; } #footer .top-social-icons>a>span { line-height:56px; } @-moz-document url-prefix() { #footer .top-social-icons>a>span{line-height:56px;} } #footer-wrapper { background-color:rgba(50,50,50,1); } #footer *, #footer-widget-bar * { color:#ffffff !important; } #footer a:hover, #footer-widget-bar a:hover { color:#075fad !important; } #footer, #footer-widget-bar, #footer .top-social-icons>a { border-color:#2f323c } #footer-widget-bar>.container>section>div.widget>span.line { border-color:#075fad } #footer a, #footer-widget-bar a { color:#075fad } #footer-widget-bar input, #footer-widget-bar textarea, #footer-widget-bar select { background-color:rgba(50,50,50,1) !important; } #footer-widget-bar input, #footer-widget-bar textarea, #footer-widget-bar select, #footer-widget-bar .opening-time { border-color:#ffffff !important; } @media only screen and (max-width: 479px) { #footer{height:112px;} } @media only screen and (max-width: 1024px) and (min-width: 668px) { #header #title{padding-right:60px;} #header #title>a{line-height:40px;} #footer{height:56px;} } /* Primary Menu Styling */ #top-menu .logo>h1>a, #top-menu .logo2>h1>a{ color:rgba(0,0,0,1) !important; } #header{ position:fixed; background-color:rgba(255,255,255,1); } #top-menu, #top-menu .logo, body.classic-menu #top-menu>ul, body.classic-menu #top-menu>ul>li, body.classic-menu #top-menu>ul>li>a, body.classic-menu #top-menu>ul>li>a:before, body.classic-menu #top-menu>ul>li>a:after, body.classic-menu #top-menu>ul>li>.submenu-button { height:44px; line-height:44px; font-family:"Raleway";font-weight:600;font-style:normal;font-size:12px;color:rgba(0,0,0,1); } #top-menu, #top-menu .logo { line-height:40px; height:40px; font-family:"Raleway";font-weight:600;font-style:normal;font-size:12px;color:rgba(0,0,0,1); } #header, body.classic-menu #top-menu ul ul li a{ border-color:rgba(230,230,230,0.3); } body.classic-menu #top-menu ul ul li a{ color:rgba(0,0,0,1); } body.classic-menu #top-menu ul li>a:before, body.classic-menu #top-menu ul li>a:after, body.classic-menu #top-menu span.submenu-button:before, body.classic-menu #top-menu span.submenu-button:after, body.classic-menu #top-menu .menu-button:before, body.classic-menu #top-menu .menu-button.menu-opened:after { background-color:rgba(0,0,0,1) !important; } body.classic-menu #top-menu .menu-button:after, body.classic-menu #top-menu .menu-item-search>a>span, body.classic-menu #top-menu .menu-item-wpml>a>span { border-color:rgba(0,0,0,1) !important; } @media screen and (max-width:1280px){ body.classic-menu #top-menu #head-mobile { line-height:72px; min-height:72px; } body.classic-menu #top-menu .logo { background-color:rgba(255,255,255,1); } body.classic-menu #top-menu>ul>li { height:auto !important; } body.classic-menu #top-menu, body.classic-menu #top-menu ul li{ background-color:rgba(255,255,255,1); } body.classic-menu #header { position:relative !important; } body.classic-menu #top-menu>ul>li.sub-active { background-color:rgba(230,230,230,1); } } body.classic-menu #top-menu ul ul li{ background-color:rgba(255,255,255,1); } body.classic-menu #top-menu ul ul li:hover{ background-color:rgba(230,230,230,1); color:rgba(7,95,173,1); } body.classic-menu #top-menu>ul>li:hover>a, body.classic-menu #top-menu ul ul li:hover>a, body.classic-menu #top-menu>ul>li.active>a, body.classic-menu #top-menu ul ul li.current-menu-parent>a, body.classic-menu #top-menu ul ul li.current-menu-item>a, body.classic-menu #top-menu ul li.sub-active>a, body.classic-menu #top-menu ul>li.current-page-ancestor>a{ color:rgba(7,95,173,1); } body.classic-menu #top-menu ul>li.current-menu-parent>a:before, body.classic-menu #top-menu ul>li.current-menu-parent>a:after, body.classic-menu #top-menu ul>li.current-menu-item>a:before, body.classic-menu #top-menu ul>li.current-menu-item>a:after, body.classic-menu #top-menu ul>li.current-page-ancestor>a:before, body.classic-menu #top-menu ul>li.current-page-ancestor>a:after, body.classic-menu #top-menu li:hover>span.submenu-button:before, body.classic-menu #top-menu li:hover>span.submenu-button:after, body.classic-menu #top-menu li.sub-active>span.submenu-button:before, body.classic-menu #top-menu li.sub-active>span.submenu-button:after, body.classic-menu #top-menu>ul>li:hover>a:before, body.classic-menu #top-menu>ul>li:hover>a:after, body.classic-menu #top-menu>ul ul>li:hover>a:before, body.classic-menu #top-menu>ul ul>li:hover>a:after{ background-color:rgba(7,95,173,1) !important; } /* Top Info Bar */ #info-bar .ozy-selectBox{border-color:rgba(255,255,255,.5);} #info-bar *{color:#ffffff;} #info-bar div.ozy-selectOptions, #info-bar .ozy-selectOption{background-color:#fff;} #info-bar .ozy-selectOption>a{color:#000;} #info-bar .ozy-selectOption:hover{background-color:#000;} #info-bar .ozy-selectOption:hover>a{color:#fff;} div.ozy-selectOptions:before{border-bottom-color:#fff;} #info-bar { background: #0076ff; background: -moz-linear-gradient(left, #0076ff 0%, #1fd87c 100%); background: -webkit-linear-gradient(left, #0076ff 0%,#1fd87c 100%); background: linear-gradient(to right, #0076ff 0%,#1fd87c 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076ff', endColorstr='#1fd87c',GradientType=1 ); } /* Widgets */ .widget li>a{ color:#000000 !important; } .widget li>a:hover{ color:#075fad !important; } .ozy-latest-posts>a>span{ background-color:rgba(7,95,173,.8);color:rgba(255,255,255,1); } /* Page Styling and Typography */ body.classic-menu ul.menu li.current_page_item>a, .content-color-alternate{ color:#075fad !important; } .content-color, h1.content-color>a,h2.content-color>a,h3.content-color>a,h4.content-color>a,h5.content-color>a,h6.content-color>a { color:#000000 !important; } .ozy-footer-slider, .content-font, .ozy-header-slider, #content, #footer-widget-bar, #sidebar, #footer, input, select, textarea, .tooltipsy, .fancybox-inner, #woocommerce-lightbox-cart { font-family:"Raleway";font-weight:normal;font-style:normal;font-size:14px;line-height:1.5em;color:#000000; } #content a:not(.ms-btn):not(.vc_btn3), #sidebar a,#footer a, .alternate-text-color, #footer-widget-bar>.container>.widget-area a:hover, .fancybox-inner a, #woocommerce-lightbox-cart a { color:#075fad; } #footer #social-icons a, #ozy-share-div>a>span, .a-page-title, .page-pagination>a, .fancybox-inner, #woocommerce-lightbox-cart{ color:#000000 !important; } .page-pagination>.current{ background-color:rgba(240,240,240,1); } .a-page-title:hover{ border-color:#000000 !important; } .nav-box a, #page-title-wrapper h1, #page-title-wrapper h3, #side-nav-bar a, #side-nav-bar h3, #content h1, #footer-widget-bar h1, #footer-widget-bar h2, #footer-widget-bar h3, #footer-widget-bar h4, #footer-widget-bar h5, #footer-widget-bar h6, #sidr h1, #sidr h2, #sidr h3, #sidr h4, #sidr h5, #sidr h6, #sidebar .widget h1, #footer h1, #content h2, #sidebar .widget h2, #footer h2, #content h3, #sidebar .widget h3, #footer h3, #content h4, #sidebar .widget h4, #footer h4, #content h5, #sidebar .widget h5, #footer h5, #content h6, #sidebar .widget h6, #footer h6, .heading-font, #logo, #tagline, .ozy-ajax-shoping-cart{ font-family:"Raleway";color:#000000; } #page-title-wrapper h1, #content h1, #footer-widget-bar h1, #sidebar h1, #footer h1, #sidr h1{ font-weight:900;font-style:normal;font-size:40px;line-height:1.5em; } #footer-widget-bar .widget-area h4, #sidebar .widget>h4 { font-weight:500;font-style:normal;font-size:18px;line-height:1.5em; } #content h2, #footer-widget-bar h2, #sidebar h2, #footer h2, #sidr h2{ font-weight:700;font-size:30px;line-height:1.5em;; } #page-title-wrapper h3, #content h3, #footer-widget-bar h3, #sidebar h3, #footer h3, #sidr h3{ font-weight:700;font-size:22px;line-height:1.5em;; } #content h4, #footer-widget-bar h4, #sidebar h4, #footer h4, #sidr h4{ font-weight:500;font-style:normal;font-size:18px;line-height:1.5em;; } #content h5, #footer-widget-bar h5, #sidebar h5, #footer h5, #sidr h5{ font-weight:600;font-style:normal;font-size:16px;line-height:1.5em;; } #content h6, #footer-widget-bar h6, #sidebar h6, #footer h6, #sidr h6{ font-weight:800;font-style:normal;font-size:12px;line-height:1.5em;; } #footer-widget-bar .widget a:hover, #sidebar .widget a:hover{ color:#000000; } span.plus-icon>span{ background-color:#000000; } /* Forms */ input:not([type=submit]):not([type=button]):not([type=file]), select, textarea{ background-color:rgba(255,255,255,1); border-color:rgba(35,35,35,1) !important; } #request-a-rate input:not([type=submit]):not([type=button]):not([type=file]):hover, #request-a-rate textarea:hover, #request-a-rate select:hover, #request-a-rate input:not([type=submit]):not([type=button]):not([type=file]):focus, #request-a-rate textarea:focus, #request-a-rate select:focus, #freevision_tracker_form input:not([type=submit]):not([type=button]):not([type=file]):hover, #freevision_tracker_form textarea:hover, #freevision_tracker_form select:hover, #freevision_tracker_form input:not([type=submit]):not([type=button]):not([type=file]):focus, #freevision_tracker_form textarea:focus, #freevision_tracker_form select:focus, #content input:not([type=submit]):not([type=button]):not([type=file]):hover, #content textarea:hover, #content input:not([type=submit]):not([type=button]):not([type=file]):focus, #content textarea:focus{ border-color:#075fad !important; } .rsMinW .rsBullet span{ background-color:rgb(35,35,35); } .generic-button, .woocommerce-page .button, input[type=button], input[type=submit], button[type=submit], .comment-body .reply>a, #to-top-button, .tagcloud>a{ color:rgb(255,255,255) !important; background-color:rgba(0,0,0,1); border:1px solid rgba(0,0,0,1); } .post-submeta>a.button:hover, .woocommerce-page .button:hover, input[type=button]:hover, input[type=submit]:hover, button[type=submit]:hover, .comment-body .reply>a:hover, .tagcloud>a:hover{ background-color:rgb(7,95,173); color:rgb(255,255,255) !important; border:1px solid rgba(7,95,173,1); } /* Blog Comments & Blog Stuff */ .comment-body, #ozy-share-div>a{ background-color:rgba(240,240,240,1); } .post-submeta>div>div.button{ background-color:#000000; } .post-submeta>div>div.arrow{ border-color: transparent #000000 transparent transparent; } .post-title>span, .post-submeta>a>span, .simple-post-format>div>span{ background-color:#075fad !important; } .featured-thumbnail-header p, .featured-thumbnail-header a, .featured-thumbnail-header h1{ color:#ffffff !important; } .featured-thumbnail-header>div{ background-color:rgba(7,95,173,.4); } .featured-thumbnail>a, .ozy-related-posts .related-post-item>a{ background-color:rgba(7,95,173,.8); } .post-submeta>div>div.button>a>span{ color:rgba(240,240,240,1); } .post-meta p.g{ color:#000000; } #single-blog-tags>a, .ozy-related-posts .caption, .ozy-related-posts .caption>h4>a{ color:rgba(255,255,255,1) !important; background-color:#000000; } #single-blog-tags>a:hover{ color:rgba(255,255,255,1); background-color:#075fad; } /*post formats*/ .simple-post-format.post-excerpt-aside>div{ background-color:rgba(0,0,0,.8); } .simple-post-format>div{ background-color:#000000; } .simple-post-format>div>span, .simple-post-format>div>h2, .simple-post-format>div>p, .simple-post-format>div>p>a, .simple-post-format>div>blockquote, .post-excerpt-audio>div>div{ color:rgb(255,255,255) !important; } div.sticky.post-single { background-color:rgba(240,240,240,1); border-color:rgba(240,240,240,1); } /* Shortcodes */ .ozy-postlistwithtitle-feed>a:hover{ background-color:rgb(7,95,173); } .ozy-postlistwithtitle-feed>a:hover *{ color:rgb(255,255,255) !important; } .ozy-accordion>h6.ui-accordion-header>span, .ozy-tabs .ozy-nav .ui-tabs-selected a, .ozy-tabs .ozy-nav .ui-tabs-active a, .ozy-toggle span.ui-icon{ background-color:#075fad; } .ozy-tabs .ozy-nav .ui-tabs-selected a, .ozy-tabs .ozy-nav .ui-tabs-active a{ border-color:#075fad !important; } .ozy-tabs .ozy-nav li a{ color:#000000 !important; } /*owl carousel*/ .ozy-owlcarousel .item.item-extended>a .overlay-one *, .ozy-owlcarousel .item.item-extended>a .overlay-two *{ color:#ffffff !important; } .ozy-owlcarousel .item.item-extended>a .overlay-one-bg{ background-color:#075fad; background-color:rgba(7,95,173,0.5); } .ozy-owlcarousel .item.item-extended>a .overlay-two{ background-color:#075fad; background-color:rgba(7,95,173,0.85); } .owl-theme .owl-controls .owl-page.active span{ background-color:#075fad; } .ozy-button.auto,.wpb_button.wpb_ozy_auto{ background-color:rgba(0,0,0,1); color:rgba(255,255,255,1); } .ozy-button.auto:hover, .wpb_button.wpb_ozy_auto:hover{ border-color:rgba(7,95,173,1); color:rgba(255,255,255,1) !important; background-color:rgba(7,95,173,1); } .ozy-icon.circle{ background-color:#000000; } .ozy-icon.circle2{ color:#000000; border-color:#000000; } a:hover>.ozy-icon.square, a:hover>.ozy-icon.circle{ background-color:transparent !important;color:#000000; } a:hover>.ozy-icon.circle2{ color:#000000; border-color:transparent !important; } .wpb_content_element .wpb_tabs_nav li.ui-tabs-active{ background-color:#075fad !important; border-color:#075fad !important; } .wpb_content_element .wpb_tabs_nav li, .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header{ border-color:rgba(240,240,240,1) !important; } .wpb_content_element .wpb_tabs_nav li.ui-tabs-active>a{ color:rgba(255,255,255,1) !important; } .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav a, .wpb_content_element .wpb_accordion_header a{ color:#000000 !important; } .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_header{ font-size:14px !important; line-height:1.5em !important } .pricing-table .pricing-table-column+.pricetable-featured .pricing-price{ color:#075fad !important; } .pricing-table li, .pricing-table .pricing-table-column:first-child, .pricing-table .pricing-table-column{ border-color:rgba(240,240,240,1) !important; } .pricing-table .pricing-table-column+.pricetable-featured, .pricing-table .pricing-table-column.pricetable-featured:first-child{ border:4px solid #075fad !important; } .ozy-service-box:hover { background-color:#000000 !important; } .ozy-service-box:hover>* { color:#ffffff !important; } #ozy-cookie_notice_banner { color:rgba(255,255,255,1); background-color:rgba(0,0,0,1); } /* Shared Border Color */ .post .pagination>a, .ozy-border-color, #ozy-share-div.ozy-share-div-blog, .page-content table td, #content table tr, .post-content table td, .ozy-toggle .ozy-toggle-title, .ozy-toggle-inner, .ozy-tabs .ozy-nav li a, .ozy-accordion>h6.ui-accordion-header, .ozy-accordion>div.ui-accordion-content, .chat-row .chat-text, #sidebar .widget>h4, #sidebar .widget li, .ozy-content-divider, #post-author, .single-post .post-submeta, .widget ul ul, blockquote, .page-pagination>a, .page-pagination>span, .woocommerce-pagination>ul>li>*, #content select, body.search article.result, div.rssSummary, #sidr input, #content table tr td, #content table tr th, .widget .testimonial-box, .shared-border-color { border-color:rgba(240,240,240,1); } #content table tr.featured { border:2px solid #075fad !important; } .content-color-svg path{fill:#000000;} /* Specific heading styling */ #page-title-wrapper{height:100px}#main{margin-top:0!important} /* Conditional Page Template Styles */ </style> <link rel="stylesheet" href="https://www.buechl.hu/wp-content/uploads/logistic-google-fonts/raleway.css" id="raleway" type="text/css" /> <noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="error404 wp-theme-logistic wp-child-theme-logistic-child _masterslider _msp_version_3.7.8 ozy-page-model-boxed ozy-page-model-no-sidebar has-page-title classic-menu cat-19-id wpb-js-composer js-comp-ver-8.5 vc_responsive">
+    <div class="animsition">				    <div class="none">
+        <p><a href="#content">Skip to Content</a></p>    </div><!--.none-->
+    
+    <div id="main" class="">
+        			
+        <div class="container no-sidebar  no-vc no-sidebar  has-title  no-vc "><div id="content">
+	<div id="error404" class="post">
+		<h1>Error 404 Not Found</h1>
+		<div class="post-content">
+			<p>Oops. Fail. The page cannot be found.</p>
+			<p>Please check your URL or use the search form below.</p>
+            <p>&nbsp;</p>
+            <p><a href="https://www.buechl.hu/" class="vc_btn vc_btn-sky vc_btn-md vc_btn-rounded"><span>Click here to return main page</span></a></p>
+			<form action="https://www.buechl.hu/" method="get" class="wp-search-form">
+	<i class="oic-zoom"></i>
+    <input type="text" name="s" id="search" placeholder="Type and hit Enter" />
+<input type='hidden' name='lang' value='hu' /></form>		</div><!--.post-content-->
+	</div><!--#error404 .post-->
+</div><!--#content-->
+
+<canvas id="canvas" width="100%" height="100%"></canvas>        
+
+<div id="trees"></div>
+
+        <div class="clear"></div>
+        
+        </div><!--.container-->    
+    
+                    
+			                     
+    </div><!--#main-->
+  
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/logistic-child\/*","\/wp-content\/themes\/logistic\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<style type="text/css">
+.ozy-page-model-full #main>.container.no-vc,
+		.ozy-page-model-full.ozy-page-model-no-sidebar #content>div>article>div>.wpb_row.ozy-custom-full-row,
+		.ozy-page-model-full.ozy-page-model-no-sidebar #content>div>article>div>.wpb_row>.parallax-wrapper,
+		.ozy-page-model-has-sidebar #main>.container {
+			padding-left: 36px;
+			padding-right: 36px;
+		}/***** PAGE LAYOUT *****/
+/* Spaltenabstände */
+.ozy-page-model-boxed .parallax-wrapper>.wpb_column {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+/* Grundlayout Padding Mobil */
+@media screen and (max-width: 1280px) {
+.ozy-page-model-boxed.ozy-page-model-no-sidebar #main>.container .wpb_row:not(.ozy-custom-full-row) {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+}
+
+
+/***** NAVIGATION *****/
+/* Logo Position */
+#top-menu .logo>a>img {
+  vertical-align: middle;
+  margin-top: -1px;
+  width: 200px;
+}
+/* Anpassung Navigation */
+#top-menu>ul {
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+#top-menu, #top-menu .logo, #top-menu>ul, #top-menu>ul>li, #top-menu>ul>li>a, #top-menu>ul>li>a:before, #top-menu>ul>li>a:after, #top-menu>ul>li>.submenu-button {
+  letter-spacing: -0.3px !important;
+  height: 34px;
+  line-height: 34px;
+}
+body.ozy-page-model-boxed #header {
+  height: 80px;
+  padding-top: 18px;
+}
+ul.dropdown-menu.depth_0 {
+  width: 275px;
+}
+#top-menu > ul > li.has-sub > a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#top-menu > ul > li > a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* Drecks "+" ausblenden */
+#top-menu > ul > li.has-sub > a:before {
+  content: none !important;
+}
+#top-menu > ul > li.has-sub > a:after {
+  content: none !important;
+}
+
+/* Sprachenumschalter ausblenden */
+li.menu-item.menu-item-wpml.has-sub {
+  display: none !important;
+}
+
+/* Zweizeilige Navigation */
+/* Navibar Höhe */
+/* body.ozy-page-model-boxed #header { */
+/*     height: 110px; */
+/* } */
+
+/* Logo */
+/* #top-menu, #top-menu .logo { */
+/*     line-height: 0px; */
+/*     height: 0px; */
+/* } */
+
+/* Navibar */
+/* #top-menu>ul { */
+/*     margin-top: 0px; */
+/*     top: 64px; */
+/*     float: left; */
+/*     left: 28px; */
+/* } */
+
+
+/* NAVIGATION Mobil Anpassungen */
+@media screen and (max-width: 1280px) {
+#header {
+  position: fixed !important;
+}
+#top-menu>ul>li>a {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  font-size: 11px !important;
+}
+#top-menu > ul {
+  top: 23px !important;
+}
+#top-menu .logo {
+  padding: 0 !important;
+  margin-left: 10px;
+}
+.logo {
+text-align:left;
+}
+}
+
+@media screen and (min-width: 1025px){
+#main {
+  margin-top: 0px !important;
+}
+}
+
+
+/* Kontakt & Anfahrt Kasten */
+@media screen and (min-width: 1121px){
+#top-menu>ul>li.menu-item-1419>a {
+  background-color: #38ae5d;
+  color: #ffffff;
+  border-radius: 7px !important;
+}
+}
+
+
+/***** TYPOGRAPHY *****/
+#content h1 {
+text-transform: uppercase;
+}
+#content h3 {
+text-transform: uppercase;
+}
+#content h4 {
+font-weight: 500;
+color: #38ae5d;
+}
+#content h5 {
+  line-height: 1.3em;
+}
+
+.content h3 {
+text-transform: uppercase;
+color:#fff;
+}
+
+/***** STARTSEITE *****/
+/* Anpassung Slider */
+#ozy-background-cycler>div {
+background-position: top left;
+}
+/* Anpassung Scroll Button */
+.animated {
+-webkit-animation-duration: 2s;
+-moz-animation-duration: 2s;
+-o-animation-duration: 2s;
+animation-duration: 2s;
+}
+/* Anpassung "letzte Posts" */
+.zoom.wpb_single_image>div:hover>a>img,
+.zoom.wpb_single_image>div:hover>img,
+.ozy-owlcarousel .item.item-extended:hover>img,
+.ozy-image-with-caption:hover>figure>img,
+.ozy-fancyimagebox:hover>img {
+  -moz-transform:scale(1.0) rotate(0deg);
+  -webkit-transform:scale(1.0) rotate(0deg);
+  -o-transform:scale(1.0) rotate(0deg);
+  transform:scale(1.0) rotate(0deg);
+}
+/* Festes Höhen und Breitenverhältnis der letzten Posts */
+.zoom.wpb_single_image>div>img, .zoom.wpb_single_image>div>a>img, .ozy-owlcarousel .item.item-extended>img, .ozy-image-with-caption>figure>img, .ozy-fancyimagebox>img {
+  height: 300px !important;
+  width: 370px !important;
+}
+
+
+/***** NEUIGKEITEN *****/
+/* Anpassung News Grid */
+.vc_grid-filter.vc_grid-filter-default > .vc_grid-filter-item {
+background-color: #bbb;
+}
+.featured-thumbnail-header {
+  height: 450px;
+  max-width: 1212px;
+  margin: 0px auto;
+  background-position: top center;
+}
+/* Hover blau */
+.vc_custom_1419253765784 {
+  background-color: rgba(7,95,173,0.7) !important;
+}
+.newer-older-blog {
+  display: none;
+}
+/* Meta ausblenden */
+.post-meta.content-font {
+  display: none !important;
+}
+
+.hide {
+  display:none !important;
+}
+
+/***** ELEMENTE *****/
+/***** TABS *****/
+/* Tabs Styling */
+.tabs nav a span {
+text-transform: uppercase;
+}
+.wpb_content_element .wpb_tabs_nav li, .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header {
+  border-color: #000000 !important;
+}
+/* Tabs Icons open/close */
+/* Icon OPEN */
+.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon, .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url(https://www.buechl.de/wp-content/uploads/2016/01/tab-arrow-open.png);
+  left: 0.0em;
+  top: 0.6em;
+}
+/* Icon CLOSE */
+.wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
+  background-image: url(https://www.buechl.de/wp-content/uploads/2016/01/tab-arrow-close.png);
+}
+/* Textanpassung */
+.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a {
+  padding-left: 2.0em;
+}
+
+
+/* SLIDER */
+/* prev + next ausblenden */
+span.wpb_prev_slide {
+  display: none;
+}
+span.wpb_next_slide {
+  display: none;
+}
+/* Anpassung Teaser Boxen */
+.ozy-simple-hove-box {
+overflow: hidden;
+}
+.ozy-simple-hove-box>a {
+  position: relative;
+  display: block;
+  height: 186px;
+}
+.ozy-simple-hove-box>a>img {
+  max-width: 124%;
+}
+
+
+/* Bilder proportional skalieren */
+.image-scale {
+max-width: 100% !important;
+height: auto !important;
+max-height: 40px !important;
+}
+/* Seltsamer Abstand nach Soft-Return */
+#content br {
+margin-top: 0.0em !important;
+}
+/* Akkordeon Boxen */
+.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header {
+  border-color: rgba(0,0,0,1) !important;
+  border: 0 !important;
+  height: 38px;
+}
+.owl-carousel .owl-item {
+  overflow: visible;
+}
+/* Firmengruppe-Slider */
+div#all_around_slider_1 {
+  margin-left: 15px;
+}
+.content_slider_text_block_wrap div {
+  font-family: "Raleway";
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.circle_slider_thumb {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+.all_around_position_4 {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
+}
+/* Call to Action Button */
+.cta_align_left .wpb_button, .cta_align_right .wpb_button {
+  max-width: 100%;
+  background-color: #38ae5d;
+}
+/* Karriere Headline Textboxen */
+.textboxzweizeilig {
+  height: 25px;
+}
+/* Karriere Textboxen feste höhe */
+.textboxdreizeilig {
+  height: 55px;
+}
+
+
+/***** SPECIAL *****/
+/* Anpassung Bildmotiv Geschäftsführung */
+.vc_custom_1449154034680 {
+  background-position: center top !important;
+}
+
+
+/***** KONTAKT *****/
+/* Kontaktformular */
+input.wpcf7-form-control.wpcf7-text {
+  background-color: #f0f0f1;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+  background-color: #f0f0f1;
+}
+#request-a-rate input:not([type=submit]):not([type=file]):not([type=radio]):not([type=checkbox]), #request-a-rate textarea, #request-a-rate select, #content input:not([type=submit]):not([type=file]):not([type=radio]):not([type=checkbox]), #content textarea, #content select, #sidebar input:not([type=submit]):not([type=file]):not([type=radio]):not([type=checkbox]), #sidebar textarea, #sidebar select {
+  text-transform: none;
+  letter-spacing: 0px;
+}
+
+
+/***** FOOTER *****/
+/* Anpassung Input Boxen */
+input, textarea, select {
+padding: 7px 16px;
+}
+#footer-widget-bar .widget input {
+ margin: 10px 0px 10px 0px;
+}
+
+/* Full-width Footer */
+.ozy-page-model-boxed #main {
+  max-width: none;
+  background: none;
+}
+#main>.container {
+  background: #fff;
+}
+div#footer-widget-bar {
+  max-width: 1212px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  position: relative;
+}
+.firmen-links-footer {
+  padding-bottom: 10px;
+}
+
+/* Hotfix Bildmotive */
+.wpb_single_image img {
+  height: auto;
+  width: 100%;
+}
+
+/* News Monat und Jahr */
+.specialDatumAnzeige {
+  color: #FFFFFF;
+}
+
+/* Mobile Menu Fix */
+@media (max-width: 1120px) {
+.menu-button ~ #menu-hauptnavigation-hu {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+.menu-button.opened ~ #menu-hauptnavigation-hu {
+    opacity: 1;
+}
+#top-menu > ul {
+  top: 95px !important;
+}
+} 
+/* Bouncing Scroll-Link ausblenden */
+a.row-botton-button.bounce {
+  display:none;
+}
+
+#page-title-wrapper h3,  {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: #fff;
+}
+.h3-special {
+   color:#fff;
+   font-size:22px;
+}
+
+
+
+/* raleway-100 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-200 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-300 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-500 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-800 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-900 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-100italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 100;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-100italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-200italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 200;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-200italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-300italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 300;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-300italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-500italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-500italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-600italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 600;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-600italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-700italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-700italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-800italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 800;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-800italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-900italic - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 900;
+  src: url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900italic.woff') format('woff'), /* Modern Browsers */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/raleway-v28-latin-900italic.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local(''),
+         url('https://www.buechl.hu/wp-content/themes/logistic-child/fonts/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+
+</style>
+<script type="text/javascript">
+jQuery( document ).ready(function() {
+    
+    var section = getUrlParameter("section");
+    if(section !== undefined) {
+    jQuery('html, body').animate({
+	    scrollTop: jQuery("#" + section).offset().top
+	}, 2000); }
+});
+
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] === sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+</script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-06-30 16:09:30+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"hu"},"This contact form is placed in the wrong place.":["Ez a kapcsolatfelv\u00e9teli \u0171rlap rossz helyre ker\u00fclt."],"Error:":["Hiba:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.buechl.hu\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/logistic-global-plugins.js" id="logistic-global-plugins-js"></script>
+<script type="text/javascript" id="logistic-js-extra">
+/* <![CDATA[ */
+var ozy_headerType = {"menu_type":"classic","menu_align":"right","theme_url":"https:\/\/www.buechl.hu\/wp-content\/themes\/logistic\/"};
+var ozy_Animsition = {"is_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/logistic.js" id="logistic-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/fancybox/jquery.fancybox.pack.js" id="fancybox-js"></script>
+<script type="text/javascript" src="https://www.buechl.hu/wp-content/themes/logistic/scripts/fancybox/helpers/jquery.fancybox-media.js" id="fancybox-media-js"></script>
+<script></script>
+	<!-- Copyright (c) 2000-2017 etracker GmbH. All rights reserved. -->
+	<!-- This material may not be reproduced, displayed, modified or distributed -->
+	<!-- without the express prior written permission of the copyright holder. -->
+	<!-- etracker tracklet 4.0 -->
+	<script type="text/javascript">
+	//var et_pagename = "";
+	//var et_areas = "";
+	//var et_url = "";
+	//var et_target = "";
+	//var et_ilevel = 0;
+	//var et_tval = "";
+	//var et_cust = 0;
+	//var et_tonr = "";
+	//var et_tsale = 0;
+	//var et_basket = "";
+	//var et_lpage = "";
+	//var et_trig = "";
+	//var et_sub = "";
+	//var et_se = "";
+	//var et_tag = "";
+	</script>
+	<script id="_etLoader" type="text/javascript" charset="UTF-8" data-secure-code="bVg0Ym" src="//static.etracker.com/code/e.js"></script>
+	<noscript><link rel="stylesheet" media="all" href="//www.etracker.de/cnt_css.php?et=bVg0Ym&amp;v=4.0&amp;java=n&amp;et_easy=0&amp;et_pagename=&amp;et_areas=&amp;et_ilevel=0&amp;et_target=,0,0,0&amp;et_lpage=0&amp;et_trig=0&amp;et_se=0&amp;et_cust=0&amp;et_basket=&amp;et_url=&amp;et_tag=&amp;et_sub=&amp;et_organisation=&amp;et_demographic=" /></noscript>
+	<!-- etracker tracklet 4.0 end -->
+
+</body>
+</html>

@@ -2,8 +2,8 @@
   <div>
     <!-- Hero Section -->
     <BuchlHero
-      title="Tanúsítványok"
-      subtitle="Minőségirányítási és környezetvédelmi tanúsítványaink"
+      title="Letöltések"
+      subtitle="Tanúsítványaink, engedélyeink és céginformációink egy helyen"
       image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=800&fit=crop"
       bg-color="blue"
       :primary-cta="{
@@ -20,8 +20,28 @@
     <section class="py-20 bg-gray-50">
       <UContainer>
         <div class="max-w-6xl mx-auto">
-          <!-- Language Toggle -->
-          <div class="flex justify-center mb-12">
+          <!-- Category Navigation -->
+          <div class="flex justify-center mb-8">
+            <div class="bg-white rounded-lg p-1 shadow-lg flex">
+              <button 
+                v-for="category in documentCategories"
+                :key="category.id"
+                @click="selectedCategory = category.id"
+                :class="[
+                  'flex items-center px-6 py-3 rounded-md text-sm font-medium transition-all duration-200',
+                  selectedCategory === category.id 
+                    ? 'bg-buchl-blue text-white shadow-md' 
+                    : 'text-gray-600 hover:text-buchl-blue'
+                ]"
+              >
+                <UIcon :name="category.icon" class="w-4 h-4 mr-2" />
+                {{ category.name }}
+              </button>
+            </div>
+          </div>
+
+          <!-- Language Toggle (only for certificates) -->
+          <div v-if="selectedCategory === 'tanusitvanyok'" class="flex justify-center mb-12">
             <div class="bg-white rounded-lg p-1 shadow-lg">
               <button 
                 @click="selectedLanguage = 'hu'"
@@ -134,15 +154,16 @@ interface Certificate {
   filename: string
   fileSize: string
   language: 'hu' | 'en'
+  category: string
 }
 
 // Meta setup
 useHead({
-  title: 'Tanúsítványok | BÜCHL HUNGARIA',
+  title: 'Letöltések | BÜCHL HUNGARIA',
   meta: [
     {
       name: 'description',
-      content: 'A BÜCHL HUNGARIA Kft. minőségirányítási és környezetvédelmi tanúsítványai. ISO 9001, ISO 14001, ISO 45001 és EMAS tanúsítványok letöltése.'
+      content: 'A BÜCHL HUNGARIA Kft. hivatalos dokumentumai: tanúsítványok, engedélyek és céginformációk. ISO 9001, ISO 14001, ISO 45001, EMAS tanúsítványok és egyéb dokumentumok letöltése.'
     }
   ]
 })
@@ -150,16 +171,26 @@ useHead({
 // Reactive state
 const selectedLanguage = ref<'hu' | 'en'>('hu')
 
-// Certificate data
-const certificates = ref<Certificate[]>([
-  // Hungarian certificates
+// Document categories
+const documentCategories = ref([
+  { id: 'tanusitvanyok', name: 'Tanúsítványok', icon: 'i-lucide-award' },
+  { id: 'engedélyek', name: 'Engedélyek', icon: 'i-lucide-file-check' },
+  { id: 'céginformációk', name: 'Céginformációk', icon: 'i-lucide-building' }
+])
+
+const selectedCategory = ref('tanusitvanyok')
+
+// Certificate and document data
+const allDocuments = ref<Certificate[]>([
+  // Tanúsítványok - Hungarian
   {
     id: 'emas-hu',
     name: 'EMAS Tanúsítvány',
     description: 'Eco-Management and Audit Scheme',
     filename: 'EMAS _20280622.pdf',
     fileSize: '131 KB',
-    language: 'hu'
+    language: 'hu',
+    category: 'tanusitvanyok'
   },
   {
     id: 'iso-9001-hu',
@@ -167,7 +198,8 @@ const certificates = ref<Certificate[]>([
     description: 'Minőségirányítási rendszer',
     filename: 'ISO 9001_2015_HU.pdf',
     fileSize: '544 KB',
-    language: 'hu'
+    language: 'hu',
+    category: 'tanusitvanyok'
   },
   {
     id: 'iso-14001-hu',
@@ -175,7 +207,8 @@ const certificates = ref<Certificate[]>([
     description: 'Környezetirányítási rendszer',
     filename: 'ISO 14001_2015_HU.pdf',
     fileSize: '544 KB',
-    language: 'hu'
+    language: 'hu',
+    category: 'tanusitvanyok'
   },
   {
     id: 'iso-45001-hu',
@@ -183,16 +216,18 @@ const certificates = ref<Certificate[]>([
     description: 'Munkavédelmi irányítási rendszer',
     filename: 'ISO 45001_2018_HU.pdf',
     fileSize: '625 KB',
-    language: 'hu'
+    language: 'hu',
+    category: 'tanusitvanyok'
   },
-  // English certificates
+  // Tanúsítványok - English
   {
     id: 'iso-9001-en',
     name: 'ISO 9001:2015',
     description: 'Quality Management System',
     filename: 'ISO 9001_2015_angol.pdf',
     fileSize: '541 KB',
-    language: 'en'
+    language: 'en',
+    category: 'tanusitvanyok'
   },
   {
     id: 'iso-14001-en',
@@ -200,7 +235,8 @@ const certificates = ref<Certificate[]>([
     description: 'Environmental Management System',
     filename: 'ISO 14001_2015_angol.pdf',
     fileSize: '541 KB',
-    language: 'en'
+    language: 'en',
+    category: 'tanusitvanyok'
   },
   {
     id: 'iso-45001-en',
@@ -208,18 +244,119 @@ const certificates = ref<Certificate[]>([
     description: 'Occupational Health and Safety Management System',
     filename: 'ISO 45001_2018_angol.pdf',
     fileSize: '623 KB',
-    language: 'en'
+    language: 'en',
+    category: 'tanusitvanyok'
+  },
+  // Engedélyek
+  {
+    id: 'hulladek-katalogus',
+    name: 'Hulladékkatalógus',
+    description: 'AVV számok szerint a engedélyek alapján',
+    filename: 'hulladékkatalógus.xlsx',
+    fileSize: '71 KB',
+    language: 'hu',
+    category: 'engedélyek'
+  },
+  {
+    id: 'engedélyek-attekintese',
+    name: 'Engedélyek áttekintése',
+    description: 'Teljes engedélyek összefoglalása',
+    filename: 'engedélyek_áttekintése.pdf',
+    fileSize: '198 KB',
+    language: 'hu',
+    category: 'engedélyek'
+  },
+  // Céginformációk
+  {
+    id: 'emas-2007-elso',
+    name: 'EMAS 2007 – Első tanúsítvány',
+    description: 'Első EMAS tanúsítvány 2007-ből',
+    filename: 'EMAS_2007_első_tanúsítvány.pdf',
+    fileSize: '6.2 MB',
+    language: 'hu',
+    category: 'céginformációk'
+  },
+  {
+    id: 'emas-nyilatkozat-2020',
+    name: 'EMAS nyilatkozat 2020',
+    description: 'Környezetvédelmi nyilatkozat 2020',
+    filename: 'EMAS_nyilatkozat_2020.pdf',
+    fileSize: '709 KB',
+    language: 'hu',
+    category: 'céginformációk'
+  },
+  {
+    id: 'emas-nyilatkozat-2021',
+    name: 'EMAS nyilatkozat 2021',
+    description: 'Környezetvédelmi nyilatkozat 2021',
+    filename: 'EMAS_nyilatkozat_2021.pdf',
+    fileSize: '749 KB',
+    language: 'hu',
+    category: 'céginformációk'
+  },
+  {
+    id: 'emas-nyilatkozat-2022',
+    name: 'EMAS nyilatkozat 2022',
+    description: 'Környezetvédelmi nyilatkozat 2022',
+    filename: 'EMAS_nyilatkozat_2022.pdf',
+    fileSize: '1.1 MB',
+    language: 'hu',
+    category: 'céginformációk'
+  },
+  {
+    id: 'elog-system-prezentacio',
+    name: 'ELOG Rendszer prezentáció',
+    description: 'ELOG rendszer bemutató prezentáció',
+    filename: 'ELOG_System_prezentáció.pdf',
+    fileSize: '69 KB',
+    language: 'hu',
+    category: 'céginformációk'
+  },
+  {
+    id: 'fenntarthatosagi-jelentes',
+    name: 'Fenntarthatósági jelentés',
+    description: 'Vállalati fenntarthatósági jelentés',
+    filename: 'Fenntarthatósági_jelentés.pdf',
+    fileSize: '7.6 MB',
+    language: 'hu',
+    category: 'céginformációk'
+  },
+  {
+    id: 'energetikai-jelentes-2023',
+    name: 'Energetikai szakreferens éves jelentés 2023',
+    description: 'Energetikai szakreferens éves jelentése 2023',
+    filename: 'Energetikai_szakreferens_éves_jelentés_2023.pdf',
+    fileSize: '6.1 MB',
+    language: 'hu',
+    category: 'céginformációk'
   }
 ])
 
-// Computed property to filter certificates by language
+// Legacy certificate data for backward compatibility
+const certificates = computed(() => allDocuments.value.filter(doc => doc.category === 'tanusitvanyok'))
+
+// Computed property to filter documents by category and language
 const currentCertificates = computed(() => {
-  return certificates.value.filter(cert => cert.language === selectedLanguage.value)
+  const documentsInCategory = allDocuments.value.filter(doc => doc.category === selectedCategory.value)
+  
+  // For certificates, also filter by language
+  if (selectedCategory.value === 'tanusitvanyok') {
+    return documentsInCategory.filter(doc => doc.language === selectedLanguage.value)
+  }
+  
+  // For other categories, return all documents (they're only in Hungarian)
+  return documentsInCategory
 })
 
 // Download function
 const downloadCertificate = (certificate: Certificate) => {
-  const path = `/certificates/${certificate.language}/${certificate.filename}`
+  let path: string
+  
+  if (certificate.category === 'tanusitvanyok') {
+    path = `/certificates/${certificate.language}/${certificate.filename}`
+  } else {
+    path = `/certificates/hu/${certificate.category}/${certificate.filename}`
+  }
   
   // Create a link element and trigger download
   const link = document.createElement('a')

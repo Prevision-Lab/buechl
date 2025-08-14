@@ -114,30 +114,61 @@
     </section>
 
 
-    <!-- BÜCHL csoport szekció -->
-    <section class="py-16 bg-gray-900 text-white">
+    <!-- BÜCHL CSOPORT szekció -->
+    <section class="py-16 bg-buchl-blue text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-buchl-green">
-            EGY ÖTLETTEL ELŐRÉBB. 1951 óta.
+          <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-buchl-green">
+            BÜCHL CSOPORT
           </h2>
-          <div class="max-w-4xl mx-auto space-y-6">
-            <p class="text-lg text-gray-300">
-              A németországi <strong class="text-white">Ingolstadtban alapított, immár harmadik generációs családi vállalkozás 
-              75 éve kínál innovatív megoldásokat</strong> a hulladékgazdálkodás, környezetvédelem és fenntarthatóság területén.
+          <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-white/90 leading-relaxed">
+              A BÜCHL csoport egy komoly teljesítménnyel rendelkező közepes cégcsoport, ahol több mint 500 munkatárs 
+              dolgozik olyan telephelyeken, mint Ingolstadt, Stammham, Neuburg an der Donau, Großmehring, valamint a 
+              nemzetközi szinten is Győrben. A BÜCHL évente több mint 600 000 tonna hulladékot szállít és kezel.
             </p>
-            <p class="text-lg text-gray-300">
-              <strong class="text-white">A BÜCHL Csoport teljes szolgáltatási portfólióját a megbízható minőség, az innovatív megoldások, 
-              a bátor cseletkvés, valamint az emberek és a környezet iránti felelősségtudat</strong> jellemzi.
-            </p>
-            <p class="text-lg text-gray-300">
-              <strong class="text-white">Tevékenységük lefedi a hulladékgyűjtést, -szállítást és -kezelést, valamint a tervezést és 
-              szaktanácsadást</strong> is.
-            </p>
-            <p class="text-xl font-bold text-buchl-green mt-8">
-              Küldetésük: <strong class="text-white">egy ötlettel előrébb – a körforgásos gazdaságot támogató hatékony és jövőorientált 
-              szolgáltatásokkal.</strong>
-            </p>
+          </div>
+        </div>
+
+        <!-- Animált statisztikák -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12" ref="statsRef">
+          <!-- Telephelyek száma -->
+          <div class="text-center">
+            <div class="mb-6">
+              <UIcon name="i-lucide-building-2" class="text-6xl text-buchl-green mx-auto mb-4" />
+            </div>
+            <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2" ref="telephelyRef">
+              {{ telephelyCount }}
+            </div>
+            <div class="text-xl font-medium text-white/90">
+              TELEPHELY
+            </div>
+          </div>
+
+          <!-- Munkatársak száma -->
+          <div class="text-center">
+            <div class="mb-6">
+              <UIcon name="i-lucide-users" class="text-6xl text-buchl-green mx-auto mb-4" />
+            </div>
+            <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2" ref="munkatarsRef">
+              {{ munkatarsCount }}
+            </div>
+            <div class="text-xl font-medium text-white/90">
+              MUNKATÁRS
+            </div>
+          </div>
+
+          <!-- Napi hulladék mennyiség -->
+          <div class="text-center">
+            <div class="mb-6">
+              <UIcon name="i-lucide-recycle" class="text-6xl text-buchl-green mx-auto mb-4" />
+            </div>
+            <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2" ref="hulladekRef">
+              {{ hulladekCount }}
+            </div>
+            <div class="text-xl font-medium text-white/90">
+              TONNA HULLADÉK NAPONTA
+            </div>
           </div>
         </div>
       </div>
@@ -171,10 +202,94 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+
 // SEO meta adatok
 useSeoMeta({
   title: 'Rólunk - BÜCHL HUNGARIA',
   description: 'A BÜCHL HUNGARIA Kft. Magyarország egyik meghatározó szakértője az ipari hulladékkezelés területén. 2000 óta kínálunk megbízható, innovatív és fenntartható hulladékgazdálkodási megoldásokat.',
   keywords: 'BÜCHL HUNGARIA, ipari hulladékkezelés, veszélyes hulladék, hulladékgazdálkodás, környezetvédelem, fenntarthatóság, autóipar'
+})
+
+// Animált számok
+const telephelyCount = ref(0)
+const munkatarsCount = ref(0)
+const hulladekCount = ref(0)
+
+const telephelyRef = ref(null)
+const munkatarsRef = ref(null)
+const hulladekRef = ref(null)
+const statsRef = ref(null)
+
+// Számláló animáció
+const animateCounter = (start: number, end: number, duration: number, callback: (value: number) => void) => {
+  const startTime = Date.now()
+  const animate = () => {
+    const elapsed = Date.now() - startTime
+    const progress = Math.min(elapsed / duration, 1)
+    const current = Math.floor(start + (end - start) * progress)
+    callback(current)
+    
+    if (progress < 1) {
+      requestAnimationFrame(animate)
+    }
+  }
+  animate()
+}
+
+// Intersection Observer a statisztikák szekció figyeléséhez
+let observer: IntersectionObserver | null = null
+let animationStarted = false
+
+const startAnimations = () => {
+  if (animationStarted) return
+  animationStarted = true
+  
+  // Telephelyek animálása (6 másodperc alatt)
+  animateCounter(0, 6, 3000, (value) => {
+    telephelyCount.value = value
+  })
+  
+  // Munkatársak animálása (500+ másodperc alatt)
+  setTimeout(() => {
+    animateCounter(0, 500, 2500, (value) => {
+      munkatarsCount.value = value
+    })
+  }, 500)
+  
+  // Hulladék animálása (1700 tonna naponta, 3 másodperc alatt)
+  setTimeout(() => {
+    animateCounter(0, 1700, 2000, (value) => {
+      hulladekCount.value = value
+    })
+  }, 1000)
+}
+
+onMounted(() => {
+  // Intersection Observer beállítása
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
+          startAnimations()
+        }
+      })
+    },
+    {
+      threshold: 0.3
+    }
+  )
+  
+  // Statisztikák szekció megfigyelése
+  if (statsRef.value) {
+    observer.observe(statsRef.value)
+  }
+})
+
+// Cleanup
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect()
+  }
 })
 </script>

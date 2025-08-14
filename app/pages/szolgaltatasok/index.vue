@@ -41,13 +41,13 @@
                                 <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green text-4xl" />
                             </div>
                             <h3 class="font-bold text-buchl-blue mb-2">Hulladékkezelés</h3>
-                            <p class="text-gray-600 text-sm">Speciális technológiák és korszerű berendezések Győrben</p>
+                            <p class="text-gray-600 text-sm">Speciális technológiák és korszerű berendezések</p>
                         </div>
                         <div class="text-center">
                             <div class="bg-buchl-blue/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <UIcon name="i-heroicons-cpu-chip" class="text-buchl-blue text-4xl" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">ELOG SYSTEM®</h3>
+                            <h3 class="font-bold text-buchl-blue mb-2">Logisztika</h3>
                             <p class="text-gray-600 text-sm">Digitális logisztikai megoldások és papírmentes folyamatok</p>
                         </div>
                     </div>

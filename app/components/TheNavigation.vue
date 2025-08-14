@@ -186,7 +186,7 @@ const navigation = ref<NavItem[]>([
     to: '/fenntarthatosag'
   },
   {
-    label: 'Tanúsítványok',
+    label: 'Letöltések',
     to: '/tanusitvanyok'
   },
   {

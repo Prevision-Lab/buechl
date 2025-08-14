@@ -3,7 +3,7 @@
         <!-- Hero szekció -->
         <BuchlHero
             title="Logisztika"
-            subtitle="ELOG SYSTEM® – Digitális hulladéklogisztikai megoldások"
+            subtitle="Digitális hulladéklogisztikai megoldások"
             image="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&h=800&fit=crop"
             bg-color="blue"
             :primary-cta="{
@@ -22,9 +22,9 @@
                 <div class="max-w-4xl mx-auto">
                     <div class="prose prose-lg max-w-none">
                         <p class="text-xl text-gray-700 mb-8">
-                            A BÜCHL HUNGARIA Kft. folyamatos fejlesztésekkel optimalizálja az üzemen belüli hulladéklogisztikát. 
-                            Az ELOG SYSTEM® rendszer 4.0 verziója komplex, digitális megoldást kínál, melyet innovatív 
-                            gyűjtőeszközök és a gyártósor mellett biztonságos gyűjtésre tervezett Q-Frame Shuttle egészít ki.
+                            Az ELOG SYSTEM® rendszer 4.0 verziója komplex, digitális megoldást kínál a hulladékok gyűjtésére és 
+                            papírmentes, igényalapú elszállítására. Emellett bevezetésre került a CleverWaste® rendszer, mely a 
+                            teljes szállítási és hulladékkezelési folyamatot digitalizálja.
                         </p>
                     </div>
                 </div>
@@ -35,18 +35,18 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    ELOG SYSTEM® komponensek
+                    ELOG SYSTEM® 4.0
                 </h2>
 
                 <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- ELOG SYSTEM 4.0 -->
+                    <!-- Innovatív gyűjtőeszközök -->
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-cpu-chip" class="text-buchl-blue text-2xl" />
+                            <UIcon name="i-heroicons-cube" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">ELOG SYSTEM® 4.0</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Innovatív gyűjtőeszközök</h3>
                         <p class="text-gray-700 text-center">
-                            Komplex, digitális megoldás az üzemen belüli hulladéklogisztika optimalizálására
+                            Intelligens gyűjtőkonténerek és moduláris rendszerek a hatékony hulladékválogatáshoz
                         </p>
                     </div>
 
@@ -57,7 +57,7 @@
                         </div>
                         <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Q-Frame Shuttle</h3>
                         <p class="text-gray-700 text-center">
-                            A gyártósor mellett biztonságos gyűjtésre tervezett innovatív gyűjtőeszköz
+                            A gyártósor melletti biztonságos gyűjtés szolgálatában
                         </p>
                     </div>
 
@@ -95,7 +95,7 @@
                             <div class="border-l-4 border-buchl-green pl-6">
                                 <h3 class="text-xl font-bold text-buchl-green mb-2">CleverWaste®</h3>
                                 <p class="text-gray-700">
-                                    Bevezetésre került rendszer, mely a teljes szállítási és hulladékkezelési folyamatot 
+                                    A rendszer a teljes szállítási és hulladékkezelési folyamatot 
                                     digitalizálja – a konténerkihelyezéstől a mérlegelésen át az elszámolásig és dokumentációig.
                                 </p>
                             </div>

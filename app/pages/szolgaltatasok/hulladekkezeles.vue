@@ -55,9 +55,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-funnel" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Lakkozó szennyvíz kezelése</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Speciális szennvíz kezelése</h3>
                         <p class="text-gray-700 text-sm">
-                            Lakkozó berendezésekből származó szennyvíz részére speciális kezelő berendezés
+                            Lakkozó berendezésekből származó szennvíz részére speciális kezelő berendezés
                         </p>
                     </div>
 

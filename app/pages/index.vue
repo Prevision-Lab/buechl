@@ -344,7 +344,7 @@
             :trailing="true"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            Tanúsítványok megtekintése
+            Letöltések
           </UButton>
           <UButton
             to="/fenntarthatosag"
