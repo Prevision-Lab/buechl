@@ -2,7 +2,7 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      title="Jelentkezés, állásleȋetőségek"
+      title="Jelentkezés, álláslehetőségek"
       subtitle="Egy lépéssel előrébb és mindig INNOVATÍVAN, hogy együtt formáljuk a jövőt."
       image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&h=800&fit=crop"
       bg-color="blue"
@@ -20,15 +20,15 @@
             Fedezd fel a lehetőségeidet – olyan <span class="text-buchl-green">SOKSZÍNŰEN</span>, mint amilyen a világunk!
           </h2>
           <div class="max-w-4xl mx-auto space-y-6">
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              Fedezd fel a lehetőségeidet – olyan SOKSZÍNŰEN, mint amilyen a világunk! Mindig egyesíte< erővel, CSALÁDIASAN és professzionálisan. Üdvözlünk a BÜCHL-nél!
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Mindig egyesített erővel, CSALÁDIASAN és professzionálisan. Üdvözlünk a BÜCHL-nél!
             </p>
             <p class="text-xl text-gray-700 leading-relaxed">
-              Ha szeretnél csatlakozni innovaWv vállalatunkhoz, számos lehetőség áll rendelkezésedre a belépéshez.
+              Ha szeretnél csatlakozni innovatív vállalatunkhoz, számos lehetőség áll rendelkezésedre a belépéshez.
             </p>
             <p class="text-lg text-gray-700 leading-relaxed">
-              Együ< szeretnénk formálni a jövőt, és ehhez olyan haladó gondolkodású és gyakorlaZas embereket keresünk, 
-              akik felelősséget vállalnak, és friss ötleteikkel egy Zsztább jövőért dolgoznak.
+              Együtt szeretnénk formálni a jövőt, és ehhez olyan haladó gondolkodású és gyakorlatos embereket keresünk, 
+              akik felelősséget vállalnak, és friss ötleteikkel egy tisztább jövőért dolgoznak.
             </p>
             <p class="text-2xl font-bold text-buchl-blue mt-8">
               Légy te is a BÜCHL csoport tagja!

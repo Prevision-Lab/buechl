@@ -122,10 +122,20 @@
             BÜCHL CSOPORT
           </h2>
           <div class="max-w-4xl mx-auto">
-            <p class="text-lg text-white/90 leading-relaxed">
-              A BÜCHL csoport egy komoly teljesítménnyel rendelkező közepes cégcsoport, ahol több mint 500 munkatárs 
-              dolgozik olyan telephelyeken, mint Ingolstadt, Stammham, Neuburg an der Donau, Großmehring, valamint a 
-              nemzetközi szinten is Győrben. A BÜCHL évente több mint 600 000 tonna hulladékot szállít és kezel.
+            <p class="text-lg text-white/90 leading-relaxed font-semibold">
+              EGY ÖTLETTEL ELŐRÉBB. 1951 óta.
+            </p>
+            <p class="text-lg text-white/90 leading-relaxed mt-4">
+              A németországi Ingolstadtban alapított, immár harmadik generációs családi vállalkozás 75 éve kínál innovatív megoldásokat a hulladékgazdálkodás, környezetvédelem és fenntarthatóság területén.
+            </p>
+            <p class="text-lg text-white/90 leading-relaxed mt-4">
+              A BÜCHL Csoport teljes szolgáltatási portfólióját a megbízható minőség, az innovatív megoldások, a bátor cselekvés, valamint az emberek és a környezet iránti felelősségtudat jellemzi.
+            </p>
+            <p class="text-lg text-white/90 leading-relaxed mt-4">
+              Tevékenységük lefedi a hulladékgyűjtést, -szállítást és -kezelést, valamint a tervezést és szaktanácsadást is.
+            </p>
+            <p class="text-lg text-white/90 leading-relaxed mt-4 font-semibold">
+              Küldetésük: egy ötlettel előrébb – a körforgásos gazdaságot támogató hatékony és jövőorientált szolgáltatásokkal.
             </p>
           </div>
         </div>
@@ -169,6 +179,24 @@
             <div class="text-xl font-medium text-white/90">
               TONNA HULLADÉK NAPONTA
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner logók szekció -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center">
+          <div class="max-w-5xl w-full">
+            <NuxtImg 
+              src="/images/buchl-partner-logos.png" 
+              alt="BÜCHL Csoport partnerei és leányvállalatai: BÜCHL ENTSORGUNG, PRIOREC, BÜCHL HUNGARIA, ELOGplan, Glasrecycling Neuburg, inas, BÜCHL VERWALTUNG, BÜCHL FOUNDATION, BioIN, SEG SOLARENERGIE, TADAK NETT, GEOS, DONAU BAUSCHUTT RECYCLING"
+              class="w-full h-auto object-contain"
+              loading="lazy"
+              format="webp"
+              quality="90"
+            />
           </div>
         </div>
       </div>

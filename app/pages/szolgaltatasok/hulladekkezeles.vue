@@ -44,9 +44,9 @@
                         <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-beaker" class="text-buchl-green text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Emulzió- és mosólúg-kezelés</h3>
-                        <p class="text-gray-700 text-sm">
-                            Az emulzió- és mosólúg-kezelő bepárló berendezések
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Emulzió- és mosólúgkezelés</h3>
+                        <p class="text-gray-700 text-sm text-center">
+                            Az emulzió- és mosólúgkezelő bepárló berendezések
                         </p>
                     </div>
 
@@ -55,9 +55,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-funnel" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Speciális szennvíz kezelése</h3>
-                        <p class="text-gray-700 text-sm">
-                            Lakkozó berendezésekből származó szennvíz részére speciális kezelő berendezés
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Speciális szennyvíz kezelése</h3>
+                        <p class="text-gray-700 text-sm text-center">
+                            Lakkozó berendezésekből származó szennyvíz részére speciális kezelő berendezés
                         </p>
                     </div>
 
@@ -67,7 +67,7 @@
                             <UIcon name="i-heroicons-fire" class="text-orange-500 text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Másodlagos tüzelőanyagok</h3>
-                        <p class="text-gray-700 text-sm">
+                        <p class="text-gray-700 text-sm text-center">
                             Cementgyárak részére veszélyes és nem veszélyes hulladékokból másodlagos tüzelőanyagok előállítására alkalmas technológia
                         </p>
                     </div>
@@ -78,7 +78,7 @@
                             <UIcon name="i-heroicons-cog-6-tooth" class="text-gray-600 text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Köszörűiszap kezelése</h3>
-                        <p class="text-gray-700 text-sm">
+                        <p class="text-gray-700 text-sm text-center">
                             Fémmegmunkálásból származó olajtartalmú köszörűiszap számára előkezelő berendezés
                         </p>
                     </div>
@@ -89,7 +89,7 @@
                             <UIcon name="i-heroicons-funnel" class="text-buchl-green text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Válogatás</h3>
-                        <p class="text-gray-700 text-sm">
+                        <p class="text-gray-700 text-sm text-center">
                             Válogató berendezés vegyes csomagolóanyagok és egyéb értékes hulladékok részére
                         </p>
                     </div>
@@ -100,7 +100,7 @@
                             <UIcon name="i-heroicons-cube" class="text-buchl-blue text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Bálázás</h3>
-                        <p class="text-gray-700 text-sm">
+                        <p class="text-gray-700 text-sm text-center">
                             Bálázó berendezés kartonok, textíliák és fóliák részére
                         </p>
                     </div>
@@ -111,7 +111,7 @@
                             <UIcon name="i-heroicons-arrows-pointing-in" class="text-purple-600 text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Tömörítés</h3>
-                        <p class="text-gray-700 text-sm">
+                        <p class="text-gray-700 text-sm text-center">
                             Tömörítő berendezés műanyag csomagolási hulladékok (hungarocell, habosító fólia) részére
                         </p>
                     </div>
@@ -122,8 +122,8 @@
                             <UIcon name="i-heroicons-document-minus" class="text-red-500 text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Iratmegsemmisítés</h3>
-                        <p class="text-gray-700 text-sm">
-                            Iratmegsemmisítő berendezés
+                        <p class="text-gray-700 text-sm text-center">
+                            Iratmegsemmísítő berendezés
                         </p>
                     </div>
 
@@ -133,7 +133,7 @@
                             <UIcon name="i-heroicons-building-storefront" class="text-buchl-blue text-2xl" />
                         </div>
                         <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Raktározás</h3>
-                        <p class="text-gray-700 text-sm">
+                        <p class="text-gray-700 text-sm text-center">
                             Veszélyes hulladékok részére köztes raktár, fedett raktárak, folyadéktartályok – szinte minden hulladéktípus kezelésére
                         </p>
                     </div>

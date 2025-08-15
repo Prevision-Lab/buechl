@@ -70,9 +70,9 @@
               <h3 class="text-xl font-semibold text-white">Napelemrendszerek</h3>
             </div>
             <p class="text-white/90 text-sm mb-4">
-              Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszerűsítettük, a teljes 
+              Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszþrűsítettük, a teljes 
               tetőfelület kihasználásával maximalizáltuk az elérhető kapacitást. 
-              Kettős számú telephelyünkön egy új, 100 kW-os rendszer épült ki, igazodva a nappali időszak fogyasztásához.
+              Mindkét telephelyünkön egy új, 100 kW-os rendszer épült ki, igazodva a nappali időszak fogyasztásához.
             </p>
             <div class="text-2xl font-bold text-buchl-green mb-1">494 kW</div>
             <div class="text-sm text-white/70">napelemes kapacitás (178 kW-ról)</div>
@@ -87,7 +87,7 @@
             <p class="text-white/90 text-sm mb-4">
               2015 óta mindkét győri telephelyünk fűtése és hűtése fosszilis energiahordozók nélkül működik. 
               A szükséges energiát talajszondás hőszivattyúk biztosítják. 
-              A használati melegvíz ellátás kettős számú telephelyünkön napkollektorokkal történik.
+              A használati melegvíz ellátás mindkét telephelyünkön napkollektorokkal történik.
             </p>
             <div class="text-2xl font-bold text-buchl-green mb-1">2015 óta</div>
             <div class="text-sm text-white/70">fosszilismentes fűtés-hűtés</div>
@@ -107,34 +107,6 @@
             <div class="text-sm text-white/70">elektromos flotta</div>
           </div>
 
-          <!-- Elektromos munkagépek -->
-          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <div class="flex items-center mb-4">
-              <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
-              <h3 class="text-xl font-semibold text-white">Elektromos munkagépek</h3>
-            </div>
-            <p class="text-white/90 text-sm mb-4">
-              2025-ben anyagmozgató és rakodógépeink 61%-a már elektromos meghajtású. Gépparkunkon belül 
-              ez az arány folyamatosan nő. Ezzel jelentős mértékben csökkentjük az üvegházhatású gázok kibocsátását.
-            </p>
-            <div class="text-2xl font-bold text-buchl-green mb-1">61%</div>
-            <div class="text-sm text-white/70">elektromos munkagépek</div>
-          </div>
-
-          <!-- Zöld energia vásárlás -->
-          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-            <div class="flex items-center mb-4">
-              <UIcon name="i-heroicons-bolt" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
-              <h3 class="text-xl font-semibold text-white">Zöld energia vásárlás</h3>
-            </div>
-            <p class="text-white/90 text-sm mb-4">
-              A működésünkhöz szükséges energiát teljes mértékben megújuló vagy nagy hatásfokú kapcsolt 
-              energiatermelésből származó energiával fedezzük. 2025-ben 3 500 MWh mennyiségű zöld energiát vásároltunk.
-            </p>
-            <div class="text-2xl font-bold text-buchl-green mb-1">3.500 MWh</div>
-            <div class="text-sm text-white/70">zöld energia 2025-ben</div>
-          </div>
-
           <!-- Méhcsaládok -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
@@ -144,7 +116,7 @@
             <p class="text-white/90 text-sm mb-4">
               2022-ben aktívan bekapcsolódtunk a biológiai sokféleség megőrzésébe. Ennek részeként három méhcsalád 
               telepítését támogattuk egy szakképzett méhész állományában. Egyetlen méhcsalád hozzávetőleg 50 000 
-              méhből áll – ezek az apró beporzok kulcsszerepet játszanak az ökoszisztéma fenntartásában és a biológiai 
+              méhből áll – ezek az apró beporzók kulcsszerepet játszanak az ökoszisztéma fenntartásában és a biológiai 
               sokféleség védelmében. A méhek által megtermelt méz nem csupán a természet értékes ajándéka: 
               lehetőséget ad arra is, hogy e fenntarthatósági törekvésünket kézzel fogható formában is megosszuk 
               munkatársainkkal és partnereinkkel.
@@ -189,6 +161,34 @@
             <div class="text-2xl font-bold text-buchl-green mb-1">2003 óta</div>
             <div class="text-sm text-white/70">KÖVET tagság</div>
           </div>
+
+          <!-- Elektromos munkagépek -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center mb-4">
+              <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
+              <h3 class="text-xl font-semibold text-white">Elektromos munkagépek</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4">
+              2025-ben anyagmozgató és rakodógépeink 61%-a már elektromos meghajtású. Gépparkunkon belül 
+              ez az arány folyamatosan nő. Ezzel jelentős mértékben csökkentjük az üvegházhatású gázok kibocsátását.
+            </p>
+            <div class="text-2xl font-bold text-buchl-green mb-1">61%</div>
+            <div class="text-sm text-white/70">elektromos munkagépek</div>
+          </div>
+
+          <!-- Zöld energia vásárlás -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center mb-4">
+              <UIcon name="i-heroicons-bolt" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
+              <h3 class="text-xl font-semibold text-white">Zöld energia vásárlás</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4">
+              A működésünkhöz szükséges energiát teljes mértékben megújuló vagy nagy hatásfokú kapcsolt 
+              energiatermelésből származó energiával fedezzük. 2025-ben 3 500 MWh mennyiségű zöld energiát vásároltunk.
+            </p>
+            <div class="text-2xl font-bold text-buchl-green mb-1">3.500 MWh</div>
+            <div class="text-sm text-white/70">zöld energia 2025-ben</div>
+          </div>
         </div>
       </div>
     </section>
@@ -212,13 +212,13 @@
               <UIcon name="i-heroicons-academic-cap" class="text-buchl-blue mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Oktatási kooperációk</h3>
             </div>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 text-sm mb-4">
               Fontos számunkra a szakmai utánpótlás és a tudásmegosztás. Együttműködünk a győri Széchenyi 
               István Egyetemmel, valamint a MOBILIS Interaktív Kiállítási Központtal, ahol tudományos és oktatási 
               projekteket támogatunk, valamint ösztöndíjjal segítjük a diákokat. Az Audi Hungaria Iskolaközpont 
               tanulóit minden évben egy projektnap keretében fogadjuk vállalatunknál. A program célja, hogy a 
-              gyerekek testközelből ismerkedhessenek meg a modern hulladékgazdálkodási folyamatokkal, 
-              valamint betekintést nyerjenek egy fenntarthatóan működő ipari vállalat mindennappjaiba.
+              gyerekek testközelből ismerkedhesenek meg a modern hulladékgazdálkodási folyamatokkal, 
+              valamint betekintést nyerjenek egy fenntarthatóan működő ipari vállalat mindennapjaiba.
             </p>
             <div class="text-sm text-gray-500">Tudományos és oktatási projektek, ösztöndíjak</div>
           </div>
@@ -228,12 +228,12 @@
               <UIcon name="i-heroicons-trophy" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Sportszponzoráció</h3>
             </div>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 text-sm mb-4">
               A BÜCHL-nél hisszük, hogy a sport támogatása nem csupán szponzoráció – hanem befektetés a jövőbe, 
               a közösségbe és az értékteremtésbe. A kézilabda, a jégkorong, a kosárlabda dinamizmusa és csapatszelleme 
               tökéletesen tükrözi vállalatunk értékeit. Büszkék vagyunk rá, hogy a Győri ETO HC, a Győri ETO UNI FKC 
-              és a Győri Kosárlabda Club támogatói lehetünk. A kezdetektől fogva ott vagyunk Lipovics Patrik ifjú autóversenyező 
-              sikereit is támogatjuk, mert hiszünk benne, hogy az elkötelezettség és a folyamatos fejlődés a motorsportban 
+              és a Győri Kosárlabda Club támogatói lehetünk. A kezdetektől fogva ott vagyunk Lipovics Patrik ifjú autóversenyző 
+              sikerei mögött, mert hiszünk benne, hogy az elkötelezettség és a folyamatos fejlődés a motorsportban 
               és az üzleti életben egyaránt kulcsfontosságú.
             </p>
             <div class="text-sm text-gray-500">Kézilabda, jégkorong, kosárlabda, motorsport</div>
@@ -244,10 +244,10 @@
               <UIcon name="i-heroicons-user-group" class="text-buchl-blue mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Tömegsport támogatása</h3>
             </div>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 text-sm mb-4">
               2000 óta minden évben több százan állnak rajthoz a BÜCHL Hungaria Kft. főtámogatásával 
               megvalósuló BÜCHL Éjszakai Futóversenyen, köztük nagy büszkeségünkre munkatársaink is, 
-              akik egyéniben és váltóban is bizonyítanak. Akik nem húztak futócipőt, önkéntesként segítették a szervezők munkáját.
+              akik egyéniben és váltóban is bizonyítanak. Akik nem húznak futócipőt, önkéntesként segítik a szervezők munkáját.
             </p>
             <div class="text-sm text-gray-500">2000 óta BÜCHL Éjszakai Futóverseny</div>
           </div>
@@ -257,9 +257,9 @@
               <UIcon name="i-heroicons-heart" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Közösségépítés élményekkel</h3>
             </div>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 text-sm mb-4">
               Az erős csapat alapja a közös élmény. Év közben rendszeresen szervezünk munkatársi programokat – 
-              többek között horgászversenyt, gyereknapot, közös kirándulást, retro szendvics napot és karácsonyi sütést – 
+              többek között horgászversenyt, gyereknapot, közös kirándulást, retro szendvics napot és karácsonyi sütizést –
               melyek nemcsak kikapcsolódást, hanem valódi közösségi élményt is nyújtanak.
             </p>
             <div class="text-sm text-gray-500">Valódi közösségi élmények munkatársainknak</div>
