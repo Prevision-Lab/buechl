@@ -4,7 +4,7 @@
     <BuchlHero
       title="Rólunk"
       subtitle="Megbízható partner az ipari hulladékkezelésben"
-      image="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?w=1600&h=800&fit=crop"
+      image="/media/images/rolunk.jpg"
       bg-color="blue"
       :primary-cta="{
         label: 'Kapcsolatfelvétel',
@@ -35,8 +35,9 @@
               tapasztalatot</strong> biztosít számunkra.
             </p>
             <p>
-              Magyarországon <strong>közel 300 munkatárssal, 10 korszerű hulladékkezelő berendezéssel és több mint 40 
-              speciális járművel</strong> állunk partnereink rendelkezésére. Szolgáltatásaink <strong>teljeskörű megoldást kínálnak 
+              Magyarországon <strong>320 munkatárssal, 5 telephelyen, korszerű hulladékkezelő berendezésekkel és speciális 
+              járművekkel</strong> állunk partnereink rendelkezésére. Napi szinten <strong>615 tonna hulladékszállítást és 
+              234 tonna hulladékelőkezelést</strong> végzünk. Szolgáltatásaink <strong>teljeskörű megoldást kínálnak 
               a veszélyes és nem veszélyes ipari hulladékok begyűjtésére, szállítására és újrahasznosítására</strong>. A saját 
               kezelőüzemeinkben a hulladékból <strong>értékes nyersanyagokat és energiahordozókat állítunk elő</strong>, így 
               aktívan hozzájárulunk a <strong>körforgásos gazdaság fejlődéséhez</strong>.
@@ -173,11 +174,11 @@
             <div class="mb-6">
               <UIcon name="i-lucide-recycle" class="text-6xl text-buchl-green mx-auto mb-4" />
             </div>
-            <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2" ref="hulladekRef">
-              {{ hulladekCount }}
+            <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2">
+              {{ hulladekSzallitasCount }}<br><span class="text-2xl">+ {{ hulladekElkezelesCount }}</span>
             </div>
             <div class="text-xl font-medium text-white/90">
-              TONNA HULLADÉK NAPONTA
+              TONNA/H NAPONTA<br><span class="text-base">szállítás + előkezelés</span>
             </div>
           </div>
         </div>
@@ -187,16 +188,167 @@
     <!-- Partner logók szekció -->
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center">
-          <div class="max-w-5xl w-full">
-            <NuxtImg 
-              src="/images/buchl-partner-logos.png" 
-              alt="BÜCHL Csoport partnerei és leányvállalatai: BÜCHL ENTSORGUNG, PRIOREC, BÜCHL HUNGARIA, ELOGplan, Glasrecycling Neuburg, inas, BÜCHL VERWALTUNG, BÜCHL FOUNDATION, BioIN, SEG SOLARENERGIE, TADAK NETT, GEOS, DONAU BAUSCHUTT RECYCLING"
-              class="w-full h-auto object-contain"
-              loading="lazy"
-              format="webp"
-              quality="90"
-            />
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
+            BÜCHL CSOPORT
+          </h2>
+          <p class="text-lg text-gray-700">
+            A BÜCHL cégcsoport tagjai
+          </p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
+          <!-- BÜCHL Gruppe -->
+          <div class="flex justify-center">
+            <a href="https://www.buechl-gruppe.de/hu/" target="_blank">
+              <img 
+                src="/media/logos/Logo-BUeCHL-Gruppe_weisser-Hintergrund_Firmenstruktur-546x209-1-300x115.jpg" 
+                alt="BÜCHL Gruppe"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- BÜCHL Entsorgung -->
+          <div class="flex justify-center">
+            <a href="https://www.buechl.de/" target="_blank">
+              <img 
+                src="/media/logos/Logo-BUeCHL-Entsorgung_weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="BÜCHL Entsorgung"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- BÜCHL Hungaria -->
+          <div class="flex justify-center">
+            <a href="https://www.buechl.hu/" target="_blank">
+              <img 
+                src="/media/logos/Logo-BUeCHL-Hungaria_weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="BÜCHL Hungaria"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- BÜCHL Verwaltung -->
+          <div class="flex justify-center">
+            <a href="https://www.buechl-gruppe.de/hu/" target="_blank">
+              <img 
+                src="/media/logos/Logo-BUeCHL-Verwaltung_weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="BÜCHL Verwaltung"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- PRIOREC -->
+          <div class="flex justify-center">
+            <a href="https://priorec.de/" target="_blank">
+              <img 
+                src="/media/logos/PRIOREC.jpg" 
+                alt="PRIOREC"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- inas -->
+          <div class="flex justify-center">
+            <a href="https://www.inas-institut.de/" target="_blank">
+              <img 
+                src="/media/logos/inas-Institut.jpg" 
+                alt="inas Institut"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- SEG Solarenergie -->
+          <div class="flex justify-center">
+            <a href="https://www.seg-solarenergie.de/" target="_blank">
+              <img 
+                src="/media/logos/Logo-SEG-Solarenergie_weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="SEG Solarenergie"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- TADAK NETT -->
+          <div class="flex justify-center">
+            <a href="https://tadaknett.hu/" target="_blank">
+              <img 
+                src="/media/logos/Logo-TADAK-NETT-Kft._weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="TADAK NETT"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- GEOS -->
+          <div class="flex justify-center">
+            <a href="https://www.geos-energie.de/" target="_blank">
+              <img 
+                src="/media/logos/Logo-GEOS_weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="GEOS"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- LOGEX -->
+          <div class="flex justify-center">
+            <a href="https://www.logex.de/" target="_blank">
+              <img 
+                src="/media/logos/Logo-LOGEX_weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
+                alt="LOGEX"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- DONAU BAUSCHUTT -->
+          <div class="flex justify-center">
+            <a href="https://www.donaubauschutt.de/" target="_blank">
+              <img 
+                src="/media/logos/BH_01.jpg" 
+                alt="DONAU BAUSCHUTT"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- Glasrecycling Neuburg -->
+          <div class="flex justify-center">
+            <a href="http://www.gr-neuburg.de/" target="_blank">
+              <img 
+                src="/media/logos/BH-02.jpg" 
+                alt="Glasrecycling Neuburg"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- BioIN -->
+          <div class="flex justify-center">
+            <a href="http://www.bioin-gmbh.de/" target="_blank">
+              <img 
+                src="/media/logos/BH-08.jpg" 
+                alt="BioIN"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
+          
+          <!-- ELOGplan -->
+          <div class="flex justify-center">
+            <a href="https://www.elogplan.com/" target="_blank">
+              <img 
+                src="/media/logos/BH-11.jpg" 
+                alt="ELOGplan"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -242,11 +394,13 @@ useSeoMeta({
 // Animált számok
 const telephelyCount = ref(0)
 const munkatarsCount = ref(0)
-const hulladekCount = ref(0)
+const hulladekSzallitasCount = ref(0)
+const hulladekElkezelesCount = ref(0)
 
 const telephelyRef = ref(null)
 const munkatarsRef = ref(null)
-const hulladekRef = ref(null)
+const hulladekSzallitasRef = ref(null)
+const hulladekElkezelesRef = ref(null)
 const statsRef = ref(null)
 
 // Számláló animáció
@@ -273,24 +427,31 @@ const startAnimations = () => {
   if (animationStarted) return
   animationStarted = true
   
-  // Telephelyek animálása (6 másodperc alatt)
-  animateCounter(0, 6, 3000, (value) => {
+  // Telephelyek animálása (5 telephely, 3 másodperc alatt)
+  animateCounter(0, 5, 3000, (value) => {
     telephelyCount.value = value
   })
   
-  // Munkatársak animálása (500+ másodperc alatt)
+  // Munkatársak animálása (320 fő, 2.5 másodperc alatt)
   setTimeout(() => {
-    animateCounter(0, 500, 2500, (value) => {
+    animateCounter(0, 320, 2500, (value) => {
       munkatarsCount.value = value
     })
   }, 500)
   
-  // Hulladék animálása (1700 tonna naponta, 3 másodperc alatt)
+  // Hulladékszálítás animálása (615 tonna naponta, 2 másodperc alatt)
   setTimeout(() => {
-    animateCounter(0, 1700, 2000, (value) => {
-      hulladekCount.value = value
+    animateCounter(0, 615, 2000, (value) => {
+      hulladekSzallitasCount.value = value
     })
   }, 1000)
+  
+  // Hulladékelőkezelés animálása (234 tonna naponta, 2 másodperc alatt)
+  setTimeout(() => {
+    animateCounter(0, 234, 2000, (value) => {
+      hulladekElkezelesCount.value = value
+    })
+  }, 1500)
 }
 
 onMounted(() => {

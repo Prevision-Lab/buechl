@@ -17,21 +17,14 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-            Fedezd fel a lehetőségeidet – olyan <span class="text-buchl-green">SOKSZÍNŰEN</span>, mint amilyen a világunk!
+            A BÜCHL HUNGARIA Kft. folyamatos fejlődéséhez elhivatott és szakképzett munkatársakat keres, akik sokrétű feladatokban vesznek részt, és közösen alakítják velünk a fenntartható jövőt.
           </h2>
           <div class="max-w-4xl mx-auto space-y-6">
-          <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              Mindig egyesített erővel, CSALÁDIASAN és professzionálisan. Üdvözlünk a BÜCHL-nél!
-            </p>
-            <p class="text-xl text-gray-700 leading-relaxed">
-              Ha szeretnél csatlakozni innovatív vállalatunkhoz, számos lehetőség áll rendelkezésedre a belépéshez.
-            </p>
             <p class="text-lg text-gray-700 leading-relaxed">
-              Együtt szeretnénk formálni a jövőt, és ehhez olyan haladó gondolkodású és gyakorlatos embereket keresünk, 
-              akik felelősséget vállalnak, és friss ötleteikkel egy tisztább jövőért dolgoznak.
+              Olyan nyitott gondolkodású, felelősségteljes és kreatív embereket várunk, akik friss ötleteikkel hozzájárulnak egy tisztább környezet megteremtéséhez.
             </p>
             <p class="text-2xl font-bold text-buchl-blue mt-8">
-              Légy te is a BÜCHL csoport tagja!
+              Legyél Te is a BÜCHL csoport tagja, és dolgozz velünk a jövőért!
             </p>
           </div>
         </div>
@@ -55,7 +48,7 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Gépkocsivezető')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Gépkocsivezető (m/w/d)</h3>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Gépkocsivezető (m/w)</h3>
                   <p class="text-gray-600 text-sm">Hulladékszállítási feladatok ellátása, ADR képesítés előny</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
@@ -84,7 +77,7 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Targoncavezető')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Targoncavezető (m/w/d)</h3>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Targoncavezető (m/w)</h3>
                   <p class="text-gray-600 text-sm">Raktári és udvari anyagmozgatási feladatok</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
@@ -113,7 +106,7 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Megváltozott munkaképességű kolléga')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Megváltozott munkaképességű kolléga (m/w/d)</h3>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Megváltozott munkaképességű kolléga (m/w)</h3>
                   <p class="text-gray-600 text-sm">Adminisztrációs és kisegítő feladatok</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
@@ -142,7 +135,7 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Portás')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Portás (m/w/d)</h3>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Portás (m/w)</h3>
                   <p class="text-gray-600 text-sm">Telephely biztonsági feladatai, beléptetés</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">

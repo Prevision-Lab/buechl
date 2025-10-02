@@ -4,7 +4,7 @@
         <BuchlHero
             title="Hulladékkezelés"
             subtitle="Speciális technológiák és korszerű hulladékkezelés Győrben"
-            image="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&h=800&fit=crop"
+            image="/media/images/hulladekkezeles.jpg"
             bg-color="green"
             :primary-cta="{
                 label: 'Ajánlatkérés',
@@ -164,7 +164,7 @@
                     </div>
                     <div class="relative">
                         <img
-                            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&h=600&fit=crop"
+                            src="/media/images/masodnyersanyagok.jpg"
                             alt="Másodnyersanyagok előállítása"
                             class="rounded-lg shadow-lg"
                         />

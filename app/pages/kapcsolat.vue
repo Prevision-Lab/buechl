@@ -59,6 +59,24 @@
               </div>
             </div>
 
+            <!-- MOHU ügyintézés -->
+            <div class="mb-8 p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
+                <UIcon name="i-heroicons-user-circle" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
+                MOHU ügyintézés
+              </h3>
+              <div class="flex items-center space-x-4">
+                <a href="tel:+3620/559-7004" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
+                  +36 20/559-7004
+                </a>
+                <a href="mailto:kereskedelem@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
+                  kereskedelem@buechl.hu
+                </a>
+              </div>
+            </div>
+
             <!-- Értékesítés -->
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
@@ -73,29 +91,11 @@
                     <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
                     +36 20 559 7002
                   </a>
-                  <a href="mailto:info@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <a href="mailto:pkozicz@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                     <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
-                    info@buechl.hu
+                    pkozicz@buechl.hu
                   </a>
                 </div>
-              </div>
-            </div>
-
-            <!-- Logisztika -->
-            <div class="mb-8 p-6 bg-gray-50 rounded-lg">
-              <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
-                <UIcon name="i-heroicons-truck" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Logisztika
-              </h3>
-              <div class="flex items-center space-x-4">
-                <a href="tel:+36202914943" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
-                  <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
-                  +36 20 291-4943
-                </a>
-                <a href="mailto:szallitas@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
-                  <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
-                  szallitas@buechl.hu
-                </a>
               </div>
             </div>
 
@@ -113,6 +113,43 @@
                 <a href="mailto:kornyezetvedelem@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                   <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
                   kornyezetvedelem@buechl.hu
+                </a>
+              </div>
+            </div>
+
+            <!-- Hulladékadat-szolgáltatás -->
+            <div class="mb-8 p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
+                <UIcon name="i-heroicons-document-text" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
+                Hulladékadat-szolgáltatás
+              </h3>
+              <p class="text-gray-700 text-sm mb-2">Hulladékkezelési nyilvántartások, jelentések</p>
+              <div class="flex items-center space-x-4">
+                <a href="tel:+36203271151" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
+                  +36 20 327-1151
+                </a>
+                <a href="mailto:kornyezetvedelem@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
+                  kornyezetvedelem@buechl.hu
+                </a>
+              </div>
+            </div>
+
+            <!-- Logisztika -->
+            <div class="mb-8 p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
+                <UIcon name="i-heroicons-truck" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
+                Logisztika
+              </h3>
+              <div class="flex items-center space-x-4">
+                <a href="tel:+36202914943" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
+                  +36 20 291-4943
+                </a>
+                <a href="mailto:szallitas@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
+                  <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
+                  szallitas@buechl.hu
                 </a>
               </div>
             </div>
@@ -154,25 +191,6 @@
                 <a href="mailto:konyveles@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                   <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
                   konyveles@buechl.hu
-                </a>
-              </div>
-            </div>
-
-            <!-- Hulladékadat-szolgáltatás -->
-            <div class="mb-8 p-6 bg-gray-50 rounded-lg">
-              <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
-                <UIcon name="i-heroicons-document-text" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Hulladékadat-szolgáltatás
-              </h3>
-              <p class="text-gray-700 text-sm mb-2">Hulladékkezelési nyilvántartások, jelentések</p>
-              <div class="flex items-center space-x-4">
-                <a href="tel:+36203271151" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
-                  <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
-                  +36 20 327-1151
-                </a>
-                <a href="mailto:kornyezetvedelem@buechl.hu" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
-                  <UIcon name="i-heroicons-envelope" class="mr-1" style="width: 16px; height: 16px;" />
-                  kornyezetvedelem@buechl.hu
                 </a>
               </div>
             </div>

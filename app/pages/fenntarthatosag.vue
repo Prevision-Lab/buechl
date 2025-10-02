@@ -4,7 +4,7 @@
     <BuchlHero
       title="Fenntarthatóság"
       subtitle="ESG - Környezet, Társadalom, Vállalatirányítás"
-      image="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1600&h=800&fit=crop"
+      image="/media/images/elektromos-jarmuvek.jpg"
       bg-color="green"
       :primary-cta="{
         label: 'Kapcsolatfelvétel',
@@ -65,14 +65,21 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Napelemrendszerek -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/napelemrendszerek.jpg" 
+                alt="Napelemrendszerek" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-sun" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Napelemrendszerek</h3>
             </div>
             <p class="text-white/90 text-sm mb-4">
-              Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszþrűsítettük, a teljes 
+              Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszerűsítettük, a teljes 
               tetőfelület kihasználásával maximalizáltuk az elérhető kapacitást. 
-              Mindkét telephelyünkön egy új, 100 kW-os rendszer épült ki, igazodva a nappali időszak fogyasztásához.
+              Mindkét telephelyünkön új napelemrendszer épült ki, igazodva a nappali időszak fogyasztásához és a telephelyek adottságaihoz.
             </p>
             <div class="text-2xl font-bold text-buchl-green mb-1">494 kW</div>
             <div class="text-sm text-white/70">napelemes kapacitás (178 kW-ról)</div>
@@ -80,6 +87,13 @@
 
           <!-- Földhő és napenergia -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/foldho-es-napenergia.jpg" 
+                alt="Földhő és napenergia" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-home-modern" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Földhő és napenergia</h3>
@@ -95,6 +109,13 @@
 
           <!-- Elektromos járművek -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/elektromos-jarmuvek.jpg" 
+                alt="Elektromos járművek" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-truck" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Elektromos járművek</h3>
@@ -109,6 +130,13 @@
 
           <!-- Méhcsaládok -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/mehcsaladok.jpg" 
+                alt="Méhcsaládok a fenntarthatóság szolgálatában" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-heart" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Méhcsaládok a fenntarthatóság szolgálatában</h3>
@@ -127,6 +155,13 @@
 
           <!-- Karbonlábnyom-elemzés -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/karbonlabnyom.png" 
+                alt="Karbonlábnyom-elemzés" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-chart-bar" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Karbonlábnyom-elemzés</h3>
@@ -146,6 +181,13 @@
 
           <!-- KÖVET Egyesület partnerség -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/kovet-logo.jpg" 
+                alt="Partnerség a fenntarthatóságért - KÖVET Egyesület" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-globe-europe-africa" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Partnerség a fenntarthatóságért - KÖVET Egyesület</h3>
@@ -164,6 +206,13 @@
 
           <!-- Elektromos munkagépek -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/elektromos-jarmuvek.jpg" 
+                alt="Elektromos munkagépek" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Elektromos munkagépek</h3>
@@ -178,6 +227,13 @@
 
           <!-- Zöld energia vásárlás -->
           <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/foldho-es-napenergia.jpg" 
+                alt="Zöld energia vásárlás" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-bolt" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">Zöld energia vásárlás</h3>
@@ -202,12 +258,19 @@
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
             A BÜCHL HUNGARIA Kft. elkötelezett a közösség és a jövő generációk támogatása mellett – legyen szó oktatásról, sportról vagy közösségi eseményekről. 
-            Vállalatunk immár 10 éve töretlenul örömmel támogatja a győri Generációk Háza által szervezett Raklapos Építőtábort.
+            Vállalatunk immár 10 éve örömmel támogatja a győri Generációk Háza által szervezett Raklapos Építőtábort.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/oktatasikooperaciok.jpg" 
+                alt="Oktatási kooperációk" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-academic-cap" class="text-buchl-blue mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Oktatási kooperációk</h3>
@@ -224,6 +287,13 @@
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/sportszponzoracio.jpg" 
+                alt="Sportszponzoráció" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-trophy" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Sportszponzoráció</h3>
@@ -240,6 +310,13 @@
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/tomegsport-tamogatasa.jpg" 
+                alt="Tömegsport támogatása" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-user-group" class="text-buchl-blue mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Tömegsport támogatása</h3>
@@ -253,6 +330,13 @@
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="relative h-40 mb-4">
+              <img 
+                src="/media/images/kozossegepites-elmanyekkel.jpg" 
+                alt="Közösségépítés élményekkel" 
+                class="w-full h-full object-cover rounded-md"
+              />
+            </div>
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-heart" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-buchl-blue">Közösségépítés élményekkel</h3>
@@ -277,9 +361,9 @@
           </h2>
         </div>
 
-        <div class="flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- DUIHK-tagság -->
-          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm max-w-md w-full">
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-building-office-2" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
               <h3 class="text-xl font-semibold text-white">DUIHK-tagság – Aktív kapcsolat a német gazdasággal</h3>
@@ -293,6 +377,32 @@
             </p>
             <div class="text-2xl font-bold text-buchl-green mb-1">Hosszú évek óta</div>
             <div class="text-sm text-white/70">DUIHK tagság</div>
+          </div>
+          
+          <!-- Integrált vállalatirányítási rendszer -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center mb-4">
+              <UIcon name="i-heroicons-computer-desktop" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
+              <h3 class="text-xl font-semibold text-white">Integrált vállalatirányítási rendszer</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4">
+              2008-ban telepítettük és azóta folyamatosan fejlesztjük, bővítjük a Microsoft Dynamics NAV 2018 integrált vállalatirányítási rendszert, mely alapját képezi a hulladékok nyilvántartásának is.
+            </p>
+            <div class="text-2xl font-bold text-buchl-green mb-1">Microsoft Dynamics NAV 2018</div>
+            <div class="text-sm text-white/70">Vállalatirányítási rendszer</div>
+          </div>
+          
+          <!-- Elkötelezetten a minőségért -->
+          <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+            <div class="flex items-center mb-4">
+              <UIcon name="i-heroicons-shield-check" class="text-buchl-green mr-3" style="width: 32px; height: 32px;" />
+              <h3 class="text-xl font-semibold text-white">Elkötelezetten a minőségért</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4">
+              Elkötelezettségünket bizonyítva és munkánkat segítve bevezettük és fenntartjuk az MSZ EN ISO 14001:2015, illetve az Európai Unió EMAS III. minősítést, a 1221/2009/EK rendelete, a 2017/1505 rendelet, valamint a 2018/2026 EU rendelet módosításával. Emellett az MSZ EN ISO 9001:2015, valamint az MSZ ISO 45001:2018 szerinti Környezetközpontú, Minőség és Munkahelyi Egészségvédelemi és Biztonsági Integrált Irányítási Rendszert.
+            </p>
+            <div class="text-2xl font-bold text-buchl-green mb-1">minőség és biztonság</div>
+            <div class="text-sm text-white/70">Integrált irányítási rendszer</div>
           </div>
         </div>
       </div>

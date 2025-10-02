@@ -4,7 +4,7 @@
         <BuchlHero
             title="Logisztika"
             subtitle="Digitális hulladéklogisztikai megoldások"
-            image="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&h=800&fit=crop"
+            image="/media/images/logisztika.jpg"
             bg-color="blue"
             :primary-cta="{
                 label: 'Ajánlatkérés',

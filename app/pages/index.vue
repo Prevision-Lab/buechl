@@ -275,37 +275,37 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- 1. Blog poszt -->
           <BuchlBlogPost
-            title="Új hulladékkezelő berendezés a győri telephelyen"
-            description="A legkorszerűbb technológiát képviselő folyadékkezelő berendezés üzembe helyezésével jelentősen nőtt az újrahasznosítási arányunk."
+            title="VBS Junior Kör látogatása"
+            description="Szeptember 12-én örömmel láttuk vendégül a VBS Junior Kört Németországból, akik telephelyünkön ismerkedhettek meg hulladékgazdálkodási technológiáinkkal."
             image="/media/images/02.jpg"
-            to="/hirek/uj-hulladekkezelo-berendezes"
-            category="Technológia"
-            date="2025-05-10"
+            to="/hirek/vbs-junior-kor-latogatas"
+            category="Események"
+            date="2025-09-12"
             reading-time="3 perc olvasás"
             read-more-text="Tovább"
           />
 
           <!-- 2. Blog poszt -->
           <BuchlBlogPost
-            title="BÜCHL a Fenntarthatósági Expón"
-            description="Cégünk sikeresen képviselte a hulladékgazdálkodási szektor innovációit a 2025-ös Fenntarthatósági Expón Budapesten."
+            title="Játékos módon a fenntarthatóság szolgálatában"
+            description="A fenntarthatóság cégfilozófiánk központi kérdése. Három éves munka után elkészült a „RESZETT” program, amely játékos formában ismerteti meg a gyerekeket a hulladékgazdálkodás folyamataival."
             image="/media/images/06.jpg"
-            to="/hirek/fenntarthatosagi-expo-2025"
-            category="Események"
-            date="2025-04-25"
+            to="/hirek/reszett-program"
+            category="Oktatás"
+            date="2025-08-28"
             reading-time="4 perc olvasás"
             read-more-text="Tovább"
           />
 
           <!-- 3. Blog poszt -->
           <BuchlBlogPost
-            title="Elindult az új ELOG SYSTEM® digitalizációs platform"
-            description="A teljesen papírmentes hulladékgazdálkodási rendszer bevezetésével új szintre emeljük a belső üzemi logisztikát."
+            title="Tudomány, élmény, inspiráció – fiataloknak!"
+            description="Büszkék vagyunk rá, hogy a BÜCHL Hungaria idén is kiemelt támogatója lehetett a VIII. Győri Gyerekegyetemnek! A program célja, hogy közelebb hozza az egyetemi világot az általános iskolás korosztályhoz."
             image="/media/images/image_123650291.JPG"
-            to="/hirek/elog-system-bevezetes"
-            category="Innováció"
-            date="2025-04-15"
-            reading-time="5 perc olvasás"
+            to="/hirek/viii-gyori-gyerekegyetem"
+            category="Oktatás"
+            date="2025-08-24"
+            reading-time="3 perc olvasás"
             read-more-text="Tovább"
           />
         </div>

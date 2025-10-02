@@ -4,7 +4,7 @@
         <BuchlHero
             title="Hulladékgyűjtés és -szállítás"
             subtitle="Professzionális hulladékszállítás – rugalmasan és megbízhatóan"
-            image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=800&fit=crop"
+            image="/media/images/hulladekgyujtes-szallitas.jpg"
             bg-color="blue"
             :primary-cta="{
                 label: 'Ajánlatkérés',
@@ -22,7 +22,7 @@
                 <div class="max-w-4xl mx-auto">
                     <div class="prose prose-lg max-w-none">
                         <p class="text-xl text-gray-700 mb-8">
-                            A BÜCHL HUNGARIA közel 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó 
+                            A BÜCHL HUNGARIA több mint 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó 
                             konténeres, folyékony vagy veszélyes hulladék szállításáról. Sofőrjeink jól képzettek, ADR-
                             tanúsítvánnyal rendelkeznek, és ismerik ügyfeleink telephelyi sajátosságait. Igény esetén részletes 
                             dokumentációt biztosítunk az elszállított hulladékok típusáról és mennyiségéről.

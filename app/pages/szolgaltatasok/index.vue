@@ -4,7 +4,7 @@
         <BuchlHero
             title="Szolgáltatásaink"
             subtitle="Komplex hulladékgazdálkodási megoldások minden igényre"
-            image="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&h=800&fit=crop"
+            image="/media/images/szolgaltatasaink.jpg"
             bg-color="blue"
             :primary-cta="{
                 label: 'Ajánlatkérés',
@@ -26,7 +26,7 @@
                         Komplex hulladékkezelés ipari partnerek számára
                     </h2>
                     <p class="text-lg text-gray-700 mb-8">
-                        A BÜCHL HUNGARIA közel 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó konténeres, folyékony vagy veszélyes hulladék szállításáról. Specializált technológiáink és szakértő csapatunk átfogó megoldásokat kínál minden iparág számára.
+                        A BÜCHL HUNGARIA több mint 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó konténeres, folyékony vagy veszélyes hulladék szállításáról. Specializált technológiáink és szakértő csapatunk átfogó megoldásokat kínál minden iparág számára.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                         <div class="text-center">
@@ -282,7 +282,7 @@
                     </div>
                     <div class="relative">
                         <img
-                            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
+                            src="/media/images/szakerto.jpg"
                             alt="Környezetvédelmi szolgáltatások"
                             class="rounded-lg shadow-lg"
                         />
