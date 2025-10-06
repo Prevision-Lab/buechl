@@ -277,7 +277,7 @@
           <BuchlBlogPost
             title="VBS Junior Kör látogatása"
             description="Szeptember 12-én örömmel láttuk vendégül a VBS Junior Kört Németországból, akik telephelyünkön ismerkedhettek meg hulladékgazdálkodási technológiáinkkal."
-            image="/media/images/02.jpg"
+            image="/media/images/hirek/vbs-junior.jpeg"
             to="/hirek/vbs-junior-kor-latogatas"
             category="Események"
             date="2025-09-12"
@@ -289,7 +289,7 @@
           <BuchlBlogPost
             title="Játékos módon a fenntarthatóság szolgálatában"
             description="A fenntarthatóság cégfilozófiánk központi kérdése. Három éves munka után elkészült a „RESZETT” program, amely játékos formában ismerteti meg a gyerekeket a hulladékgazdálkodás folyamataival."
-            image="/media/images/06.jpg"
+            image="/media/images/hirek/reszett-program.jpeg"
             to="/hirek/reszett-program"
             category="Oktatás"
             date="2025-08-28"
@@ -301,7 +301,7 @@
           <BuchlBlogPost
             title="Tudomány, élmény, inspiráció – fiataloknak!"
             description="Büszkék vagyunk rá, hogy a BÜCHL Hungaria idén is kiemelt támogatója lehetett a VIII. Győri Gyerekegyetemnek! A program célja, hogy közelebb hozza az egyetemi világot az általános iskolás korosztályhoz."
-            image="/media/images/image_123650291.JPG"
+            image="/media/images/hirek/gyerekegyetem.jpeg"
             to="/hirek/viii-gyori-gyerekegyetem"
             category="Oktatás"
             date="2025-08-24"

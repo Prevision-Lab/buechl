@@ -31,7 +31,7 @@
           
           <div class="my-8">
             <img 
-              src="/media/images/02.jpg" 
+              src="/media/images/hirek/vbs-junior.jpeg"
               alt="VBS Junior Kör látogatás"
               class="w-full h-96 object-cover rounded-lg"
             />
@@ -54,6 +54,9 @@
           </p>
         </div>
         
+        <!-- Képgaléria -->
+        <HirekGallery :images="galleryImages" />
+        
         <div class="mt-12 pt-8 border-t border-gray-200">
           <UButton
             to="/hirek"
@@ -72,4 +75,11 @@
 
 <script setup lang="ts">
 // VBS Junior Kör látogatása hír részletes oldala
+
+const galleryImages = [
+  {
+    src: '/media/images/hirek/vbs-junior-2.jpeg',
+    alt: 'VBS Junior Kör látogatás - 2. kép'
+  }
+]
 </script>

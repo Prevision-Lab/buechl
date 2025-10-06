@@ -31,7 +31,7 @@
           
           <div class="my-8">
             <img 
-              src="/media/images/06.jpg" 
+              src="/media/images/hirek/defibrillatorok.jpeg"
               alt="Defibrillátorok telepítése"
               class="w-full h-96 object-cover rounded-lg"
             />
@@ -45,6 +45,9 @@
             Köszönjük minden kollégának, aki részt vett a képzésen.
           </p>
         </div>
+        
+        <!-- Képgaléria -->
+        <HirekGallery :images="galleryImages" />
         
         <div class="mt-12 pt-8 border-t border-gray-200">
           <UButton
@@ -63,5 +66,16 @@
 </template>
 
 <script setup lang="ts">
-// Defibrillátorok telepítése hír részletes oldala
+// Defibrillatorok telepítése hír részletes oldala
+
+const galleryImages = [
+  {
+    src: '/media/images/hirek/defibrillatorok-2.jpeg',
+    alt: 'Defibrillátorok telepítése - 2. kép'
+  },
+  {
+    src: '/media/images/hirek/defibrillatorok-3.jpeg',
+    alt: 'Defibrillátorok telepítése - 3. kép'
+  }
+]
 </script>

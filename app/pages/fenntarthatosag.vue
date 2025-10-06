@@ -264,11 +264,11 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded-lg shadow-md">
-            <div class="relative h-40 mb-4">
+            <div class="relative h-56 mb-4">
               <img 
                 src="/media/images/oktatasikooperaciok.jpg" 
                 alt="Oktatási kooperációk" 
-                class="w-full h-full object-cover rounded-md"
+                class="w-full h-full object-cover object-top rounded-md"
               />
             </div>
             <div class="flex items-center mb-4">
@@ -287,11 +287,11 @@
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-md">
-            <div class="relative h-40 mb-4">
+            <div class="relative h-56 mb-4">
               <img 
                 src="/media/images/sportszponzoracio.jpg" 
                 alt="Sportszponzoráció" 
-                class="w-full h-full object-cover rounded-md"
+                class="w-full h-full object-cover object-top rounded-md"
               />
             </div>
             <div class="flex items-center mb-4">
@@ -310,11 +310,11 @@
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-md">
-            <div class="relative h-40 mb-4">
+            <div class="relative h-56 mb-4">
               <img 
                 src="/media/images/tomegsport-tamogatasa.jpg" 
                 alt="Tömegsport támogatása" 
-                class="w-full h-full object-cover rounded-md"
+                class="w-full h-full object-cover object-top rounded-md"
               />
             </div>
             <div class="flex items-center mb-4">
@@ -330,11 +330,11 @@
           </div>
 
           <div class="bg-white p-8 rounded-lg shadow-md">
-            <div class="relative h-40 mb-4">
+            <div class="relative h-56 mb-4">
               <img 
                 src="/media/images/kozossegepites-elmanyekkel.jpg" 
                 alt="Közösségépítés élményekkel" 
-                class="w-full h-full object-cover rounded-md"
+                class="w-full h-full object-cover object-top rounded-md"
               />
             </div>
             <div class="flex items-center mb-4">

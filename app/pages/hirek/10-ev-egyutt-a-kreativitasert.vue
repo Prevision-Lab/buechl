@@ -31,7 +31,7 @@
           
           <div class="my-8">
             <img 
-              src="/media/images/02.jpg" 
+              src="/media/images/hirek/raklapos-epitotabor.jpeg"
               alt="Raklapos Építőtábor"
               class="w-full h-96 object-cover rounded-lg"
             />
@@ -49,6 +49,9 @@
             <em>Fotók: Fenesi Bianka és AUDI Hungaria Zrt.</em>
           </p>
         </div>
+        
+        <!-- Képgaléria -->
+        <HirekGallery :images="galleryImages" />
         
         <div class="mt-12 pt-8 border-t border-gray-200">
           <UButton
@@ -68,4 +71,31 @@
 
 <script setup lang="ts">
 // 10 év együtt a kreativitásért hír részletes oldala
+
+const galleryImages = [
+  {
+    src: '/media/images/hirek/raklapos-epitotabor-2.jpeg',
+    alt: 'Raklapos Építőtábor - 2. kép'
+  },
+  {
+    src: '/media/images/hirek/raklapos-epitotabor-3.jpeg',
+    alt: 'Raklapos Építőtábor - 3. kép'
+  },
+  {
+    src: '/media/images/hirek/raklapos-epitotabor-4.jpeg',
+    alt: 'Raklapos Építőtábor - 4. kép'
+  },
+  {
+    src: '/media/images/hirek/raklapos-epitotabor-5.jpeg',
+    alt: 'Raklapos Építőtábor - 5. kép'
+  },
+  {
+    src: '/media/images/hirek/raklapos-epitotabor-6.jpeg',
+    alt: 'Raklapos Építőtábor - 6. kép'
+  },
+  {
+    src: '/media/images/hirek/raklapos-epitotabor-7.jpeg',
+    alt: 'Raklapos Építőtábor - 7. kép'
+  }
+]
 </script>

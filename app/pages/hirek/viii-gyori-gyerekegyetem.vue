@@ -31,7 +31,7 @@
           
           <div class="my-8">
             <img 
-              src="/media/images/image_123650291.JPG" 
+              src="/media/images/hirek/gyerekegyetem.jpeg"
               alt="VIII. Győri Gyerekegyetem"
               class="w-full h-96 object-cover rounded-lg"
             />
@@ -61,6 +61,9 @@
           </p>
         </div>
         
+        <!-- Képgaléria -->
+        <HirekGallery :images="galleryImages" />
+        
         <div class="mt-12 pt-8 border-t border-gray-200">
           <UButton
             to="/hirek"
@@ -79,4 +82,31 @@
 
 <script setup lang="ts">
 // VIII. Győri Gyerekegyetem hír részletes oldala
+
+const galleryImages = [
+  {
+    src: '/media/images/hirek/gyerekegyetem-2.jpeg',
+    alt: 'Győri Gyerekegyetem - 2. kép'
+  },
+  {
+    src: '/media/images/hirek/gyerekegyetem-3.jpeg',
+    alt: 'Győri Gyerekegyetem - 3. kép'
+  },
+  {
+    src: '/media/images/hirek/gyerekegyetem-4.jpeg',
+    alt: 'Győri Gyerekegyetem - 4. kép'
+  },
+  {
+    src: '/media/images/hirek/gyerekegyetem-5.jpeg',
+    alt: 'Győri Gyerekegyetem - 5. kép'
+  },
+  {
+    src: '/media/images/hirek/gyerekegyetem-6.jpeg',
+    alt: 'Győri Gyerekegyetem - 6. kép'
+  },
+  {
+    src: '/media/images/hirek/gyerekegyetem-7.jpeg',
+    alt: 'Győri Gyerekegyetem - 7. kép'
+  }
+]
 </script>

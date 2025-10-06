@@ -175,10 +175,10 @@
               <UIcon name="i-lucide-recycle" class="text-6xl text-buchl-green mx-auto mb-4" />
             </div>
             <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2">
-              {{ hulladekSzallitasCount }}<br><span class="text-2xl">+ {{ hulladekElkezelesCount }}</span>
+              {{ hulladekSzallitasCount }}
             </div>
             <div class="text-xl font-medium text-white/90">
-              TONNA/H NAPONTA<br><span class="text-base">szállítás + előkezelés</span>
+              TONNA SZÁLLÍTÁSA NAPONTA
             </div>
           </div>
         </div>
@@ -395,12 +395,12 @@ useSeoMeta({
 const telephelyCount = ref(0)
 const munkatarsCount = ref(0)
 const hulladekSzallitasCount = ref(0)
-const hulladekElkezelesCount = ref(0)
+// A hulladékelőkezelés változó már nem szükséges
 
 const telephelyRef = ref(null)
 const munkatarsRef = ref(null)
 const hulladekSzallitasRef = ref(null)
-const hulladekElkezelesRef = ref(null)
+// A hulladékelőkezelés ref már nem szükséges
 const statsRef = ref(null)
 
 // Számláló animáció
@@ -446,12 +446,7 @@ const startAnimations = () => {
     })
   }, 1000)
   
-  // Hulladékelőkezelés animálása (234 tonna naponta, 2 másodperc alatt)
-  setTimeout(() => {
-    animateCounter(0, 234, 2000, (value) => {
-      hulladekElkezelesCount.value = value
-    })
-  }, 1500)
+  // Hulladékelőkezelés animáció eltávolítva - már csak szállítás
 }
 
 onMounted(() => {

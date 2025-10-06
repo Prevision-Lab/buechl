@@ -31,7 +31,7 @@
           
           <div class="my-8">
             <img 
-              src="/media/images/image_123650291.JPG" 
+              src="/media/images/hirek/stresszkezelo-trening.jpeg"
               alt="Stresszkezelő tréning"
               class="w-full h-96 object-cover rounded-lg"
             />

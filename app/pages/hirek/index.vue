@@ -3,8 +3,8 @@
     <!-- Hero szekció -->
     <BuchlHero
       title="Hírek és Események"
-      subtitle="Maradjon naprakész legfrissebb híreinkkel, eseményeinkkel és innovációinkkal"
-      image="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&h=800&fit=crop"
+      subtitle="Maradjon naprakész legfrissebb híreinkkel, eseményeinkkel és innovációinkkal!"
+      image="/media/images/buchl-hirek.jpeg"
       bg-color="blue"
     />
 
@@ -16,7 +16,7 @@
             Legfrissebb híreink
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Kövesse nyomon a BÜCHL Hungaria legújabb fejlesztéseit, projektjeit és eseményeit.
+            Kövesse nyomon a BÜCHL Hungaria legújabb fejlesztéseit, projektjeit és eseményeit!
           </p>
         </div>
 
@@ -26,7 +26,7 @@
           <BuchlBlogPost
             title="VBS Junior Kör látogatása"
             description="Szeptember 12-én örömmel láttuk vendégül a VBS Junior Kört Németországból, akik telephelyünkön ismerkedhettek meg hulladékgazdálkodási technológiáinkkal."
-            image="/media/images/02.jpg"
+            image="/media/images/hirek/vbs-junior.jpeg"
             to="/hirek/vbs-junior-kor-latogatas"
             category="Események"
             date="2025-09-12"
@@ -38,7 +38,7 @@
           <BuchlBlogPost
             title="Játékos módon a fenntarthatóság szolgálatában"
             description="A fenntarthatóság cégfilozófiánk központi kérdése. Három éves munka után elkészült a „RESZETT” program, amely játékos formában ismerteti meg a gyerekeket a hulladékgazdálkodás folyamataival."
-            image="/media/images/06.jpg"
+            image="/media/images/hirek/reszett-program.jpeg"
             to="/hirek/reszett-program"
             category="Oktatás"
             date="2025-08-28"
@@ -50,7 +50,7 @@
           <BuchlBlogPost
             title="Tudomány, élmény, inspiráció – fiataloknak!"
             description="Büszkék vagyunk rá, hogy a BÜCHL Hungaria idén is kiemelt támogatója lehetett a VIII. Győri Gyerekegyetemnek! A program célja, hogy közelebb hozza az egyetemi világot az általános iskolás korosztályhoz."
-            image="/media/images/image_123650291.JPG"
+            image="/media/images/hirek/gyerekegyetem.jpeg"
             to="/hirek/viii-gyori-gyerekegyetem"
             category="Oktatás"
             date="2025-08-24"
@@ -62,7 +62,7 @@
           <BuchlBlogPost
             title="10 éve együtt a kreativitásért!"
             description="A BÜCHL HUNGARIA Kft. az AUDI HUNGARIA Zrt.-vel karöltve immár 10 éve támogatja a Generációk Háza által szervezett győri Raklapos Építőtábort."
-            image="/media/images/02.jpg"
+            image="/media/images/hirek/raklapos-epitotabor.jpeg"
             to="/hirek/10-ev-egyutt-a-kreativitasert"
             category="Események"
             date="2025-08-18"
@@ -74,7 +74,7 @@
           <BuchlBlogPost
             title="Munkatársaink biztonsága érdekében"
             description="A BÜCHL Hungaria számára a munkatársak biztonsága mindig is elsődleges szempont volt. Ennek jegyében három darab automata defibrillátort telepítettünk telephelyünkön."
-            image="/media/images/06.jpg"
+            image="/media/images/hirek/defibrillatorok.jpeg"
             to="/hirek/defibrillatorok-telepites"
             category="Biztonság"
             date="2025-07-25"
@@ -86,7 +86,7 @@
           <BuchlBlogPost
             title="Mentális egészség és reziliencia"
             description="Munkatársaink részt vettek a Német-Magyar Tudásközpont - DUWZ stresszkezelő és rezilienciafejlesztő tréningjén, melynek célja a stresszreakciók felismerése és kezelési technikák elsajátítása."
-            image="/media/images/image_123650291.JPG"
+            image="/media/images/hirek/stresszkezelo-trening.jpeg"
             to="/hirek/stresszkezelo-trening"
             category="Fejlesztés"
             date="2025-07-21"

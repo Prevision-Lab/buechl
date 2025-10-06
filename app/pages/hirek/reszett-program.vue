@@ -31,7 +31,7 @@
           
           <div class="my-8">
             <img 
-              src="/media/images/06.jpg" 
+              src="/media/images/hirek/reszett-program.jpeg"
               alt="RESZETT program"
               class="w-full h-96 object-cover rounded-lg"
             />
@@ -54,6 +54,9 @@
           </p>
         </div>
         
+        <!-- Képgaléria -->
+        <HirekGallery :images="galleryImages" />
+        
         <div class="mt-12 pt-8 border-t border-gray-200">
           <UButton
             to="/hirek"
@@ -72,4 +75,23 @@
 
 <script setup lang="ts">
 // RESZETT program hír részletes oldala
+
+const galleryImages = [
+  {
+    src: '/media/images/hirek/reszett-program-2.jpeg',
+    alt: 'RESZETT program - 2. kép'
+  },
+  {
+    src: '/media/images/hirek/reszett-program-3.jpeg',
+    alt: 'RESZETT program - 3. kép'
+  },
+  {
+    src: '/media/images/hirek/reszett-program-4.jpeg',
+    alt: 'RESZETT program - 4. kép'
+  },
+  {
+    src: '/media/images/hirek/reszett-program-5.jpeg',
+    alt: 'RESZETT program - 5. kép'
+  }
+]
 </script>
