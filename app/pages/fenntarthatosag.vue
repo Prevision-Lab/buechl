@@ -334,7 +334,7 @@
               <img 
                 src="/media/images/kozossegepites-elmanyekkel.jpg" 
                 alt="Közösségépítés élményekkel" 
-                class="w-full h-full object-cover object-top rounded-md"
+                class="w-full h-full object-cover object-bottom rounded-md"
               />
             </div>
             <div class="flex items-center mb-4">

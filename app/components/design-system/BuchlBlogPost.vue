@@ -10,12 +10,14 @@
       <template v-if="image" #header>
         <div class="overflow-hidden rounded-t-md">
           <NuxtLink :to="to" class="block">
-            <img 
-              :src="image" 
-              :alt="alt || title"
-              class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-              loading="lazy"
-            >
+            <div class="aspect-[16/9] overflow-hidden">
+              <img 
+                :src="image" 
+                :alt="alt || title"
+                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              >
+            </div>
           </NuxtLink>
           <!-- Category Badge -->
           <div v-if="category" class="absolute top-4 left-4">

@@ -175,10 +175,10 @@
               <UIcon name="i-lucide-recycle" class="text-6xl text-buchl-green mx-auto mb-4" />
             </div>
             <div class="text-5xl sm:text-6xl font-bold text-buchl-green mb-2">
-              {{ hulladekSzallitasCount }}
+              {{ hulladekSzallitasCount }} TONNA
             </div>
             <div class="text-xl font-medium text-white/90">
-              TONNA SZÁLLÍTÁSA NAPONTA
+              SZÁLLÍTÁSA NAPONTA
             </div>
           </div>
         </div>
