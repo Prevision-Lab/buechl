@@ -1,0 +1,38 @@
+{
+  "szallitas": [
+    { "waste_code": "02 01 08*", "waste_name": "veszélyes anyagokat tartalmazó, mezőgazdasági vegyi hulladékok" },
+    { "waste_code": "02 02 01", "waste_name": "mosásból és tisztításból származó iszapok" },
+    { "waste_code": "02 02 03", "waste_name": "fogyasztásra vagy feldolgozásra alkalmatlan anyagok" },
+    { "waste_code": "20 03 07", "waste_name": "lom hulladék" }
+  ],
+  "karitasz": [
+    { "waste_code": "07 02 13", "waste_name": "hulladék műanyag" },
+    { "waste_code": "15 01 02", "waste_name": "műanyag csomagolási hulladék" },
+    { "waste_code": "15 01 05", "waste_name": "kompozit csomagolási hulladék" },
+    { "waste_code": "19 01 19", "waste_name": "műanyagok" }
+  ],
+  "ati": [
+    { "waste_code": "03 01 05", "waste_name": "fűrészpor, faforgács, darabos eselék, fa, forgácslap és furnér, amely különbözik" },
+    { "waste_code": "07 02 13", "waste_name": "hulladék műanyag" },
+    { "waste_code": "07 02 99", "waste_name": "közelebbről meg nem határozott hulladék" }
+  ],
+  "csorgfa": [
+    { "waste_code": "08 01 19*", "waste_name": "szerves oldószereket, valamint más veszélyes anyagokat tartalmazó festék vagy lakk tartalmú vizes szuszpenziók" },
+    { "waste_code": "13 01 05*", "waste_name": "klórozott szerves vegyületeket nem tartalmazó emulzió" },
+    { "waste_code": "13 02 05*", "waste_name": "ásványolaj alapú, klórvegyületet nem tartalmazó motor-, hajtómű- és kenőolaj" },
+    { "waste_code": "16 01 13*", "waste_name": "fékfolyadék" }
+  ],
+  "nyiregyhaza": [
+    { "waste_code": "02 01 10", "waste_name": "fémhulladék" },
+    { "waste_code": "16 01 03", "waste_name": "hulladékká vált gumiabroncsok" },
+    { "waste_code": "16 06 01*", "waste_name": "ólomakkumulátorok" },
+    { "waste_code": "20 01 37*", "waste_name": "veszélyes anyagokat tartalmazó fa" }
+  ],
+  "repter": [
+    { "waste_code": "02 01 03", "waste_name": "hulladékká vált növényi szövetek" },
+    { "waste_code": "03 01 04*", "waste_name": "veszélyes anyagokat tartalmazó fűrészpor, faforgács, darabos eselék, fa, forgácslap és furnér" },
+    { "waste_code": "16 02 13*", "waste_name": "veszélyes anyagokat tartalmazó kiselejtezett berendezés" },
+    { "waste_code": "16 06 01*", "waste_name": "ólomakkumulátorok" },
+    { "waste_code": "20 02 01", "waste_name": "biológiailag lebomló hulladék" }
+  ]
+}

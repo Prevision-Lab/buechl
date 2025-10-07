@@ -1,119 +1,179 @@
 <template>
     <div>
-        <!-- Egyszerű Hero szekció -->
+        <!-- Hero szekció -->
         <div class="bg-buchl-blue text-white py-16">
             <div class="max-w-7xl mx-auto px-4 text-center">
                 <h1 class="text-4xl font-bold mb-4">Hulladékkatalógus</h1>
-                <p class="text-xl text-blue-100">Keresés az engedélyezett hulladéktípusaink között</p>
+                <p class="text-xl text-blue-100 mb-6">Keresés az engedélyezett hulladéktípusaink között</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+                    <div class="flex-1">
+                        <UInput
+                            v-model="globalSearchQuery"
+                            placeholder="Keresés minden telephelyen..."
+                            icon="i-heroicons-magnifying-glass"
+                            size="lg"
+                            variant="outline"
+                            class="w-full"
+                            color="white"
+                            @input="handleGlobalSearch"
+                        />
+                    </div>
+                    <UButton
+                        @click="clearAllSearch"
+                        variant="outline"
+                        color="white"
+                        size="lg"
+                        icon="i-heroicons-x-mark"
+                        class="shrink-0"
+                    >
+                        Törlés
+                    </UButton>
+                </div>
             </div>
         </div>
 
-        <!-- Keresési szekció -->
+        <!-- Tabos felület -->
         <section class="py-12 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-2xl mx-auto text-center mb-8">
+                <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-buchl-blue mb-4">
-                        Keresés a hulladékkatalógusban
+                        Telephelyek és engedélyek szerint
                     </h2>
                     <p class="text-gray-600">
-                        Adja meg a hulladék kódját vagy leírását a kereséshez
+                        Válasszon telephelyet az engedélyezett hulladéktípusok megtekintéséhez
                     </p>
                 </div>
 
-                <!-- Keresési beviteli mező -->
-                <div class="max-w-xl mx-auto mb-8">
-                    <UInput
-                        v-model="searchQuery"
-                        placeholder="Pl.: 'műanyag' vagy '15 01 04'"
-                        icon="i-heroicons-magnifying-glass"
-                        size="lg"
-                        variant="outline"
-                        class="w-full"
-                        color="primary"
-                        @input="handleSearch"
-                    />
+                <!-- Tabos navigáció -->
+                <div class="mb-8">
+                    <UTabs v-model="activeTab" :items="tabItems" class="w-full" />
                 </div>
 
+                <!-- Tab tartalmak -->
+                <div class="mt-8">
+                    <!-- Helyi keresés az aktív tabon belül -->
+                    <div class="mb-6 max-w-xl mx-auto">
+                        <UInput
+                            v-model="localSearchQuery"
+                            :placeholder="`Keresés a ${getCurrentTabName()} telephelyen...`"
+                            icon="i-heroicons-magnifying-glass"
+                            size="md"
+                            variant="outline"
+                            class="w-full"
+                            color="primary"
+                            @input="handleLocalSearch"
+                        />
+                    </div>
 
-                <!-- Találatok számláló -->
-                <div class="text-center mb-6">
-                    <p class="text-gray-600">
-                        <span class="font-semibold">{{ filteredWastes.length }}</span> 
-                        találat {{ allWastes.length }} hulladéktípusból
-                    </p>
-                </div>
-            </div>
-        </section>
+                    <!-- Találatok számláló -->
+                    <div class="text-center mb-6">
+                        <p class="text-gray-600">
+                            <span class="font-semibold">{{ getCurrentFilteredWastes().length }}</span> 
+                            találat {{ getCurrentTabWastes().length }} hulladéktípusból
+                            <span v-if="localSearchQuery || globalSearchQuery" class="text-buchl-blue">
+                                - {{ getCurrentTabName() }} telephely
+                            </span>
+                        </p>
+                    </div>
 
-        <!-- Eredmények szekció -->
-        <section class="py-12 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Eredmény lista -->
-                <div v-if="filteredWastes.length > 0" class="space-y-4">
-                    <div
-                        v-for="(waste, index) in filteredWastes"
-                        :key="waste.waste_code"
-                        class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow"
-                    >
-                        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-                            <!-- Hulladék kód -->
-                            <div class="flex-shrink-0">
-                                <div class="bg-buchl-blue text-white px-4 py-2 rounded-lg text-center">
-                                    <div class="font-mono text-lg font-bold">
-                                        {{ waste.waste_code }}
+                    <!-- Eredmény lista -->
+                    <div v-if="getCurrentFilteredWastes().length > 0" class="space-y-4">
+                        <div
+                            v-for="(waste, index) in getCurrentFilteredWastes()"
+                            :key="`${waste.location}-${waste.waste_code}`"
+                            class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow"
+                        >
+                            <div class="flex flex-col lg:flex-row lg:items-center gap-4">
+                                <!-- Hulladék kód -->
+                                <div class="flex-shrink-0">
+                                    <div class="bg-buchl-blue text-white px-4 py-2 rounded-lg text-center">
+                                        <div class="font-mono text-lg font-bold">
+                                            {{ waste.waste_code }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Hulladék megnevezés -->
+                                <div class="flex-grow">
+                                    <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                                        {{ formatWasteName(waste.waste_name) }}
+                                    </h3>
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <!-- Telephelyi információ -->
+                                        <UBadge
+                                            color="blue"
+                                            variant="subtle"
+                                            :label="waste.location_short"
+                                        />
+                                        <!-- Kategória badge -->
+                                        <UBadge
+                                            :color="getCategoryColor(waste.waste_code)"
+                                            variant="subtle"
+                                            :label="getCategory(waste.waste_code)"
+                                        />
+                                        <!-- Anyagtípus badge -->
+                                        <UBadge
+                                            v-if="getMaterialType(waste.waste_name)"
+                                            color="gray"
+                                            variant="subtle"
+                                            :label="getMaterialType(waste.waste_name)"
+                                        />
+                                        <!-- Veszélyes jelzés -->
+                                        <UBadge
+                                            v-if="waste.waste_code.includes('*')"
+                                            color="red"
+                                            variant="subtle"
+                                            label="Veszélyes"
+                                        />
+                                    </div>
+                                    <div class="text-sm text-gray-600">
+                                        <strong>Telephely:</strong> {{ waste.location }}<br>
+                                        <strong>KTJ:</strong> {{ waste.ktj }}<br>
+                                        <strong>Engedély:</strong> {{ waste.permit }}
+                                    </div>
+                                </div>
+
+                                <!-- Akciók -->
+                                <div class="flex-shrink-0">
+                                    <div class="flex gap-2">
+                                        <UButton
+                                            variant="ghost"
+                                            color="primary"
+                                            icon="i-heroicons-clipboard-document-list"
+                                            @click="showDetails(waste)"
+                                        >
+                                            Részletek
+                                        </UButton>
+                                        <UButton
+                                            variant="ghost"
+                                            color="green"
+                                            icon="i-heroicons-envelope"
+                                            to="/kapcsolat"
+                                        >
+                                            Ajánlat
+                                        </UButton>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Hulladék megnevezés -->
-                            <div class="flex-grow">
-                                <h3 class="font-semibold text-lg text-gray-900 mb-1">
-                                    {{ formatWasteName(waste.waste_name) }}
-                                </h3>
-                                <div class="flex flex-wrap gap-2">
-                                    <!-- Kategória badge -->
-                                    <UBadge
-                                        :color="getCategoryColor(waste.waste_code)"
-                                        variant="subtle"
-                                        :label="getCategory(waste.waste_code)"
-                                    />
-                                    <!-- Anyagtípus badge -->
-                                    <UBadge
-                                        v-if="getMaterialType(waste.waste_name)"
-                                        color="gray"
-                                        variant="subtle"
-                                        :label="getMaterialType(waste.waste_name)"
-                                    />
-                                </div>
-                            </div>
-
-                            <!-- Akciók -->
-                            <div class="flex-shrink-0">
-                                <UButton
-                                    variant="ghost"
-                                    color="primary"
-                                    icon="i-heroicons-clipboard-document-list"
-                                    @click="showDetails(waste)"
-                                >
-                                    Részletek
-                                </UButton>
-                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Nincs találat -->
-                <div v-else class="text-center py-12">
-                    <UIcon name="i-heroicons-magnifying-glass" class="text-gray-400 text-6xl mx-auto mb-4" />
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                        Nincs találat
-                    </h3>
-                    <p class="text-gray-600 max-w-md mx-auto">
-                        A keresési feltételeknek megfelelő hulladéktípust nem találtunk. 
-                        Próbálja meg módosítani a keresési kifejezést.
-                    </p>
+                    <!-- Nincs találat -->
+                    <div v-else class="text-center py-12">
+                        <UIcon name="i-heroicons-magnifying-glass" class="text-gray-400 text-6xl mx-auto mb-4" />
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            Nincs találat
+                        </h3>
+                        <p class="text-gray-600 max-w-md mx-auto">
+                            <span v-if="localSearchQuery || globalSearchQuery">
+                                A keresési feltételeknek megfelelő hulladéktípust nem találtunk a {{ getCurrentTabName() }} telephelyen.
+                            </span>
+                            <span v-else>
+                                Nincsenek elérhető hulladéktípusok ezen a telephelyen.
+                            </span>
+                        </p>
+                    </div>
                 </div>
-
             </div>
         </section>
 
@@ -230,98 +290,87 @@
 </template>
 
 <script setup lang="ts">
+// Import complete waste data from external file
+import { allWasteData, tabItems as importedTabItems } from '~/utils/wasteData.js'
+
 // SEO meta adatok
 useSeoMeta({
-    title: 'Hulladékkatalógus - BÜCHL HUNGARIA',
-    description: 'Keresés a BÜCHL HUNGARIA engedélyezett hulladéktípusai között. Keresőfunkció hulladékkódok és megnevezések alapján.',
-    keywords: 'hulladékkatalógus, hulladékkód, hulladékkezelés, veszélyes hulladék, nem veszélyes hulladék'
+    title: 'Hulladékkatalögus - BÜCHL HUNGARIA',
+    description: 'Keresés a BÜCHL HUNGARIA engedélyezett hulladéktípusai között telephelyek szerint. Fejlett keresőfunkció hulladékkódok és megnevezések alapján.',
+    keywords: 'hulladékkatalógus, hulladékkód, hulladékkezelés, veszélyes hulladék, nem veszélyes hulladék, telephely, engedély'
 })
 
 // Komponens adatok
 interface WasteItem {
     waste_code: string
     waste_name: string
+    location: string
+    location_short: string
+    ktj: string
+    permit: string
+    tab_key: string
 }
 
 // Reactive adatok
-const searchQuery = ref('')
+const globalSearchQuery = ref('')
+const localSearchQuery = ref('')
 const showDetailsModal = ref(false)
 const selectedWaste = ref<WasteItem | null>(null)
+const activeTab = ref(0)
 
-// Hulladék adatok (Excel-ből)
-const allWastes = ref<WasteItem[]>([
-    { waste_code: "03 01 05", waste_name: "fűrészpor, faforgács, darabos eselék, fa, forgácslap és furnér, amely különbözik" },
-    { waste_code: "07 02 13", waste_name: "hulladék műanyag" },
-    { waste_code: "07 02 99", waste_name: "közelebbről meg nem határozott hulladék" },
-    { waste_code: "10 11 03", waste_name: "üveg alapú, szálas anyagok hulladéka" },
-    { waste_code: "10 11 05", waste_name: "egyéb részecskék és por" },
-    { waste_code: "10 11 12", waste_name: "üveghulladék, amely különbözik a 10 11 11-től" },
-    { waste_code: "10 11 14", waste_name: "üvegcsiszolási és polírozási iszap, amely különbözik a 10 11 13-tól" },
-    { waste_code: "10 11 99", waste_name: "közelebbről meg nem határozott hulladék" },
-    { waste_code: "12 01 01", waste_name: "vasfém részek és esztergaforgács" },
-    { waste_code: "12 01 03", waste_name: "nemvas fém reszelék és esztergaforgács" },
-    { waste_code: "12 01 99", waste_name: "közelebbről meg nem határozott hulladék" },
-    { waste_code: "15 01 03", waste_name: "fa csomagolási hulladék" },
-    { waste_code: "15 01 04", waste_name: "fém csomagolási hulladék" },
-    { waste_code: "15 01 07", waste_name: "üveg csomagolási hulladék" },
-    { waste_code: "16 01 17", waste_name: "vasfémek" },
-    { waste_code: "16 01 18", waste_name: "nemvas fémek" },
-    { waste_code: "16 01 19", waste_name: "műanyagok" },
-    { waste_code: "16 01 20", waste_name: "üveg" },
-    { waste_code: "16 01 99", waste_name: "közelebbről meg nem határozott hulladék" },
-    { waste_code: "17 01 07", waste_name: "beton, tégla, cserép és kerámia frakció vagy azok keveréke, amely különbözik" },
-    { waste_code: "17 02 01", waste_name: "fa" },
-    { waste_code: "17 02 02", waste_name: "üveg" },
-    { waste_code: "17 02 03", waste_name: "műanyag" },
-    { waste_code: "17 03 02", waste_name: "bitumen keverék, amely különbözik a 17 03 01-től" },
-    { waste_code: "17 04 02", waste_name: "alumínium" },
-    { waste_code: "17 04 05", waste_name: "vas és acél" },
-    { waste_code: "17 04 07", waste_name: "fémkeverék" },
-    { waste_code: "17 06 04", waste_name: "szigetelő anyag, amely különbözik a 17 06 01 és a 17 06 03-tól" },
-    { waste_code: "17 09 04", waste_name: "kevert építési-bontási hulladék, amely különbözik a 17 09 01-től, a 17 09 02-től és" },
-    { waste_code: "19 12 02", waste_name: "fém vas" },
-    { waste_code: "19 12 04", waste_name: "műanyag és gumi" },
-    { waste_code: "19 12 05", waste_name: "üveg" },
-    { waste_code: "19 12 12", waste_name: "egyéb, a 19 12 11-től különböző hulladék mechanikai kezelésével nyert hulladék (ideértve a kevert anyagokat is)" },
-    { waste_code: "20 01 02", waste_name: "üveg" },
-    { waste_code: "20 01 38", waste_name: "fa, amely különbözik a 20 01 37-től" }
-])
+// Use imported tab items
+const tabItems = importedTabItems
 
-// Szűrt eredmények
-const filteredWastes = ref<WasteItem[]>([...allWastes.value])
-
-// Szűrő opciók
-const categoryOptions = [
-    { value: '', label: 'Minden kategória' },
-    { value: '03', label: '03 - Fa feldolgozás hulladéka' },
-    { value: '07', label: '07 - Szerves vegyipar hulladéka' },
-    { value: '10', label: '10 - Szervetlen hulladék' },
-    { value: '12', label: '12 - Fémfeldolgozás hulladéka' },
-    { value: '15', label: '15 - Csomagolási hulladék' },
-    { value: '16', label: '16 - Nem máshol szereplő hulladék' },
-    { value: '17', label: '17 - Építési-bontási hulladék' },
-    { value: '19', label: '19 - Hulladékkezelés hulladéka' },
-    { value: '20', label: '20 - Települési hulladék' }
-]
-
-// Metódusok
-const handleSearch = () => {
-    applyFilters()
+// Computed properties
+const getCurrentTabKey = (): string => {
+    return tabItems[activeTab.value]?.key || 'szallitas'
 }
 
-const applyFilters = () => {
-    let filtered = [...allWastes.value]
+const getCurrentTabName = (): string => {
+    return tabItems[activeTab.value]?.label || 'Szállítás telephely'
+}
+
+const getCurrentTabWastes = (): WasteItem[] => {
+    return allWasteData[getCurrentTabKey()] || []
+}
+
+const getCurrentFilteredWastes = (): WasteItem[] => {
+    let filtered = getCurrentTabWastes()
     
-    // Szöveges keresés
-    if (searchQuery.value) {
-        const query = searchQuery.value.toLowerCase()
+    // Globális keresés
+    if (globalSearchQuery.value) {
+        const query = globalSearchQuery.value.toLowerCase()
+        filtered = filtered.filter(waste => 
+            waste.waste_code.toLowerCase().includes(query) ||
+            waste.waste_name.toLowerCase().includes(query) ||
+            waste.location.toLowerCase().includes(query)
+        )
+    }
+    
+    // Helyi keresés
+    if (localSearchQuery.value) {
+        const query = localSearchQuery.value.toLowerCase()
         filtered = filtered.filter(waste => 
             waste.waste_code.toLowerCase().includes(query) ||
             waste.waste_name.toLowerCase().includes(query)
         )
     }
     
-    filteredWastes.value = filtered
+    return filtered
+}
+
+// Metódusok
+const handleGlobalSearch = () => {
+    // Az aktív tab változtatása nincs szükség, mert minden tabon keresünk
+}
+
+const handleLocalSearch = () => {
+    // Nincs teendő, a computed property automatikusan frissíti a listát
+}
+
+const clearAllSearch = () => {
+    globalSearchQuery.value = ''
+    localSearchQuery.value = ''
 }
 
 const formatWasteName = (name: string): string => {
@@ -330,22 +379,50 @@ const formatWasteName = (name: string): string => {
 
 const getCategory = (code: string): string => {
     const prefix = code.substring(0, 2)
-    const category = categoryOptions.find(opt => opt.value === prefix)
-    return category ? category.label : 'Egyéb kategória'
+    const categoryMap: { [key: string]: string } = {
+        '02': '02 - Mezőgazdasági hulladék',
+        '03': '03 - Fa feldolgozás hulladéka',
+        '04': '04 - Bőr-, szőrme- és textilipar hulladéka',
+        '05': '05 - Olajfinomítás hulladéka',
+        '06': '06 - Szervetlen vegyipar hulladéka',
+        '07': '07 - Szerves vegyipar hulladéka',
+        '08': '08 - Bevonatok hulladéka',
+        '09': '09 - Fényképészet hulladéka',
+        '10': '10 - Szervetlen termikus folyamatok hulladéka',
+        '11': '11 - Fémkezelés hulladéka',
+        '12': '12 - Fémfeldolgozás hulladéka',
+        '13': '13 - Olajos hulladék',
+        '14': '14 - Szerves oldószer hulladék',
+        '15': '15 - Csomagolási hulladék',
+        '16': '16 - Nem máshol szereplő hulladék',
+        '17': '17 - Építési-bontási hulladék',
+        '19': '19 - Hulladékkezelés hulladéka',
+        '20': '20 - Települési hulladék'
+    }
+    return categoryMap[prefix] || 'Egyéb kategória'
 }
 
 const getCategoryColor = (code: string): string => {
     const prefix = code.substring(0, 2)
     const colorMap: { [key: string]: string } = {
-        '03': 'green',
-        '07': 'red',
-        '10': 'orange',
-        '12': 'blue',
-        '15': 'purple',
+        '02': 'green',
+        '03': 'emerald',
+        '04': 'teal',
+        '05': 'orange',
+        '06': 'red',
+        '07': 'pink',
+        '08': 'purple',
+        '09': 'violet',
+        '10': 'indigo',
+        '11': 'blue',
+        '12': 'sky',
+        '13': 'amber',
+        '14': 'yellow',
+        '15': 'lime',
         '16': 'gray',
-        '17': 'yellow',
-        '19': 'pink',
-        '20': 'indigo'
+        '17': 'stone',
+        '19': 'rose',
+        '20': 'cyan'
     }
     return colorMap[prefix] || 'gray'
 }
@@ -356,7 +433,11 @@ const getMaterialType = (name: string): string => {
     if (lowerName.includes('műanyag')) return 'Műanyag'
     if (lowerName.includes('üveg')) return 'Üveg'
     if (lowerName.includes('fa')) return 'Fa'
-    if (lowerName.includes('papír')) return 'Papír'
+    if (lowerName.includes('papír') || lowerName.includes('karton')) return 'Papír'
+    if (lowerName.includes('olaj')) return 'Olaj'
+    if (lowerName.includes('festék') || lowerName.includes('lakk')) return 'Festék/Lakk'
+    if (lowerName.includes('oldószer')) return 'Oldószer'
+    if (lowerName.includes('sav') || lowerName.includes('lúg')) return 'Vegyszer'
     return ''
 }
 
@@ -367,6 +448,7 @@ const showDetails = (waste: WasteItem) => {
 
 // Inicializálás
 onMounted(() => {
-    applyFilters()
+    // Kezdeti tab beállítás
+    activeTab.value = 0
 })
 </script>
