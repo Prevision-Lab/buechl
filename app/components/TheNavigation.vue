@@ -48,10 +48,13 @@
         </div>
 
         <!-- Desktop Actions -->
-        <div class="hidden md:flex items-center">
+        <div class="hidden md:flex items-center gap-4">
+          <!-- Language Selector -->
+          <LocaleSwitcher class="w-32" />
+          
           <!-- Contact Button -->
           <UButton
-            label="Kapcsolat"
+            :label="t('nav.contact')"
             color="neutral"
             variant="solid"
             class="bg-buchl-green text-buchl-blue hover:bg-white hover:text-buchl-blue"
@@ -134,14 +137,17 @@
             </template>
 
             <!-- Mobile Actions -->
-            <div class="mt-8 border-t border-white/20 pt-8">
+            <div class="mt-8 border-t border-white/20 pt-8 space-y-4">
+              <!-- Language Selector -->
+              <LocaleSwitcher />
+              
               <!-- Contact Button -->
               <UButton
-                label="Kapcsolat"
+                :label="t('nav.contact')"
                 color="neutral"
                 variant="solid"
                 class="w-full bg-buchl-green text-buchl-blue hover:bg-white hover:text-buchl-blue"
-                to="/kapcsolat"
+                :to="getContactUrl()"
                 @click="closeMobileMenu"
               />
             </div>
@@ -167,37 +173,74 @@ interface Language {
   name: string
 }
 
-// Navigation items
-const navigation = ref<NavItem[]>([
-  {
-    label: 'Kezdőoldal',
-    to: '/'
-  },
-  {
-    label: 'Rólunk',
-    to: '/rolunk'
-  },
-  {
-    label: 'Szolgáltatások',
-    to: '/szolgaltatasok'
-  },
-  {
-    label: 'Fenntarthatóság',
-    to: '/fenntarthatosag'
-  },
-  {
-    label: 'Letöltések',
-    to: '/tanusitvanyok'
-  },
-  {
-    label: 'Hírek',
-    to: '/hirek'
-  },
-  {
-    label: 'Karrier',
-    to: '/karrier'
+// Import i18n and locale
+const { t, locale } = useI18n()
+
+// Navigation items with hardcoded URLs for each language
+const navigation = computed(() => {
+  const routes = {
+    hu: {
+      home: '/',
+      about: '/rolunk',
+      services: '/szolgaltatasok',
+      sustainability: '/fenntarthatosag',
+      downloads: '/tanusitvanyok',
+      news: '/hirek',
+      careers: '/karrier'
+    },
+    en: {
+      home: '/en/',
+      about: '/en/about-us',
+      services: '/en/services',
+      sustainability: '/en/sustainability',
+      downloads: '/en/downloads',
+      news: '/en/news',
+      careers: '/en/careers'
+    },
+    de: {
+      home: '/de/',
+      about: '/de/uber-uns',
+      services: '/de/dienstleistungen',
+      sustainability: '/de/nachhaltigkeit',
+      downloads: '/de/downloads',
+      news: '/de/nachrichten',
+      careers: '/de/karriere'
+    }
   }
-])
+  
+  const currentRoutes = routes[locale.value] || routes.hu
+  
+  return [
+    {
+      label: t('nav.home'),
+      to: currentRoutes.home
+    },
+    {
+      label: t('nav.about'),
+      to: currentRoutes.about
+    },
+    {
+      label: t('nav.services'),
+      to: currentRoutes.services
+    },
+    {
+      label: t('nav.sustainability'),
+      to: currentRoutes.sustainability
+    },
+    {
+      label: t('nav.downloads'),
+      to: currentRoutes.downloads
+    },
+    {
+      label: t('nav.news'),
+      to: currentRoutes.news
+    },
+    {
+      label: t('nav.careers'),
+      to: currentRoutes.careers
+    }
+  ]
+})
 
 // Language options
 const languages = ref<Language[]>([
@@ -271,6 +314,16 @@ const performSearch = () => {
     searchOpen.value = false
     searchQuery.value = ''
   }
+}
+
+// Get contact URL based on current locale
+const getContactUrl = () => {
+  const contactRoutes = {
+    hu: '/kapcsolat',
+    en: '/en/contact',
+    de: '/de/kontakt'
+  }
+  return contactRoutes[locale.value] || contactRoutes.hu
 }
 
 // Close dropdowns when clicking outside
