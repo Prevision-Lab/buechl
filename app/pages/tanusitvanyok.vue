@@ -2,17 +2,17 @@
   <div>
     <!-- Hero Section -->
     <BuchlHero
-      title="Letöltések"
-      subtitle="Tanúsítványaink, engedélyeink és céginformációink egy helyen"
+      :title="$t('downloads.hero.title')"
+      :subtitle="$t('downloads.hero.subtitle')"
       image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=800&fit=crop"
       bg-color="blue"
       :primary-cta="{
-        label: 'Kapcsolat',
-        to: '/kapcsolat',
+        label: $t('downloads.hero.primaryCta'),
+        to: localePath('/kapcsolat'),
       }"
       :secondary-cta="{
-        label: 'Fenntarthatóság',
-        to: '/fenntarthatosag',
+        label: $t('downloads.hero.secondaryCta'),
+        to: localePath('/fenntarthatosag'),
       }"
     />
 
@@ -35,7 +35,7 @@
                 ]"
               >
                 <UIcon :name="category.icon" class="w-4 h-4 mr-2" />
-                {{ category.name }}
+                {{ $t(`downloads.categories.${category.id}`) }}
               </button>
             </div>
           </div>
@@ -44,15 +44,15 @@
           <div v-if="selectedCategory === 'tanusitvanyok'" class="flex justify-center mb-12">
             <div class="bg-white rounded-lg p-1 shadow-lg">
               <button 
-                @click="selectedLanguage = 'hu'"
+                @click="selectedLanguage = 'de'"
                 :class="[
                   'px-6 py-3 rounded-md text-sm font-medium transition-all duration-200',
-                  selectedLanguage === 'hu' 
+                  selectedLanguage === 'de' 
                     ? 'bg-buchl-blue text-white shadow-md' 
                     : 'text-gray-600 hover:text-buchl-blue'
                 ]"
               >
-                Magyar
+                {{ $t('downloads.languages.german') }}
               </button>
               <button 
                 @click="selectedLanguage = 'en'"
@@ -63,7 +63,7 @@
                     : 'text-gray-600 hover:text-buchl-blue'
                 ]"
               >
-                English
+                {{ $t('downloads.languages.english') }}
               </button>
             </div>
           </div>
@@ -96,7 +96,7 @@
                 
                 <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                   <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                    Érvényes
+                    {{ $t('downloads.status.valid') }}
                   </span>
                   <div class="flex items-center text-sm text-gray-500">
                     <span class="mr-3">{{ certificate.fileSize }}</span>
@@ -110,32 +110,30 @@
           <!-- Additional Info -->
           <div class="mt-16 bg-white rounded-xl p-8 shadow-lg">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">
-              Minőségi és környezetvédelmi tanúsítványaink
+              {{ $t('downloads.additionalInfo.title') }}
             </h2>
             <div class="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 class="text-lg font-semibold text-buchl-blue mb-3">ISO Tanúsítványok</h3>
+                <h3 class="text-lg font-semibold text-buchl-blue mb-3">{{ $t('downloads.additionalInfo.isoCertificates.title') }}</h3>
                 <ul class="space-y-2 text-gray-600">
                   <li class="flex items-center">
                     <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" />
-                    ISO 9001:2015 - Minőségirányítási rendszer
+                    {{ $t('downloads.additionalInfo.isoCertificates.iso9001') }}
                   </li>
                   <li class="flex items-center">
                     <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" />
-                    ISO 14001:2015 - Környezetirányítási rendszer
+                    {{ $t('downloads.additionalInfo.isoCertificates.iso14001') }}
                   </li>
                   <li class="flex items-center">
                     <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" />
-                    ISO 45001:2018 - Munkavédelmi rendszer
+                    {{ $t('downloads.additionalInfo.isoCertificates.iso45001') }}
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-buchl-blue mb-3">EMAS Tanúsítvány</h3>
+                <h3 class="text-lg font-semibold text-buchl-blue mb-3">{{ $t('downloads.additionalInfo.emasCertificate.title') }}</h3>
                 <p class="text-gray-600">
-                  A BÜCHL HUNGARIA Kft. büszke arra, hogy Magyarországon az elsők között szerezte meg 
-                  az EMAS (Eco-Management and Audit Scheme) tanúsítványt, amely a legmagasabb szintű 
-                  környezetirányítási elismerést jelenti az Európai Unióban.
+                  {{ $t('downloads.additionalInfo.emasCertificate.description') }}
                 </p>
               </div>
             </div>
@@ -153,23 +151,22 @@ interface Certificate {
   description: string
   filename: string
   fileSize: string
-  language: 'hu' | 'en'
+  language: 'hu' | 'en' | 'de'
   category: string
 }
 
-// Meta setup
-useHead({
-  title: 'Letöltések | BÜCHL HUNGARIA',
-  meta: [
-    {
-      name: 'description',
-      content: 'A BÜCHL HUNGARIA Kft. hivatalos dokumentumai: tanúsítványok, engedélyek és céginformációk. ISO 9001, ISO 14001, ISO 45001, EMAS tanúsítványok és egyéb dokumentumok letöltése.'
-    }
-  ]
+// Composables
+const localePath = useLocalePath()
+
+// SEO meta adatok - using static content like rolunk.vue
+useSeoMeta({
+  title: 'Letöltések - BÜCHL HUNGARIA',
+  description: 'A BÜCHL HUNGARIA Kft. hivatalos dokumentumai: tanúsítványok, engedélyek és céginformációk. ISO 9001, ISO 14001, ISO 45001, EMAS tanúsítványok és egyéb dokumentumok letöltése.',
+  keywords: 'BÜCHL HUNGARIA, ISO tanúsítványok, EMAS, letöltések, környezetédelmi tanúsítványok, minőségügyi rendszer'
 })
 
 // Reactive state
-const selectedLanguage = ref<'hu' | 'en'>('hu')
+const selectedLanguage = ref<'hu' | 'en' | 'de'>('hu')
 
 // Document categories
 const documentCategories = ref([
@@ -180,7 +177,7 @@ const documentCategories = ref([
 
 const selectedCategory = ref('tanusitvanyok')
 
-// Certificate and document data
+// Certificate and document data with hardcoded content (will be displayed via locale translations)
 const allDocuments = ref<Certificate[]>([
   // Tanúsítványok - Hungarian
   {

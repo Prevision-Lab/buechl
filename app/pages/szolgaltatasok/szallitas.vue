@@ -2,17 +2,17 @@
     <div>
         <!-- Hero szekció -->
         <BuchlHero
-            title="Hulladékgyűjtés és -szállítás"
-            subtitle="Professzionális hulladékszállítás – rugalmasan és megbízhatóan"
+            :title="$t('transport.hero.title')"
+            :subtitle="$t('transport.hero.subtitle')"
             image="/media/images/hulladekgyujtes-szallitas.jpg"
             bg-color="blue"
             :primary-cta="{
-                label: 'Ajánlatkérés',
-                to: '/kapcsolat',
+                label: $t('transport.hero.primaryCta'),
+                to: localePath('/kapcsolat'),
             }"
             :secondary-cta="{
-                label: 'Vissza a szolgáltatásokhoz',
-                to: '/szolgaltatasok',
+                label: $t('transport.hero.secondaryCta'),
+                to: localePath('/szolgaltatasok'),
             }"
         />
 
@@ -22,10 +22,7 @@
                 <div class="max-w-4xl mx-auto">
                     <div class="prose prose-lg max-w-none">
                         <p class="text-xl text-gray-700 mb-8">
-                            A BÜCHL HUNGARIA több mint 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó 
-                            konténeres, folyékony vagy veszélyes hulladék szállításáról. Sofőrjeink jól képzettek, ADR-
-                            tanúsítvánnyal rendelkeznek, és ismerik ügyfeleink telephelyi sajátosságait. Igény esetén részletes 
-                            dokumentációt biztosítunk az elszállított hulladékok típusáról és mennyiségéről.
+                            {{ $t('transport.intro.description') }}
                         </p>
                     </div>
                 </div>
@@ -36,13 +33,12 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    Konténerek és tárolók minden ipari igényre
+                    {{ $t('transport.containers.title') }}
                 </h2>
                 
                 <div class="max-w-4xl mx-auto mb-12">
                     <p class="text-lg text-gray-700 text-center">
-                        A BÜCHL HUNGARIA az ipari hulladékok kezeléséhez széles konténerválasztékot kínál – a kis tárolóktól 
-                        a nagyméretű, tömörítős rendszerekig.
+                        {{ $t('transport.containers.description') }}
                     </p>
                 </div>
 
@@ -52,9 +48,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-cube" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Nagy mennyiség esetén</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('transport.containers.types.largeQuantity.title') }}</h3>
                         <p class="text-gray-700">
-                            Préskonténerek, csigás és görgős tömörítők, borítószerkezetek állnak rendelkezésre.
+                            {{ $t('transport.containers.types.largeQuantity.description') }}
                         </p>
                     </div>
 
@@ -63,9 +59,9 @@
                         <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-beaker" class="text-red-500 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Folyékony és veszélyes hulladékok</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('transport.containers.types.liquidHazardous.title') }}</h3>
                         <p class="text-gray-700">
-                            IBC, MGB 1100 típusú hordók, speciális olajleeresztős tárolók és mobil tartályok használhatók.
+                            {{ $t('transport.containers.types.liquidHazardous.description') }}
                         </p>
                     </div>
 
@@ -74,18 +70,17 @@
                         <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-cpu-chip" class="text-buchl-green text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Üzemen belüli mozgatás</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('transport.containers.types.inPlantMovement.title') }}</h3>
                         <p class="text-gray-700">
-                            Az ELOG SYSTEM® multifunkciós konténerei nyújtanak hatékony megoldást.
+                            {{ $t('transport.containers.types.inPlantMovement.description') }}
                         </p>
                     </div>
                 </div>
 
                 <div class="mt-12 bg-buchl-blue/5 p-8 rounded-lg text-center">
-                    <h3 class="text-2xl font-bold text-buchl-blue mb-4">Szakértő tanácsadás</h3>
+                    <h3 class="text-2xl font-bold text-buchl-blue mb-4">{{ $t('transport.containers.consulting.title') }}</h3>
                     <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-                        Szakértő csapatunk segít a megfelelő tároló és tömörítő rendszer kiválasztásában – a hulladékkezelés 
-                        optimalizálása és a szállítási költségek csökkentése érdekében.
+                        {{ $t('transport.containers.consulting.description') }}
                     </p>
                 </div>
             </div>
@@ -95,29 +90,29 @@
         <section class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    Kérjen személyre szabott ajánlatot!
+                    {{ $t('transport.cta.title') }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    Tapasztalt szakembereink segítségével találja meg a legmegfelelőbb hulladékszállítási megoldást vállalata számára.
+                    {{ $t('transport.cta.description') }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
-                        to="/kapcsolat"
+                        :to="localePath('/kapcsolat')"
                         size="lg"
                         icon="i-heroicons-envelope"
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        Ajánlatkérés
+                        {{ $t('transport.cta.quoteButton') }}
                     </UButton>
                     <UButton
-                        to="/szolgaltatasok"
+                        :to="localePath('/szolgaltatasok')"
                         variant="outline"
                         size="lg"
                         icon="i-heroicons-arrow-left"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        Vissza a szolgáltatásokhoz
+                        {{ $t('transport.cta.backButton') }}
                     </UButton>
                 </div>
             </div>
@@ -126,5 +121,13 @@
 </template>
 
 <script setup lang="ts">
-// Hulladékgyűjtés és -szállítás oldal
+// Composables
+const localePath = useLocalePath()
+
+// SEO meta adatok - using static content like rolunk.vue
+useSeoMeta({
+  title: 'Hulladékgyűjtés és -szállítás - BÜCHL HUNGARIA',
+  description: 'A BÜCHL HUNGARIA több mint 40 járműből álló flottával szolgálja ki ipari partnereit. Professzionális hulladékszállítás, ADR tanúsítvánnyal rendelkező sofőrök.',
+  keywords: 'BÜCHL HUNGARIA, hulladékszállítás, hulladékgyűjtés, ADR, ipari hulladék, konténer, veszélyes hulladék'
+})
 </script>

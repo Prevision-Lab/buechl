@@ -2,17 +2,17 @@
     <div>
         <!-- Hero szekció -->
         <BuchlHero
-            title="Szolgáltatásaink"
-            subtitle="Komplex hulladékgazdálkodási megoldások minden igényre"
+            :title="$t('services.hero.title')"
+            :subtitle="$t('services.hero.subtitle')"
             image="/media/images/szolgaltatasaink.jpg"
             bg-color="blue"
             :primary-cta="{
-                label: 'Ajánlatkérés',
-                to: '/kapcsolat',
+                label: $t('services.hero.primaryCta'),
+                to: localePath('kapcsolat'),
             }"
             :secondary-cta="{
-                label: 'Tanúsítványaink',
-                to: '/fenntarthatosag#certificates',
+                label: $t('services.hero.secondaryCta'),
+                to: localePath('fenntarthatosag') + '#certificates',
             }"
         />
 
@@ -23,32 +23,32 @@
                     <h2
                         class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6"
                     >
-                        Komplex hulladékkezelés ipari partnerek számára
+                        {{ $t('services.intro.title') }}
                     </h2>
                     <p class="text-lg text-gray-700 mb-8">
-                        A BÜCHL HUNGARIA több mint 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó konténeres, folyékony vagy veszélyes hulladék szállításáról. Specializált technológiáink és szakértő csapatunk átfogó megoldásokat kínál minden iparág számára.
+                        {{ $t('services.intro.description') }}
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                         <div class="text-center">
                             <div class="bg-buchl-blue/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <UIcon name="i-heroicons-truck" class="text-buchl-blue text-4xl" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">Gyűjtés & Szállítás</h3>
-                            <p class="text-gray-600 text-sm">ADR tanúsítvánnyal rendelkező sofőrök és modern járműpark</p>
+                            <h3 class="font-bold text-buchl-blue mb-2">{{ $t('services.intro.features.collection.title') }}</h3>
+                            <p class="text-gray-600 text-sm">{{ $t('services.intro.features.collection.description') }}</p>
                         </div>
                         <div class="text-center">
                             <div class="bg-buchl-green/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green text-4xl" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">Hulladékkezelés</h3>
-                            <p class="text-gray-600 text-sm">Speciális technológiák és korszerű berendezések</p>
+                            <h3 class="font-bold text-buchl-blue mb-2">{{ $t('services.intro.features.treatment.title') }}</h3>
+                            <p class="text-gray-600 text-sm">{{ $t('services.intro.features.treatment.description') }}</p>
                         </div>
                         <div class="text-center">
                             <div class="bg-buchl-blue/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <UIcon name="i-heroicons-cpu-chip" class="text-buchl-blue text-4xl" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">Logisztika</h3>
-                            <p class="text-gray-600 text-sm">Digitális logisztikai megoldások és papírmentes folyamatok</p>
+                            <h3 class="font-bold text-buchl-blue mb-2">{{ $t('services.intro.features.logistics.title') }}</h3>
+                            <p class="text-gray-600 text-sm">{{ $t('services.intro.features.logistics.description') }}</p>
                         </div>
                     </div>
                 </div>
@@ -61,17 +61,12 @@
                 <h2
                     class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center"
                 >
-                    Szolgáltatási portfóliónk
+                    {{ $t('services.portfolio.title') }}
                 </h2>
 
                 <div class="max-w-3xl mx-auto mb-16 text-center">
                     <p class="text-lg text-gray-700">
-                        A BÜCHL ipari ügyfelekre specializálódott, így
-                        minden szolgáltatásunkat a vállalati igények
-                        figyelembevételével alakítottuk ki. Csapatunk szakértő
-                        megoldásokat kínál minden iparág számára, különös
-                        tekintettel az autóiparra, elektronikai iparra,
-                        vegyiparra és feldolgozóiparra.
+                        {{ $t('services.portfolio.description') }}
                     </p>
                 </div>
 
@@ -88,12 +83,12 @@
                                     name="i-heroicons-truck"
                                     class="w-7 h-7"
                                 />
-                                Hulladékgyűjtés és -szállítás
+                                {{ $t('services.portfolio.categories.collection.title') }}
                             </h3>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                Professzionális hulladékgyűjtés és -szállítás – rugalmasan és megbízhatóan ADR-tanúsítvánnyal és részletes dokumentációval.
+                                {{ $t('services.portfolio.categories.collection.description') }}
                             </p>
                             <ul class="space-y-3 mb-6">
                                 <li class="flex items-start gap-3">
@@ -101,21 +96,21 @@
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Folyékony és veszélyes hulladékok speciális tárolása és szállítása</span>
+                                    <span>{{ $t('services.portfolio.categories.collection.features.0') }}</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Széles választék minden ipari igényre az ipari hulladékok kezeléséhez</span>
+                                    <span>{{ $t('services.portfolio.categories.collection.features.1') }}</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Szakértő segítség a hulladékkezelés optimalizálására és a szállítási költségek csökkentésére</span>
+                                    <span>{{ $t('services.portfolio.categories.collection.features.2') }}</span>
                                 </li>
                             </ul>
                             <div>
@@ -124,9 +119,9 @@
                                     variant="soft"
                                     size="lg"
                                     class="w-full rounded-none"
-                                    to="/szolgaltatasok/szallitas"
+                                    :to="localePath('/szolgaltatasok/szallitas')"
                                 >
-                                    Részletek
+                                    {{ $t('services.portfolio.detailsButton') }}
                                 </UButton>
                             </div>
                         </div>
@@ -142,12 +137,12 @@
                                     name="i-heroicons-cog-6-tooth"
                                     class="w-7 h-7"
                                 />
-                                Hulladékkezelés
+                                {{ $t('services.portfolio.categories.treatment.title') }}
                             </h3>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                Speciális technológiák és korszerű berendezések a hulladékok biztonságos és hatékony kezelésére.
+                                {{ $t('services.portfolio.categories.treatment.description') }}
                             </p>
                             <ul class="space-y-3 mb-6">
                                 <li class="flex items-start gap-3">
@@ -155,21 +150,21 @@
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
                                     />
-                                    <span>Másodnyersanyagok előállítása – a körforgásos gazdaság szolgálatában</span>
+                                    <span>{{ $t('services.portfolio.categories.treatment.features.0') }}</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
                                     />
-                                    <span>Innovatív megoldások speciális ipari hulladékokra</span>
+                                    <span>{{ $t('services.portfolio.categories.treatment.features.1') }}</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
                                     />
-                                    <span>Külső partnerektől érkező hulladékok komplex kezelése</span>
+                                    <span>{{ $t('services.portfolio.categories.treatment.features.2') }}</span>
                                 </li>
                             </ul>
                             <div>
@@ -178,9 +173,9 @@
                                     variant="soft"
                                     size="lg"
                                     class="w-full rounded-none"
-                                    to="/szolgaltatasok/hulladekkezeles"
+                                    :to="localePath('/szolgaltatasok/hulladekkezeles')"
                                 >
-                                    Részletek
+                                    {{ $t('services.portfolio.detailsButton') }}
                                 </UButton>
                             </div>
                         </div>
@@ -196,12 +191,12 @@
                                     name="i-heroicons-cpu-chip"
                                     class="w-7 h-7"
                                 />
-                                Logisztika
+                                {{ $t('services.portfolio.categories.logistics.title') }}
                             </h3>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                Átfogó logisztikai megoldások az üzemen belüli hulladékkezelés optimalizálására, beleértve az ELOG SYSTEM® digitális platformot.
+                                {{ $t('services.portfolio.categories.logistics.description') }}
                             </p>
                             <ul class="space-y-3 mb-6">
                                 <li class="flex items-start gap-3">
@@ -209,21 +204,21 @@
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Papírmentes, igényalapú elszállítás (GYLOG 1.0)</span>
+                                    <span>{{ $t('services.portfolio.categories.logistics.features.0') }}</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Teljes körű digitalizáció (CleverWaste®)</span>
+                                    <span>{{ $t('services.portfolio.categories.logistics.features.1') }}</span>
                                 </li>
                                 <li class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
                                         class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
                                     />
-                                    <span>Rugalmas szakszemélyzet biztosítása</span>
+                                    <span>{{ $t('services.portfolio.categories.logistics.features.2') }}</span>
                                 </li>
                             </ul>
                             <div>
@@ -232,9 +227,9 @@
                                     variant="soft"
                                     size="lg"
                                     class="w-full rounded-none"
-                                    to="/szolgaltatasok/elog-system"
+                                    :to="localePath('/szolgaltatasok/elog-system')"
                                 >
-                                    Részletek
+                                    {{ $t('services.portfolio.detailsButton') }}
                                 </UButton>
                             </div>
                         </div>
@@ -248,34 +243,34 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    Környezetvédelmi szolgáltatások
+                    {{ $t('services.environmental.title') }}
                 </h2>
                 
                 <div class="grid gap-8 md:grid-cols-2 items-center">
                     <div>
                         <h3 class="text-2xl font-bold text-buchl-blue mb-6">
-                            Szakértő tanácsadás és tervezés
+                            {{ $t('services.environmental.subtitle') }}
                         </h3>
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3">
                                 <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-green shrink-0 mt-0.5" />
                                 <div>
-                                    <span class="font-semibold">Környezetvédelmi tanácsadás</span>
-                                    <p class="text-gray-600">Szakértő támogatás környezetvédelmi előírások betartásában</p>
+                                    <span class="font-semibold">{{ $t('services.environmental.services.consulting.title') }}</span>
+                                    <p class="text-gray-600">{{ $t('services.environmental.services.consulting.description') }}</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-green shrink-0 mt-0.5" />
                                 <div>
-                                    <span class="font-semibold">Hulladékgazdálkodási tervek</span>
-                                    <p class="text-gray-600">Testreszabott tervek kidolgozása és optimalizálás</p>
+                                    <span class="font-semibold">{{ $t('services.environmental.services.planning.title') }}</span>
+                                    <p class="text-gray-600">{{ $t('services.environmental.services.planning.description') }}</p>
                                 </div>
                             </li>
                             <li class="flex items-start gap-3">
                                 <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-buchl-green shrink-0 mt-0.5" />
                                 <div>
-                                    <span class="font-semibold">Compliance ellenőrzés</span>
-                                    <p class="text-gray-600">Jogszabályi megfelelőség biztosítása és auditálás</p>
+                                    <span class="font-semibold">{{ $t('services.environmental.services.compliance.title') }}</span>
+                                    <p class="text-gray-600">{{ $t('services.environmental.services.compliance.description') }}</p>
                                 </div>
                             </li>
                         </ul>
@@ -297,19 +292,19 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="text-center">
                         <div class="text-4xl font-bold text-buchl-blue mb-2">320</div>
-                        <div class="text-buchl-blue/80">Szakképzett munkatárs</div>
+                        <div class="text-buchl-blue/80">{{ $t('services.stats.employees') }}</div>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl font-bold text-buchl-blue mb-2">40+</div>
-                        <div class="text-buchl-blue/80">Speciális jármű</div>
+                        <div class="text-buchl-blue/80">{{ $t('services.stats.vehicles') }}</div>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl font-bold text-buchl-blue mb-2">10</div>
-                        <div class="text-buchl-blue/80">Hulladékkezelő berendezés</div>
+                        <div class="text-buchl-blue/80">{{ $t('services.stats.equipment') }}</div>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl font-bold text-buchl-blue mb-2">25</div>
-                        <div class="text-buchl-blue/80">Év tapasztalat</div>
+                        <div class="text-buchl-blue/80">{{ $t('services.stats.experience') }}</div>
                     </div>
                 </div>
             </div>
@@ -319,30 +314,30 @@
         <section class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    Kérjen személyre szabott ajánlatot!
+                    {{ $t('services.cta.title') }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    Tapasztalt szakembereink segítségével találja meg a legmegfelelőbb hulladékgazdálkodási megoldást vállalata számára.
+                    {{ $t('services.cta.description') }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
-                        to="/kapcsolat"
+                        :to="localePath('kapcsolat')"
                         size="lg"
                         icon="i-heroicons-envelope"
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        Ajánlatkérés
+                        {{ $t('services.cta.requestQuote') }}
                     </UButton>
                     <UButton
-                        to="/rolunk"
+                        :to="localePath('rolunk')"
                         variant="outline"
                         size="lg"
                         icon="i-heroicons-arrow-right"
                         :trailing="true"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        Rólunk bővebben
+                        {{ $t('services.cta.learnMore') }}
                     </UButton>
                 </div>
             </div>
@@ -352,4 +347,5 @@
 
 <script setup lang="ts">
 // Szolgáltatások oldal
+const localePath = useLocalePath()
 </script>

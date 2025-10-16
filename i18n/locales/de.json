@@ -1,0 +1,947 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "sustainability": "Nachhaltigkeit",
+    "downloads": "Downloads",
+    "news": "Aktuelles",
+    "careers": "Karriere",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Mit jeder Idee immer einen Schritt voraus",
+    "subtitle": "Abfallwirtschaft für eine nachhaltige Zukunft.",
+    "primaryCta": "Unsere Leistungen",
+    "secondaryCta": "Kontakt"
+  },
+  "homepage": {
+    "about": {
+      "readMore": "Mehr über das Unternehmen"
+    },
+    "services": {
+      "title": "Unsere Leistungen",
+      "description": "Wir bieten umfassende Abfallwirtschaftslösungen in den Bereichen Abfallbehandlung, Abfallsammlung und -transport, Umweltdienstleistungen sowie Planung und Beratung.",
+      "viewAll": "Alle Leistungen",
+      "wasteManagement": {
+        "title": "Abfallbehandlung",
+        "description": "Mit modernsten Technologien gewährleisten wir die umweltfreundliche Behandlung und Verarbeitung von Abfällen."
+      },
+      "collection": {
+        "title": "Abfallsammlung und -transport",
+        "description": "Unser spezialisierter Fuhrpark gewährleistet sicheren und zuverlässigen Abfalltransport."
+      },
+      "environmental": {
+        "title": "Umweltdienstleistungen",
+        "description": "Umfassende Umweltlösungen für nachhaltigen Betrieb."
+      },
+      "consulting": {
+        "title": "Planung und Beratung",
+        "description": "Fachberatung und Planung für effiziente Abfallwirtschaft."
+      }
+    },
+    "stats": {
+      "title": "In Zahlen",
+      "subtitle": "Wir bieten unseren Kunden ein breites Dienstleistungsspektrum.",
+      "employees": "Mitarbeiter",
+      "fleet": "Fahrzeugflotte",
+      "experience": "Jahre am Markt",
+      "equipment": "moderne Abfallbehandlungsanlagen"
+    },
+    "sustainability": {
+      "title": "Nachhaltigkeit ist unsere Mission",
+      "subtitle": "Gemeinsam für eine sauberere Zukunft.",
+      "cta": "Nachhaltigkeit"
+    }
+  },
+  "stats": {
+    "title": "In Zahlen",
+    "subtitle": "Wir bieten unseren Kunden ein breites Dienstleistungsspektrum.",
+    "employees": "Mitarbeiter",
+    "fleet": "Fahrzeugflotte",
+    "experience": "Jahre am Markt",
+    "equipment": "moderne Abfallbehandlungsanlagen"
+  },
+  "news": {
+    "title": "Aktuelle Nachrichten",
+    "subtitle": "Unsere neuesten Nachrichten und Ereignisse",
+    "viewAll": "Alle Nachrichten",
+    "readMore": "Weiterlesen",
+    "posts": {
+      "vbs": {
+        "title": "Besuch des VBS Junior Kreises",
+        "description": "Am 12. September durften wir den VBS Junior Kreis aus Deutschland bei uns begrüßen, der sich an unserem Standort mit unseren Abfallwirtschaftstechnologien vertraut machen konnte.",
+        "category": "Veranstaltungen",
+        "readingTime": "3 Min. Lesezeit"
+      },
+      "reszett": {
+        "title": "Spielerisch im Dienste der Nachhaltigkeit",
+        "description": "Nachhaltigkeit ist eine zentrale Frage unserer Unternehmensphilosophie. Nach dreijähriger Arbeit wurde das 'RESZETT'-Programm fertiggestellt, das Kinder spielerisch mit Abfallwirtschaftsprozessen vertraut macht.",
+        "category": "Bildung",
+        "readingTime": "4 Min. Lesezeit"
+      },
+      "gyerekegyetem": {
+        "title": "Wissenschaft, Erlebnis, Inspiration – für junge Menschen!",
+        "description": "Wir sind stolz darauf, dass BÜCHL Hungaria auch in diesem Jahr wieder ein wichtiger Unterstützer der VIII. Győrer Kinderuniversität sein durfte! Das Programm zielt darauf ab, die Universitätswelt Grundschülern näher zu bringen.",
+        "category": "Bildung",
+        "readingTime": "3 Min. Lesezeit"
+      },
+      "raklapos": {
+        "title": "Seit 10 Jahren gemeinsam für Kreativität!",
+        "description": "Die BÜCHL HUNGARIA GmbH unterstützt gemeinsam mit der AUDI HUNGARIA Zrt. seit 10 Jahren das in Győr organisierte Paletten-Baucamp des Hauses der Generationen.",
+        "category": "Veranstaltungen",
+        "readingTime": "2 Min. Lesezeit"
+      },
+      "defibrillator": {
+        "title": "Für die Sicherheit unserer Mitarbeiter",
+        "description": "Bei BÜCHL Hungaria hat die Sicherheit der Mitarbeiter stets oberste Priorität. In diesem Sinne haben wir drei automatische Defibrillatoren an unserem Standort installiert.",
+        "category": "Sicherheit",
+        "readingTime": "2 Min. Lesezeit"
+      },
+      "stressz": {
+        "title": "Mentale Gesundheit und Resilienz",
+        "description": "Unsere Kollegen nahmen am Stressbewältigungs- und Resilienztraining des Deutsch-Ungarischen Wissenszentrums - DUWZ teil, dessen Ziel es ist, Stressreaktionen zu erkennen und Bewältigungstechniken zu erlernen.",
+        "category": "Entwicklung",
+        "readingTime": "3 Min. Lesezeit"
+      }
+    },
+    "page": {
+      "hero": {
+        "title": "Nachrichten und Ereignisse",
+        "subtitle": "Bleiben Sie auf dem Laufenden mit unseren neuesten Nachrichten, Veranstaltungen und Innovationen!"
+      },
+      "latest": {
+        "title": "Unsere neuesten Nachrichten",
+        "subtitle": "Verfolgen Sie die neuesten Entwicklungen, Projekte und Veranstaltungen von BÜCHL Hungaria!"
+      },
+      "viewAllButton": "Alle Nachrichten ansehen",
+      "categories": {
+        "all": "Alle Kategorien",
+        "technology": "Technologie",
+        "sustainability": "Nachhaltigkeit",
+        "events": "Veranstaltungen",
+        "innovation": "Innovation",
+        "community": "Gemeinschaft",
+        "recognition": "Anerkennung",
+        "education": "Bildung",
+        "safety": "Sicherheit",
+        "development": "Entwicklung"
+      },
+      "years": {
+        "all": "Alle Jahre",
+        "2025": "2025",
+        "2024": "2024",
+        "2023": "2023"
+      },
+      "readMore": "Details"
+    }
+  },
+  "cta": {
+    "title": "Lernen Sie unsere Qualitätsmanagement-Zertifikate kennen!",
+    "subtitle": "Die BÜCHL HUNGARIA GmbH ist stolz auf ihre ISO- und EMAS-Zertifikate, die unser Engagement für Qualität und Umweltschutz belegen.",
+    "download": "Downloads",
+    "sustainability": "Nachhaltigkeit"
+  },
+  "company": {
+    "title": "BÜCHL Hungaria GmbH",
+    "description1": "BÜCHL Hungaria ist ein führendes Abfallwirtschaftsunternehmen in Ungarn mit über 25 Jahren Erfahrung und bietet umfassende Lösungen für Industriekunden.",
+    "description2": "Als Mitglied der deutschen BÜCHL-Gruppe verfügen wir über fast 75 Jahre professionellen Hintergrund im Bereich nachhaltiger Abfallwirtschaft.",
+    "description3": "Unser Ziel ist es, mit innovativen Lösungen zur Verwirklichung der Kreislaufwirtschaft beizutragen und unsere Kunden bei der Erreichung ihrer Umweltziele zu unterstützen.",
+    "videoTitle": "BÜCHL Hungaria GmbH"
+  },
+  "footer": {
+    "companyDescription": "BÜCHL Hungaria GmbH ist ein führendes Industrieabfallwirtschaftsunternehmen in Ungarn. Mit unseren innovativen Lösungen unterstützen wir nachhaltige Entwicklung.",
+    "servicesTitle": "Dienstleistungen",
+    "companyTitle": "Unser Unternehmen",
+    "contactTitle": "Kontakt",
+    "contactButton": "Kontakt aufnehmen",
+    "copyright": "Alle Rechte vorbehalten.",
+    "legal": {
+      "designSystem": "Design System",
+      "privacy": "Datenschutz",
+      "imprint": "Impressum",
+      "terms": "AGB"
+    },
+    "servicesLinks": {
+      "wasteManagement": "Abfallwirtschaft",
+      "recycling": "Recycling",
+      "transport": "Transport & Logistik",
+      "consulting": "Umweltberatung"
+    },
+    "companyLinks": {
+      "about": "Über uns",
+      "sustainability": "Nachhaltigkeit",
+      "careers": "Karriere",
+      "news": "Nachrichten"
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "title": "Nachhaltigkeit",
+      "subtitle": "ESG - Umwelt, Gesellschaft, Unternehmensführung",
+      "contactButton": "Kontakt aufnehmen"
+    },
+    "intro": {
+      "title": "Nachhaltiger Unternehmensbetrieb",
+      "description": "Die BÜCHL HUNGARIA GmbH ist dem nachhaltigen Unternehmensbetrieb verpflichtet. Unsere ESG-Strategie (Umwelt, Gesellschaft, Unternehmensführung) ruht auf drei Hauptpfeilern, über die wir zum Aufbau einer nachhaltigeren Zukunft beitragen."
+    },
+    "pillars": {
+      "environment": {
+        "title": "1. Umwelt"
+      },
+      "social": {
+        "title": "2. Gesellschaftliche Verantwortung"
+      },
+      "governance": {
+        "title": "3. Unternehmensführung"
+      }
+    },
+    "environment": {
+      "title": "1. Umwelt",
+      "initiatives": {
+        "solar": {
+          "title": "Solaranlagen",
+          "description": "2025 modernisierten wir das Solarkraftwerk unseres Unternehmens am Hauptstandort und maximierten die verfügbare Kapazität durch Nutzung der gesamten Dachfläche. An beiden unseren Standorten wurden neue Solaranlagen errichtet, angepasst an den Tagesverbrauch und die Gegebenheiten der Standorte.",
+          "capacity": "494 kW",
+          "capacityNote": "Solarkapazität (von 178 kW)"
+        },
+        "geothermal": {
+          "title": "Erdwärme und Solarenergie",
+          "description": "Seit 2015 funktionieren Heizung und Kühlung beider unserer Győrer Standorte ohne fossile Energieträger. Die notwendige Energie wird durch Erdsondenwärmepumpen bereitgestellt. Die Warmwasserversorgung erfolgt an beiden Standorten mit Solarkollektoren.",
+          "since": "Seit 2015",
+          "sinceNote": "fossilfreie Heizung und Kühlung"
+        },
+        "electricVehicles": {
+          "title": "Elektrofahrzeuge",
+          "description": "In unserer Flotte steigt die Anzahl der Elektro-Pkw Jahr für Jahr. Außerdem haben wir einen früheren Diesel-Container-Lkw vollständig auf Elektroantrieb umgerüstet.",
+          "status": "Wachsend",
+          "statusNote": "Elektroflotte"
+        },
+        "bees": {
+          "title": "Bienenfamilien im Dienste der Nachhaltigkeit",
+          "description": "2022 beteiligten wir uns aktiv am Erhalt der biologischen Vielfalt. Im Rahmen dessen unterstützten wir die Ansiedlung von drei Bienenfamilien im Bestand eines ausgebildeten Imkers. Eine einzige Bienenfamilie besteht aus etwa 50.000 Bienen – diese winzigen Bestäuber spielen eine Schlüsselrolle bei der Erhaltung des Ökosystems und dem Schutz der biologischen Vielfalt. Der von den Bienen produzierte Honig ist nicht nur ein wertvolles Geschenk der Natur: Er gibt uns auch die Möglichkeit, unser Nachhaltigkeitsbestreben in greifbarer Form mit unseren Mitarbeitern und Partnern zu teilen.",
+          "count": "3",
+          "countNote": "Bienenfamilien (~150.000 Bienen insgesamt)"
+        },
+        "carbonFootprint": {
+          "title": "CO₂-Fußabdruck-Analyse",
+          "description": "Mit fachlicher Unterstützung des KÖVET-Vereins wurde die drei Jahre umfassende (2019-2021) CO₂-Fußabdruck-Bewertung von BÜCHL Hungaria erstellt. Die Untersuchung zeigt, welche Mengen an Treibhausgasen (hauptsächlich CO₂) wir während unserer Tätigkeiten ausstoßen – direkt und indirekt. Basierend auf den Daten von drei Jahren sind die Hauptquellen unserer Emissionen: Standort-Energieverbrauch, Logistikoperationen, Materialverbrauch. Mit Hilfe der Bilan Carbone®-Methodik erhielten wir ein präzises Bild davon, in welchen Bereichen Reduzierungsmöglichkeiten bestehen – und unterstützen damit die Verwirklichung unserer Nachhaltigkeitsziele.",
+          "title2": "CO₂-Fußabdruck",
+          "note": "kontinuierliche Emissionsoptimierung"
+        },
+        "kovet": {
+          "title": "Partnerschaft für Nachhaltigkeit - KÖVET-Verein",
+          "description": "Die BÜCHL Hungaria GmbH ist seit 2003 Mitglied des KÖVET-Vereins, der seit 1995 für die Verbreitung des vorbeugenden Umweltschutzes und nachhaltigen Unternehmensbetriebs arbeitet. Das Ziel des Vereins ist die Entwicklung und Förderung von Methoden, die gleichzeitig Umwelt-, Gesellschafts- und Wirtschaftsinteressen dienen. Im Rahmen unserer gemeinsamen Arbeit nehmen wir regelmäßig an der Győrer Grünen Expo teil, unterstützen EMAS-Roundtable-Veranstaltungen und haben mehrfach Preise im Programm „Geld aus dem Fenster geworfenes“ gewonnen.",
+          "since": "Seit 2003",
+          "sinceNote": "KÖVET-Mitgliedschaft"
+        },
+        "electricMachinery": {
+          "title": "Elektrische Arbeitsmaschinen",
+          "description": "2025 sind bereits 61% unserer Material- und Ladehandhabungsgeräte elektrisch angetrieben. Dieser Anteil steigt in unserem Maschinenpark kontinuierlich. Dadurch reduzieren wir unsere Treibhausgasemissionen erheblich.",
+          "percentage": "61%",
+          "percentageNote": "elektrische Arbeitsmaschinen"
+        },
+        "greenEnergy": {
+          "title": "Grüne Energie-Einkauf",
+          "description": "Die für unseren Betrieb benötigte Energie decken wir vollständig mit Energie aus erneuerbaren oder hocheffizienten gekoppelten Energieerzeugung ab. 2025 kauften wir 3.500 MWh grüne Energie.",
+          "amount": "3.500 MWh",
+          "amountNote": "grüne Energie 2025"
+        }
+      }
+    },
+    "social": {
+      "title": "2. Gesellschaftliche Verantwortung",
+      "subtitle": "Die BÜCHL HUNGARIA GmbH engagiert sich für die Unterstützung der Gemeinschaft und zukünftiger Generationen – sei es in Bildung, Sport oder Gemeinschaftsveranstaltungen. Unser Unternehmen unterstützt seit 10 Jahren mit Freude das von dem Haus der Generationen organisierte Paletten-Baucamp in Győr.",
+      "initiatives": {
+        "education": {
+          "title": "Bildungskooperationen",
+          "description": "Fachlicher Nachwuchs und Wissensaustausch sind uns wichtig. Wir arbeiten mit der Szechenyi-Istvan-Universität in Győr und dem MOBILIS Interaktiven Ausstellungszentrum zusammen, wo wir wissenschaftliche und Bildungsprojekte unterstützen sowie Studenten mit Stipendien helfen. Die Schüler des Audi Hungaria Schulzentrums empfangen wir jedes Jahr im Rahmen eines Projekttages in unserem Unternehmen. Das Ziel des Programms ist, dass Kinder moderne Abfallwirtschaftsprozesse aus nächster Nähe kennenlernen und Einblick in den Alltag eines nachhaltig operierenden Industrieunternehmens gewinnen.",
+          "note": "Wissenschaftliche und Bildungsprojekte, Stipendien"
+        },
+        "sports": {
+          "title": "Sportsponsoring",
+          "description": "Bei BÜCHL glauben wir, dass Sportförderung nicht nur Sponsoring ist – sondern Investition in die Zukunft, die Gemeinschaft und Wertschöpfung. Die Dynamik und der Teamgeist von Handball, Eishockey und Basketball spiegeln perfekt unsere Unternehmenswerte wider. Wir sind stolz darauf, Unterstützer von Győri ETO HC, Győri ETO UNI FKC und Győr Basketball Club zu sein. Von Anfang an stehen wir hinter den Erfolgen des jungen Rennfahrers Patrik Lipovics, weil wir glauben, dass Engagement und kontinuierliche Entwicklung sowohl im Motorsport als auch im Geschäftsleben gleichermaßen entscheidend sind.",
+          "note": "Handball, Eishockey, Basketball, Motorsport"
+        },
+        "massEvents": {
+          "title": "Massensport-Unterstützung",
+          "description": "Seit 2000 gehen jedes Jahr Hunderte beim BÜCHL Nachtlauf an den Start, der mit Hauptsponsoring der BÜCHL Hungaria GmbH verwirklicht wird, darunter zu unserem großen Stolz auch unsere Mitarbeiter, die sowohl einzeln als auch in Staffeln antreten. Wer keine Laufschuhe anzieht, hilft als Freiwilliger bei der Organisationsarbeit.",
+          "note": "BÜCHL Nachtlauf seit 2000"
+        },
+        "community": {
+          "title": "Gemeinschaftsaufbau mit Erlebnissen",
+          "description": "Die Basis eines starken Teams ist das gemeinsame Erlebnis. Während des Jahres organisieren wir regelmäßig Mitarbeiterprogramme – unter anderem Angelwettbewerb, Kindertag, gemeinsame Ausflüge, Retro-Sandwich-Tag und Weihnachtsbacken – die nicht nur Erholung, sondern auch echte Gemeinschaftserlebnisse bieten.",
+          "note": "Echte Gemeinschaftserlebnisse für unsere Mitarbeiter"
+        }
+      }
+    },
+    "governance": {
+      "title": "3. Unternehmensführung",
+      "initiatives": {
+        "duihk": {
+          "title": "DUIHK-Mitgliedschaft – Aktive Verbindung zur deutschen Wirtschaft",
+          "description": "Die BÜCHL Hungaria GmbH engagiert sich für internationale fachliche Zusammenarbeit und verantwortlichen Unternehmensbetrieb. Im Rahmen dessen sind wir seit langem Mitglieder der Deutsch-Ungarischen Industrie- und Handelskammer (DUIHK). Die DUIHK-Mitgliedschaft bedeutet aktive Verbindung zu deutschen Wirtschaftsakteuren, bietet Möglichkeiten für fachliche Entwicklung, Erfahrungsaustausch und unterstützt unser Unternehmensziel, auch im Bereich Umweltdienstleistungen hohe deutsche Standards in Ungarn zu vertreten.",
+          "since": "Seit langem",
+          "sinceNote": "DUIHK-Mitgliedschaft"
+        },
+        "erp": {
+          "title": "Integriertes Unternehmensmanagementsystem",
+          "description": "2008 installierten wir das Microsoft Dynamics NAV 2018 integrierte Unternehmensmanagementsystem und entwickeln und erweitern es seitdem kontinuierlich, das auch die Grundlage für die Abfallregistrierung bildet.",
+          "system": "Microsoft Dynamics NAV 2018",
+          "systemNote": "Unternehmensmanagementsystem"
+        },
+        "quality": {
+          "title": "Engagiert für Qualität",
+          "description": "Als Beweis unseres Engagements und zur Unterstützung unserer Arbeit haben wir die MSZ EN ISO 14001:2015 sowie die EMAS III.-Zertifizierung der Europäischen Union eingeführt und aufrechterhalten, gemäß Verordnung 1221/2009/EG, Verordnung 2017/1505 sowie Änderung der EU-Verordnung 2018/2026. Zusätzlich das umweltzentrierte, Qualitäts- und Arbeitsplatz-Gesundheitsschutz- und Sicherheits-Integrierte Managementsystem nach MSZ EN ISO 9001:2015 und MSZ ISO 45001:2018.",
+          "focus": "Qualität und Sicherheit",
+          "focusNote": "Integriertes Managementsystem"
+        }
+      }
+    },
+    "cta": {
+      "title": "Seien Sie Teil des Wandels!",
+      "description": "Schließen Sie sich uns beim Aufbau einer nachhaltigen Zukunft an. Gemeinsam können wir unsere Welt grüner und sauberer machen.",
+      "contactButton": "Kontakt aufnehmen",
+      "servicesButton": "Unsere Dienstleistungen"
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Bewerbung, Stellenangebote",
+      "subtitle": "Einen Schritt voraus und immer INNOVATIV, um gemeinsam die Zukunft zu gestalten.",
+      "primaryCta": "Aktuelle Stellenangebote"
+    },
+    "intro": {
+      "title": "Die BÜCHL HUNGARIA GmbH sucht für ihre kontinuierliche Entwicklung engagierte und qualifizierte Mitarbeiter, die an vielfältigen Aufgaben teilnehmen und gemeinsam mit uns die nachhaltige Zukunft gestalten.",
+      "description": "Wir suchen aufgeschlossene, verantwortungsbewusste und kreative Menschen, die mit ihren frischen Ideen zur Schaffung einer saubereren Umwelt beitragen.",
+      "callToAction": "Werden auch Sie Mitglied der BÜCHL-Gruppe und arbeiten Sie mit uns für die Zukunft!"
+    },
+    "jobs": {
+      "title": "Aktuelle Stellenangebote",
+      "positions": {
+        "driver": {
+          "title": "Kraftfahrer (m/w)",
+          "description": "Abfalltransportaufgaben, ADR-Zertifizierung von Vorteil",
+          "type": "Operativ",
+          "location": "Győr"
+        },
+        "forklift": {
+          "title": "Staplerfahrer (m/w)",
+          "description": "Lager- und Hof-Materialhandhabungsaufgaben",
+          "type": "Operativ",
+          "location": "Győr"
+        },
+        "disabled": {
+          "title": "Kollege mit veränderter Arbeitsfähigkeit (m/w)",
+          "description": "Administrative und unterstützende Aufgaben",
+          "type": "Administrativ",
+          "location": "Győr"
+        },
+        "security": {
+          "title": "Pförtner (m/w)",
+          "description": "Betriebsgelände Sicherheitsaufgaben, Zugangskontrile",
+          "type": "Sicherheit",
+          "location": "Győr"
+        }
+      },
+      "labels": {
+        "type": "Typ",
+        "location": "Standort",
+        "apply": "Bewerbung"
+      },
+      "applicationInfo": {
+        "title": "Wie bewerben?",
+        "description": "Durch Klicken auf die Stellen öffnet sich Ihr E-Mail-Client, in dem Sie Ihre Bewerbungsabsicht angeben können.",
+        "directContact": "Direkter Kontakt:"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Über uns",
+      "subtitle": "Zuverlässiger Partner in der industriellen Abfallwirtschaft"
+    },
+    "sections": {
+      "company": {
+        "title": "BÜCHL HUNGARIA GmbH",
+        "description1": "Die BÜCHL HUNGARIA GmbH ist einer der führenden Spezialisten Ungarns auf dem Gebiet der industriellen Abfallwirtschaft, mit besonderem Fokus auf Automotive-Partner. Unser Unternehmen ist seit 2000 auf dem heimischen Markt präsent und seither sind wir engagiert darin, unseren Kunden zuverlässige, innovative und nachhaltige Abfallwirtschaftslösungen zu bieten. Unser Spezialgebiet ist die Behandlung gefährlicher Abfälle aus den Produktionsprozessen von Fertigungsunternehmen, wofür wir modernste Technologien und Geräte betreiben.",
+        "description2": "Unser Unternehmen ist Mitglied der bayerischen BÜCHL-Gruppe, die seit 75 Jahren erfolgreich in den Bereichen Abfallwirtschaft, Umweltschutz, Fachberatung und Innovation tätig ist. Der familienbesitzige, eigentümergeführte Unternehmensverbund bietet uns einen stabilen Hintergrund und internationale Erfahrung.",
+        "description3": "In Ungarn stehen wir unseren Partnern mit 320 Mitarbeitern an 5 Standorten, mit modernsten Abfallbehandlungsanlagen und Spezialfahrzeugen zur Verfügung. Täglich führen wir 615 Tonnen Abfalltransport und 234 Tonnen Abfallvorbehandlung durch. Unsere Dienstleistungen bieten eine umfassende Lösung für die Sammlung, den Transport und das Recycling von gefährlichen und nicht gefährlichen Industrieabfällen. In unseren eigenen Behandlungsanlagen produzieren wir wertvolle Rohstoffe und Energieträger aus Abfällen und tragen so aktiv zur Entwicklung der Kreislaufwirtschaft bei.",
+        "description4": "Bei unserer Arbeit legen wir besonderen Wert auf Digitalisierung, Effizienzsteigerung und Nachhaltigkeit, die seit 2020 die Säulen unserer Unternehmensstrategie sind. Unser Ziel ist es, die Abfallwirtschaftsprozesse unserer Kunden mit Hilfe modernster Technologien und maßgeschneiderter Logistiklösungen zu optimieren, während wir die strengsten gesetzlichen und umweltrechtlichen Vorschriften einhalten.",
+        "description5": "Die wichtigsten Werte für BÜCHL HUNGARIA GmbH sind Kundenzufriedenheit, hohe Verwertungsquote, umfassende Sicherheit und nachhaltiger Betrieb.",
+        "slogan": "BÜCHL HUNGARIA – Zuverlässiger Partner in der industriellen Abfallwirtschaft."
+      },
+      "management": {
+        "title": "Management",
+        "subtitle": "Unsere erfahrene Führung gewährleistet die strategische Ausrichtung des Unternehmens und nachhaltiges Wachstum.",
+        "ceo": {
+          "name": "Sándor Gyökeres",
+          "position": "Geschäftsführer",
+          "description": "Sándor Gyökeres, der über mehr als 20 Jahre Erfahrung im Umweltsektor verfügt, bekleidet seit 2021 die Geschäftsführer-Position bei der Büchl Hungaria GmbH. Während seiner beruflichen Laufbahn engagiert er sich für die Entwicklung und Umsetzung nachhaltiger Lösungen. Seine Führungsarbeit ist geprägt von Offenheit für Innovation, Unterstützung der Teamarbeit und einer langfristigen, strategischen Denkweise."
+        }
+      },
+      "group": {
+        "title": "BÜCHL GRUPPE",
+        "slogan": "MIT EINER IDEE VORAUS. Seit 1951.",
+        "description1": "Das in Ingolstadt, Deutschland, gegründete Familienunternehmen der dritten Generation bietet seit 75 Jahren innovative Lösungen in den Bereichen Abfallwirtschaft, Umweltschutz und Nachhaltigkeit.",
+        "description2": "Das komplette Dienstleistungsportfolio der BÜCHL Gruppe ist geprägt von zuverlässiger Qualität, innovativen Lösungen, mutigem Handeln sowie Verantwortung für Mensch und Umwelt.",
+        "description3": "Ihre Tätigkeiten umfassen Abfallsammlung, -transport und -behandlung sowie Planung und Fachberatung.",
+        "mission": "Ihre Mission: mit einer Idee voraus – mit effizienten und zukunftsorientierten Dienstleistungen, die die Kreislaufwirtschaft unterstützen.",
+        "companyList": "Mitglieder der BÜCHL Unternehmensgruppe",
+        "stats": {
+          "locations": "STANDORTE",
+          "employees": "MITARBEITER",
+          "dailyTransport": "TONNEN TÄGLICH TRANSPORTIERT"
+        }
+      },
+      "newsSection": {
+        "title": "Nachrichten",
+        "subtitle": "Verfolgen Sie unsere neuesten Nachrichten und Entwicklungen im Bereich Abfallwirtschaft.",
+        "viewAllNews": "Alle Nachrichten ansehen"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende Abfallwirtschaftslösungen für jeden Bedarf",
+      "primaryCta": "Angebot anfordern",
+      "secondaryCta": "Unsere Zertifikate"
+    },
+    "intro": {
+      "title": "Umfassende Abfallbehandlung für Industriepartner",
+      "description": "BÜCHL HUNGARIA bedient ihre Industriepartner mit einer Flotte von mehr als 40 Fahrzeugen – ob Container-, Flüssig- oder Gefahrguttransport. Unsere spezialisierten Technologien und unser Expertenteam bieten umfassende Lösungen für alle Branchen.",
+      "features": {
+        "collection": {
+          "title": "Sammlung & Transport",
+          "description": "ADR-zertifizierte Fahrer und moderner Fuhrpark"
+        },
+        "treatment": {
+          "title": "Abfallbehandlung",
+          "description": "Spezialtechnologien und modernste Anlagen"
+        },
+        "logistics": {
+          "title": "Logistik",
+          "description": "Digitale Logistiklösungen und papierlose Prozesse"
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Unser Leistungsportfolio",
+      "description": "BÜCHL ist auf Industriekunden spezialisiert, daher haben wir alle unsere Dienstleistungen unter Berücksichtigung der Unternehmensbedürfnisse entwickelt. Unser Team bietet Expertlösungen für alle Branchen, mit besonderem Fokus auf Automobil-, Elektronik-, Chemie- und Fertigungsindustrie.",
+      "categories": {
+        "collection": {
+          "title": "Abfallsammlung und -transport",
+          "description": "Professionelle Abfallsammlung und -transport – flexibel und zuverlässig mit ADR-Zertifizierung und detaillierter Dokumentation.",
+          "features": [
+            "Spezielle Lagerung und Transport von flüssigen und gefährlichen Abfällen",
+            "Breites Spektrum für alle industriellen Anforderungen in der Industrieabfallbehandlung",
+            "Fachkundige Unterstützung bei der Optimierung der Abfallwirtschaft und Reduzierung der Transportkosten"
+          ]
+        },
+        "treatment": {
+          "title": "Abfallbehandlung",
+          "description": "Spezialtechnologien und modernste Anlagen für sichere und effiziente Abfallbehandlung.",
+          "features": [
+            "Sekundärrohstoffproduktion – im Dienste der Kreislaufwirtschaft",
+            "Innovative Lösungen für spezielle Industrieabfälle",
+            "Umfassende Behandlung von Abfällen externer Partner"
+          ]
+        },
+        "logistics": {
+          "title": "Logistik",
+          "description": "Umfassende Logistiklösungen zur Optimierung der betriebsinternen Abfallwirtschaft, einschließlich der digitalen Plattform ELOG SYSTEM®.",
+          "features": [
+            "Papierlose, bedarfsgerechte Abholung (GYLOG 1.0)",
+            "Vollständige Digitalisierung (CleverWaste®)",
+            "Flexible Fachpersonalbereitstellung"
+          ]
+        }
+      },
+      "detailsButton": "Details"
+    },
+    "environmental": {
+      "title": "Umweltdienstleistungen",
+      "subtitle": "Fachberatung und Planung",
+      "services": {
+        "consulting": {
+          "title": "Umweltberatung",
+          "description": "Fachkundige Unterstützung bei der Einhaltung von Umweltvorschriften"
+        },
+        "planning": {
+          "title": "Abfallwirtschaftspläne",
+          "description": "Entwicklung und Optimierung maßgeschneiderter Pläne"
+        },
+        "compliance": {
+          "title": "Compliance-Prüfung",
+          "description": "Gewährleistung der Rechtskonformität und Auditierung"
+        }
+      }
+    },
+    "stats": {
+      "employees": "Qualifizierte Mitarbeiter",
+      "vehicles": "Spezialfahrzeuge",
+      "equipment": "Abfallbehandlungsanlagen",
+      "experience": "Jahre Erfahrung"
+    },
+    "cta": {
+      "title": "Fordern Sie ein maßgeschneidertes Angebot an!",
+      "description": "Mit Hilfe unserer erfahrenen Spezialisten finden Sie die am besten geeignete Abfallwirtschaftslösung für Ihr Unternehmen.",
+      "requestQuote": "Angebot anfordern",
+      "learnMore": "Mehr über uns erfahren"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakt",
+      "subtitle": "Nehmen Sie Kontakt mit uns auf! Unser Expertenteam steht Ihnen gerne zur Verfügung."
+    },
+    "quickContact": {
+      "title": "Schnelle Kontaktaufnahme",
+      "phone": {
+        "label": "Sofortiger Kontakt"
+      },
+      "email": {
+        "label": "E-Mail"
+      }
+    },
+    "directContact": {
+      "title": "Direkter Kontakt zu unseren Experten",
+      "departments": {
+        "central": {
+          "title": "Zentrale",
+          "contact": "Szilvia Lipóth",
+          "position": "Assistentin der Geschäftsführung"
+        },
+        "mohu": {
+          "title": "MOHU-Verwaltung"
+        },
+        "sales": {
+          "title": "Vertrieb",
+          "contact": "Pál Kozicz",
+          "position": "Vertriebsleiter"
+        },
+        "environmental": {
+          "title": "Umweltschutz"
+        },
+        "wasteData": {
+          "title": "Abfalldatenservice",
+          "description": "Abfallbehandlungsregister, Berichte"
+        },
+        "logistics": {
+          "title": "Logistik"
+        },
+        "technical": {
+          "title": "Technische Leitung",
+          "contact": "Tamás Lövész",
+          "position": "Betriebsleiter"
+        },
+        "accounting": {
+          "title": "Buchhaltung",
+          "description": "Rechnungswesen, Finanzangelegenheiten"
+        }
+      }
+    },
+    "form": {
+      "title": "Schreiben Sie uns",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Ihr Name"
+        },
+        "company": {
+          "label": "Firmenname",
+          "placeholder": "Unternehmen"
+        },
+        "email": {
+          "label": "E-Mail-Adresse",
+          "placeholder": "beispiel{'@'}email.de"
+        },
+        "phone": {
+          "label": "Telefonnummer",
+          "placeholder": "+49 123 456 789"
+        },
+        "message": {
+          "label": "Nachricht",
+          "placeholder": "Beschreiben Sie Ihre Frage oder Anfrage im Detail..."
+        },
+        "privacy": {
+          "text": "Ich akzeptiere die",
+          "link": "Datenschutzrichtlinie",
+          "consent": "und stimme der Verarbeitung meiner Daten zu."
+        }
+      },
+      "required": "*",
+      "submit": "Nachricht senden"
+    },
+    "locations": {
+      "title": "Unsere Standorte",
+      "description": "Besuchen Sie einen unserer Standorte, wo unser Expertenteam Sie erwartet.",
+      "gyor": {
+        "central": {
+          "title": "Győr – Zentrale",
+          "hours": {
+            "title": "Öffnungszeiten",
+            "weekdays": "Montag – Donnerstag",
+            "weekdaysTimes": "7:00 - 15:30",
+            "friday": "Freitag",
+            "fridayTimes": "7:00 - 14:30",
+            "weekend": "Samstag – Sonntag",
+            "closed": "Geschlossen"
+          }
+        },
+        "second": {
+          "title": "Győr – Standort II",
+          "hours": {
+            "title": "Öffnungszeiten",
+            "weekdays": "Montag – Donnerstag",
+            "weekdaysTimes": "7:00 - 15:30",
+            "friday": "Freitag",
+            "fridayTimes": "7:00 - 14:30",
+            "weekend": "Samstag – Sonntag",
+            "closed": "Geschlossen"
+          }
+        }
+      },
+      "nyiregyhaza": {
+        "title": "Nyíregyháza",
+        "hours": {
+          "title": "Öffnungszeiten",
+          "weekdays": "Montag – Donnerstag",
+          "weekdaysTimes": "7:00 - 15:30",
+          "friday": "Freitag",
+          "fridayTimes": "7:00 - 14:30",
+          "weekend": "Samstag – Sonntag",
+          "closed": "Geschlossen"
+        }
+      }
+    }
+  },
+  "downloads": {
+    "hero": {
+      "title": "Downloads",
+      "subtitle": "Unsere Zertifikate, Genehmigungen und Unternehmensinformationen an einem Ort",
+      "primaryCta": "Kontakt aufnehmen",
+      "secondaryCta": "Nachhaltigkeit"
+    },
+    "categories": {
+      "tanusitvanyok": "Zertifikate",
+      "engedélyek": "Genehmigungen",
+      "céginformációk": "Unternehmensinformationen"
+    },
+    "languages": {
+      "hungarian": "Ungarisch",
+      "english": "Englisch",
+      "german": "Deutsch"
+    },
+    "status": {
+      "valid": "Gültig"
+    },
+    "seo": {
+      "title": "Downloads | BÜCHL HUNGARIA",
+      "description": "Offizielle Dokumente der BÜCHL HUNGARIA Kft.: Zertifikate, Genehmigungen und Unternehmensinformationen. ISO 9001, ISO 14001, ISO 45001, EMAS-Zertifikate und andere Dokumente zum Download."
+    },
+    "additionalInfo": {
+      "title": "Qualitäts- und Umweltmanagementzertifikate",
+      "isoCertificates": {
+        "title": "ISO-Zertifikate",
+        "iso9001": "ISO 9001:2015 - Qualitätsmanagementsystem",
+        "iso14001": "ISO 14001:2015 - Umweltmanagementsystem",
+        "iso45001": "ISO 45001:2018 - Arbeitsschutzmanagementsystem"
+      },
+      "emasCertificate": {
+        "title": "EMAS-Zertifikat",
+        "description": "Die BÜCHL HUNGARIA Kft. ist stolz darauf, zu den ersten Unternehmen in Ungarn zu gehören, die das EMAS-Zertifikat (Eco-Management and Audit Scheme) erhalten haben, das die höchste Stufe der Umweltmanagement-Anerkennung in der Europäischen Union darstellt."
+      }
+    },
+    "documents": {
+      "emasHu": {
+        "name": "EMAS-Zertifikat",
+        "description": "Eco-Management and Audit Scheme"
+      },
+      "iso9001Hu": {
+        "name": "ISO 9001:2015",
+        "description": "Qualitätsmanagementsystem"
+      },
+      "iso14001Hu": {
+        "name": "ISO 14001:2015",
+        "description": "Umweltmanagementsystem"
+      },
+      "iso45001Hu": {
+        "name": "ISO 45001:2018",
+        "description": "Arbeitsschutzmanagementsystem"
+      },
+      "iso9001En": {
+        "name": "ISO 9001:2015",
+        "description": "Quality Management System"
+      },
+      "iso14001En": {
+        "name": "ISO 14001:2015",
+        "description": "Environmental Management System"
+      },
+      "iso45001En": {
+        "name": "ISO 45001:2018",
+        "description": "Occupational Health and Safety Management System"
+      },
+      "hulladekKatalogus": {
+        "name": "Abfallkatalog",
+        "description": "Nach AVV-Nummern gemäß Genehmigungen"
+      },
+      "engedélyekAttekintese": {
+        "name": "Genehmigungsübersicht",
+        "description": "Vollständige Genehmigungszusammenfassung"
+      },
+      "emas2007Elso": {
+        "name": "EMAS 2007 – Erstes Zertifikat",
+        "description": "Erstes EMAS-Zertifikat von 2007"
+      },
+      "emasNyilatkozat2020": {
+        "name": "EMAS-Erklärung 2020",
+        "description": "Umwelterklärung 2020"
+      },
+      "emasNyilatkozat2021": {
+        "name": "EMAS-Erklärung 2021",
+        "description": "Umwelterklärung 2021"
+      },
+      "emasNyilatkozat2022": {
+        "name": "EMAS-Erklärung 2022",
+        "description": "Umwelterklärung 2022"
+      },
+      "elogSystemPrezentacio": {
+        "name": "ELOG-System-Präsentation",
+        "description": "ELOG-System-Demonstrationspräsentation"
+      },
+      "fenntarthatosagiJelentes": {
+        "name": "Nachhaltigkeitsbericht",
+        "description": "Unternehmensnachhaltigkeitsbericht"
+      },
+      "energetikaiJelentes2023": {
+        "name": "Jahresbericht Energiebeauftragter 2023",
+        "description": "Jahresbericht des Energiebeauftragten 2023"
+      }
+    }
+  },
+  "wasteManagement": {
+    "hero": {
+      "title": "Abfallbehandlung",
+      "subtitle": "Spezialtechnologien und moderne Abfallbehandlung in Győr",
+      "primaryCta": "Angebot anfordern",
+      "secondaryCta": "Zurück zu Dienstleistungen"
+    },
+    "intro": {
+      "description": "Am Standort Győr der BÜCHL arbeiten fortschrittliche Technologien für die sichere und effiziente Behandlung von Industrieabfällen. Darüber hinaus stehen für gefährliche Abfälle Zwischenlager, überdachte Lager und Flüssigkeitsbehälter zur Verfügung – für die Behandlung fast aller Abfallarten."
+    },
+    "technologies": {
+      "title": "Spezialtechnologien und Ausrüstung",
+      "items": {
+        "emulsion": {
+          "title": "Emulsions- und Waschlaugenbehandlung",
+          "description": "Eindampfanlagen für Emulsions- und Waschlaugenbehandlung"
+        },
+        "wastewater": {
+          "title": "Spezielle Abwasserbehandlung",
+          "description": "Spezielle Behandlungsanlage für Abwasser aus Lackieranlagen"
+        },
+        "fuel": {
+          "title": "Sekundärbrennstoffe",
+          "description": "Technologie zur Herstellung von Sekundärbrennstoffen aus gefährlichen und ungefährlichen Abfällen für Zementwerke"
+        },
+        "grinding": {
+          "title": "Schleifschlammbehandlung",
+          "description": "Vorbehandlungsanlage für ölhaltigen Schleifschlamm aus der Metallbearbeitung"
+        },
+        "sorting": {
+          "title": "Sortierung",
+          "description": "Sortieranlage für gemischte Verpackungsmaterialien und andere wertvolle Abfälle"
+        },
+        "baling": {
+          "title": "Ballenpressung",
+          "description": "Ballenpresse für Karton, Textilien und Folien"
+        },
+        "compacting": {
+          "title": "Verdichtung",
+          "description": "Verdichtungsanlage für Kunststoffverpackungsabfälle (Styropor, Schaumfolie)"
+        },
+        "shredding": {
+          "title": "Aktenvernichtung",
+          "description": "Aktenvernichtungsanlage"
+        },
+        "storage": {
+          "title": "Lagerung",
+          "description": "Zwischenlager, überdachte Lager, Flüssigkeitsbehälter für gefährliche Abfälle – für die Behandlung fast aller Abfallarten"
+        }
+      }
+    },
+    "secondaryMaterials": {
+      "title": "Produktion von Sekundärrohstoffen",
+      "subtitle": "Im Dienste der Kreislaufwirtschaft",
+      "description1": "Die BÜCHL HUNGARIA Kft. ist ein Schlüsselakteur in der Abfallverwertung und dient als zuverlässiger Partner zur Versorgung der Verarbeitungs- und Energieindustrie mit Sekundärrohstoffen in Ungarn und der Region.",
+      "description2": "Ihr Produktportfolio umfasst unter anderem Metallspäne, verschiedene Metallabfälle, Sekundärbrennstoffe, vorbehandelte Kunststoffe, Verpackungsmaterialien sowie Textil- und Nichteisen-Metallabfälle – alles im Zeichen nachhaltiger und kreislauforientierter Wirtschaft."
+    },
+    "innovative": {
+      "title": "Innovative Lösungen für spezielle Industrieabfälle",
+      "description": "BÜCHL entwickelt kontinuierlich neue Technologien für die kostengünstige, sichere und nachhaltige Behandlung von Industrieabfällen.",
+      "paintWastewater": {
+        "title": "Lackhaltige Abwässer",
+        "description": "Pilotanlage zur Verarbeitung lackhaltiger Abwässer"
+      },
+      "pyrotechnic": {
+        "title": "Pyrotechnische Systeme",
+        "description": "Mobiler Container zur sicheren Vernichtung von Airbags und anderen pyrotechnischen Systemen aus Fahrzeugen"
+      }
+    },
+    "catalog": {
+      "title": "Abfallkatalog - Komplexe Abfallbehandlung",
+      "description1": "Unser Unternehmen behandelt nicht nur Abfälle unserer eigenen Partner, sondern auch Abfälle aus anderen Regionen. Wir verarbeiten eine breite Palette ungefährlicher Abfallarten (z.B. Kunststoff, Holz, Metall), und unser Hauptspezialgebiet ist die sichere Übernahme und Behandlung gefährlicher Abfälle – einschließlich Emulsionen, Waschlaugen, Aerosole, Metallspäne, Airbags und HV-Batterien.",
+      "description2": "Die Liste unserer genehmigten Abfallarten ist herunterladbar.",
+      "nonHazardous": {
+        "title": "Ungefährliche Abfälle",
+        "plastic": "Kunststoffabfälle",
+        "wood": "Holzabfälle",
+        "metal": "Metallabfälle",
+        "packaging": "Verpackungsmaterialien"
+      },
+      "hazardous": {
+        "title": "Gefährliche Abfälle (Hauptspezialgebiet)",
+        "emulsions": "Emulsionen, Waschlaugen",
+        "aerosols": "Aerosole",
+        "metalChips": "Metallspäne",
+        "airbags": "Airbags und HV-Batterien"
+      },
+      "fullCatalog": {
+        "title": "Vollständiger Abfallkatalog und Suchfunktion",
+        "description": "Die vollständige Liste unserer genehmigten Abfallarten ist herunterladbar und mit einer Online-Suchfunktion ausgestattet. Sie können leicht die geeignete Behandlungsmethode für Ihre Abfälle finden.",
+        "searchButton": "Suchfunktion",
+        "downloadButton": "Katalog herunterladen"
+      }
+    },
+    "cta": {
+      "title": "Fordern Sie ein personalisiertes Angebot an!",
+      "subtitle": "Mit Hilfe unserer erfahrenen Spezialisten finden Sie die am besten geeignete Abfallbehandlungslösung für Ihr Unternehmen.",
+      "requestButton": "Angebot anfordern",
+      "backButton": "Zurück zu Leistungen"
+    }
+  },
+  "transport": {
+    "hero": {
+      "title": "Abfallsammlung und -transport",
+      "subtitle": "Professioneller Abfalltransport – flexibel und zuverlässig",
+      "primaryCta": "Angebot anfordern",
+      "secondaryCta": "Zurück zu Leistungen"
+    },
+    "intro": {
+      "description": "BÜCHL HUNGARIA bedient seine Industriepartner mit einer Flotte von mehr als 40 Fahrzeugen – ob Container-, Flüssig- oder Gefahrguttransport. Unsere Fahrer sind gut geschult, besitzen ADR-Zertifikate und kennen die Besonderheiten der Standorte unserer Kunden. Auf Wunsch stellen wir detaillierte Dokumentation über Art und Menge der gesammelten Abfälle zur Verfügung."
+    },
+    "containers": {
+      "title": "Container und Lagersysteme für jeden industriellen Bedarf",
+      "description": "BÜCHL HUNGARIA bietet eine breite Palette von Containern für die Handhabung von Industrieabfällen – von kleinen Lagerbehältern bis zu großen Verdichtungssystemen.",
+      "types": {
+        "largeQuantity": {
+          "title": "Für große Mengen",
+          "description": "Presscontainer, Schnecken- und Rollenverdichter, Abdeckkonstruktionen stehen zur Verfügung."
+        },
+        "liquidHazardous": {
+          "title": "Flüssige und gefährliche Abfälle",
+          "description": "IBC, MGB 1100 Typ Fässer, spezielle Ölablass-Behälter und mobile Container können verwendet werden."
+        },
+        "inPlantMovement": {
+          "title": "Werksinterner Transport",
+          "description": "ELOG SYSTEM® multifunktionale Container bieten effiziente Lösungen."
+        }
+      },
+      "consulting": {
+        "title": "Fachberatung",
+        "description": "Unser Expertenteam hilft bei der Auswahl des geeigneten Lager- und Verdichtungssystems – zur Optimierung der Abfallwirtschaft und Reduzierung der Transportkosten."
+      }
+    },
+    "cta": {
+      "title": "Fordern Sie ein maßgeschneidertes Angebot an!",
+      "description": "Mit Hilfe unserer erfahrenen Spezialisten finden Sie die am besten geeignete Abfalltransportlösung für Ihr Unternehmen.",
+      "quoteButton": "Angebot anfordern",
+      "backButton": "Zurück zu Leistungen"
+    }
+  },
+  "elogSystem": {
+    "hero": {
+      "title": "Logistik",
+      "subtitle": "Digitale Abfalllogistiklösungen",
+      "primaryCta": "Angebot anfordern",
+      "secondaryCta": "Zurück zu Leistungen"
+    },
+    "intro": {
+      "description": "Die ELOG SYSTEM® Version 4.0 bietet eine komplexe, digitale Lösung für die Abfallsammlung und papierlose, bedarfsgerechte Entsorgung. Zusätzlich wurde das CleverWaste® System eingeführt, das den gesamten Transport- und Abfallwirtschaftsprozess digitalisiert."
+    },
+    "system": {
+      "title": "ELOG SYSTEM® 4.0",
+      "components": {
+        "collectingTools": {
+          "title": "Innovative Sammelwerkzeuge",
+          "description": "Intelligente Sammelbehälter und modulare Systeme für effiziente Abfalltrennung"
+        },
+        "qFrameShuttle": {
+          "title": "Q-Frame Shuttle",
+          "description": "Im Dienst der sicheren Sammlung neben Produktionslinien"
+        },
+        "gylogControl": {
+          "title": "GYLOG 1.0 Steuerung",
+          "description": "Unser eigens entwickeltes papierloses, bedarfsgerechtes Transportsystem"
+        }
+      }
+    },
+    "digital": {
+      "title": "ELOGplan und CleverWaste®",
+      "elogplan": {
+        "title": "ELOGplan (seit 2019)",
+        "description": "Die ELOG SYSTEM® Version für externe Partner, die eine breitere Anwendung ermöglicht."
+      },
+      "cleverWaste": {
+        "title": "CleverWaste®",
+        "description": "Das System digitalisiert den gesamten Transport- und Abfallwirtschaftsprozess – von der Containeraufstellung über das Wiegen bis zur Abrechnung und Dokumentation."
+      }
+    },
+    "services": {
+      "title": "Flexible Dienstleistungen mit Fachpersonalbereitstellung",
+      "description1": "Neben innovativen technologischen Lösungen bieten wir flexible Dienstleistungen mit Fachpersonal. Vom Staplerfahrer bis zum Abfallexperten arbeitet ein komplettes Team an der Effizienz der selektiven Sammlung, Datenerfassung und Kostenoptimierung.",
+      "description2": "BÜCHL Expertise steht auch für Planung und Optimierung von Abfalllogistikprozessen zur Verfügung.",
+      "staff": {
+        "forkliftOperators": {
+          "title": "Staplerfahrer",
+          "description": "Qualifizierte Bediener für Materialhandhabung"
+        },
+        "wasteExperts": {
+          "title": "Abfallexperten",
+          "description": "Fachberatung und Prozessoptimierung"
+        },
+        "selectiveCollection": {
+          "title": "Selektive Sammlung",
+          "description": "Effiziente Sortier- und Sammelsysteme"
+        },
+        "dataEntry": {
+          "title": "Datenerfassung",
+          "description": "Präzise Dokumentation und Verfolgung"
+        }
+      }
+    },
+    "benefits": {
+      "title": "ELOG SYSTEM® Vorteile",
+      "paperless": {
+        "title": "Papierlose Prozesse",
+        "description": "Digitale Dokumentation und bedarfsgerechter Transport"
+      },
+      "costOptimization": {
+        "title": "Kostenoptimierung",
+        "description": "Effiziente Ressourcennutzung und Kosteneinsparung"
+      },
+      "realTimeTracking": {
+        "title": "Echtzeitverfolgung",
+        "description": "Vollständige Prozesstransparenz und Kontrolle"
+      }
+    },
+    "cta": {
+      "title": "Fordern Sie ein maßgeschneidertes Angebot an!",
+      "description": "Mit Hilfe unserer erfahrenen Spezialisten finden Sie die am besten geeignete digitale Abfalllogistiklösung für Ihr Unternehmen.",
+      "quoteButton": "Angebot anfordern",
+      "backButton": "Zurück zu Leistungen"
+    }
+  }
+}

@@ -2,8 +2,8 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      title="Hírek és Események"
-      subtitle="Maradjon naprakész legfrissebb híreinkkel, eseményeinkkel és innovációinkkal!"
+      :title="$t('news.page.hero.title')"
+      :subtitle="$t('news.page.hero.subtitle')"
       image="/media/images/buchl-hirek.jpeg"
       bg-color="blue"
     />
@@ -13,10 +13,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            Legfrissebb híreink
+            {{ $t('news.page.latest.title') }}
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Kövesse nyomon a BÜCHL Hungaria legújabb fejlesztéseit, projektjeit és eseményeit!
+            {{ $t('news.page.latest.subtitle') }}
           </p>
         </div>
 
@@ -24,74 +24,74 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <!-- Hír 1: VBS Junior Kör -->
           <BuchlBlogPost
-            title="VBS Junior Kör látogatása"
-            description="Szeptember 12-én örömmel láttuk vendégül a VBS Junior Kört Németországból, akik telephelyünkön ismerkedhettek meg hulladékgazdálkodási technológiáinkkal."
+            :title="$t('news.posts.vbs.title')"
+            :description="$t('news.posts.vbs.description')"
             image="/media/images/hirek/vbs-junior.jpeg"
             to="/hirek/vbs-junior-kor-latogatas"
-            category="Események"
+            :category="$t('news.posts.vbs.category')"
             date="2025-09-12"
-            reading-time="3 perc olvasás"
-            read-more-text="Részletek"
+            :reading-time="$t('news.posts.vbs.readingTime')"
+            :read-more-text="$t('news.page.readMore')"
           />
 
           <!-- Hír 2: RESZETT program -->
           <BuchlBlogPost
-            title="Játékos módon a fenntarthatóság szolgálatában"
-            description="A fenntarthatóság cégfilozófiánk központi kérdése. Három éves munka után elkészült a „RESZETT” program, amely játékos formában ismerteti meg a gyerekeket a hulladékgazdálkodás folyamataival."
+            :title="$t('news.posts.reszett.title')"
+            :description="$t('news.posts.reszett.description')"
             image="/media/images/hirek/reszett-program.jpeg"
             to="/hirek/reszett-program"
-            category="Oktatás"
+            :category="$t('news.posts.reszett.category')"
             date="2025-08-28"
-            reading-time="4 perc olvasás"
-            read-more-text="Részletek"
+            :reading-time="$t('news.posts.reszett.readingTime')"
+            :read-more-text="$t('news.page.readMore')"
           />
 
           <!-- Hír 3: VIII. Győri Gyerekegyetem -->
           <BuchlBlogPost
-            title="Tudomány, élmény, inspiráció – fiataloknak!"
-            description="Büszkék vagyunk rá, hogy a BÜCHL Hungaria idén is kiemelt támogatója lehetett a VIII. Győri Gyerekegyetemnek! A program célja, hogy közelebb hozza az egyetemi világot az általános iskolás korosztályhoz."
+            :title="$t('news.posts.gyerekegyetem.title')"
+            :description="$t('news.posts.gyerekegyetem.description')"
             image="/media/images/hirek/gyerekegyetem.jpeg"
             to="/hirek/viii-gyori-gyerekegyetem"
-            category="Oktatás"
+            :category="$t('news.posts.gyerekegyetem.category')"
             date="2025-08-24"
-            reading-time="3 perc olvasás"
-            read-more-text="Részletek"
+            :reading-time="$t('news.posts.gyerekegyetem.readingTime')"
+            :read-more-text="$t('news.page.readMore')"
           />
 
           <!-- Hír 4: Raklapos Építőtábor -->
           <BuchlBlogPost
-            title="10 éve együtt a kreativitásért!"
-            description="A BÜCHL HUNGARIA Kft. az AUDI HUNGARIA Zrt.-vel karöltve immár 10 éve támogatja a Generációk Háza által szervezett győri Raklapos Építőtábort."
+            :title="$t('news.posts.raklapos.title')"
+            :description="$t('news.posts.raklapos.description')"
             image="/media/images/hirek/raklapos-epitotabor.jpeg"
             to="/hirek/10-ev-egyutt-a-kreativitasert"
-            category="Események"
+            :category="$t('news.posts.raklapos.category')"
             date="2025-08-18"
-            reading-time="2 perc olvasás"
-            read-more-text="Részletek"
+            :reading-time="$t('news.posts.raklapos.readingTime')"
+            :read-more-text="$t('news.page.readMore')"
           />
           
           <!-- Hír 5: Defibrillátorok telepítése -->
           <BuchlBlogPost
-            title="Munkatársaink biztonsága érdekében"
-            description="A BÜCHL Hungaria számára a munkatársak biztonsága mindig is elsődleges szempont volt. Ennek jegyében három darab automata defibrillátort telepítettünk telephelyünkön."
+            :title="$t('news.posts.defibrillator.title')"
+            :description="$t('news.posts.defibrillator.description')"
             image="/media/images/hirek/defibrillatorok.jpeg"
             to="/hirek/defibrillatorok-telepites"
-            category="Biztonság"
+            :category="$t('news.posts.defibrillator.category')"
             date="2025-07-25"
-            reading-time="2 perc olvasás"
-            read-more-text="Részletek"
+            :reading-time="$t('news.posts.defibrillator.readingTime')"
+            :read-more-text="$t('news.page.readMore')"
           />
 
           <!-- Hír 6: Stresszkezelő tréning -->
           <BuchlBlogPost
-            title="Mentális egészség és reziliencia"
-            description="Munkatársaink részt vettek a Német-Magyar Tudásközpont - DUWZ stresszkezelő és rezilienciafejlesztő tréningjén, melynek célja a stresszreakciók felismerése és kezelési technikák elsajátítása."
+            :title="$t('news.posts.stressz.title')"
+            :description="$t('news.posts.stressz.description')"
             image="/media/images/hirek/stresszkezelo-trening.jpeg"
             to="/hirek/stresszkezelo-trening"
-            category="Fejlesztés"
+            :category="$t('news.posts.stressz.category')"
             date="2025-07-21"
-            reading-time="3 perc olvasás"
-            read-more-text="Részletek"
+            :reading-time="$t('news.posts.stressz.readingTime')"
+            :read-more-text="$t('news.page.readMore')"
           />
         </div>
 
@@ -104,7 +104,7 @@
             icon="i-heroicons-newspaper"
             class="rounded-none border-2 px-8"
           >
-            Összes hír megtekintése
+            {{ $t('news.page.viewAllButton') }}
           </UButton>
         </div>
       </div>
@@ -115,20 +115,22 @@
 <script setup lang="ts">
 // Hírek oldal
 
+const { t } = useI18n()
+
 const categories = [
-  { label: 'Összes kategória', value: 'all' },
-  { label: 'Technológia', value: 'technology' },
-  { label: 'Fenntarthatóság', value: 'sustainability' },
-  { label: 'Események', value: 'events' },
-  { label: 'Innováció', value: 'innovation' },
-  { label: 'Közösség', value: 'community' },
-  { label: 'Elismerés', value: 'recognition' }
+  { label: t('news.page.categories.all'), value: 'all' },
+  { label: t('news.page.categories.technology'), value: 'technology' },
+  { label: t('news.page.categories.sustainability'), value: 'sustainability' },
+  { label: t('news.page.categories.events'), value: 'events' },
+  { label: t('news.page.categories.innovation'), value: 'innovation' },
+  { label: t('news.page.categories.community'), value: 'community' },
+  { label: t('news.page.categories.recognition'), value: 'recognition' }
 ]
 
 const years = [
-  { label: 'Összes év', value: 'all' },
-  { label: '2025', value: '2025' },
-  { label: '2024', value: '2024' },
-  { label: '2023', value: '2023' }
+  { label: t('news.page.years.all'), value: 'all' },
+  { label: t('news.page.years.2025'), value: '2025' },
+  { label: t('news.page.years.2024'), value: '2024' },
+  { label: t('news.page.years.2023'), value: '2023' }
 ]
 </script>

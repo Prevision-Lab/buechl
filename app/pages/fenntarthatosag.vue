@@ -2,12 +2,12 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      title="Fenntarthatóság"
-      subtitle="ESG - Környezet, Társadalom, Vállalatirányítás"
+      :title="$t('sustainability.hero.title')"
+      :subtitle="$t('sustainability.hero.subtitle')"
       image="/media/images/elektromos-jarmuvek.jpg"
       bg-color="green"
       :primary-cta="{
-        label: 'Kapcsolatfelvétel',
+        label: $t('sustainability.hero.contactButton'),
         to: '/kapcsolat'
       }"
     />
@@ -17,12 +17,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-            Fenntartható vállalati működés
+            {{ $t('sustainability.intro.title') }}
           </h2>
           <p class="text-lg text-gray-700 max-w-4xl mx-auto">
-            A BÜCHL HUNGARIA Kft. elkötelezett a fenntartható vállalati működés iránt. 
-            ESG (Környezet, Társadalom, Vállalatirányítás) stratégiánk három fő pilléren nyugszik, 
-            amelyeken keresztül hozzájárulunk egy fenntarthatóbb jövő építéséhez.
+            {{ $t('sustainability.intro.description') }}
           </p>
         </div>
 
@@ -32,21 +30,21 @@
             <div class="inline-flex items-center justify-center w-16 h-16 bg-buchl-green rounded-full mb-6">
               <UIcon name="i-heroicons-globe-alt" class="text-white" style="width: 32px; height: 32px;" />
             </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">1. Környezet</h3>
+            <h3 class="text-xl font-semibold text-buchl-blue mb-3">{{ $t('sustainability.pillars.environment.title') }}</h3>
           </button>
           
           <button @click="scrollToSection('tarsadalmi')" class="text-center p-8 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors cursor-pointer">
             <div class="inline-flex items-center justify-center w-16 h-16 bg-buchl-blue rounded-full mb-6">
               <UIcon name="i-heroicons-users" class="text-white" style="width: 32px; height: 32px;" />
             </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">2. Társadalmi szerepvállalás</h3>
+            <h3 class="text-xl font-semibold text-buchl-blue mb-3">{{ $t('sustainability.pillars.social.title') }}</h3>
           </button>
           
           <button @click="scrollToSection('vallalatiranytias')" class="text-center p-8 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
             <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-600 rounded-full mb-6">
               <UIcon name="i-heroicons-building-office-2" class="text-white" style="width: 32px; height: 32px;" />
             </div>
-            <h3 class="text-xl font-semibold text-buchl-blue mb-3">3. Vállalatirányítás</h3>
+            <h3 class="text-xl font-semibold text-buchl-blue mb-3">{{ $t('sustainability.pillars.governance.title') }}</h3>
           </button>
         </div>
       </div>
@@ -58,7 +56,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-            1. Környezet
+            {{ $t('sustainability.environment.title') }}
           </h2>
         </div>
 
@@ -412,10 +410,10 @@
     <section class="py-16 bg-buchl-green text-buchl-blue">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-          Legyen része a változásnak!
+          {{ $t('sustainability.cta.title') }}
         </h2>
         <p class="text-xl text-buchl-blue/80 max-w-3xl mx-auto mb-10">
-          Csatlakozzon hozzánk a fenntartható jövő építésében. Együtt tehetjük zoldebbé és tisztábbá a világunkat.
+          {{ $t('sustainability.cta.description') }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton
@@ -426,7 +424,7 @@
             :trailing="true"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            Kapcsolatfelvétel
+            {{ $t('sustainability.cta.contactButton') }}
           </UButton>
           <UButton
             to="/szolgaltatasok"
@@ -436,7 +434,7 @@
             :trailing="true"
             class="rounded-none border-2 border-buchl-blue text-buchl-blue"
           >
-            Szolgáltatásaink
+            {{ $t('sustainability.cta.servicesButton') }}
           </UButton>
         </div>
       </div>
@@ -445,7 +443,8 @@
 </template>
 
 <script setup lang="ts">
-// SEO meta adatok
+// Fenntarthatóság oldal
+const { t } = useI18n()
 useSeoMeta({
   title: 'Fenntarthatóság - BÜCHL HUNGARIA',
   description: 'ESG megközelítésünk: Környezet, Társadalom és Vállalatirányítás területén vagyunk elkötelezettek. Megújuló energia, oktatási kooperációk és nemzetközi partneri hálózat.',

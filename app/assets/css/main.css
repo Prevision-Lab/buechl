@@ -93,8 +93,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-display {
-  font-family: 'Permanent Marker', cursive;
+/* Font display with fallback for Hungarian characters */
+.font-display,
+h1.font-display,
+.font-display h1 {
+  font-family: 'Permanent Marker', 'Fredoka One', 'Kalam', 'Caveat', cursive !important;
+  font-weight: 400 !important;
 }
 
 /* Button overrides for BÜCHL style */

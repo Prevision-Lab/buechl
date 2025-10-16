@@ -2,17 +2,17 @@
     <div>
         <!-- Hero szekció -->
         <BuchlHero
-            title="Hulladékkezelés"
-            subtitle="Speciális technológiák és korszerű hulladékkezelés Győrben"
+            :title="$t('wasteManagement.hero.title')"
+            :subtitle="$t('wasteManagement.hero.subtitle')"
             image="/media/images/hulladekkezeles.jpg"
             bg-color="green"
             :primary-cta="{
-                label: 'Ajánlatkérés',
-                to: '/kapcsolat',
+                label: $t('wasteManagement.hero.primaryCta'),
+                to: localePath('/kapcsolat'),
             }"
             :secondary-cta="{
-                label: 'Vissza a szolgáltatásokhoz',
-                to: '/szolgaltatasok',
+                label: $t('wasteManagement.hero.secondaryCta'),
+                to: localePath('/szolgaltatasok'),
             }"
         />
 
@@ -22,9 +22,7 @@
                 <div class="max-w-4xl mx-auto">
                     <div class="prose prose-lg max-w-none">
                         <p class="text-xl text-gray-700 mb-8">
-                            A BÜCHL győri telephelyén fejlett technológiák működnek az ipari hulladékok biztonságos és 
-                            hatékony kezelésére. Emellett veszélyes hulladékok részére köztes raktár, fedett raktárak, 
-                            folyadéktartályok is rendelkezésre állnak – szinte minden hulladéktípus kezelésére.
+                            {{ $t('wasteManagement.intro.description') }}
                         </p>
                     </div>
                 </div>
@@ -35,7 +33,7 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    Speciális technológiák és berendezések
+                    {{ $t('wasteManagement.technologies.title') }}
                 </h2>
 
                 <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -44,9 +42,9 @@
                         <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-beaker" class="text-buchl-green text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Emulzió- és mosólúgkezelés</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.emulsion.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Az emulzió- és mosólúgkezelő bepárló berendezések
+                            {{ $t('wasteManagement.technologies.items.emulsion.description') }}
                         </p>
                     </div>
 
@@ -55,9 +53,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-funnel" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Speciális szennyvíz kezelése</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.wastewater.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Lakkozó berendezésekből származó szennyvíz részére speciális kezelő berendezés
+                            {{ $t('wasteManagement.technologies.items.wastewater.description') }}
                         </p>
                     </div>
 
@@ -66,9 +64,9 @@
                         <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-fire" class="text-orange-500 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Másodlagos tüzelőanyagok</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.fuel.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Cementgyárak részére veszélyes és nem veszélyes hulladékokból másodlagos tüzelőanyagok előállítására alkalmas technológia
+                            {{ $t('wasteManagement.technologies.items.fuel.description') }}
                         </p>
                     </div>
 
@@ -77,9 +75,9 @@
                         <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-cog-6-tooth" class="text-gray-600 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Köszörűiszap kezelése</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.grinding.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Fémmegmunkálásból származó olajtartalmú köszörűiszap számára előkezelő berendezés
+                            {{ $t('wasteManagement.technologies.items.grinding.description') }}
                         </p>
                     </div>
 
@@ -88,9 +86,9 @@
                         <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-funnel" class="text-buchl-green text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Válogatás</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.sorting.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Válogató berendezés vegyes csomagolóanyagok és egyéb értékes hulladékok részére
+                            {{ $t('wasteManagement.technologies.items.sorting.description') }}
                         </p>
                     </div>
 
@@ -99,9 +97,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-cube" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Bálázás</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.baling.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Bálázó berendezés kartonok, textíliák és fóliák részére
+                            {{ $t('wasteManagement.technologies.items.baling.description') }}
                         </p>
                     </div>
 
@@ -110,9 +108,9 @@
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-arrows-pointing-in" class="text-purple-600 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Tömörítés</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.compacting.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Tömörítő berendezés műanyag csomagolási hulladékok (hungarocell, habosító fólia) részére
+                            {{ $t('wasteManagement.technologies.items.compacting.description') }}
                         </p>
                     </div>
 
@@ -121,9 +119,9 @@
                         <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-document-minus" class="text-red-500 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Iratmegsemmisítés</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.shredding.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Iratmegsemmísítő berendezés
+                            {{ $t('wasteManagement.technologies.items.shredding.description') }}
                         </p>
                     </div>
 
@@ -132,9 +130,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-building-storefront" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">Raktározás</h3>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.storage.title') }}</h3>
                         <p class="text-gray-700 text-sm text-center">
-                            Veszélyes hulladékok részére köztes raktár, fedett raktárak, folyadéktartályok – szinte minden hulladéktípus kezelésére
+                            {{ $t('wasteManagement.technologies.items.storage.description') }}
                         </p>
                     </div>
                 </div>
@@ -147,19 +145,16 @@
                 <div class="grid gap-12 md:grid-cols-2 items-center">
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-                            Másodnyersanyagok előállítása
+                            {{ $t('wasteManagement.secondaryMaterials.title') }}
                         </h2>
                         <h3 class="text-xl text-buchl-green font-semibold mb-4">
-                            A körforgásos gazdaság szolgálatában
+                            {{ $t('wasteManagement.secondaryMaterials.subtitle') }}
                         </h3>
                         <p class="text-lg text-gray-700 mb-6">
-                            A BÜCHL HUNGARIA Kft. kulcsszereplő a hulladékhasznosításban, amely megbízható partnerként látja 
-                            el a feldolgozó- és energiaipart másodnyersanyagokkal Magyarországon és a régióban.
+                            {{ $t('wasteManagement.secondaryMaterials.description1') }}
                         </p>
                         <p class="text-gray-700">
-                            Termékpalettáján szerepelnek többek között fémforgácsok, különféle fémhulladékok, másodlagos 
-                            tüzelőanyagok, előkezelt műanyagok, csomagolóanyagok, valamint textil- és színesfém-hulladékok – 
-                            mindezt a fenntartható és körforgásos gazdálkodás jegyében.
+                            {{ $t('wasteManagement.secondaryMaterials.description2') }}
                         </p>
                     </div>
                     <div class="relative">
@@ -177,13 +172,12 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    Innovatív megoldások speciális ipari hulladékokra
+                    {{ $t('wasteManagement.innovative.title') }}
                 </h2>
                 
                 <div class="max-w-4xl mx-auto">
                     <p class="text-lg text-gray-700 mb-8 text-center">
-                        A BÜCHL folyamatosan új technológiákat fejleszt az ipari hulladékok költséghatékony, biztonságos és 
-                        fenntartható kezelésére.
+                        {{ $t('wasteManagement.innovative.description') }}
                     </p>
                     
                     <div class="grid gap-8 md:grid-cols-2">
@@ -191,9 +185,9 @@
                             <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <UIcon name="i-heroicons-beaker" class="text-buchl-blue text-2xl" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Lakktartalmú szennyvizek</h3>
+                            <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('wasteManagement.innovative.paintWastewater.title') }}</h3>
                             <p class="text-gray-700">
-                                Lakktartalmú szennyvizek feldolgozására szolgáló pilot-berendezés
+                                {{ $t('wasteManagement.innovative.paintWastewater.description') }}
                             </p>
                         </div>
                         
@@ -201,9 +195,9 @@
                             <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <UIcon name="i-heroicons-shield-exclamation" class="text-red-500 text-2xl" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Pirotechnikai rendszerek</h3>
+                            <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('wasteManagement.innovative.pyrotechnic.title') }}</h3>
                             <p class="text-gray-700">
-                                Légzsákok és más, a gépjárművekből származó pirotechnikai rendszerek biztonságos megsemmisítésére alkalmas mobil konténer
+                                {{ $t('wasteManagement.innovative.pyrotechnic.description') }}
                             </p>
                         </div>
                     </div>
@@ -215,18 +209,15 @@
         <section class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    Hulladékkatalógus - Komplex hulladékkezelés
+                    {{ $t('wasteManagement.catalog.title') }}
                 </h2>
                 
                 <div class="max-w-4xl mx-auto mb-12">
                     <p class="text-lg text-gray-700 text-center mb-8">
-                        Vállalatunk nemcsak saját partnerei, hanem más régiókból érkező hulladékok kezelését is vállalja.
-                        Széles körű nem veszélyes hulladéktípusokat is feldolgozunk (pl. műanyag, fa, fém), emellett fő 
-                        szakterületünk a veszélyes hulladékok biztonságos átvétele és kezelése – ideértve emulziókat, 
-                        mosólúgokat, aeroszolokat, fémforgácsokat, légzsákokat és HV-akkumulátorokat is.
+                        {{ $t('wasteManagement.catalog.description1') }}
                     </p>
                     <p class="text-gray-700 text-center">
-                        Engedélyezett hulladéktípusaink listája letölthető.
+                        {{ $t('wasteManagement.catalog.description2') }}
                     </p>
                 </div>
 
@@ -235,24 +226,24 @@
                         <div class="bg-buchl-blue/5 p-8 rounded-lg">
                             <h3 class="text-xl font-bold text-buchl-blue mb-4 flex items-center gap-3">
                                 <UIcon name="i-heroicons-rectangle-stack" class="w-6 h-6" />
-                                Nem veszélyes hulladékok
+                                {{ $t('wasteManagement.catalog.nonHazardous.title') }}
                             </h3>
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Műanyag hulladékok</span>
+                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.plastic') }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Fa hulladékok</span>
+                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.wood') }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Fém hulladékok</span>
+                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.metal') }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>Csomagolóanyagok</span>
+                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.packaging') }}</span>
                                 </li>
                             </ul>
                         </div>
@@ -262,24 +253,24 @@
                         <div class="bg-red-50 p-8 rounded-lg border-l-4 border-red-400">
                             <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center gap-3">
                                 <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6" />
-                                Veszélyes hulladékok (fő szakterület)
+                                {{ $t('wasteManagement.catalog.hazardous.title') }}
                             </h3>
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Emulziók, mosólúgok</span>
+                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.emulsions') }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Aeroszolok</span>
+                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.aerosols') }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Fémforgácsok</span>
+                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.metalShavings') }}</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>Légzsákok és HV-akkumulátorok</span>
+                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.airbags') }}</span>
                                 </li>
                             </ul>
                         </div>
@@ -288,11 +279,10 @@
 
                 <div class="bg-gray-50 rounded-lg p-8 text-center">
                     <h3 class="text-2xl font-bold text-buchl-blue mb-4">
-                        Teljes hulladékatalógus és kereső funkció
+                        {{ $t('wasteManagement.catalog.fullCatalog.title') }}
                     </h3>
                     <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
-                        Engedélyezett hulladéktípusaink teljes listája letölthető és online kereső funkcióval ellátott. 
-                        Könnyen megtalálhatja a megfelelő kezelési módot az Ön hulladékaihoz.
+                        {{ $t('wasteManagement.catalog.fullCatalog.description') }}
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <UButton
@@ -301,7 +291,7 @@
                             icon="i-heroicons-magnifying-glass"
                             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                         >
-                            Kereső funkció
+                            {{ $t('wasteManagement.catalog.fullCatalog.searchButton') }}
                         </UButton>
                         <UButton
                             href="/media/documents/hulladek-katalogus.pdf"
@@ -311,7 +301,7 @@
                             class="rounded-none border-buchl-blue text-buchl-blue hover:bg-buchl-blue hover:text-white"
                             target="_blank"
                         >
-                            Katálógus letöltése
+                            {{ $t('wasteManagement.catalog.fullCatalog.downloadButton') }}
                         </UButton>
                     </div>
                 </div>
@@ -322,10 +312,10 @@
         <section class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    Kérjen személyre szabott ajánlatot!
+                    {{ $t('wasteManagement.cta.title') }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    Tapasztalt szakembereink segítségével találja meg a legmegfelelőbb hulladékkezelési megoldást vállalata számára.
+                    {{ $t('wasteManagement.cta.description') }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
@@ -335,7 +325,7 @@
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        Ajánlatkérés
+                        {{ $t('wasteManagement.cta.quoteButton') }}
                     </UButton>
                     <UButton
                         to="/szolgaltatasok"
@@ -344,7 +334,7 @@
                         icon="i-heroicons-arrow-left"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        Vissza a szolgáltatásokhoz
+                        {{ $t('wasteManagement.cta.backButton') }}
                     </UButton>
                 </div>
             </div>
@@ -353,5 +343,13 @@
 </template>
 
 <script setup lang="ts">
-// Hulladékkezelés oldal
+// Composables
+const localePath = useLocalePath()
+
+// SEO meta adatok - using static content like rolunk.vue
+useSeoMeta({
+  title: 'Hulladékkezelés - BÜCHL HUNGARIA',
+  description: 'A BÜCHL győri telephelyen fejlett technológiák működnek az ipari hulladékok biztonságos és hatékony kezelésére. Speciális technológiák, másodnyersúnyagok előállítása és innovatív megoldások.',
+  keywords: 'BÜCHL HUNGARIA, hulladékkezelés, veszélyes hulladék, ipari hulladék, másodnyersúnyag, emulziókezelés, bepárlás'
+})
 </script>

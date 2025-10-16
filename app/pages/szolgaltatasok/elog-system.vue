@@ -2,17 +2,17 @@
     <div>
         <!-- Hero szekció -->
         <BuchlHero
-            title="Logisztika"
-            subtitle="Digitális hulladéklogisztikai megoldások"
+            :title="$t('elogSystem.hero.title')"
+            :subtitle="$t('elogSystem.hero.subtitle')"
             image="/media/images/logisztika.jpg"
             bg-color="blue"
             :primary-cta="{
-                label: 'Ajánlatkérés',
-                to: '/kapcsolat',
+                label: $t('elogSystem.hero.primaryCta'),
+                to: localePath('/kapcsolat'),
             }"
             :secondary-cta="{
-                label: 'Vissza a szolgáltatásokhoz',
-                to: '/szolgaltatasok',
+                label: $t('elogSystem.hero.secondaryCta'),
+                to: localePath('/szolgaltatasok'),
             }"
         />
 
@@ -22,9 +22,7 @@
                 <div class="max-w-4xl mx-auto">
                     <div class="prose prose-lg max-w-none">
                         <p class="text-xl text-gray-700 mb-8">
-                            Az ELOG SYSTEM® rendszer 4.0 verziója komplex, digitális megoldást kínál a hulladékok gyűjtésére és 
-                            papírmentes, igényalapú elszállítására. Emellett bevezetésre került a CleverWaste® rendszer, mely a 
-                            teljes szállítási és hulladékkezelési folyamatot digitalizálja.
+                            {{ $t('elogSystem.intro.description') }}
                         </p>
                     </div>
                 </div>
@@ -35,7 +33,7 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    ELOG SYSTEM® 4.0
+                    {{ $t('elogSystem.system.title') }}
                 </h2>
 
                 <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -44,9 +42,9 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-cube" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Innovatív gyűjtőeszközök</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('elogSystem.system.components.collectingTools.title') }}</h3>
                         <p class="text-gray-700 text-center">
-                            Intelligens gyűjtőkonténerek és moduláris rendszerek a hatékony hulladékválogatáshoz
+                            {{ $t('elogSystem.system.components.collectingTools.description') }}
                         </p>
                     </div>
 
@@ -55,9 +53,9 @@
                         <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-truck" class="text-buchl-green text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">Q-Frame Shuttle</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('elogSystem.system.components.qFrameShuttle.title') }}</h3>
                         <p class="text-gray-700 text-center">
-                            A gyártósor melletti biztonságos gyűjtés szolgálatában
+                            {{ $t('elogSystem.system.components.qFrameShuttle.description') }}
                         </p>
                     </div>
 
@@ -66,9 +64,9 @@
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-document-check" class="text-purple-600 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">GYLOG 1.0 vezérlés</h3>
+                        <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('elogSystem.system.components.gylogControl.title') }}</h3>
                         <p class="text-gray-700 text-center">
-                            Saját fejlesztésű papírmentes, igényalapú elszállítási rendszer
+                            {{ $t('elogSystem.system.components.gylogControl.description') }}
                         </p>
                     </div>
                 </div>
@@ -81,22 +79,20 @@
                 <div class="grid gap-12 md:grid-cols-2 items-center">
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-                            ELOGplan és CleverWaste®
+                            {{ $t('elogSystem.digital.title') }}
                         </h2>
                         <div class="space-y-6">
                             <div class="border-l-4 border-buchl-blue pl-6">
-                                <h3 class="text-xl font-bold text-buchl-blue mb-2">ELOGplan (2019-től)</h3>
+                                <h3 class="text-xl font-bold text-buchl-blue mb-2">{{ $t('elogSystem.digital.elogplan.title') }}</h3>
                                 <p class="text-gray-700">
-                                    Az ELOG SYSTEM® rendszer külső partnerek számára is elérhető változata, 
-                                    mely lehetővé teszi a szélesebb körű alkalmazást.
+                                    {{ $t('elogSystem.digital.elogplan.description') }}
                                 </p>
                             </div>
                             
                             <div class="border-l-4 border-buchl-green pl-6">
-                                <h3 class="text-xl font-bold text-buchl-green mb-2">CleverWaste®</h3>
+                                <h3 class="text-xl font-bold text-buchl-green mb-2">{{ $t('elogSystem.digital.cleverWaste.title') }}</h3>
                                 <p class="text-gray-700">
-                                    A rendszer a teljes szállítási és hulladékkezelési folyamatot 
-                                    digitalizálja – a konténerkihelyezéstől a mérlegelésen át az elszámolásig és dokumentációig.
+                                    {{ $t('elogSystem.digital.cleverWaste.description') }}
                                 </p>
                             </div>
                         </div>
@@ -116,17 +112,15 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    Rugalmas szolgáltatások szakszemélyzet biztosításával
+                    {{ $t('elogSystem.services.title') }}
                 </h2>
                 
                 <div class="max-w-4xl mx-auto mb-12">
                     <p class="text-lg text-gray-700 text-center mb-8">
-                        Az innovatív technológiai megoldások mellett rugalmas szolgáltatásokat nyújtunk szakszemélyzet 
-                        biztosításával is. A targoncavezetőtől a hulladékszakértőig teljes csapat dolgozik a szelektív gyűjtés 
-                        hatékonyságán, az adatrögzítésen és a költségek optimalizálásán.
+                        {{ $t('elogSystem.services.description1') }}
                     </p>
                     <p class="text-lg text-gray-700 text-center">
-                        A BÜCHL szakértelme a hulladéklogisztikai folyamatok tervezésében és optimalizálásában is rendelkezésre áll.
+                        {{ $t('elogSystem.services.description2') }}
                     </p>
                 </div>
 
@@ -136,8 +130,8 @@
                         <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-truck" class="text-buchl-blue text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-2">Targoncavezetők</h3>
-                        <p class="text-gray-600 text-sm">Szakképzett operátorok az anyagmozgatáshoz</p>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-2">{{ $t('elogSystem.services.staff.forkliftOperators.title') }}</h3>
+                        <p class="text-gray-600 text-sm">{{ $t('elogSystem.services.staff.forkliftOperators.description') }}</p>
                     </div>
 
                     <!-- Hulladékszakértők -->
@@ -145,8 +139,8 @@
                         <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-academic-cap" class="text-buchl-green text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-2">Hulladékszakértők</h3>
-                        <p class="text-gray-600 text-sm">Szakértő tanácsadás és folyamatoptimalizálás</p>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-2">{{ $t('elogSystem.services.staff.wasteExperts.title') }}</h3>
+                        <p class="text-gray-600 text-sm">{{ $t('elogSystem.services.staff.wasteExperts.description') }}</p>
                     </div>
 
                     <!-- Szelektív gyűjtés -->
@@ -154,8 +148,8 @@
                         <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-funnel" class="text-orange-500 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-2">Szelektív gyűjtés</h3>
-                        <p class="text-gray-600 text-sm">Hatékony válogatási és gyűjtési rendszerek</p>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-2">{{ $t('elogSystem.services.staff.selectiveCollection.title') }}</h3>
+                        <p class="text-gray-600 text-sm">{{ $t('elogSystem.services.staff.selectiveCollection.description') }}</p>
                     </div>
 
                     <!-- Adatrögzítés -->
@@ -163,8 +157,8 @@
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-chart-bar" class="text-purple-600 text-2xl" />
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-2">Adatrögzítés</h3>
-                        <p class="text-gray-600 text-sm">Precíz dokumentáció és nyomonkövetés</p>
+                        <h3 class="font-bold text-buchl-blue text-lg mb-2">{{ $t('elogSystem.services.staff.dataEntry.title') }}</h3>
+                        <p class="text-gray-600 text-sm">{{ $t('elogSystem.services.staff.dataEntry.description') }}</p>
                     </div>
                 </div>
             </div>
@@ -175,7 +169,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                        Az ELOG SYSTEM® előnyei
+                        {{ $t('elogSystem.benefits.title') }}
                     </h2>
                 </div>
                 
@@ -184,24 +178,24 @@
                         <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-document-check" class="text-white text-3xl" />
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Papírmentes folyamatok</h3>
-                        <p class="text-white/80">Digitális dokumentáció és igényalapú elszállítás</p>
+                        <h3 class="text-xl font-bold mb-2">{{ $t('elogSystem.benefits.paperless.title') }}</h3>
+                        <p class="text-white/80">{{ $t('elogSystem.benefits.paperless.description') }}</p>
                     </div>
                     
                     <div class="text-center">
                         <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-chart-pie" class="text-white text-3xl" />
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Költségoptimalizálás</h3>
-                        <p class="text-white/80">Hatékony erőforrás-felhasználás és költségmegtakarítás</p>
+                        <h3 class="text-xl font-bold mb-2">{{ $t('elogSystem.benefits.costOptimization.title') }}</h3>
+                        <p class="text-white/80">{{ $t('elogSystem.benefits.costOptimization.description') }}</p>
                     </div>
                     
                     <div class="text-center">
                         <div class="bg-white/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                             <UIcon name="i-heroicons-clock" class="text-white text-3xl" />
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Valós idejű nyomonkövetés</h3>
-                        <p class="text-white/80">Teljes folyamat átláthatósága és kontrollja</p>
+                        <h3 class="text-xl font-bold mb-2">{{ $t('elogSystem.benefits.realTimeTracking.title') }}</h3>
+                        <p class="text-white/80">{{ $t('elogSystem.benefits.realTimeTracking.description') }}</p>
                     </div>
                 </div>
             </div>
@@ -211,29 +205,29 @@
         <section class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    Kérjen személyre szabott ajánlatot!
+                    {{ $t('elogSystem.cta.title') }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    Tapasztalt szakembereink segítségével találja meg a legmegfelelőbb digitális hulladéklogisztikai megoldást vállalata számára.
+                    {{ $t('elogSystem.cta.description') }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
-                        to="/kapcsolat"
+                        :to="localePath('/kapcsolat')"
                         size="lg"
                         icon="i-heroicons-envelope"
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        Ajánlatkérés
+                        {{ $t('elogSystem.cta.quoteButton') }}
                     </UButton>
                     <UButton
-                        to="/szolgaltatasok"
+                        :to="localePath('/szolgaltatasok')"
                         variant="outline"
                         size="lg"
                         icon="i-heroicons-arrow-left"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        Vissza a szolgáltatásokhoz
+                        {{ $t('elogSystem.cta.backButton') }}
                     </UButton>
                 </div>
             </div>
@@ -242,5 +236,13 @@
 </template>
 
 <script setup lang="ts">
-// Logisztika (ELOG SYSTEM®) oldal
+// Composables
+const localePath = useLocalePath()
+
+// SEO meta adatok - using static content like rolunk.vue
+useSeoMeta({
+  title: 'Logisztika - ELOG SYSTEM® - BÜCHL HUNGARIA',
+  description: 'Az ELOG SYSTEM® rendszer 4.0 verziója komplex, digitális megoldást kínál a hulladékok gyűjtésére és papírmentes, igényalapú elszállítására. CleverWaste® rendszer.',
+  keywords: 'BÜCHL HUNGARIA, ELOG SYSTEM, CleverWaste, digitális logisztika, hulladéklogisztika, papírmentes, GYLOG'
+})
 </script>

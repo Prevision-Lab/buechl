@@ -31,3 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 .text-marker {
   font-family: 'Permanent Marker', cursive;
 }
+
+/* Különleges kiemelések, szlogenek */
+.font-display {
+  font-family: 'Permanent Marker', cursive;
+}

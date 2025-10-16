@@ -17,6 +17,7 @@
         "@nuxt/icon": "^1.12.0",
         "@nuxt/image": "^1.10.0",
         "@nuxt/ui-pro": "^3.1.1",
+        "@nuxtjs/i18n": "^10.1.1",
         "@vueuse/motion": "^3.0.3",
         "eslint": "^9.26.0",
         "gray-matter": "^4.0.3",

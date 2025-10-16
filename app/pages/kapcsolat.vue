@@ -2,8 +2,8 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      title="Kapcsolat"
-      subtitle="Vegye fel velünk a kapcsolatot! Szakértő csapatunk készséggel áll rendelkezésére."
+      :title="$t('contact.hero.title')"
+      :subtitle="$t('contact.hero.subtitle')"
       image="/media/images/rolunk.jpeg"
       bg-color="blue"
     />
@@ -12,16 +12,16 @@
     <section class="py-8 bg-buchl-blue text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center space-y-4">
-          <h2 class="text-2xl font-bold">Gyors elérhetőségek</h2>
+          <h2 class="text-2xl font-bold">{{ $t('contact.quickContact.title') }}</h2>
           <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <div class="flex items-center space-x-2">
               <UIcon name="i-heroicons-phone" class="text-buchl-green" style="width: 24px; height: 24px;" />
-              <span class="text-lg font-semibold">Azonnali kapcsolat:</span>
+              <span class="text-lg font-semibold">{{ $t('contact.quickContact.phone.label') }}:</span>
               <a href="tel:+3696516620" class="text-buchl-green hover:text-white transition-colors text-lg font-bold">+36 96 516 620</a>
             </div>
             <div class="flex items-center space-x-2">
               <UIcon name="i-heroicons-envelope" class="text-buchl-green" style="width: 24px; height: 24px;" />
-              <span class="text-lg font-semibold">Email:</span>
+              <span class="text-lg font-semibold">{{ $t('contact.quickContact.email.label') }}:</span>
               <a href="mailto:info@buechl.hu" class="text-buchl-green hover:text-white transition-colors text-lg font-bold">info@buechl.hu</a>
             </div>
           </div>
@@ -35,17 +35,17 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Kapcsolat információk -->
           <div>
-            <h2 class="text-3xl font-bold text-buchl-blue mb-8">Közvetlen kapcsolat szakertőinkkel</h2>
+            <h2 class="text-3xl font-bold text-buchl-blue mb-8">{{ $t('contact.directContact.title') }}</h2>
             
             <!-- Központi iroda -->
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-building-office-2" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Központi iroda
+                {{ $t('contact.directContact.departments.central.title') }}
               </h3>
               <div class="space-y-2">
-                <p class="font-medium text-buchl-blue">Lipóth Szilvia</p>
-                <p class="text-gray-700 text-sm">Ügyvezetői asszisztens</p>
+                <p class="font-medium text-buchl-blue">{{ $t('contact.directContact.departments.central.contact') }}</p>
+                <p class="text-gray-700 text-sm">{{ $t('contact.directContact.departments.central.position') }}</p>
                 <div class="flex items-center space-x-4">
                   <a href="tel:+3696516620" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                     <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
@@ -63,7 +63,7 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-user-circle" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                MOHU ügyintézés
+                {{ $t('contact.directContact.departments.mohu.title') }}
               </h3>
               <div class="flex items-center space-x-4">
                 <a href="tel:+3620/559-7004" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
@@ -81,11 +81,11 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-chart-bar" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Értékesítés
+                {{ $t('contact.directContact.departments.sales.title') }}
               </h3>
               <div class="space-y-2">
-                <p class="font-medium text-buchl-blue">Kozicz Pál</p>
-                <p class="text-gray-700 text-sm">Kereskedelmi vezető</p>
+                <p class="font-medium text-buchl-blue">{{ $t('contact.directContact.departments.sales.contact') }}</p>
+                <p class="text-gray-700 text-sm">{{ $t('contact.directContact.departments.sales.position') }}</p>
                 <div class="flex items-center space-x-4">
                   <a href="tel:+36205597002" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                     <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
@@ -103,7 +103,7 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-globe-alt" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Környezetvédelem
+                {{ $t('contact.directContact.departments.environmental.title') }}
               </h3>
               <div class="flex items-center space-x-4">
                 <a href="tel:+36203271151" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
@@ -121,9 +121,9 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-document-text" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Hulladékadat-szolgáltatás
+                {{ $t('contact.directContact.departments.wasteData.title') }}
               </h3>
-              <p class="text-gray-700 text-sm mb-2">Hulladékkezelési nyilvántartások, jelentések</p>
+              <p class="text-gray-700 text-sm mb-2">{{ $t('contact.directContact.departments.wasteData.description') }}</p>
               <div class="flex items-center space-x-4">
                 <a href="tel:+36203271151" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                   <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
@@ -140,7 +140,7 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-truck" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Logisztika
+                {{ $t('contact.directContact.departments.logistics.title') }}
               </h3>
               <div class="flex items-center space-x-4">
                 <a href="tel:+36202914943" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
@@ -158,11 +158,11 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-cog" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Műszaki vezetés
+                {{ $t('contact.directContact.departments.technical.title') }}
               </h3>
               <div class="space-y-2">
-                <p class="font-medium text-buchl-blue">Lövész Tamás</p>
-                <p class="text-gray-700 text-sm">Operatív vezető</p>
+                <p class="font-medium text-buchl-blue">{{ $t('contact.directContact.departments.technical.contact') }}</p>
+                <p class="text-gray-700 text-sm">{{ $t('contact.directContact.departments.technical.position') }}</p>
                 <div class="flex items-center space-x-4">
                   <a href="tel:+36209924560" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                     <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
@@ -180,9 +180,9 @@
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-calculator" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
-                Könyvelés
+                {{ $t('contact.directContact.departments.accounting.title') }}
               </h3>
-              <p class="text-gray-700 text-sm mb-2">Számlázás, pénzügyi kérdések</p>
+              <p class="text-gray-700 text-sm mb-2">{{ $t('contact.directContact.departments.accounting.description') }}</p>
               <div class="flex items-center space-x-4">
                 <a href="tel:+36204830595" class="flex items-center text-buchl-blue hover:text-buchl-green transition-colors">
                   <UIcon name="i-heroicons-phone" class="mr-1" style="width: 16px; height: 16px;" />
@@ -198,35 +198,35 @@
 
           <!-- Kapcsolatfelvételi űrlap -->
           <div class="bg-gray-50 p-8 rounded-lg h-fit">
-            <h2 class="text-3xl font-bold text-buchl-blue mb-8">Írjon nekünk</h2>
+            <h2 class="text-3xl font-bold text-buchl-blue mb-8">{{ $t('contact.form.title') }}</h2>
             
             <form class="space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">Név *</label>
-                  <UInput placeholder="Az Ön neve" size="lg" />
+                  <label class="block text-sm font-medium text-gray-700 mb-2">{{ $t('contact.form.fields.name.label') }} {{ $t('contact.form.required') }}</label>
+                  <UInput :placeholder="$t('contact.form.fields.name.placeholder')" size="lg" />
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">Cég neve *</label>
-                  <UInput placeholder="Vállalat neve" size="lg" />
+                  <label class="block text-sm font-medium text-gray-700 mb-2">{{ $t('contact.form.fields.company.label') }} {{ $t('contact.form.required') }}</label>
+                  <UInput :placeholder="$t('contact.form.fields.company.placeholder')" size="lg" />
                 </div>
               </div>
               
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">E-mail cím *</label>
-                  <UInput placeholder="pelda@email.com" type="email" size="lg" />
+                  <label class="block text-sm font-medium text-gray-700 mb-2">{{ $t('contact.form.fields.email.label') }} {{ $t('contact.form.required') }}</label>
+                  <UInput :placeholder="$t('contact.form.fields.email.placeholder')" type="email" size="lg" />
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">Telefonszám</label>
-                  <UInput placeholder="+36 30 123 4567" type="tel" size="lg" />
+                  <label class="block text-sm font-medium text-gray-700 mb-2">{{ $t('contact.form.fields.phone.label') }}</label>
+                  <UInput :placeholder="$t('contact.form.fields.phone.placeholder')" type="tel" size="lg" />
                 </div>
               </div>
 
               <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Üzenet *</label>
+                <label class="block text-sm font-medium text-gray-700 mb-2">{{ $t('contact.form.fields.message.label') }} {{ $t('contact.form.required') }}</label>
                 <UTextarea 
-                  placeholder="Írja le kérdését vagy kérését részletesen..."
+                  :placeholder="$t('contact.form.fields.message.placeholder')"
                   :rows="5"
                   size="lg"
                   class="w-full"
@@ -237,8 +237,8 @@
                 <UCheckbox class="mt-1" />
                 <div class="ml-3">
                   <label class="text-sm text-gray-700">
-                    Elfogadom az <a href="/adatvedelem" class="text-buchl-blue hover:text-buchl-green underline">adatvédelmi szabályzatot</a> 
-                    és hozzájárulok adataim kezeléséhez. *
+                    {{ $t('contact.form.fields.privacy.text') }} <a href="/adatvedelem" class="text-buchl-blue hover:text-buchl-green underline">{{ $t('contact.form.fields.privacy.link') }}</a> 
+                    {{ $t('contact.form.fields.privacy.consent') }} {{ $t('contact.form.required') }}
                   </label>
                 </div>
               </div>
@@ -251,7 +251,7 @@
                 icon="i-heroicons-paper-airplane"
                 :trailing="true"
               >
-                Üzenet elküldése
+                {{ $t('contact.form.submit') }}
               </UButton>
             </form>
           </div>
@@ -264,10 +264,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            Telephelyeink
+            {{ $t('contact.locations.title') }}
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Látogasson el valamelyik telephelyünkre, ahol szakértő csapatunk várja Önt.
+            {{ $t('contact.locations.description') }}
           </p>
         </div>
 
@@ -276,7 +276,7 @@
           <div class="bg-white p-8 rounded-lg shadow-md">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-building-office-2" class="text-buchl-blue mr-3" style="width: 24px; height: 24px;" />
-              <h3 class="text-xl font-semibold text-buchl-blue">Győr – Központ</h3>
+              <h3 class="text-xl font-semibold text-buchl-blue">{{ $t('contact.locations.gyor.central.title') }}</h3>
             </div>
             <div class="space-y-3 mb-6">
               <div class="flex items-start">
@@ -293,19 +293,19 @@
               </div>
             </div>
             <div class="bg-buchl-blue/5 p-4 rounded mb-4">
-              <h4 class="font-medium text-buchl-blue mb-2">Nyitvatartás:</h4>
+              <h4 class="font-medium text-buchl-blue mb-2">{{ $t('contact.locations.gyor.central.hours.title') }}:</h4>
               <div class="text-sm text-gray-700 space-y-1">
                 <div class="flex justify-between">
-                  <span>Hétfő – Csütörtök:</span>
-                  <span>7:00 - 15:30</span>
+                  <span>{{ $t('contact.locations.gyor.central.hours.weekdays') }}:</span>
+                  <span>{{ $t('contact.locations.gyor.central.hours.weekdaysTimes') }}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span>Péntek:</span>
-                  <span>7:00 - 14:30</span>
+                  <span>{{ $t('contact.locations.gyor.central.hours.friday') }}:</span>
+                  <span>{{ $t('contact.locations.gyor.central.hours.fridayTimes') }}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span>Szombat – Vasárnap:</span>
-                  <span>Zárva</span>
+                  <span>{{ $t('contact.locations.gyor.central.hours.weekend') }}:</span>
+                  <span>{{ $t('contact.locations.gyor.central.hours.closed') }}</span>
                 </div>
               </div>
             </div>
@@ -324,7 +324,7 @@
           <div class="bg-white p-8 rounded-lg shadow-md">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-building-office" class="text-buchl-blue mr-3" style="width: 24px; height: 24px;" />
-              <h3 class="text-xl font-semibold text-buchl-blue">Győr – II-es telephely</h3>
+              <h3 class="text-xl font-semibold text-buchl-blue">{{ $t('contact.locations.gyor.second.title') }}</h3>
             </div>
             <div class="space-y-3 mb-6">
               <div class="flex items-start">
@@ -341,19 +341,19 @@
               </div>
             </div>
             <div class="bg-buchl-blue/5 p-4 rounded mb-4">
-              <h4 class="font-medium text-buchl-blue mb-2">Nyitvatartás:</h4>
+              <h4 class="font-medium text-buchl-blue mb-2">{{ $t('contact.locations.gyor.second.hours.title') }}:</h4>
               <div class="text-sm text-gray-700 space-y-1">
                 <div class="flex justify-between">
-                  <span>Hétfő – Csütörtök:</span>
-                  <span>7:00 - 15:30</span>
+                  <span>{{ $t('contact.locations.gyor.second.hours.weekdays') }}:</span>
+                  <span>{{ $t('contact.locations.gyor.second.hours.weekdaysTimes') }}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span>Péntek:</span>
-                  <span>7:00 - 14:30</span>
+                  <span>{{ $t('contact.locations.gyor.second.hours.friday') }}:</span>
+                  <span>{{ $t('contact.locations.gyor.second.hours.fridayTimes') }}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span>Szombat – Vasárnap:</span>
-                  <span>Zárva</span>
+                  <span>{{ $t('contact.locations.gyor.second.hours.weekend') }}:</span>
+                  <span>{{ $t('contact.locations.gyor.second.hours.closed') }}</span>
                 </div>
               </div>
             </div>
@@ -372,7 +372,7 @@
           <div class="bg-white p-8 rounded-lg shadow-md lg:col-span-2 xl:col-span-1">
             <div class="flex items-center mb-4">
               <UIcon name="i-heroicons-building-storefront" class="text-buchl-blue mr-3" style="width: 24px; height: 24px;" />
-              <h3 class="text-xl font-semibold text-buchl-blue">Nyíregyháza</h3>
+              <h3 class="text-xl font-semibold text-buchl-blue">{{ $t('contact.locations.nyiregyhaza.title') }}</h3>
             </div>
             <div class="space-y-3 mb-6">
               <div class="flex items-start">
@@ -389,19 +389,19 @@
               </div>
             </div>
             <div class="bg-buchl-blue/5 p-4 rounded mb-4">
-              <h4 class="font-medium text-buchl-blue mb-2">Nyitvatartás:</h4>
+              <h4 class="font-medium text-buchl-blue mb-2">{{ $t('contact.locations.nyiregyhaza.hours.title') }}:</h4>
               <div class="text-sm text-gray-700 space-y-1">
                 <div class="flex justify-between">
-                  <span>Hétfő – Csütörtök:</span>
-                  <span>7:00 - 15:30</span>
+                  <span>{{ $t('contact.locations.nyiregyhaza.hours.weekdays') }}:</span>
+                  <span>{{ $t('contact.locations.nyiregyhaza.hours.weekdaysTimes') }}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span>Péntek:</span>
-                  <span>7:00 - 14:30</span>
+                  <span>{{ $t('contact.locations.nyiregyhaza.hours.friday') }}:</span>
+                  <span>{{ $t('contact.locations.nyiregyhaza.hours.fridayTimes') }}</span>
                 </div>
                 <div class="flex justify-between">
-                  <span>Szombat – Vasárnap:</span>
-                  <span>Zárva</span>
+                  <span>{{ $t('contact.locations.nyiregyhaza.hours.weekend') }}:</span>
+                  <span>{{ $t('contact.locations.nyiregyhaza.hours.closed') }}</span>
                 </div>
               </div>
             </div>

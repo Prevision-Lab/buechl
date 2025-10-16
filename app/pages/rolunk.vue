@@ -2,13 +2,13 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      title="Rólunk"
-      subtitle="Megbízható partner az ipari hulladékkezelésben"
+      :title="$t('about.hero.title')"
+      :subtitle="$t('about.hero.subtitle')"
       image="/media/images/rolunk.jpg"
       bg-color="blue"
       :primary-cta="{
-        label: 'Kapcsolatfelvétel',
-        to: '/kapcsolat'
+        label: $t('footer.contactButton'),
+        to: localePath('kapcsolat')
       }"
     />
 
@@ -17,44 +17,26 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-8 text-center">
-            BÜCHL HUNGARIA Kft.
+            {{ $t('about.sections.company.title') }}
           </h2>
           <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p>
-              A <strong>BÜCHL HUNGARIA Kft.</strong> Magyarország egyik meghatározó szakértője az ipari hulladékkezelés 
-              területén, különös fókuszt helyezve az <strong>autóipari partnerekre</strong>. Vállalatunk <strong>2000 óta</strong> van jelen a hazai 
-              piacon, és azóta is elkötelezetten dolgozunk azon, hogy ügyfeleink számára <strong>megbízható, innovatív és 
-              fenntartható hulladékgazdálkodási megoldásokat</strong> kínáljunk. <strong>Kiemelt szakterületünk a termelő 
-              vállalatok gyártási folyamataiból származó veszélyes hulladékok kezelése</strong>, amelyhez korszerű 
-              technológiákat és eszközparkot üzemeltetünk.
+              {{ $t('about.sections.company.description1') }}
             </p>
             <p>
-              Cégünk a <strong>bajorországi székhelyű BÜCHL cégcsoport tagja</strong>, amely immár <strong>75 éve tevékenykedik 
-              sikeresen a hulladékgazdálkodás, környezetvédelem, szaktanácsadás és innováció területén</strong>. A családi 
-              tulajdonban lévő, tulajdonosok által irányított vállalatcsoport <strong>stabil hátteret és nemzetközi 
-              tapasztalatot</strong> biztosít számunkra.
+              {{ $t('about.sections.company.description2') }}
             </p>
             <p>
-              Magyarországon <strong>320 munkatárssal, 5 telephelyen, korszerű hulladékkezelő berendezésekkel és speciális 
-              járművekkel</strong> állunk partnereink rendelkezésére. Napi szinten <strong>615 tonna hulladékszállítást és 
-              234 tonna hulladékelőkezelést</strong> végzünk. Szolgáltatásaink <strong>teljeskörű megoldást kínálnak 
-              a veszélyes és nem veszélyes ipari hulladékok begyűjtésére, szállítására és újrahasznosítására</strong>. A saját 
-              kezelőüzemeinkben a hulladékból <strong>értékes nyersanyagokat és energiahordozókat állítunk elő</strong>, így 
-              aktívan hozzájárulunk a <strong>körforgásos gazdaság fejlődéséhez</strong>.
+              {{ $t('about.sections.company.description3') }}
             </p>
             <p>
-              Munkánk során <strong>kiemelt figyelmet fordítunk a digitalizációra, a hatékonyságnövelésre és a 
-              fenntarthatóságra</strong>, amelyek <strong>2020 óta vállalati stratégiánk alappillérei</strong>. Célunk, hogy a legmodernebb 
-              technológiák és testreszabott logisztikai megoldások segítségével <strong>ügyfeleink hulladékgazdálkodási 
-              folyamatait optimalizáljuk</strong>, miközben megfelelünk a <strong>legszigorúbb jogszabályi és környezetvédelmi 
-              előírásoknak</strong>.
+              {{ $t('about.sections.company.description4') }}
             </p>
             <p>
-              <strong>A BÜCHL HUNGARIA Kft. számára a legfontosabb értékek a vevői elégedettség, a magas hasznosítási 
-              arány, a teljes körű biztonság, valamint a fenntartható működés.</strong>
+              {{ $t('about.sections.company.description5') }}
             </p>
             <p class="text-center text-xl font-bold text-buchl-blue mt-8">
-              <strong>BÜCHL HUNGARIA – Megbízható partner az ipari hulladékkezelésben.</strong>
+              <strong>{{ $t('about.sections.company.slogan') }}</strong>
             </p>
           </div>
         </div>
@@ -66,10 +48,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            Menedzsment
+            {{ $t('about.sections.management.title') }}
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Tapasztalt vezetőségünk biztosítja a vállalat stratégiai irányítását és a fenntartható növekedést.
+            {{ $t('about.sections.management.subtitle') }}
           </p>
         </div>
 
@@ -92,19 +74,16 @@
               <div class="lg:col-span-2 space-y-6">
                 <div>
                   <h3 class="text-2xl lg:text-3xl font-bold text-buchl-blue mb-2">
-                    Gyökeres Sándor
+                    {{ $t('about.sections.management.ceo.name') }}
                   </h3>
                   <p class="text-lg text-buchl-green font-semibold mb-4">
-                    Ügyvezető igazgató
+                    {{ $t('about.sections.management.ceo.position') }}
                   </p>
                 </div>
                 
                 <div>
                   <p class="text-gray-700 leading-relaxed">
-                    Gyökeres Sándor, aki több mint 20 éves tapasztalattal rendelkezik a környezetvédelmi szektorban, 
-                    2021 óta tölti be a Büchl Hungaria Kft. ügyvezetői pozícióját. Szakmai pályafutása során elkötelezetten 
-                    tevékenykedik a fenntartható megoldások kidolgozásán és megvalósításán. Vezetői munkáját az innováció 
-                    iránti nyitottság, a csapatmunka támogatása és a hosszú távú, stratégiai szemléletmód határozza meg.
+                    {{ $t('about.sections.management.ceo.description') }}
                   </p>
                 </div>
               </div>
@@ -120,23 +99,23 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-buchl-green">
-            BÜCHL CSOPORT
+            {{ $t('about.sections.group.title') }}
           </h2>
           <div class="max-w-4xl mx-auto">
             <p class="text-lg text-white/90 leading-relaxed font-semibold">
-              EGY ÖTLETTEL ELŐRÉBB. 1951 óta.
+              {{ $t('about.sections.group.slogan') }}
             </p>
             <p class="text-lg text-white/90 leading-relaxed mt-4">
-              A németországi Ingolstadtban alapított, immár harmadik generációs családi vállalkozás 75 éve kínál innovatív megoldásokat a hulladékgazdálkodás, környezetvédelem és fenntarthatóság területén.
+              {{ $t('about.sections.group.description1') }}
             </p>
             <p class="text-lg text-white/90 leading-relaxed mt-4">
-              A BÜCHL Csoport teljes szolgáltatási portfólióját a megbízható minőség, az innovatív megoldások, a bátor cselekvés, valamint az emberek és a környezet iránti felelősségtudat jellemzi.
+              {{ $t('about.sections.group.description2') }}
             </p>
             <p class="text-lg text-white/90 leading-relaxed mt-4">
-              Tevékenységük lefedi a hulladékgyűjtést, -szállítást és -kezelést, valamint a tervezést és szaktanácsadást is.
+              {{ $t('about.sections.group.description3') }}
             </p>
             <p class="text-lg text-white/90 leading-relaxed mt-4 font-semibold">
-              Küldetésük: egy ötlettel előrébb – a körforgásos gazdaságot támogató hatékony és jövőorientált szolgáltatásokkal.
+              {{ $t('about.sections.group.mission') }}
             </p>
           </div>
         </div>
@@ -152,7 +131,7 @@
               {{ telephelyCount }}
             </div>
             <div class="text-xl font-medium text-white/90">
-              TELEPHELY
+              {{ $t('about.sections.group.stats.locations') }}
             </div>
           </div>
 
@@ -165,7 +144,7 @@
               {{ munkatarsCount }}
             </div>
             <div class="text-xl font-medium text-white/90">
-              MUNKATÁRS
+              {{ $t('about.sections.group.stats.employees') }}
             </div>
           </div>
 
@@ -178,7 +157,7 @@
               {{ hulladekSzallitasCount }}
             </div>
             <div class="text-xl font-medium text-white/90">
-              TONNA SZÁLLÍTÁSA NAPONTA
+              {{ $t('about.sections.group.stats.dailyTransport') }}
             </div>
           </div>
         </div>
@@ -190,10 +169,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            BÜCHL CSOPORT
+            {{ $t('about.sections.group.title') }}
           </h2>
           <p class="text-lg text-gray-700">
-            A BÜCHL cégcsoport tagjai
+            {{ $t('about.sections.group.companyList') }}
           </p>
         </div>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
@@ -359,10 +338,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-            Hírek
+            {{ $t('about.sections.newsSection.title') }}
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Kövesse nyomon legfrissebb híreinket és fejlesztéseinket a hulladékgazdálkodás területén.
+            {{ $t('about.sections.newsSection.subtitle') }}
           </p>
         </div>
         
@@ -373,7 +352,7 @@
             icon="i-heroicons-newspaper"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            Összes hír megtekintése
+            {{ $t('about.sections.newsSection.viewAllNews') }}
           </UButton>
         </div>
       </div>
@@ -383,6 +362,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+const localePath = useLocalePath()
 
 // SEO meta adatok
 useSeoMeta({

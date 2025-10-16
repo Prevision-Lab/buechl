@@ -1,19 +1,19 @@
 <template>
   <div>
     <!-- Hero szekció - Ferde stílusú, nagy hatású megjelenítéssel -->
-    <BuchlHero
-      title="Egy ötlettel mindig tovább"
-      subtitle="Hulladékkezelés a fenntartható jövőért."
+<BuchlHero
+      :title="$t('hero.title')"
+      :subtitle="$t('hero.subtitle')"
       image="/media/images/elektromos autó.jpg"
       bg-color="blue"
       title-font="permanent-marker"
       :skewed="true"
       :primary-cta="{
-        label: 'Szolgáltatásaink',
+        label: $t('hero.primaryCta'),
         to: '/szolgaltatasok'
       }"
       :secondary-cta="{
-        label: 'Kapcsolatfelvétel',
+        label: $t('hero.secondaryCta'),
         to: '/kapcsolat'
       }"
     />
@@ -24,28 +24,28 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-                            BÜCHL Hungaria Kft.
+                            {{$t('company.title')}}
                         </h2>
                         <div class="space-y-4">
                             <p class="text-lg text-gray-700">
-                                A BÜCHL Hungaria több mint 25 éves tapasztalattal rendelkező vezető hulladékgazdálkodási vállalat Magyarországon, amely átfogó megoldásokat kínál az ipari ügyfelek számára.
+                                {{$t('company.description1')}}
                             </p>
                             <p class="text-lg text-gray-700">
-                                A németországi BÜCHL cégcsoport tagjaként közel 75 éves szakmai háttérrel rendelkezünk a fenntartható hulladékgazdálkodás területén.
+                                {{$t('company.description2')}}
                             </p>
                             <p class="text-lg text-gray-700">
-                                Célunk, hogy innovatív megoldásainkkal hozzájáruljunk a körforgásos gazdaság megvalósításához és ügyfeleink környezetvédelmi célkitűzéseinek eléréséhez.
+                                {{$t('company.description3')}}
                             </p>
                         </div>
             <div class="mt-8">
-              <UButton
-                to="/rolunk"
+<UButton
+                :to="localePath('rolunk')"
                 color="primary"
                 class="rounded-none"
                 icon="i-heroicons-arrow-right"
                 :trailing="true"
               >
-                Többet a vállalatról
+              {{$t('homepage.about.readMore')}}
               </UButton>
             </div>
           </div>
@@ -86,7 +86,7 @@
               </div>
             </div>
             <div class="absolute bottom-0 left-0 right-0 bg-buchl-blue/80 p-4 text-white">
-              <p class="font-semibold">BÜCHL Hungaria Kft.</p>
+              <p class="font-semibold">{{$t('company.videoTitle')}}</p>
             </div>
           </div>
         </div>
@@ -97,11 +97,11 @@
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            Szolgáltatásaink
+<h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
+            {{$t('homepage.services.title')}}
           </h2>
           <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-            Átfogó hulladékgazdálkodási megoldásokat kínálunk a hulladékkezelés, hulladékgyűjtés és -szállítás, környezetvédelmi szolgáltatások, valamint a tervezési és szaktanácsadási feladatok területén.
+            {{$t('homepage.services.description')}}
           </p>
         </div>
 
@@ -113,12 +113,12 @@
                 <div class="p-3 bg-primary-100 dark:bg-primary-900 rounded-lg">
                   <UIcon name="i-heroicons-cog-8-tooth" class="text-primary-600 dark:text-primary-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Hulladékkezelés</h3>
+                <h3 class="text-lg font-semibold">{{$t('homepage.services.wasteManagement.title')}}</h3>
               </div>
             </template>
             <div class="flex-1 flex items-center">
               <p class="text-gray-600 dark:text-gray-400">
-                Korszerű technológiákkal biztosítjuk a hulladékok környezetbarát kezelését és feldolgozását.
+                {{$t('homepage.services.wasteManagement.description')}}
               </p>
             </div>
           </UCard>
@@ -130,12 +130,12 @@
                 <div class="p-3 bg-green-100 dark:bg-green-900 rounded-lg">
                   <UIcon name="i-heroicons-truck" class="text-green-600 dark:text-green-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Hulladékgyűjtés és -szállítás</h3>
+                <h3 class="text-lg font-semibold">{{$t('homepage.services.collection.title')}}</h3>
               </div>
             </template>
             <div class="flex-1 flex items-center">
               <p class="text-gray-600 dark:text-gray-400">
-                Specializált járműparkunk biztosítja a biztonságos és megbízható hulladékszállítást.
+                {{$t('homepage.services.collection.description')}}
               </p>
             </div>
           </UCard>
@@ -147,12 +147,12 @@
                 <div class="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg">
                   <UIcon name="i-heroicons-shield-check" class="text-blue-600 dark:text-blue-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Környezetvédelmi szolgáltatások</h3>
+                <h3 class="text-lg font-semibold">{{$t('homepage.services.environmental.title')}}</h3>
               </div>
             </template>
             <div class="flex-1 flex items-center">
               <p class="text-gray-600 dark:text-gray-400">
-                Átfogó környezetvédelmi megoldások a fenntartható működésért.
+                {{$t('homepage.services.environmental.description')}}
               </p>
             </div>
           </UCard>
@@ -164,27 +164,27 @@
                 <div class="p-3 bg-yellow-100 dark:bg-yellow-900 rounded-lg">
                   <UIcon name="i-heroicons-light-bulb" class="text-yellow-600 dark:text-yellow-400 text-2xl" />
                 </div>
-                <h3 class="text-lg font-semibold">Tervezés és szaktanácsadás</h3>
+                <h3 class="text-lg font-semibold">{{$t('homepage.services.consulting.title')}}</h3>
               </div>
             </template>
             <div class="flex-1 flex items-center">
               <p class="text-gray-600 dark:text-gray-400">
-                Szakértői tanácsadás és tervezés a hatékony hulladékgazdálkodásért.
+                {{$t('homepage.services.consulting.description')}}
               </p>
             </div>
           </UCard>
         </div>
 
         <div class="text-center mt-12">
-          <UButton
-            to="/szolgaltatasok"
+<UButton
+            :to="localePath('szolgaltatasok')"
             color="neutral"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
             icon="i-heroicons-arrow-right"
             :trailing="true"
             size="lg"
           >
-            Összes szolgáltatás
+            {{$t('homepage.services.viewAll')}}
           </UButton>
         </div>
       </div>
@@ -195,10 +195,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-            Számokban
+            {{$t('homepage.stats.title')}}
           </h2>
           <p class="text-lg text-white/80 max-w-3xl mx-auto">
-            Széleskörű szolgáltatási spektrumot biztosítunk ügyfeleink számára.
+            {{$t('homepage.stats.subtitle')}}
           </p>
         </div>
 
@@ -206,25 +206,25 @@
           <!-- 1. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
             <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">320</div>
-            <div class="text-xl text-white/90">fő munkatárs</div>
+            <div class="text-xl text-white/90">{{$t('homepage.stats.employees')}}</div>
           </div>
 
           <!-- 2. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
             <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">közel 40</div>
-            <div class="text-xl text-white/90">gépjárműből álló flotta</div>
+            <div class="text-xl text-white/90">{{$t('homepage.stats.fleet')}}</div>
           </div>
 
           <!-- 3. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
             <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">25</div>
-            <div class="text-xl text-white/90">év a piacon</div>
+            <div class="text-xl text-white/90">{{$t('homepage.stats.experience')}}</div>
           </div>
 
           <!-- 4. Statisztika -->
           <div class="text-center p-6 border border-white/20 rounded-lg">
             <div class="text-4xl sm:text-5xl font-bold text-buchl-green mb-2">10</div>
-            <div class="text-xl text-white/90">korszerű hulladékkezelő berendezés</div>
+            <div class="text-xl text-white/90">{{$t('homepage.stats.equipment')}}</div>
           </div>
         </div>
       </div>
@@ -234,12 +234,12 @@
     <section class="pb-0">
       <div class="rounded-lg overflow-hidden">
         <BuchlHero
-          title="A fenntarthatóság a küldetésünk"
-          subtitle="Együtt egy tisztább jövőért."
+          :title="$t('homepage.sustainability.title')"
+          :subtitle="$t('homepage.sustainability.subtitle')"
           image="/media/images/elektromos autó.jpg"
           bg-color="green"
           :primary-cta="{
-            label: 'Fenntarthatóság',
+            label: $t('homepage.sustainability.cta'),
             to: '/fenntarthatosag'
           }"
         />
@@ -252,10 +252,10 @@
         <div class="flex justify-between items-center mb-12">
           <div>
             <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-2">
-              Aktuális hírek
+              {{$t('news.title')}}
             </h2>
             <p class="text-lg text-gray-700">
-              Legfrissebb híreink és eseményeink
+              {{$t('news.subtitle')}}
             </p>
           </div>
           <div class="hidden md:block">
@@ -267,7 +267,7 @@
               icon="i-heroicons-arrow-right"
               :trailing="true"
             >
-              Összes hír
+              {{$t('news.viewAll')}}
             </UButton>
           </div>
         </div>
@@ -275,38 +275,38 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- 1. Blog poszt -->
           <BuchlBlogPost
-            title="VBS Junior Kör látogatása"
-            description="Szeptember 12-én örömmel láttuk vendégül a VBS Junior Kört Németországból, akik telephelyünkön ismerkedhettek meg hulladékgazdálkodási technológiáinkkal."
+            :title="$t('news.posts.vbs.title')"
+            :description="$t('news.posts.vbs.description')"
             image="/media/images/hirek/vbs-junior.jpeg"
             to="/hirek/vbs-junior-kor-latogatas"
-            category="Események"
+            :category="$t('news.posts.vbs.category')"
             date="2025-09-12"
-            reading-time="3 perc olvasás"
-            read-more-text="Tovább"
+            :reading-time="$t('news.posts.vbs.readingTime')"
+            :read-more-text="$t('news.readMore')"
           />
 
           <!-- 2. Blog poszt -->
           <BuchlBlogPost
-            title="Játékos módon a fenntarthatóság szolgálatában"
-            description="A fenntarthatóság cégfilozófiánk központi kérdése. Három éves munka után elkészült a „RESZETT” program, amely játékos formában ismerteti meg a gyerekeket a hulladékgazdálkodás folyamataival."
+            :title="$t('news.posts.reszett.title')"
+            :description="$t('news.posts.reszett.description')"
             image="/media/images/hirek/reszett-program.jpeg"
             to="/hirek/reszett-program"
-            category="Oktatás"
+            :category="$t('news.posts.reszett.category')"
             date="2025-08-28"
-            reading-time="4 perc olvasás"
-            read-more-text="Tovább"
+            :reading-time="$t('news.posts.reszett.readingTime')"
+            :read-more-text="$t('news.readMore')"
           />
 
           <!-- 3. Blog poszt -->
           <BuchlBlogPost
-            title="Tudomány, élmény, inspiráció – fiataloknak!"
-            description="Büszkék vagyunk rá, hogy a BÜCHL Hungaria idén is kiemelt támogatója lehetett a VIII. Győri Gyerekegyetemnek! A program célja, hogy közelebb hozza az egyetemi világot az általános iskolás korosztályhoz."
+            :title="$t('news.posts.gyerekegyetem.title')"
+            :description="$t('news.posts.gyerekegyetem.description')"
             image="/media/images/hirek/gyerekegyetem.jpeg"
             to="/hirek/viii-gyori-gyerekegyetem"
-            category="Oktatás"
+            :category="$t('news.posts.gyerekegyetem.category')"
             date="2025-08-24"
-            reading-time="3 perc olvasás"
-            read-more-text="Tovább"
+            :reading-time="$t('news.posts.gyerekegyetem.readingTime')"
+            :read-more-text="$t('news.readMore')"
           />
         </div>
 
@@ -319,7 +319,7 @@
             icon="i-heroicons-arrow-right"
             :trailing="true"
           >
-            Összes hír
+            {{$t('news.viewAll')}}
           </UButton>
         </div>
       </div>
@@ -330,10 +330,10 @@
     <section class="py-16 bg-buchl-green text-buchl-blue">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-          Ismerd meg minőségirányítási tanúsítványainkat!
+          {{$t('cta.title')}}
         </h2>
         <p class="text-xl text-buchl-blue/80 max-w-3xl mx-auto mb-10">
-          A BÜCHL HUNGARIA Kft. büszke ISO és EMAS tanúsítványaira, amelyek bizonyítják elkötelezettségünket a minőség és környezetvédelem iránt.
+          {{$t('cta.subtitle')}}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton
@@ -344,7 +344,7 @@
             :trailing="true"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            Letöltések
+            {{$t('cta.download')}}
           </UButton>
           <UButton
             to="/fenntarthatosag"
@@ -354,7 +354,7 @@
             :trailing="true"
             class="rounded-none border-2 border-buchl-blue text-buchl-blue"
           >
-            Fenntarthatóság
+            {{$t('cta.sustainability')}}
           </UButton>
         </div>
       </div>
@@ -365,6 +365,7 @@
 <script setup lang="ts">
 // Route és lifecycle imports
 const $route = useRoute()
+const localePath = useLocalePath()
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null)

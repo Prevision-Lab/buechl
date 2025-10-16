@@ -2,12 +2,12 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      title="Jelentkezés, álláslehetőségek"
-      subtitle="Egy lépéssel előrébb és mindig INNOVATÍVAN, hogy együtt formáljuk a jövőt."
+      :title="$t('careers.hero.title')"
+      :subtitle="$t('careers.hero.subtitle')"
       image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&h=800&fit=crop"
       bg-color="blue"
       :primary-cta="{
-        label: 'Aktuális állásajánlatok',
+        label: $t('careers.hero.primaryCta'),
         to: '#allasok'
       }"
     />
@@ -17,14 +17,14 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-            A BÜCHL HUNGARIA Kft. folyamatos fejlődéséhez elhivatott és szakképzett munkatársakat keres, akik sokrétű feladatokban vesznek részt, és közösen alakítják velünk a fenntartható jövőt.
+            {{ $t('careers.intro.title') }}
           </h2>
           <div class="max-w-4xl mx-auto space-y-6">
             <p class="text-lg text-gray-700 leading-relaxed">
-              Olyan nyitott gondolkodású, felelősségteljes és kreatív embereket várunk, akik friss ötleteikkel hozzájárulnak egy tisztább környezet megteremtéséhez.
+              {{ $t('careers.intro.description') }}
             </p>
             <p class="text-2xl font-bold text-buchl-blue mt-8">
-              Legyél Te is a BÜCHL csoport tagja, és dolgozz velünk a jövőért!
+              {{ $t('careers.intro.callToAction') }}
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-4">
-            Aktuális állásajánlatok
+            {{ $t('careers.jobs.title') }}
           </h2>
         </div>
 
@@ -48,17 +48,17 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Gépkocsivezető')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Gépkocsivezető (m/w)</h3>
-                  <p class="text-gray-600 text-sm">Hulladékszállítási feladatok ellátása, ADR képesítés előny</p>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.driver.title') }}</h3>
+                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.driver.description') }}</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
                   <div class="text-center">
-                    <span class="block font-medium">Típus</span>
-                    <span>Operatív</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
+                    <span>{{ $t('careers.jobs.positions.driver.type') }}</span>
                   </div>
                   <div class="text-center">
-                    <span class="block font-medium">Helyszín</span>
-                    <span>Győr</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
+                    <span>{{ $t('careers.jobs.positions.driver.location') }}</span>
                   </div>
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
@@ -66,7 +66,7 @@
                       color="primary"
                       class="rounded-none"
                     >
-                      Jelentkezés
+                      {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
                   </div>
                 </div>
@@ -77,17 +77,17 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Targoncavezető')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Targoncavezető (m/w)</h3>
-                  <p class="text-gray-600 text-sm">Raktári és udvari anyagmozgatási feladatok</p>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.forklift.title') }}</h3>
+                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.forklift.description') }}</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
                   <div class="text-center">
-                    <span class="block font-medium">Típus</span>
-                    <span>Operatív</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
+                    <span>{{ $t('careers.jobs.positions.forklift.type') }}</span>
                   </div>
                   <div class="text-center">
-                    <span class="block font-medium">Helyszín</span>
-                    <span>Győr</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
+                    <span>{{ $t('careers.jobs.positions.forklift.location') }}</span>
                   </div>
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
@@ -95,7 +95,7 @@
                       color="primary"
                       class="rounded-none"
                     >
-                      Jelentkezés
+                      {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
                   </div>
                 </div>
@@ -106,17 +106,17 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Megváltozott munkaképességű kolléga')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Megváltozott munkaképességű kolléga (m/w)</h3>
-                  <p class="text-gray-600 text-sm">Adminisztrációs és kisegítő feladatok</p>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.disabled.title') }}</h3>
+                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.disabled.description') }}</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
                   <div class="text-center">
-                    <span class="block font-medium">Típus</span>
-                    <span>Adminisztrációs</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
+                    <span>{{ $t('careers.jobs.positions.disabled.type') }}</span>
                   </div>
                   <div class="text-center">
-                    <span class="block font-medium">Helyszín</span>
-                    <span>Győr</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
+                    <span>{{ $t('careers.jobs.positions.disabled.location') }}</span>
                   </div>
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
@@ -124,7 +124,7 @@
                       color="primary"
                       class="rounded-none"
                     >
-                      Jelentkezés
+                      {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
                   </div>
                 </div>
@@ -135,17 +135,17 @@
             <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Portás')">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">Portás (m/w)</h3>
-                  <p class="text-gray-600 text-sm">Telephely biztonsági feladatai, beléptetés</p>
+                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.security.title') }}</h3>
+                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.security.description') }}</p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
                   <div class="text-center">
-                    <span class="block font-medium">Típus</span>
-                    <span>Biztonsági</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
+                    <span>{{ $t('careers.jobs.positions.security.type') }}</span>
                   </div>
                   <div class="text-center">
-                    <span class="block font-medium">Helyszín</span>
-                    <span>Győr</span>
+                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
+                    <span>{{ $t('careers.jobs.positions.security.location') }}</span>
                   </div>
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
@@ -153,7 +153,7 @@
                       color="primary"
                       class="rounded-none"
                     >
-                      Jelentkezés
+                      {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
                   </div>
                 </div>
@@ -165,13 +165,13 @@
         <!-- Jelentkezési információ -->
         <div class="mt-12 bg-buchl-blue/5 p-8 rounded-lg text-center">
           <h3 class="text-xl font-bold text-buchl-blue mb-4">
-            Hogyan jelentkezzen?
+            {{ $t('careers.jobs.applicationInfo.title') }}
           </h3>
           <p class="text-gray-700 mb-6">
-            Az állásokra kattintva megnyílik a levelezője, ahol megadhatja jelentkezési szándékát.
+            {{ $t('careers.jobs.applicationInfo.description') }}
           </p>
           <div class="bg-white p-4 rounded border-l-4 border-buchl-green">
-            <p class="text-buchl-blue font-semibold mb-2">Közvetlen elérhetőség:</p>
+            <p class="text-buchl-blue font-semibold mb-2">{{ $t('careers.jobs.applicationInfo.directContact') }}</p>
             <a href="mailto:karrier@buechl.hu" class="text-lg font-bold text-buchl-green hover:text-buchl-green/80 transition-colors">
               karrier@buechl.hu
             </a>

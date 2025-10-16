@@ -3,13 +3,13 @@
         <!-- Hero szekció -->
         <div class="bg-buchl-blue text-white py-16">
             <div class="max-w-7xl mx-auto px-4 text-center">
-                <h1 class="text-4xl font-bold mb-4">Hulladékkatalógus</h1>
-                <p class="text-xl text-blue-100 mb-6">Keresés az engedélyezett hulladéktípusaink között</p>
+                <h1 class="text-4xl font-bold mb-4">{{ $t('wasteCatalog.hero.title') }}</h1>
+                <p class="text-xl text-blue-100 mb-6">{{ $t('wasteCatalog.hero.subtitle') }}</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
                     <div class="flex-1">
                         <UInput
                             v-model="globalSearchQuery"
-                            placeholder="Keresés minden telephelyen..."
+                            :placeholder="$t('wasteCatalog.hero.searchPlaceholder')"
                             icon="i-heroicons-magnifying-glass"
                             size="lg"
                             variant="outline"
@@ -26,7 +26,7 @@
                         icon="i-heroicons-x-mark"
                         class="shrink-0"
                     >
-                        Törlés
+                        {{ $t('wasteCatalog.hero.clearButton') }}
                     </UButton>
                 </div>
             </div>
@@ -37,10 +37,10 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-buchl-blue mb-4">
-                        Telephelyek és engedélyek szerint
+                        {{ $t('wasteCatalog.navigation.title') }}
                     </h2>
                     <p class="text-gray-600">
-                        Válasszon telephelyet az engedélyezett hulladéktípusok megtekintéséhez
+                        {{ $t('wasteCatalog.navigation.subtitle') }}
                     </p>
                 </div>
 
@@ -55,7 +55,7 @@
                     <div class="mb-6 max-w-xl mx-auto">
                         <UInput
                             v-model="localSearchQuery"
-                            :placeholder="`Keresés a ${getCurrentTabName()} telephelyen...`"
+                            :placeholder="$t('wasteCatalog.search.localPlaceholder', { location: getCurrentTabName() })"
                             icon="i-heroicons-magnifying-glass"
                             size="md"
                             variant="outline"

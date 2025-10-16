@@ -1,0 +1,610 @@
+{
+  "nav": {
+    "home": "Kezdőoldal",
+    "about": "Rólunk",
+    "services": "Szolgáltatások",
+    "sustainability": "Fenntarthatóság",
+    "downloads": "Letöltések",
+    "news": "Hírek",
+    "careers": "Karrier",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "title": "Egy ötlettel mindig tovább",
+    "subtitle": "Hulladékkezelés a fenntartható jövőért.",
+    "primaryCta": "Szolgáltatásaink",
+    "secondaryCta": "Kapcsolatfelvétel"
+  },
+  "about": {
+    "readMore": "Többet a vállalatról"
+  },
+  "services": {
+    "title": "Szolgáltatásaink",
+    "description": "Átfogó hulladékgazdálkodási megoldásokat kínálunk a hulladékkezelés, hulladékgyűjtés és -szállítás, környezetvédelmi szolgáltatások, valamint a tervezési és szaktanácsadási feladatok területén.",
+    "viewAll": "Összes szolgáltatás",
+    "wasteManagement": {
+      "title": "Hulladékkezelés",
+      "description": "Korszerű technológiákkal biztosítjuk a hulladékok környezetbarát kezelését és feldolgozását."
+    },
+    "collection": {
+      "title": "Hulladékgyűjtés és -szállítás",
+      "description": "Specializált járműparkunk biztosítja a biztonságos és megbízható hulladékszállítást."
+    },
+    "environmental": {
+      "title": "Környezetvédelmi szolgáltatások",
+      "description": "Átfogó környezetvédelmi megoldások a fenntartható működésért."
+    },
+    "consulting": {
+      "title": "Tervezés és szaktanácsadás",
+      "description": "Szakértői tanácsadás és tervezés a hatékony hulladékgazdálkodásért."
+    }
+  },
+  "stats": {
+    "title": "Számokban",
+    "subtitle": "Széleskörű szolgáltatási spektrumot biztosítunk ügyfeleink számára.",
+    "employees": "fő munkatárs",
+    "fleet": "gépjárműből álló flotta",
+    "experience": "év a piacon",
+    "equipment": "korszerű hulladékkezelő berendezés"
+  },
+  "sustainability": {
+    "title": "A fenntarthatóság a küldetesünk",
+    "subtitle": "Együtt egy tisztább jövőért.",
+    "cta": "Fenntarthatóság"
+  },
+  "news": {
+    "title": "Aktuális hírek",
+    "subtitle": "Legfrissebb híreink és eseményeink",
+    "viewAll": "Összes hír",
+    "readMore": "Tovább",
+    "posts": {
+      "vbs": {
+        "title": "VBS Junior Kör látogatása",
+        "description": "Szeptember 12-én örömmel láttuk vendégül a VBS Junior Kört Németországból, akik telephelyünkön ismerkedhettek meg hulladékgazdálkodási technológiáinkkal.",
+        "category": "Események",
+        "readingTime": "3 perc olvasás"
+      },
+      "reszett": {
+        "title": "Játékos módon a fenntarthatóság szolgálatában",
+        "description": "A fenntarthatóság cégfilozófiánk központi kérdése. Három éves munka után elkészült a „RESZETT” program, amely játékos formában ismerteti meg a gyerekeket a hulladékgazdálkodás folyamataival.",
+        "category": "Oktatás",
+        "readingTime": "4 perc olvasás"
+      },
+      "gyerekegyetem": {
+        "title": "Tudomány, élmény, inspiráció – fiataloknak!",
+        "description": "Büszkék vagyunk rá, hogy a BÜCHL Hungaria idén is kiemelt támogatója lehetett a VIII. Győri Gyerekegyetemnek! A program célja, hogy közelebb hozza az egyetemi világot az általános iskolás korosztályhoz.",
+        "category": "Oktatás",
+        "readingTime": "3 perc olvasás"
+      },
+      "raklapos": {
+        "title": "10 éve együtt a kreativitásért!",
+        "description": "A BÜCHL HUNGARIA Kft. az AUDI HUNGARIA Zrt.-vel karöltve immár 10 éve támogatja a Generációk Háza által szervezett győri Raklapos Építőtábort.",
+        "category": "Események",
+        "readingTime": "2 perc olvasás"
+      },
+      "defibrillator": {
+        "title": "Munkatársaink biztonsága érdekében",
+        "description": "A BÜCHL Hungaria számára a munkatársak biztonsága mindig is elsődleges szempont volt. Ennek jegyében három darab automata defibrillátort telepítettünk telephelyünkön.",
+        "category": "Biztonság",
+        "readingTime": "2 perc olvasás"
+      },
+      "stressz": {
+        "title": "Mentális egészség és reziliencia",
+        "description": "Munkatársaink részt vettek a Német-Magyar Tudásközpont - DUWZ stresszkezelő és rezilienciafejlesztő tréningjén, melynek célja a stresszreakciók felismerése és kezelési technikák elsajátítása.",
+        "category": "Fejlesztés",
+        "readingTime": "3 perc olvasás"
+      }
+    },
+    "page": {
+      "hero": {
+        "title": "Hírek és Események",
+        "subtitle": "Maradjon naprakész legfrissebb híreinkkel, eseményeinkkel és innovációinkkal!"
+      },
+      "latest": {
+        "title": "Legfrissebb híreink",
+        "subtitle": "Kövesse nyomon a BÜCHL Hungaria legújabb fejlesztéseit, projektjeit és eseményeit!"
+      },
+      "viewAllButton": "Összes hír megtekintése",
+      "categories": {
+        "all": "Összes kategória",
+        "technology": "Technológia",
+        "sustainability": "Fenntarthatóság",
+        "events": "Események",
+        "innovation": "Innováció",
+        "community": "Közösség",
+        "recognition": "Elismerés",
+        "education": "Oktatás",
+        "safety": "Biztonság",
+        "development": "Fejlesztés"
+      },
+      "years": {
+        "all": "Összes év",
+        "2025": "2025",
+        "2024": "2024",
+        "2023": "2023"
+      },
+      "readMore": "Részletek"
+    }
+  },
+  "cta": {
+    "title": "Ismerd meg minőségirányítási tanúsítványainkat!",
+    "subtitle": "A BÜCHL HUNGARIA Kft. büszke ISO és EMAS tanúsítványaira, amelyek bizonyítják elkötelezettségünket a minőség és környezetvédelem iránt.",
+    "download": "Letöltések",
+    "sustainability": "Fenntarthatóság"
+  },
+  "company": {
+    "title": "BÜCHL Hungaria Kft.",
+    "description1": "A BÜCHL Hungaria több mint 25 éves tapasztalattal rendelkező vezető hulladékgazdálkodási vállalat Magyarországon, amely átfogó megoldásokat kínál az ipari ügyfelek számára.",
+    "description2": "A németországi BÜCHL cégcsoport tagjaként közel 75 éves szakmai háttérrel rendelkezünk a fenntartható hulladékgazdálkodás területén.",
+    "description3": "Célunk, hogy innovatív megoldásainkkal hozzájáruljunk a körforgásos gazdaság megvalósításához és ügyfeleink környezetvédelmi célkitűzéseinek eléréséhez.",
+    "videoTitle": "BÜCHL Hungaria Kft."
+  },
+  "footer": {
+    "companyDescription": "A BÜCHL Hungaria Kft. vezető ipari hulladékkezelő vállalat Magyarországon. Innovatív megoldásainkkal támogatjuk a fenntartható fejlődést.",
+    "servicesTitle": "Szolgáltatások",
+    "companyTitle": "Cégünk",
+    "contactTitle": "Kapcsolat",
+    "contactButton": "Kapcsolatfelvétel",
+    "copyright": "Minden jog fenntartva.",
+    "legal": {
+      "designSystem": "Design System",
+      "privacy": "Adatvédelem",
+      "imprint": "Impresszum",
+      "terms": "ÁSZF"
+    },
+    "servicesLinks": {
+      "wasteManagement": "Hulladékkezelés",
+      "recycling": "Újrahasznosítás",
+      "transport": "Szállítás és logisztika",
+      "consulting": "Környezetvédelmi tanácsadás"
+    },
+    "companyLinks": {
+      "about": "Rólunk",
+      "sustainability": "Fenntarthatóság",
+      "careers": "Karrier",
+      "news": "Hírek"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Rólunk",
+      "subtitle": "Megbízható partner az ipari hulladékkezelésben"
+    },
+    "sections": {
+      "company": {
+        "title": "BÜCHL HUNGARIA Kft.",
+        "description1": "A BÜCHL HUNGARIA Kft. Magyarország egyik meghatározó szakértője az ipari hulladékkezelés területén, különös fókuszt helyezve az autóipari partnerekre. Vállalatunk 2000 óta van jelen a hazai piacon, és azóta is elkötelezetten dolgozunk azon, hogy ügyfeleink számára megbízható, innovatív és fenntartható hulladékgazdálkodási megoldásokat kínáljunk. Kiemelt szakterületünk a termelő vállalatok gyártási folyamataiból származó veszélyes hulladékok kezelése, amelyhez korszerű technológiákat és eszközparkot üzemeltetünk.",
+        "description2": "Cégünk a bajorországi székhelyű BÜCHL cégcsoport tagja, amely immár 75 éve tevékenykedik sikeresen a hulladékgazdálkodás, környezetvédelem, szaktanácsadás és innováció területén. A családi tulajdonban lévő, tulajdonosok által irányított vállalatcsoport stabil hátteret és nemzetközi tapasztalatot biztosít számunkra.",
+        "description3": "Magyarországon 320 munkatárssal, 5 telephelyen, korszerű hulladékkezelő berendezésekkel és speciális járművekkel állunk partnereink rendelkezésére. Napi szinten 615 tonna hulladékszállítást és 234 tonna hulladékelőkezelést végzünk. Szolgáltatásaink teljeskörű megoldást kínálnak a veszélyes és nem veszélyes ipari hulladékok begyűjtésére, szállítására és újrahasznosítására. A saját kezelőüzemeinkben a hulladékból értékes nyersanyagokat és energiahordozókat állítunk elő, így aktívan hozzájárulunk a körforgásos gazdaság fejlődéséhez.",
+        "description4": "Munkánk során kiemelt figyelmet fordítunk a digitalizációra, a hatékonyságnövelésre és a fenntarthatóságra, amelyek 2020 óta vállalati stratégiánk alappillérei. Célunk, hogy a legmodernebb technológiák és testreszabott logisztikai megoldások segítségével ügyfeleink hulladékgazdálkodási folyamatait optimalizáljuk, miközben megfelelünk a legszigorúbb jogszabályi és környezetvédelmi előírásoknak.",
+        "description5": "A BÜCHL HUNGARIA Kft. számára a legfontosabb értékek a vevői elégedettség, a magas hasznosítási arány, a teljes körű biztonság, valamint a fenntartható működés.",
+        "slogan": "BÜCHL HUNGARIA – Megbízható partner az ipari hulladékkezelésben."
+      },
+      "management": {
+        "title": "Menedzsment",
+        "subtitle": "Tapasztalt vezetőségünk biztosítja a vállalat stratégiai irányítását és a fenntartható növekedést.",
+        "ceo": {
+          "name": "Gyökeres Sándor",
+          "position": "Ügyvezető igazgató",
+          "description": "Gyökeres Sándor, aki több mint 20 éves tapasztalattal rendelkezik a környezetvédelmi szektorban, 2021 óta tölti be a Büchl Hungaria Kft. ügyvezetői pozícióját. Szakmai pályafutása során elkötelezetten tevékenykedik a fenntartható megoldások kidolgozásán és megvalósításán. Vezetői munkáját az innováció iránti nyitottság, a csapatmunka támogatása és a hosszú távú, stratégiai szemléletmód határozza meg."
+        }
+      },
+      "group": {
+        "title": "BÜCHL CSOPORT",
+        "slogan": "EGY ÖTLETTEL ELŐRÉBB. 1951 óta.",
+        "description1": "A németországi Ingolstadtban alapított, immár harmadik generációs családi vállalkozás 75 éve kínál innovatív megoldásokat a hulladékgazdálkodás, környezetvédelem és fenntarthatóság területén.",
+        "description2": "A BÜCHL Csoport teljes szolgáltatási portfólióját a megbízható minőség, az innovatív megoldások, a bátor cselekvés, valamint az emberek és a környezet iránti felelősségtudat jellemzi.",
+        "description3": "Tevékenységük lefedi a hulladékgyűjtést, -szállítást és -kezelést, valamint a tervezést és szaktanácsadást is.",
+        "mission": "Küldetésük: egy ötlettel előrébb – a körforgásos gazdaságot támogató hatékony és jövőorientált szolgáltatásokkal.",
+        "companyList": "A BÜCHL cégcsoport tagjai",
+        "stats": {
+          "locations": "TELEPHELY",
+          "employees": "MUNKATÁRS",
+          "dailyTransport": "TONNA SZÁLLÍTÁSA NAPONTA"
+        }
+      },
+      "newsSection": {
+        "title": "Hírek",
+        "subtitle": "Kövesse nyomon legfrissebb híreinket és fejlesztéseinket a hulladékgazdálkodás területén.",
+        "viewAllNews": "Összes hír megtekintése"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Szolgáltatásaink",
+      "subtitle": "Komplex hulladékgazdálkodási megoldások minden igényre",
+      "primaryCta": "Ajánlatkérés",
+      "secondaryCta": "Tanúsítványaink"
+    },
+    "intro": {
+      "title": "Komplex hulladékkezelés ipari partnerek számára",
+      "description": "A BÜCHL HUNGARIA több mint 40 járműből álló flottával szolgálja ki ipari partnereit – legyen szó konténeres, folyékony vagy veszélyes hulladék szállításáról. Specializált technológiáink és szakértő csapatunk átfogó megoldásokat kínál minden iparág számára.",
+      "features": {
+        "collection": {
+          "title": "Gyűjtés & Szállítás",
+          "description": "ADR tanúsítvánnyal rendelkező sofőrök és modern járműpark"
+        },
+        "treatment": {
+          "title": "Hulladékkezelés",
+          "description": "Speciális technológiák és korszerű berendezések"
+        },
+        "logistics": {
+          "title": "Logisztika",
+          "description": "Digitális logisztikai megoldások és papírmentes folyamatok"
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Szolgáltatási portfóliónk",
+      "description": "A BÜCHL ipari ügyfelekre specializálódott, így minden szolgáltatásunkat a vállalati igények figyelembevételével alakítottuk ki. Csapatunk szakértő megoldásokat kínál minden iparág számára, különös tekintettel az autóiparra, elektronikai iparra, vegyiparra és feldolgozóiparra.",
+      "categories": {
+        "collection": {
+          "title": "Hulladékgyűjtés és -szállítás",
+          "description": "Professzionális hulladékgyűjtés és -szállítás – rugalmasan és megbízhatóan ADR-tanúsítvánnyal és részletes dokumentációval.",
+          "features": [
+            "Folyékony és veszélyes hulladékok speciális tárolása és szállítása",
+            "Széles választék minden ipari igényre az ipari hulladékok kezeléséhez",
+            "Szakértő segítség a hulladékkezelés optimalizálására és a szállítási költségek csökkentésére"
+          ]
+        },
+        "treatment": {
+          "title": "Hulladékkezelés",
+          "description": "Speciális technológiák és korszerű berendezések a hulladékok biztonságos és hatékony kezelésére.",
+          "features": [
+            "Másodnyersanyagok előállítása – a körforgásos gazdaság szolgálatában",
+            "Innovatív megoldások speciális ipari hulladékokra",
+            "Külső partnerektől érkező hulladékok komplex kezelése"
+          ]
+        },
+        "logistics": {
+          "title": "Logisztika",
+          "description": "Átfogó logisztikai megoldások az üzemen belüli hulladékkezelés optimalizálására, beleértve az ELOG SYSTEM® digitális platformot.",
+          "features": [
+            "Papírmentes, igényalapú elszállítás (GYLOG 1.0)",
+            "Teljes körű digitalizáció (CleverWaste®)",
+            "Rugalmas szakszemélyzet biztosítása"
+          ]
+        }
+      },
+      "detailsButton": "Részletek"
+    },
+    "environmental": {
+      "title": "Környezetvédelmi szolgáltatások",
+      "subtitle": "Szakértő tanácsadás és tervezés",
+      "services": {
+        "consulting": {
+          "title": "Környezetvédelmi tanácsadás",
+          "description": "Szakértő támogatás környezetvédelmi előírások betartásában"
+        },
+        "planning": {
+          "title": "Hulladékgazdálkodási tervek",
+          "description": "Testreszabott tervek kidolgozása és optimalizálás"
+        },
+        "compliance": {
+          "title": "Compliance ellenőrzés",
+          "description": "Jogszabályi megfelelőség biztosítása és auditálás"
+        }
+      }
+    },
+    "stats": {
+      "employees": "Szakképzett munkatárs",
+      "vehicles": "Speciális jármű",
+      "equipment": "Hulladékkezelő berendezés",
+      "experience": "Év tapasztalat"
+    },
+    "cta": {
+      "title": "Kérjen személyre szabott ajánlatot!",
+      "description": "Tapasztalt szakembereink segítségével találja meg a legmegfelelőbb hulladékgazdálkodási megoldást vállalata számára.",
+      "requestQuote": "Ajánlatkérés",
+      "learnMore": "Rólunk bővebben"
+    }
+  },
+  "sustainability": {
+    "hero": {
+      "title": "Fenntarthatóság",
+      "subtitle": "ESG - Környezet, Társadalom, Vállalatirányítás",
+      "contactButton": "Kapcsolatfelvétel"
+    },
+    "intro": {
+      "title": "Fenntartható vállalati működés",
+      "description": "A BÜCHL HUNGARIA Kft. elkötelezett a fenntartható vállalati működés iránt. ESG (Környezet, Társadalom, Vállalatirányítás) stratégiánk három fő pilléren nyugszik, amelyeken keresztül hozzájárulunk egy fenntarthatóbb jövő építéséhez."
+    },
+    "pillars": {
+      "environment": {
+        "title": "1. Környezet"
+      },
+      "social": {
+        "title": "2. Társadalmi szerepvállalás"
+      },
+      "governance": {
+        "title": "3. Vállalatirányítás"
+      }
+    },
+    "environment": {
+      "title": "1. Környezet",
+      "initiatives": {
+        "solar": {
+          "title": "Napelemrendszerek",
+          "description": "Vállalatunk központi telephelyének napelemes kiserőművét 2025-ben korszerűsítettük, a teljes tetőfelület kihasználásával maximalizáltuk az elérhető kapacitást. Mindkét telephelyünkön új napelemrendszer épült ki, igazodva a nappali időszak fogyasztásához és a telephelyek adottságaihoz.",
+          "capacity": "494 kW",
+          "capacityNote": "napelemes kapacitás (178 kW-ról)"
+        },
+        "geothermal": {
+          "title": "Földhő és napenergia",
+          "description": "2015 óta mindkét győri telephelyünk fűtése és hűtése fosszilis energiahordozók nélkül működik. A szükséges energiát talajszondás hőszivattyúk biztosítják. A használati melegvíz ellátás mindkét telephelyünkön napkollektorokkal történik.",
+          "since": "2015 óta",
+          "sinceNote": "fosszilismentes fűtés-hűtés"
+        },
+        "electricVehicles": {
+          "title": "Elektromos járművek",
+          "description": "Flottánkban évről évre növekszik az elektromos személyautók száma. Emellett egy korábbi dízel konténerszállító teherautót is teljesen elektromos meghajtásúvá alakítottunk.",
+          "status": "Növekvő",
+          "statusNote": "elektromos flotta"
+        },
+        "bees": {
+          "title": "Méhcsaládok a fenntarthatóság szolgálatában",
+          "description": "2022-ben aktívan bekapcsolódtunk a biológiai sokféleség megőrzésébe. Ennek részeként három méhcsalád telepítését támogattuk egy szakképzett méhész állományában. Egyetlen méhcsalád hozzávetőleg 50 000 méhből áll – ezek az apró beporzók kulcsszerepet játszanak az ökoszisztéma fenntartásában és a biológiai sokféleség védelmében. A méhek által megtermelt méz nem csupán a természet értékes ajándéka: lehetőséget ad arra is, hogy e fenntarthatósági törekvésünket kézzel fogható formában is megosszuk munkatársainkkal és partnereinkkel.",
+          "count": "3",
+          "countNote": "méhcsalád (~150.000 méh összesen)"
+        },
+        "carbonFootprint": {
+          "title": "Karbonlábnyom-elemzés",
+          "description": "A KÖVET Egyesület szakmai támogatásával elkészült a BÜCHL Hungaria három évet felölelő (2019–2021 közötti) karbonlábnyom-felmérése. A vizsgálat megmutatja, mekkora mennyiségű üvegházhatású gázt (főként CO₂-t) bocsátunk ki tevékenységeink során – közvetlenül és közvetve. A három év adatai alapján kibocsátásaink fő forrásai: telephelyi energiafelhasználás, logisztikai műveletek, anyagfelhasználás. A Bilan Carbone® módszertan segítségével pontos képet kaptunk arról, mely területeken van lehetőség csökkentésre – ezzel is támogatva fenntarthatósági céljaink megvalósítását.",
+          "title2": "Karbon lábnyom",
+          "note": "folyamatos kibocsátásoptimalizálás"
+        },
+        "kovet": {
+          "title": "Partnerség a fenntarthatóságért - KÖVET Egyesület",
+          "description": "A BÜCHL Hungaria Kft. 2003 óta tagja a KÖVET Egyesületnek, amely 1995 óta dolgozik a megelőző környezetvédelem és a fenntartható vállalati működés elterjesztéséért. Az egyesület célja olyan módszerek kidolgozása és népszerűsítése, amelyek egyszerre szolgálják a környezeti, társadalmi és gazdasági érdekeket. Közös munkánk keretében rendszeresen részt veszünk a Győri Zöld Expón, támogatjuk az EMAS kerekasztal rendezvényeket, és több alkalommal nyertünk díjat az 'Ablakon Bedobott Pénz' programban.",
+          "since": "2003 óta",
+          "sinceNote": "KÖVET tagság"
+        },
+        "electricMachinery": {
+          "title": "Elektromos munkagépek",
+          "description": "2025-ben anyagmozgató és rakodógépeink 61%-a már elektromos meghajtású. Gépparkunkon belül ez az arány folyamatosan nő. Ezzel jelentős mértékben csökkentjük az üvegházhatású gázok kibocsátását.",
+          "percentage": "61%",
+          "percentageNote": "elektromos munkagépek"
+        },
+        "greenEnergy": {
+          "title": "Zöld energia vásárlás",
+          "description": "A működésünkhöz szükséges energiát teljes mértékben megújuló vagy nagy hatásfokú kapcsolt energiatermelésből származó energiával fedezzük. 2025-ben 3 500 MWh mennyiségű zöld energiát vásároltunk.",
+          "amount": "3.500 MWh",
+          "amountNote": "zöld energia 2025-ben"
+        }
+      }
+    },
+    "social": {
+      "title": "2. Társadalmi szerepvállalás",
+      "subtitle": "A BÜCHL HUNGARIA Kft. elkötelezett a közösség és a jövő generációk támogatása mellett – legyen szó oktatásról, sportról vagy közösségi eseményekről. Vállalatunk immár 10 éve örömmel támogatja a győri Generációk Háza által szervezett Raklapos Építőtábort.",
+      "initiatives": {
+        "education": {
+          "title": "Oktatási kooperációk",
+          "description": "Fontos számunkra a szakmai utánpótlás és a tudásmegosztás. Együttműködünk a győri Széchenyi István Egyetemmel, valamint a MOBILIS Interaktív Kiállítási Központtal, ahol tudományos és oktatási projekteket támogatunk, valamint ösztöndíjjal segítjük a diákokat. Az Audi Hungaria Iskolaközpont tanulóit minden évben egy projektnap keretében fogadjuk vállalatunknál. A program célja, hogy a gyerekek testközelből ismerkedhesenek meg a modern hulladékgazdálkodási folyamatokkal, valamint betekintést nyerjenek egy fenntarthatóan működő ipari vállalat mindennapjaiba.",
+          "note": "Tudományos és oktatási projektek, ösztöndíjak"
+        },
+        "sports": {
+          "title": "Sportszponzoráció",
+          "description": "A BÜCHL-nél hisszük, hogy a sport támogatása nem csupán szponzoráció – hanem befektetés a jövőbe, a közösségbe és az értékteremtésbe. A kézilabda, a jégkorong, a kosárlabda dinamizmusa és csapatszelleme tökéletesen tükrözi vállalatunk értékeit. Büszkék vagyunk rá, hogy a Győri ETO HC, a Győri ETO UNI FKC és a Győri Kosárlabda Club támogatói lehetünk. A kezdetektől fogva ott vagyunk Lipovics Patrik ifjú autóversenyző sikerei mögött, mert hiszünk benne, hogy az elkötelezettség és a folyamatos fejlődés a motorsportban és az üzleti életben egyaránt kulcsfontosságú.",
+          "note": "Kézilabda, jégkorong, kosárlabda, motorsport"
+        },
+        "massEvents": {
+          "title": "Tömegsport támogatása",
+          "description": "2000 óta minden évben több százan állnak rajthoz a BÜCHL Hungaria Kft. főtámogatásával megvalósuló BÜCHL Éjszakai Futóversenyen, köztük nagy büszkeségünkre munkatársaink is, akik egyéniben és váltóban is bizonyítanak. Akik nem húznak futócipőt, önkéntesként segítik a szervezők munkáját.",
+          "note": "2000 óta BÜCHL Éjszakai Futóverseny"
+        },
+        "community": {
+          "title": "Közösségépítés élményekkel",
+          "description": "Az erős csapat alapja a közös élmény. Év közben rendszeresen szervezünk munkatársi programokat – többek között horgászversenyt, gyereknapot, közös kirándulást, retro szendvics napot és karácsonyi sütizést – melyek nemcsak kikapcsolódást, hanem valódi közösségi élményt is nyújtanak.",
+          "note": "Valódi közösségi élmények munkatársainknak"
+        }
+      }
+    },
+    "governance": {
+      "title": "3. Vállalatirányítás",
+      "initiatives": {
+        "duihk": {
+          "title": "DUIHK-tagság – Aktív kapcsolat a német gazdasággal",
+          "description": "A BÜCHL Hungaria Kft. elkötelezett a nemzetközi szakmai együttműködések és a felelős vállalati működés mellett. Ennek részeként hosszú évek óta tagjai vagyunk a Német–Magyar Ipari és Kereskedelmi Kamárának (DUIHK). A DUIHK-tagság aktív kapcsolatot jelent a német gazdasági szereplőkkel, lehetőséget kínál a szakmai fejlődésre, tapasztalatcserére, és támogatja cégünk célját, hogy a környezetvédelmi szolgáltatások területén is magas német színvonalat képviseljünk Magyarországon.",
+          "since": "Hosszú évek óta",
+          "sinceNote": "DUIHK tagság"
+        },
+        "erp": {
+          "title": "Integrált vállalatirányítási rendszer",
+          "description": "2008-ban telepítettük és azóta folyamatosan fejlesztjük, bővítjük a Microsoft Dynamics NAV 2018 integrált vállalatirányítási rendszert, mely alapját képezi a hulladékok nyilvántartásának is.",
+          "system": "Microsoft Dynamics NAV 2018",
+          "systemNote": "Vállalatirányítási rendszer"
+        },
+        "quality": {
+          "title": "Elkötelezetten a minőségért",
+          "description": "Elkötelezettségünket bizonyítva és munkánkat segítve bevezettük és fenntartjuk az MSZ EN ISO 14001:2015, illetve az Európai Unió EMAS III. minősítést, a 1221/2009/EK rendelete, a 2017/1505 rendelet, valamint a 2018/2026 EU rendelet módosításával. Emellett az MSZ EN ISO 9001:2015, valamint az MSZ ISO 45001:2018 szerinti Környezetközpontú, Minőség és Munkahelyi Egészségvédelemi és Biztonsági Integrált Irányítási Rendszert.",
+          "focus": "minőség és biztonság",
+          "focusNote": "Integrált irányítási rendszer"
+        }
+      }
+    },
+    "cta": {
+      "title": "Legyen része a változásnak!",
+      "description": "Csatlakozzon hozzánk a fenntartható jövő építésében. Együtt tehetjük zoldebbé és tisztábbá a világunkat.",
+      "contactButton": "Kapcsolatfelvétel",
+      "servicesButton": "Szolgáltatásaink"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kapcsolat",
+      "subtitle": "Vegye fel velünk a kapcsolatot! Szakértő csapatunk készséggel áll rendelkezésére."
+    },
+    "quickContact": {
+      "title": "Gyors elérhetőségek",
+      "phone": {
+        "label": "Azonnali kapcsolat"
+      },
+      "email": {
+        "label": "Email"
+      }
+    },
+    "directContact": {
+      "title": "Közvetlen kapcsolat szakertőinkkel",
+      "departments": {
+        "central": {
+          "title": "Központi iroda",
+          "contact": "Lipóth Szilvia",
+          "position": "Ügyvezetői asszisztens"
+        },
+        "mohu": {
+          "title": "MOHU ügyintézés"
+        },
+        "sales": {
+          "title": "Értékesítés",
+          "contact": "Kozicz Pál",
+          "position": "Kereskedelmi vezető"
+        },
+        "environmental": {
+          "title": "Környezetvédelem"
+        },
+        "wasteData": {
+          "title": "Hulladékadat-szolgáltatás",
+          "description": "Hulladékkezelési nyilvántartások, jelentések"
+        },
+        "logistics": {
+          "title": "Logisztika"
+        },
+        "technical": {
+          "title": "Műszaki vezetés",
+          "contact": "Lövész Tamás",
+          "position": "Operatív vezető"
+        },
+        "accounting": {
+          "title": "Könyvelés",
+          "description": "Számlázás, pénzügyi kérdések"
+        }
+      }
+    },
+    "form": {
+      "title": "Írjon nekünk",
+      "fields": {
+        "name": {
+          "label": "Név",
+          "placeholder": "Az Ön neve"
+        },
+        "company": {
+          "label": "Cég neve",
+          "placeholder": "Vállalat neve"
+        },
+        "email": {
+          "label": "E-mail cím",
+          "placeholder": "pelda{'@'}email.com"
+        },
+        "phone": {
+          "label": "Telefonszám",
+          "placeholder": "+36 30 123 4567"
+        },
+        "message": {
+          "label": "Üzenet",
+          "placeholder": "Írja le kérdését vagy kérését részletesen..."
+        },
+        "privacy": {
+          "text": "Elfogadom az",
+          "link": "adatvédelmi szabályzatot",
+          "consent": "és hozzájárulok adataim kezeléséhez."
+        }
+      },
+      "required": "*",
+      "submit": "Üzenet elküldése"
+    },
+    "locations": {
+      "title": "Telephelyeink",
+      "description": "Látogasson el valamelyik telephelyünkre, ahol szakértő csapatunk várja Önt.",
+      "gyor": {
+        "central": {
+          "title": "Győr – Központ",
+          "hours": {
+            "title": "Nyitvatartás",
+            "weekdays": "Hétfő – Csütörtök",
+            "weekdaysTimes": "7:00 - 15:30",
+            "friday": "Péntek",
+            "fridayTimes": "7:00 - 14:30",
+            "weekend": "Szombat – Vasárnap",
+            "closed": "Zárva"
+          }
+        },
+        "second": {
+          "title": "Győr – II-es telephely",
+          "hours": {
+            "title": "Nyitvatartás",
+            "weekdays": "Hétfő – Csütörtök",
+            "weekdaysTimes": "7:00 - 15:30",
+            "friday": "Péntek",
+            "fridayTimes": "7:00 - 14:30",
+            "weekend": "Szombat – Vasárnap",
+            "closed": "Zárva"
+          }
+        }
+      },
+      "nyiregyhaza": {
+        "title": "Nyíregyháza",
+        "hours": {
+          "title": "Nyitvatartás",
+          "weekdays": "Hétfő – Csütörtök",
+          "weekdaysTimes": "7:00 - 15:30",
+          "friday": "Péntek",
+          "fridayTimes": "7:00 - 14:30",
+          "weekend": "Szombat – Vasárnap",
+          "closed": "Zárva"
+        }
+      }
+    }
+  },
+  "careers": {
+    "hero": {
+      "title": "Jelentkezés, álláslehetőségek",
+      "subtitle": "Egy lépéssel előrébb és mindig INNOVATÍVAN, hogy együtt formáljuk a jövőt.",
+      "primaryCta": "Aktuális állásajánlatok"
+    },
+    "intro": {
+      "title": "A BÜCHL HUNGARIA Kft. folyamatos fejlődéséhez elhivatott és szakképzett munkatársakat keres, akik sokrétű feladatokban vesznek részt, és közösen alakítják velünk a fenntartható jövőt.",
+      "description": "Olyan nyitott gondolkodású, felelősségteljes és kreatív embereket várunk, akik friss ötleteikkel hozzájárulnak egy tisztább környezet megteremtéséhez.",
+      "callToAction": "Legyél Te is a BÜCHL csoport tagja, és dolgozz velünk a jövőért!"
+    },
+    "jobs": {
+      "title": "Aktuális állásajánlatok",
+      "positions": {
+        "driver": {
+          "title": "Gépkocsivezető (m/w)",
+          "description": "Hulladékszállítási feladatok ellátása, ADR képesítés előny",
+          "type": "Operatív",
+          "location": "Győr"
+        },
+        "forklift": {
+          "title": "Targoncavezető (m/w)",
+          "description": "Raktári és udvari anyagmozgatási feladatok",
+          "type": "Operatív",
+          "location": "Győr"
+        },
+        "disabled": {
+          "title": "Megváltozott munkaképességű kolléga (m/w)",
+          "description": "Adminisztrációs és kisegítő feladatok",
+          "type": "Adminisztrációs",
+          "location": "Győr"
+        },
+        "security": {
+          "title": "Portás (m/e)",
+          "description": "Telephely biztonsági feladatai, beléptetés",
+          "type": "Biztonsági",
+          "location": "Győr"
+        }
+      },
+      "labels": {
+        "type": "Típus",
+        "location": "Helyszín",
+        "apply": "Jelentkezés"
+      },
+      "applicationInfo": {
+        "title": "Hogyan jelentkezzen?",
+        "description": "Az állásokra kattintva megnyílik a levelezője, ahol megadhatja jelentkezési szándékát.",
+        "directContact": "Közvetlen elérhetőség:"
+      }
+    }
+  }
+}
