@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import the Mac-optimized Permanent Marker font */
+@font-face {
+  font-family: 'Permanent Marker HU';
+  src: url('/fonts/PermanentMarker-Mac.otf') format('opentype'),
+       url('/fonts/PermanentMarker-Mac.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Original Permanent Marker for fallback */
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('/fonts/PermanentMarker-Regular.woff2') format('woff2'),
+       url('/fonts/PermanentMarker-Regular.woff') format('woff'),
+       url('/fonts/PermanentMarker-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-buchl-blue: #002F5C;
   --color-buchl-green: #00F189;
@@ -34,5 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Különleges kiemelések, szlogenek */
 .font-display {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker HU', 'Permanent Marker', cursive, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Magasabb specificitás a Nuxt fonts felülírásához */
+h1.font-display, .hero .font-display, [class*="font-display"] {
+  font-family: 'Permanent Marker HU', 'Permanent Marker', cursive, sans-serif !important;
+  font-weight: 400 !important;
 }

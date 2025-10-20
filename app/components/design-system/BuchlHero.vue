@@ -24,7 +24,7 @@ class="absolute inset-0" :class="bgColor === 'green'
 :class="[
               'text-4xl lg:text-5xl mb-6',
               bgColor === 'green' ? 'text-buchl-blue' : 'text-white',
-              titleFont === 'permanent-marker' ? 'font-display' : 'font-bold'
+              titleFont === 'permanent-marker' ? 'permanent-marker-hu' : 'font-bold'
             ]">
               {{ title }}
             </h1>
@@ -127,7 +127,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                   :class="[
                     'text-3xl lg:text-5xl mb-6',
                     bgColor === 'green' ? 'text-buchl-blue' : 'text-white',
-                    titleFont === 'permanent-marker' ? 'font-display' : 'font-bold'
+                    titleFont === 'permanent-marker' ? 'permanent-marker-hu' : 'font-bold'
                   ]">
                   {{ title }}
                 </h1>
@@ -232,7 +232,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                     :class="[
                       'text-4xl lg:text-5xl mb-6',
                       bgColor === 'green' ? 'text-buchl-blue' : 'text-white',
-                      titleFont === 'permanent-marker' ? 'font-display' : 'font-bold'
+                      titleFont === 'permanent-marker' ? 'permanent-marker-hu' : 'font-bold'
                     ]">
                     {{ title }}
                   </h1>
@@ -285,6 +285,23 @@ class="absolute inset-0" :class="bgColor === 'green'
     </div>
   </section>
 </template>
+
+<style scoped>
+/* Import the Mac-optimized Permanent Marker font */
+@font-face {
+  font-family: 'Permanent Marker HU';
+  src: url('/fonts/PermanentMarker-Mac.otf') format('opentype'),
+       url('/fonts/PermanentMarker-Mac.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.permanent-marker-hu {
+  font-family: 'Permanent Marker HU', cursive, sans-serif !important;
+  font-weight: 400 !important;
+}
+</style>
 
 <script setup lang="ts">
 import { ref } from 'vue'
