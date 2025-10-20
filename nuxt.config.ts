@@ -187,6 +187,10 @@ export default defineNuxtConfig({
             'hulladek-katalogus': {
                 en: '/waste-catalog',
                 de: '/abfall-katalog'
+            },
+            'font-test': {
+                en: '/font-test',
+                de: '/font-test'
             }
         }
     },
