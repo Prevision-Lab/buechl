@@ -182,34 +182,36 @@
     </section>
 
     <!-- CTA szekció -->
-    <section class="py-16 bg-buchl-green text-buchl-blue">
+    <section v-if="cta" class="py-16 bg-buchl-green text-buchl-blue">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-          {{ $t('sustainability.cta.title') }}
+          {{ cta.cim }}
         </h2>
         <p class="text-xl text-buchl-blue/80 max-w-3xl mx-auto mb-10">
-          {{ $t('sustainability.cta.description') }}
+          {{ cta.leiras }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton
-            to="/kapcsolat"
+            v-if="cta.gomb_felirat"
+            :to="localePath(cta.gomb_link)"
             color="neutral"
             size="lg"
             icon="i-heroicons-envelope"
             :trailing="true"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            {{ $t('sustainability.cta.contactButton') }}
+            {{ cta.gomb_felirat }}
           </UButton>
           <UButton
-            to="/szolgaltatasok"
+            v-if="cta.gomb2_felirat"
+            :to="localePath(cta.gomb2_link)"
             variant="outline"
             size="lg"
             icon="i-heroicons-arrow-right"
             :trailing="true"
             class="rounded-none border-2 border-buchl-blue text-buchl-blue"
           >
-            {{ $t('sustainability.cta.servicesButton') }}
+            {{ cta.gomb2_felirat }}
           </UButton>
         </div>
       </div>
@@ -220,6 +222,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const config = useRuntimeConfig()
+const localePath = useLocalePath()
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(4) // ID: 4 - Fenntarthatóság
@@ -228,6 +231,9 @@ const { banner: heroBanner } = useBanner(4) // ID: 4 - Fenntarthatóság
 const { szekciok: environmentSections } = await useOldalSzekciok('fenntarthatosag-kornyezet')
 const { szekciok: socialSections } = await useOldalSzekciok('fenntarthatosag-tarsadalmi')
 const { szekciok: governanceSections } = await useOldalSzekciok('fenntarthatosag-vallalatiranytitas')
+
+// CTA szekció lekérése Directusból
+const { cta } = await useCta(11) // ID: 11 - Fenntarthatósági CTA
 
 // Első szekciók kiválasztása (csak 1-1 van mindből)
 const environmentSection = computed(() => environmentSections.value?.[0])
