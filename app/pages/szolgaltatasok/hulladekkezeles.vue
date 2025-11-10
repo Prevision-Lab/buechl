@@ -1,16 +1,17 @@
 <template>
     <div>
-        <!-- Hero szekció -->
+        <!-- Hero szekció Directusból -->
         <BuchlHero
-            :title="$t('wasteManagement.hero.title')"
-            :subtitle="$t('wasteManagement.hero.subtitle')"
-            image="/media/images/hulladekkezeles.jpg"
+            v-if="heroBanner"
+            :title="heroBanner.cim"
+            :subtitle="heroBanner.leiras"
+            :image="heroBanner.kepUrl || '/media/images/hulladekkezeles.jpg'"
             bg-color="green"
-            :primary-cta="{
+            :primary-cta="heroBanner.gombok?.[0] || {
                 label: $t('wasteManagement.hero.primaryCta'),
                 to: localePath('/kapcsolat'),
             }"
-            :secondary-cta="{
+            :secondary-cta="heroBanner.gombok?.[1] || {
                 label: $t('wasteManagement.hero.secondaryCta'),
                 to: localePath('/szolgaltatasok'),
             }"
@@ -308,33 +309,35 @@
             </div>
         </section>
 
-        <!-- CTA szekció -->
-        <section class="py-16 bg-gray-900 text-white">
+        <!-- CTA szekció Directusból -->
+        <section v-if="wasteCta" class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    {{ $t('wasteManagement.cta.title') }}
+                    {{ wasteCta.cim }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    {{ $t('wasteManagement.cta.description') }}
+                    {{ wasteCta.leiras }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
-                        to="/kapcsolat"
+                        v-if="wasteCta.gomb_felirat && wasteCta.gomb_link"
+                        :to="localePath(wasteCta.gomb_link)"
                         size="lg"
                         icon="i-heroicons-envelope"
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        {{ $t('wasteManagement.cta.quoteButton') }}
+                        {{ wasteCta.gomb_felirat }}
                     </UButton>
                     <UButton
-                        to="/szolgaltatasok"
+                        v-if="wasteCta.gomb2_felirat && wasteCta.gomb2_link"
+                        :to="localePath(wasteCta.gomb2_link)"
                         variant="outline"
                         size="lg"
                         icon="i-heroicons-arrow-left"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        {{ $t('wasteManagement.cta.backButton') }}
+                        {{ wasteCta.gomb2_felirat }}
                     </UButton>
                 </div>
             </div>
@@ -345,6 +348,12 @@
 <script setup lang="ts">
 // Composables
 const localePath = useLocalePath()
+
+// Hero banner Directusból (ID: 10 - Hulladékkezelés)
+const { banner: heroBanner } = useBanner(10)
+
+// CTA Directusból (ID: 8 - Hulladékkezelés)
+const { cta: wasteCta } = useCta(8)
 
 // SEO meta adatok - using static content like rolunk.vue
 useSeoMeta({
