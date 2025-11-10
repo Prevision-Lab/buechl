@@ -12,7 +12,13 @@ export const useCta = (ctaId: number) => {
           filter: {
             id: { _eq: ctaId }
           },
-          fields: ['*', 'translations.*', 'video.*'],
+          fields: [
+            '*', 
+            'translations.*', 
+            'video.*',
+            'szolgaltatasok.szolgaltatasok_id.*',
+            'szolgaltatasok.szolgaltatasok_id.translations.*'
+          ],
           limit: 1
         })
       )
@@ -34,6 +40,27 @@ export const useCta = (ctaId: number) => {
         (t: any) => t.languages_code === directusLangCode
       )
       
+      // Process related services
+      const szolgaltatasok = cta.szolgaltatasok?.map((item: any) => {
+        const service = item.szolgaltatasok_id
+        const serviceTranslation = service?.translations?.find(
+          (t: any) => t.languages_code === directusLangCode
+        )
+        
+        return {
+          id: service?.id,
+          cim: serviceTranslation?.cim || service?.cim,
+          leiras: serviceTranslation?.leiras || service?.leiras,
+          ikon: service?.ikon,
+          szin: service?.szin,
+          funkciok: serviceTranslation?.funkciok || service?.funkciok,
+          gomb_felirat: serviceTranslation?.gomb_felirat || service?.gomb_felirat,
+          gomb_link: service?.gomb_link,
+          tipus: service?.tipus,
+          sorrend: service?.sorrend
+        }
+      }) || []
+      
       // Return translated or default content
       return {
         cim: translation?.cim || cta.cim,
@@ -51,7 +78,8 @@ export const useCta = (ctaId: number) => {
         kep: cta.kep,
         kepUrl: cta.kep 
           ? `https://buchl-admin.previsionlab.hu/assets/${cta.kep}?access_token=${config.public.directusToken}`
-          : null
+          : null,
+        szolgaltatasok
       }
     } catch (error) {
       console.error(`Error fetching CTA ${ctaId}:`, error)

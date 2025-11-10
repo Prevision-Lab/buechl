@@ -180,33 +180,50 @@
         </section>
 
         <!-- CTA szekció -->
-        <section class="py-16 bg-gray-900 text-white">
+        <section v-if="serviceCta" class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    {{ $t('services.cta.title') }}
+                    {{ serviceCta.cim }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    {{ $t('services.cta.description') }}
+                    {{ serviceCta.leiras }}
                 </p>
+                
+                <!-- Kapcsolódó szolgáltatások megjelenítése -->
+                <div v-if="serviceCta.szolgaltatasok?.length" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-5xl mx-auto">
+                    <div v-for="service in serviceCta.szolgaltatasok" :key="service.id" class="bg-white/10 rounded-lg p-6 text-left">
+                        <div class="flex items-center gap-3 mb-3">
+                            <UIcon :name="service.ikon" :class="[
+                                'w-8 h-8',
+                                service.szin === 'green' ? 'text-buchl-green' : 'text-buchl-blue'
+                            ]" />
+                            <h3 class="font-bold text-lg">{{ service.cim }}</h3>
+                        </div>
+                        <p class="text-sm text-gray-300">{{ service.leiras }}</p>
+                    </div>
+                </div>
+                
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
-                        :to="localePath('kapcsolat')"
+                        v-if="serviceCta.gomb_felirat && serviceCta.gomb_link"
+                        :to="localePath(serviceCta.gomb_link)"
                         size="lg"
                         icon="i-heroicons-envelope"
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        {{ $t('services.cta.requestQuote') }}
+                        {{ serviceCta.gomb_felirat }}
                     </UButton>
                     <UButton
-                        :to="localePath('rolunk')"
+                        v-if="serviceCta.gomb2_felirat && serviceCta.gomb2_link"
+                        :to="localePath(serviceCta.gomb2_link)"
                         variant="outline"
                         size="lg"
                         icon="i-heroicons-arrow-right"
                         :trailing="true"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        {{ $t('services.cta.learnMore') }}
+                        {{ serviceCta.gomb2_felirat }}
                     </UButton>
                 </div>
             </div>
@@ -225,4 +242,7 @@ const { services: bevezetoServices } = useServices('bevezeto')
 
 // Portfólió kártyák lekérése
 const { services: portfolioServices } = useServices('portfolio')
+
+// CTA adat lekérése Directusból (ID: 6 - Szolgáltatások CTA)
+const { cta: serviceCta } = useCta(6)
 </script>
