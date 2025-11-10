@@ -72,27 +72,32 @@
             </template>
         </template>
 
-        <!-- Másodnyersanyagok -->
-        <section class="py-16 bg-white">
+        <!-- Másodnyersanyagok Directusból -->
+        <section v-if="secondaryMaterialsCta" class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid gap-12 md:grid-cols-2 items-center">
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-                            {{ $t('wasteManagement.secondaryMaterials.title') }}
+                            {{ secondaryMaterialsCta.cim }}
                         </h2>
-                        <h3 class="text-xl text-buchl-green font-semibold mb-4">
-                            {{ $t('wasteManagement.secondaryMaterials.subtitle') }}
+                        <h3 v-if="secondaryMaterialsCta.alcim" class="text-xl text-buchl-green font-semibold mb-4">
+                            {{ secondaryMaterialsCta.alcim }}
                         </h3>
-                        <p class="text-lg text-gray-700 mb-6">
-                            {{ $t('wasteManagement.secondaryMaterials.description1') }}
-                        </p>
-                        <p class="text-gray-700">
-                            {{ $t('wasteManagement.secondaryMaterials.description2') }}
-                        </p>
+                        <div v-if="secondaryMaterialsCta.leiras" class="text-lg text-gray-700 mb-6" v-html="secondaryMaterialsCta.leiras" />
+                        <div v-if="secondaryMaterialsCta.szoveg" class="text-gray-700 mb-6" v-html="secondaryMaterialsCta.szoveg" />
+                        <UButton
+                            v-if="secondaryMaterialsCta.gomb_felirat && secondaryMaterialsCta.gomb_link"
+                            :to="localePath(secondaryMaterialsCta.gomb_link)"
+                            size="lg"
+                            icon="i-heroicons-envelope"
+                            class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
+                        >
+                            {{ secondaryMaterialsCta.gomb_felirat }}
+                        </UButton>
                     </div>
-                    <div class="relative">
+                    <div v-if="secondaryMaterialsCta.kepUrl" class="relative">
                         <img
-                            src="/media/images/masodnyersanyagok.jpg"
+                            :src="secondaryMaterialsCta.kepUrl"
                             alt="Másodnyersanyagok előállítása"
                             class="rounded-lg shadow-lg"
                         />
@@ -286,6 +291,9 @@ const { banner: heroBanner } = useBanner(10)
 
 // Oldal szekciók Directusból (technológiák)
 const { szekciok } = useOldalSzekciok('hulladekkezeles')
+
+// Másodnyersanyagok CTA Directusból (ID: 9)
+const { cta: secondaryMaterialsCta } = useCta(9)
 
 // CTA Directusból (ID: 6 - Szolgáltatások CTA)
 const { cta: wasteCta } = useCta(6)
