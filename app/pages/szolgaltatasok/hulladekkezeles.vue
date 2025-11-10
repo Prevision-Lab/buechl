@@ -352,8 +352,8 @@ const localePath = useLocalePath()
 // Hero banner Directusból (ID: 10 - Hulladékkezelés)
 const { banner: heroBanner } = useBanner(10)
 
-// CTA Directusból (ID: 8 - Hulladékkezelés)
-const { cta: wasteCta } = useCta(8)
+// CTA Directusból (ID: 6 - Szolgáltatások CTA)
+const { cta: wasteCta } = useCta(6)
 
 // SEO meta adatok - using static content like rolunk.vue
 useSeoMeta({
