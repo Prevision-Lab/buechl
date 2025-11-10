@@ -27,8 +27,14 @@
                 ]">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="max-w-4xl mx-auto text-center">
-                            <h2 v-if="szekc.cim" class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">{{ szekc.cim }}</h2>
-                            <div v-if="szekc.leiras" class="text-xl text-gray-700" v-html="szekc.leiras" />
+                            <h2 v-if="szekc.cim" :class="[
+                                'text-3xl sm:text-4xl font-bold mb-6',
+                                szekc.bg_szin === 'blue' || szekc.bg_szin === 'green' ? 'text-white' : 'text-buchl-blue'
+                            ]">{{ szekc.cim }}</h2>
+                            <div v-if="szekc.leiras" :class="[
+                                'text-xl',
+                                szekc.bg_szin === 'blue' || szekc.bg_szin === 'green' ? 'text-white' : 'text-gray-700'
+                            ]" v-html="szekc.leiras" />
                         </div>
                     </div>
                 </section>
@@ -99,8 +105,8 @@
 // Composables
 const localePath = useLocalePath()
 
-// Hero banner Directusból (ID: 3 - Szolgáltatások)
-const { banner: heroBanner } = useBanner(3)
+// Hero banner Directusból (ID: 9 - Szállítás)
+const { banner: heroBanner } = useBanner(9)
 
 // Oldal szekciók Directusból
 const { szekciok } = useOldalSzekciok('szallitas')
