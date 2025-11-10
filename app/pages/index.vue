@@ -322,34 +322,36 @@
 
 
     <!-- CTA szekció -->
-    <section class="py-16 bg-buchl-green text-buchl-blue">
+    <section v-if="certificatesCta" class="py-16 bg-buchl-green text-buchl-blue">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-          {{$t('cta.title')}}
+          {{ certificatesCta.cim }}
         </h2>
         <p class="text-xl text-buchl-blue/80 max-w-3xl mx-auto mb-10">
-          {{$t('cta.subtitle')}}
+          {{ certificatesCta.leiras }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <UButton
-            to="/tanusitvanyok"
+            v-if="certificatesCta.gomb_felirat && certificatesCta.gomb_link"
+            :to="certificatesCta.gomb_link"
             color="neutral"
             size="lg"
             icon="i-heroicons-document-text"
             :trailing="true"
             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
           >
-            {{$t('cta.download')}}
+            {{ certificatesCta.gomb_felirat }}
           </UButton>
           <UButton
-            to="/fenntarthatosag"
+            v-if="certificatesCta.gomb2_felirat && certificatesCta.gomb2_link"
+            :to="certificatesCta.gomb2_link"
             variant="outline"
             size="lg"
             icon="i-heroicons-arrow-right"
             :trailing="true"
             class="rounded-none border-2 border-buchl-blue text-buchl-blue"
           >
-            {{$t('cta.sustainability')}}
+            {{ certificatesCta.gomb2_felirat }}
           </UButton>
         </div>
       </div>
@@ -370,6 +372,9 @@ const { cta: companyCta } = useCta(1) // ID: 1 - Company intro CTA
 
 // Sustainability CTA adat lekérése Directusból
 const { cta: sustainabilityCta } = useCta(2) // ID: 2 - Sustainability CTA
+
+// Certificates CTA adat lekérése Directusból
+const { cta: certificatesCta } = useCta(3) // ID: 3 - Certificates/Downloads CTA
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null)

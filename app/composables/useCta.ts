@@ -40,6 +40,8 @@ export const useCta = (ctaId: number) => {
         leiras: translation?.leiras || cta.leiras,
         gomb_felirat: translation?.gomb_felirat || cta.gomb_felirat,
         gomb_link: translation?.gomb_link || cta.gomb_link,
+        gomb2_felirat: translation?.gomb2_felirat || cta.gomb2_felirat,
+        gomb2_link: translation?.gomb2_link || cta.gomb2_link,
         video: cta.video,
         videoUrl: cta.video 
           ? `https://buchl-admin.previsionlab.hu/assets/${cta.video.id}?access_token=${config.public.directusToken}`
