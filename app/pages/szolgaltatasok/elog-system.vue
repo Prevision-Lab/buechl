@@ -201,7 +201,38 @@
         </template>
 
         <!-- CTA szekció from Directus -->
-        <BuchlCta v-if="cta" :cta="cta" />
+        <section v-if="cta" class="py-16 bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                    {{ cta.cim }}
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+                    {{ cta.leiras }}
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <UButton
+                        v-if="cta.gomb_felirat && cta.gomb_link"
+                        :to="localePath(cta.gomb_link)"
+                        size="lg"
+                        icon="i-heroicons-envelope"
+                        :trailing="true"
+                        class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
+                    >
+                        {{ cta.gomb_felirat }}
+                    </UButton>
+                    <UButton
+                        v-if="cta.gomb2_felirat && cta.gomb2_link"
+                        :to="localePath(cta.gomb2_link)"
+                        variant="outline"
+                        size="lg"
+                        icon="i-heroicons-arrow-left"
+                        class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
+                    >
+                        {{ cta.gomb2_felirat }}
+                    </UButton>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -212,7 +243,7 @@ const localePath = useLocalePath()
 // Fetch data from Directus
 const { banner } = await useBanner(11)
 const { szekciok: sections } = await useOldalSzekciok('elog-system')
-const { cta } = await useCta(6)
+const { cta } = await useCta(10)
 
 // Helper functions for dynamic styling
 const getIconBgClass = (icon: string, bgColor?: string) => {
