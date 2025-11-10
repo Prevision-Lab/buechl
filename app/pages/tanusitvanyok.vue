@@ -2,18 +2,19 @@
   <div>
     <!-- Hero Section -->
     <BuchlHero
-      :title="$t('downloads.hero.title')"
-      :subtitle="$t('downloads.hero.subtitle')"
-      image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=800&fit=crop"
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kepUrl || 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=800&fit=crop'"
       bg-color="blue"
-      :primary-cta="{
-        label: $t('downloads.hero.primaryCta'),
-        to: localePath('/kapcsolat'),
-      }"
-      :secondary-cta="{
-        label: $t('downloads.hero.secondaryCta'),
-        to: localePath('/fenntarthatosag'),
-      }"
+      :primary-cta="heroBanner.gombok?.[0] ? {
+        label: heroBanner.gombok[0].cim,
+        to: heroBanner.gombok[0].link
+      } : undefined"
+      :secondary-cta="heroBanner.gombok?.[1] ? {
+        label: heroBanner.gombok[1].cim,
+        to: heroBanner.gombok[1].link
+      } : undefined"
     />
 
     <!-- Certificates Section -->
@@ -157,6 +158,9 @@ interface Certificate {
 
 // Composables
 const localePath = useLocalePath()
+
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(7) // ID: 7 - Letöltések
 
 // SEO meta adatok - using static content like rolunk.vue
 useSeoMeta({

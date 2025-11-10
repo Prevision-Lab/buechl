@@ -2,9 +2,10 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      :title="$t('news.page.hero.title')"
-      :subtitle="$t('news.page.hero.subtitle')"
-      image="/media/images/buchl-hirek.jpeg"
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kepUrl || '/media/images/buchl-hirek.jpeg'"
       bg-color="blue"
     />
 
@@ -113,9 +114,10 @@
 </template>
 
 <script setup lang="ts">
-// Hírek oldal
-
 const { t } = useI18n()
+
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(8) // ID: 8 - Hírek
 
 const categories = [
   { label: t('news.page.categories.all'), value: 'all' },

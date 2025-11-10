@@ -2,14 +2,15 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      :title="$t('sustainability.hero.title')"
-      :subtitle="$t('sustainability.hero.subtitle')"
-      image="/media/images/elektromos-jarmuvek.jpg"
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kepUrl || '/media/images/elektromos-jarmuvek.jpg'"
       bg-color="green"
-      :primary-cta="{
-        label: $t('sustainability.hero.contactButton'),
-        to: '/kapcsolat'
-      }"
+      :primary-cta="heroBanner.gombok?.[0] ? {
+        label: heroBanner.gombok[0].cim,
+        to: heroBanner.gombok[0].link
+      } : undefined"
     />
 
     <!-- ESG Bevezető szekció -->
@@ -443,8 +444,10 @@
 </template>
 
 <script setup lang="ts">
-// Fenntarthatóság oldal
 const { t } = useI18n()
+
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(4) // ID: 4 - Fenntarthatóság
 useSeoMeta({
   title: 'Fenntarthatóság - BÜCHL HUNGARIA',
   description: 'ESG megközelítésünk: Környezet, Társadalom és Vállalatirányítás területén vagyunk elkötelezettek. Megújuló energia, oktatási kooperációk és nemzetközi partneri hálózat.',

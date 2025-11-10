@@ -2,14 +2,15 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      :title="$t('careers.hero.title')"
-      :subtitle="$t('careers.hero.subtitle')"
-      image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&h=800&fit=crop"
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kepUrl || 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&h=800&fit=crop'"
       bg-color="blue"
-      :primary-cta="{
-        label: $t('careers.hero.primaryCta'),
-        to: '#allasok'
-      }"
+      :primary-cta="heroBanner.gombok?.[0] ? {
+        label: heroBanner.gombok[0].cim,
+        to: heroBanner.gombok[0].link
+      } : undefined"
     />
 
     <!-- Csatlakozz hozzánk szekció -->
@@ -184,6 +185,9 @@
 </template>
 
 <script setup lang="ts">
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(6) // ID: 6 - Karrier
+
 // Jelentkezés kezelése
 const openJobApplication = (position: string) => {
   // Kapcsolat oldalra navigálás a pozíció nevével

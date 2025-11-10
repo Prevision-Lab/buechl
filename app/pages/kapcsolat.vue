@@ -2,9 +2,10 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      :title="$t('contact.hero.title')"
-      :subtitle="$t('contact.hero.subtitle')"
-      image="/media/images/rolunk.jpeg"
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kepUrl || '/media/images/rolunk.jpeg'"
       bg-color="blue"
     />
 
@@ -422,5 +423,6 @@
 </template>
 
 <script setup lang="ts">
-// Kapcsolat oldal
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(5) // ID: 5 - Kapcsolat
 </script>

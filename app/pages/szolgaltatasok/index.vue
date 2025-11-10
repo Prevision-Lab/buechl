@@ -2,18 +2,19 @@
     <div>
         <!-- Hero szekció -->
         <BuchlHero
-            :title="$t('services.hero.title')"
-            :subtitle="$t('services.hero.subtitle')"
-            image="/media/images/szolgaltatasaink.jpg"
+            v-if="heroBanner"
+            :title="heroBanner.cim"
+            :subtitle="heroBanner.leiras"
+            :image="heroBanner.kepUrl || '/media/images/szolgaltatasaink.jpg'"
             bg-color="blue"
-            :primary-cta="{
-                label: $t('services.hero.primaryCta'),
-                to: localePath('kapcsolat'),
-            }"
-            :secondary-cta="{
-                label: $t('services.hero.secondaryCta'),
-                to: localePath('fenntarthatosag') + '#certificates',
-            }"
+            :primary-cta="heroBanner.gombok?.[0] ? {
+                label: heroBanner.gombok[0].cim,
+                to: heroBanner.gombok[0].link
+            } : undefined"
+            :secondary-cta="heroBanner.gombok?.[1] ? {
+                label: heroBanner.gombok[1].cim,
+                to: heroBanner.gombok[1].link
+            } : undefined"
         />
 
         <!-- Bevezető szekció -->
@@ -346,6 +347,8 @@
 </template>
 
 <script setup lang="ts">
-// Szolgáltatások oldal
 const localePath = useLocalePath()
+
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(3) // ID: 3 - Szolgáltatások
 </script>
