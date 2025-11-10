@@ -4,8 +4,8 @@
         <BuchlHero
             v-if="banner"
             :title="banner.cim"
-            :subtitle="banner.alcim"
-            :image="banner.kep"
+            :subtitle="banner.leiras"
+            :image="banner.kepUrl"
             bg-color="blue"
             :primary-cta="{
                 label: $t('elogSystem.hero.primaryCta'),
