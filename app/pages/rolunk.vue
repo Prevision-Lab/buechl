@@ -14,32 +14,17 @@
     />
 
     <!-- Rólunk részletesen szekció -->
-    <section class="py-16 bg-white">
+    <section v-if="companyCta" class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl mx-auto">
           <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-8 text-center">
-            {{ $t('about.sections.company.title') }}
+            {{ companyCta.cim }}
           </h2>
-          <div class="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p>
-              {{ $t('about.sections.company.description1') }}
-            </p>
-            <p>
-              {{ $t('about.sections.company.description2') }}
-            </p>
-            <p>
-              {{ $t('about.sections.company.description3') }}
-            </p>
-            <p>
-              {{ $t('about.sections.company.description4') }}
-            </p>
-            <p>
-              {{ $t('about.sections.company.description5') }}
-            </p>
-            <p class="text-center text-xl font-bold text-buchl-blue mt-8">
-              <strong>{{ $t('about.sections.company.slogan') }}</strong>
-            </p>
+          <div class="prose prose-lg max-w-none text-gray-700 space-y-6" v-html="companyCta.szoveg">
           </div>
+          <p v-if="companyCta.alcim" class="text-center text-xl font-bold text-buchl-blue mt-8">
+            <strong>{{ companyCta.alcim }}</strong>
+          </p>
         </div>
       </div>
     </section>
@@ -367,6 +352,9 @@ const localePath = useLocalePath()
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(2) // ID: 2 - Rólunk
+
+// Company CTA adat lekérése Directusból
+const { cta: companyCta } = useCta(4) // ID: 4 - BÜCHL HUNGARIA Kft. szekció
 
 // SEO meta adatok
 useSeoMeta({
