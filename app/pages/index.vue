@@ -20,40 +20,34 @@
     />
 
         <!-- Rólunk röviden szekció -->
-        <section class="py-16 bg-white">
+        <section v-if="companyCta" class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-6">
-                            {{$t('company.title')}}
+                            {{ companyCta.cim }}
                         </h2>
                         <div class="space-y-4">
                             <p class="text-lg text-gray-700">
-                                {{$t('company.description1')}}
-                            </p>
-                            <p class="text-lg text-gray-700">
-                                {{$t('company.description2')}}
-                            </p>
-                            <p class="text-lg text-gray-700">
-                                {{$t('company.description3')}}
+                                {{ companyCta.leiras }}
                             </p>
                         </div>
             <div class="mt-8">
 <UButton
-                :to="localePath('rolunk')"
+                :to="companyCta.gomb_link"
                 color="primary"
                 class="rounded-none"
                 icon="i-heroicons-arrow-right"
                 :trailing="true"
               >
-              {{$t('homepage.about.readMore')}}
+              {{ companyCta.gomb_felirat }}
               </UButton>
             </div>
           </div>
           <div ref="videoContainer" class="relative rounded-lg overflow-hidden h-[400px]">
             <video 
               ref="videoElement"
-              src="/media/videos/buchl_intro.mp4" 
+              :src="companyCta.videoUrl || '/media/videos/buchl_intro.mp4'" 
               poster="/media/images/buchl_intro_poster.jpg"
               :autoplay="false"
               muted
@@ -67,13 +61,13 @@
               @canplay="onVideoCanPlay"
               @click="toggleVideo"
             >
-              <source src="/media/videos/buchl_intro.mp4" type="video/mp4">
+              <source :src="companyCta.videoUrl || '/media/videos/buchl_intro.mp4'" type="video/mp4">
             </video>
             <!-- Fallback kép, ha a videó nem tölt be -->
             <img 
               v-if="videoError || !videoCanPlay"
               src="/media/images/buchl_intro_poster.jpg" 
-              alt="BÜCHL Hungaria Kft." 
+              :alt="companyCta.cim" 
               class="absolute inset-0 w-full h-full object-cover"
             >
             <!-- Play gomb overlay -->
@@ -87,7 +81,7 @@
               </div>
             </div>
             <div class="absolute bottom-0 left-0 right-0 bg-buchl-blue/80 p-4 text-white">
-              <p class="font-semibold">{{$t('company.videoTitle')}}</p>
+              <p class="font-semibold">{{ companyCta.cim }}</p>
             </div>
           </div>
         </div>
@@ -370,6 +364,9 @@ const localePath = useLocalePath()
 
 // Hero banner adat lekérése Directusból useBanner composable-lel
 const { banner: heroBanner } = useBanner(1) // ID: 1 - Főoldal hero
+
+// Company CTA adat lekérése Directusból useCta composable-lel
+const { cta: companyCta } = useCta(1) // ID: 1 - Company intro CTA
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null)

@@ -1,0 +1,71 @@
+import { readItems } from '@directus/sdk'
+
+export const useCta = (ctaId: number) => {
+  const { $directus } = useNuxtApp()
+  const { locale } = useI18n()
+  const config = useRuntimeConfig()
+  
+  const fetchCta = async () => {
+    try {
+      const ctas = await $directus.request(
+        readItems('cta', {
+          filter: {
+            id: { _eq: ctaId }
+          },
+          fields: ['*', 'translations.*', 'video.*'],
+          limit: 1
+        })
+      )
+      
+      if (!ctas || ctas.length === 0) return null
+      
+      const cta = ctas[0]
+      
+      // Map locale to Directus language codes
+      const languageMap: Record<string, string> = {
+        'hu': 'hu-HU',
+        'en': 'en-US',
+        'de': 'de-DE'
+      }
+      const directusLangCode = languageMap[locale.value] || 'hu-HU'
+      
+      // Find translation for current language
+      const translation = cta.translations?.find(
+        (t: any) => t.languages_code === directusLangCode
+      )
+      
+      // Return translated or default content
+      return {
+        cim: translation?.cim || cta.cim,
+        leiras: translation?.leiras || cta.leiras,
+        gomb_felirat: translation?.gomb_felirat || cta.gomb_felirat,
+        gomb_link: translation?.gomb_link || cta.gomb_link,
+        video: cta.video,
+        videoUrl: cta.video 
+          ? `https://buchl-admin.previsionlab.hu/assets/${cta.video.id}?access_token=${config.public.directusToken}`
+          : null,
+        kep: cta.kep,
+        kepUrl: cta.kep 
+          ? `https://buchl-admin.previsionlab.hu/assets/${cta.kep}?access_token=${config.public.directusToken}`
+          : null
+      }
+    } catch (error) {
+      console.error(`Error fetching CTA ${ctaId}:`, error)
+      return null
+    }
+  }
+  
+  // Reactive CTA data with automatic refresh on locale change
+  const { data: cta, refresh } = useAsyncData(
+    `cta-${ctaId}`,
+    fetchCta,
+    {
+      watch: [locale]
+    }
+  )
+  
+  return {
+    cta,
+    refresh
+  }
+}
