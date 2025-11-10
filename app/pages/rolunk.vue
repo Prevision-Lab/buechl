@@ -81,27 +81,20 @@
 
 
     <!-- BÜCHL CSOPORT szekció -->
-    <section class="py-16 bg-buchl-blue text-white">
+    <section v-if="groupCta" class="py-16 bg-buchl-blue text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-buchl-green">
-            {{ $t('about.sections.group.title') }}
+            {{ groupCta.cim }}
           </h2>
           <div class="max-w-4xl mx-auto">
             <p class="text-lg text-white/90 leading-relaxed font-semibold">
-              {{ $t('about.sections.group.slogan') }}
+              {{ groupCta.leiras }}
             </p>
-            <p class="text-lg text-white/90 leading-relaxed mt-4">
-              {{ $t('about.sections.group.description1') }}
-            </p>
-            <p class="text-lg text-white/90 leading-relaxed mt-4">
-              {{ $t('about.sections.group.description2') }}
-            </p>
-            <p class="text-lg text-white/90 leading-relaxed mt-4">
-              {{ $t('about.sections.group.description3') }}
-            </p>
-            <p class="text-lg text-white/90 leading-relaxed mt-4 font-semibold">
-              {{ $t('about.sections.group.mission') }}
+            <div class="text-lg text-white/90 leading-relaxed mt-4 space-y-4" v-html="groupCta.szoveg">
+            </div>
+            <p v-if="groupCta.alcim" class="text-lg text-white/90 leading-relaxed mt-4 font-semibold">
+              {{ groupCta.alcim }}
             </p>
           </div>
         </div>
@@ -355,6 +348,9 @@ const { banner: heroBanner } = useBanner(2) // ID: 2 - Rólunk
 
 // Company CTA adat lekérése Directusból
 const { cta: companyCta } = useCta(4) // ID: 4 - BÜCHL HUNGARIA Kft. szekció
+
+// Group CTA adat lekérése Directusból
+const { cta: groupCta } = useCta(5) // ID: 5 - BÜCHL CSOPORT szekció
 
 // SEO meta adatok
 useSeoMeta({
