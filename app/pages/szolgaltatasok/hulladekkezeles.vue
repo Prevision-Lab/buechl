@@ -30,9 +30,10 @@
             </div>
         </section>
 
-        <!-- Technológiák Directusból -->
+        <!-- Dinamikus szekciók Directusból -->
         <template v-if="szekciok">
             <template v-for="szekc in szekciok" :key="szekc.id">
+                <!-- Technológiák típus -->
                 <section v-if="szekc.tipus === 'technologiak'" :class="[
                     'py-16',
                     szekc.bg_szin === 'gray' ? 'bg-gray-50' : szekc.bg_szin === 'blue' ? 'bg-buchl-blue text-white' : szekc.bg_szin === 'green' ? 'bg-buchl-green text-white' : 'bg-white'
@@ -65,6 +66,36 @@
                                 </div>
                                 <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ tech.cim }}</h3>
                                 <p class="text-gray-700 text-sm text-center">{{ tech.leiras }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cards típus -->
+                <section v-else-if="szekc.tipus === 'cards'" :class="[
+                    'py-16',
+                    szekc.bg_szin === 'gray' ? 'bg-gray-50' : szekc.bg_szin === 'blue' ? 'bg-buchl-blue text-white' : szekc.bg_szin === 'green' ? 'bg-buchl-green text-white' : 'bg-white'
+                ]">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
+                            {{ szekc.cim }}
+                        </h2>
+                        <div v-if="szekc.leiras" class="max-w-4xl mx-auto mb-12">
+                            <div class="text-lg text-gray-700 text-center" v-html="szekc.leiras" />
+                        </div>
+                        <div v-if="szekc.elemek" class="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+                            <div v-for="(elem, idx) in szekc.elemek" :key="idx" class="bg-white rounded-lg shadow-md p-6">
+                                <div v-if="elem.ikon" :class="[
+                                    'w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4',
+                                    elem.ikon.includes('beaker') ? 'bg-buchl-blue/10' : 'bg-red-50'
+                                ]">
+                                    <UIcon :name="elem.ikon" :class="[
+                                        'text-2xl',
+                                        elem.ikon.includes('beaker') ? 'text-buchl-blue' : 'text-red-500'
+                                    ]" />
+                                </div>
+                                <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ elem.cim }}</h3>
+                                <p class="text-gray-700">{{ elem.leiras }}</p>
                             </div>
                         </div>
                     </div>
@@ -106,42 +137,6 @@
             </div>
         </section>
 
-        <!-- Innovatív megoldások -->
-        <section class="py-16 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    {{ $t('wasteManagement.innovative.title') }}
-                </h2>
-                
-                <div class="max-w-4xl mx-auto">
-                    <p class="text-lg text-gray-700 mb-8 text-center">
-                        {{ $t('wasteManagement.innovative.description') }}
-                    </p>
-                    
-                    <div class="grid gap-8 md:grid-cols-2">
-                        <div class="bg-white rounded-lg shadow-md p-6">
-                            <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <UIcon name="i-heroicons-beaker" class="text-buchl-blue text-2xl" />
-                            </div>
-                            <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('wasteManagement.innovative.paintWastewater.title') }}</h3>
-                            <p class="text-gray-700">
-                                {{ $t('wasteManagement.innovative.paintWastewater.description') }}
-                            </p>
-                        </div>
-                        
-                        <div class="bg-white rounded-lg shadow-md p-6">
-                            <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <UIcon name="i-heroicons-shield-exclamation" class="text-red-500 text-2xl" />
-                            </div>
-                            <h3 class="font-bold text-buchl-blue text-xl mb-4 text-center">{{ $t('wasteManagement.innovative.pyrotechnic.title') }}</h3>
-                            <p class="text-gray-700">
-                                {{ $t('wasteManagement.innovative.pyrotechnic.description') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Hulladékkatalógus -->        
         <section class="py-16 bg-white">
