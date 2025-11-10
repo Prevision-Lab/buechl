@@ -1,16 +1,17 @@
 <template>
     <div>
-        <!-- Hero szekció -->
+        <!-- Hero szekció Directusból -->
         <BuchlHero
-            :title="$t('transport.hero.title')"
-            :subtitle="$t('transport.hero.subtitle')"
-            image="/media/images/hulladekgyujtes-szallitas.jpg"
+            v-if="heroBanner"
+            :title="heroBanner.cim"
+            :subtitle="heroBanner.leiras"
+            :image="heroBanner.kepUrl || '/media/images/hulladekgyujtes-szallitas.jpg'"
             bg-color="blue"
-            :primary-cta="{
+            :primary-cta="heroBanner.gombok?.[0] || {
                 label: $t('transport.hero.primaryCta'),
                 to: localePath('/kapcsolat'),
             }"
-            :secondary-cta="{
+            :secondary-cta="heroBanner.gombok?.[1] || {
                 label: $t('transport.hero.secondaryCta'),
                 to: localePath('/szolgaltatasok'),
             }"
@@ -58,33 +59,35 @@
             </template>
         </template>
 
-        <!-- CTA szekció -->
-        <section class="py-16 bg-gray-900 text-white">
+        <!-- CTA szekció Directusból -->
+        <section v-if="transportCta" class="py-16 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                    {{ $t('transport.cta.title') }}
+                    {{ transportCta.cim }}
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    {{ $t('transport.cta.description') }}
+                    {{ transportCta.leiras }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
-                        :to="localePath('/kapcsolat')"
+                        v-if="transportCta.gomb_felirat && transportCta.gomb_link"
+                        :to="localePath(transportCta.gomb_link)"
                         size="lg"
                         icon="i-heroicons-envelope"
                         :trailing="true"
                         class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                     >
-                        {{ $t('transport.cta.quoteButton') }}
+                        {{ transportCta.gomb_felirat }}
                     </UButton>
                     <UButton
-                        :to="localePath('/szolgaltatasok')"
+                        v-if="transportCta.gomb2_felirat && transportCta.gomb2_link"
+                        :to="localePath(transportCta.gomb2_link)"
                         variant="outline"
                         size="lg"
                         icon="i-heroicons-arrow-left"
                         class="rounded-none border-white text-white hover:bg-white hover:text-gray-900"
                     >
-                        {{ $t('transport.cta.backButton') }}
+                        {{ transportCta.gomb2_felirat }}
                     </UButton>
                 </div>
             </div>
@@ -95,7 +98,15 @@
 <script setup lang="ts">
 // Composables
 const localePath = useLocalePath()
+
+// Hero banner Directusból (ID: 3 - Szolgáltatások)
+const { banner: heroBanner } = useBanner(3)
+
+// Oldal szekciók Directusból
 const { szekciok } = useOldalSzekciok('szallitas')
+
+// CTA Directusból (ID: 7 - Szállítás)
+const { cta: transportCta } = useCta(7)
 
 // SEO meta adatok - using static content like rolunk.vue
 useSeoMeta({
