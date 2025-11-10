@@ -2,14 +2,15 @@
   <div>
     <!-- Hero szekció -->
     <BuchlHero
-      :title="$t('about.hero.title')"
-      :subtitle="$t('about.hero.subtitle')"
-      image="/media/images/rolunk.jpg"
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kepUrl || '/media/images/rolunk.jpg'"
       bg-color="blue"
-      :primary-cta="{
-        label: $t('footer.contactButton'),
-        to: localePath('kapcsolat')
-      }"
+      :primary-cta="heroBanner.gombok?.[0] ? {
+        label: heroBanner.gombok[0].cim,
+        to: heroBanner.gombok[0].link
+      } : undefined"
     />
 
     <!-- Rólunk részletesen szekció -->
@@ -363,6 +364,9 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 const localePath = useLocalePath()
+
+// Hero banner adat lekérése Directusból
+const { banner: heroBanner } = useBanner(2) // ID: 2 - Rólunk
 
 // SEO meta adatok
 useSeoMeta({

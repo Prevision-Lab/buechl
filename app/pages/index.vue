@@ -5,7 +5,7 @@
       v-if="heroBanner"
       :title="heroBanner.cim"
       :subtitle="heroBanner.leiras"
-      :image="heroBanner.kep ? `https://buchl-admin.previsionlab.hu/assets/${heroBanner.kep}?access_token=${directusToken}` : '/media/images/elektromos autó.jpg'"
+      :image="heroBanner.kepUrl || '/media/images/elektromos autó.jpg'"
       bg-color="blue"
       title-font="permanent-marker"
       :skewed="true"
@@ -364,68 +364,12 @@
 </template>
 
 <script setup lang="ts">
-import { readItems } from '@directus/sdk'
-
 // Route és lifecycle imports
 const $route = useRoute()
 const localePath = useLocalePath()
-const { locale } = useI18n()
-const { $directus } = useNuxtApp()
-const config = useRuntimeConfig()
-const directusToken = config.public.directusToken
 
-// Hero banner adat lekérése Directusból
-const fetchHeroBanner = async () => {
-  try {
-    // Lekérjük az első bannert (főoldal hero) a fordításokkal együtt
-    const banners = await $directus.request(
-      readItems('bannerek', {
-        filter: {
-          id: { _eq: 1 } // Főoldal hero banner ID-ja
-        },
-        fields: ['*', 'translations.*'],
-        limit: 1
-      })
-    )
-    
-    if (!banners || banners.length === 0) return null
-    
-    const banner = banners[0]
-    
-    // Keressük meg az aktuális nyelvű fordítást
-    // Directus nyelv kódok: hu-HU, en-US, de-DE
-    const languageMap: Record<string, string> = {
-      'hu': 'hu-HU',
-      'en': 'en-US',
-      'de': 'de-DE'
-    }
-    const directusLangCode = languageMap[locale.value] || 'hu-HU'
-    
-    const translation = banner.translations?.find(
-      (t: any) => t.languages_code === directusLangCode
-    )
-    
-    // Ha van fordítás, használjuk azt, különben az alapértelmezett adatokat
-    return {
-      cim: translation?.cim || banner.cim,
-      leiras: translation?.leiras || banner.leiras,
-      gombok: translation?.gombok || banner.gombok,
-      kep: banner.kep
-    }
-  } catch (error) {
-    console.error('Error fetching hero banner:', error)
-    return null
-  }
-}
-
-// Reaktív hero banner adat
-const { data: heroBanner, refresh: refreshHeroBanner } = await useAsyncData(
-  'home-hero-banner',
-  fetchHeroBanner,
-  {
-    watch: [locale] // Automatikus frissítés nyelvváltáskor
-  }
-)
+// Hero banner adat lekérése Directusból useBanner composable-lel
+const { banner: heroBanner } = useBanner(1) // ID: 1 - Főoldal hero
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null)
