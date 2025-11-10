@@ -38,6 +38,8 @@ export const useCta = (ctaId: number) => {
       return {
         cim: translation?.cim || cta.cim,
         leiras: translation?.leiras || cta.leiras,
+        alcim: translation?.alcim || cta.alcim,
+        szoveg: translation?.szoveg || cta.szoveg,
         gomb_felirat: translation?.gomb_felirat || cta.gomb_felirat,
         gomb_link: translation?.gomb_link || cta.gomb_link,
         gomb2_felirat: translation?.gomb2_felirat || cta.gomb2_felirat,
