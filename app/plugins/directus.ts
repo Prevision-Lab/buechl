@@ -32,18 +32,25 @@ async function fetchRetry(count: number, ...args: Parameters<typeof fetch>) {
 
 export default defineNuxtPlugin(async (_nuxtApp) => {
     const config = useRuntimeConfig()
-    const { directusUrl } = config.public
+    const { directusUrl, directusToken } = config.public
 
     // Create Directus client with retry logic and rate limiting
     const directus = createDirectus(directusUrl as string, {
         globals: {
-            fetch: (...args) => queue.add(() => fetchRetry(0, ...args)),
+            fetch: (...args) => {
+                // Add Authorization header with static token
+                const [url, options = {}] = args
+                const headers = new Headers(options.headers || {})
+                
+                if (directusToken) {
+                    headers.set('Authorization', `Bearer ${directusToken}`)
+                }
+                
+                return queue.add(() => fetchRetry(0, url, { ...options, headers }))
+            },
         },
     })
-        .with(authentication('session', { credentials: 'include' }))
-        .with(rest({ credentials: 'include' }))
-
-    // Fetch the current user on the server side
+        .with(rest())
 
     return {
         provide: {

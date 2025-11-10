@@ -19,6 +19,7 @@
         "@nuxt/ui-pro": "^3.1.1",
         "@nuxtjs/i18n": "^10.1.1",
         "@vueuse/motion": "^3.0.3",
+        "axios": "^1.13.0",
         "eslint": "^9.26.0",
         "gray-matter": "^4.0.3",
         "marked": "^15.0.12",

@@ -1,21 +1,22 @@
 <template>
   <div>
     <!-- Hero szekció - Ferde stílusú, nagy hatású megjelenítéssel -->
-<BuchlHero
-      :title="$t('hero.title')"
-      :subtitle="$t('hero.subtitle')"
-      image="/media/images/elektromos autó.jpg"
+    <BuchlHero
+      v-if="heroBanner"
+      :title="heroBanner.cim"
+      :subtitle="heroBanner.leiras"
+      :image="heroBanner.kep ? `https://buchl-admin.previsionlab.hu/assets/${heroBanner.kep}?access_token=${directusToken}` : '/media/images/elektromos autó.jpg'"
       bg-color="blue"
       title-font="permanent-marker"
       :skewed="true"
-      :primary-cta="{
-        label: $t('hero.primaryCta'),
-        to: '/szolgaltatasok'
-      }"
-      :secondary-cta="{
-        label: $t('hero.secondaryCta'),
-        to: '/kapcsolat'
-      }"
+      :primary-cta="heroBanner.gombok?.[0] ? {
+        label: heroBanner.gombok[0].cim,
+        to: heroBanner.gombok[0].link
+      } : undefined"
+      :secondary-cta="heroBanner.gombok?.[1] ? {
+        label: heroBanner.gombok[1].cim,
+        to: heroBanner.gombok[1].link
+      } : undefined"
     />
 
         <!-- Rólunk röviden szekció -->
@@ -363,9 +364,68 @@
 </template>
 
 <script setup lang="ts">
+import { readItems } from '@directus/sdk'
+
 // Route és lifecycle imports
 const $route = useRoute()
 const localePath = useLocalePath()
+const { locale } = useI18n()
+const { $directus } = useNuxtApp()
+const config = useRuntimeConfig()
+const directusToken = config.public.directusToken
+
+// Hero banner adat lekérése Directusból
+const fetchHeroBanner = async () => {
+  try {
+    // Lekérjük az első bannert (főoldal hero) a fordításokkal együtt
+    const banners = await $directus.request(
+      readItems('bannerek', {
+        filter: {
+          id: { _eq: 1 } // Főoldal hero banner ID-ja
+        },
+        fields: ['*', 'translations.*'],
+        limit: 1
+      })
+    )
+    
+    if (!banners || banners.length === 0) return null
+    
+    const banner = banners[0]
+    
+    // Keressük meg az aktuális nyelvű fordítást
+    // Directus nyelv kódok: hu-HU, en-US, de-DE
+    const languageMap: Record<string, string> = {
+      'hu': 'hu-HU',
+      'en': 'en-US',
+      'de': 'de-DE'
+    }
+    const directusLangCode = languageMap[locale.value] || 'hu-HU'
+    
+    const translation = banner.translations?.find(
+      (t: any) => t.languages_code === directusLangCode
+    )
+    
+    // Ha van fordítás, használjuk azt, különben az alapértelmezett adatokat
+    return {
+      cim: translation?.cim || banner.cim,
+      leiras: translation?.leiras || banner.leiras,
+      gombok: translation?.gombok || banner.gombok,
+      kep: banner.kep
+    }
+  } catch (error) {
+    console.error('Error fetching hero banner:', error)
+    return null
+  }
+}
+
+// Reaktív hero banner adat
+const { data: heroBanner, refresh: refreshHeroBanner } = await useAsyncData(
+  'home-hero-banner',
+  fetchHeroBanner,
+  {
+    watch: [locale] // Automatikus frissítés nyelvváltáskor
+  }
+)
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null)
