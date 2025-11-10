@@ -29,27 +29,19 @@
                     <p class="text-lg text-gray-700 mb-8">
                         {{ $t('services.intro.description') }}
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                        <div class="text-center">
-                            <div class="bg-buchl-blue/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <UIcon name="i-heroicons-truck" class="text-buchl-blue text-4xl" />
+                    <div v-if="bevezetoServices" class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                        <div v-for="service in bevezetoServices" :key="service.id" class="text-center">
+                            <div :class="[
+                                'w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4',
+                                service.szin === 'green' ? 'bg-buchl-green/10' : 'bg-buchl-blue/10'
+                            ]">
+                                <UIcon :name="service.ikon" :class="[
+                                    'text-4xl',
+                                    service.szin === 'green' ? 'text-buchl-green' : 'text-buchl-blue'
+                                ]" />
                             </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">{{ $t('services.intro.features.collection.title') }}</h3>
-                            <p class="text-gray-600 text-sm">{{ $t('services.intro.features.collection.description') }}</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="bg-buchl-green/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <UIcon name="i-heroicons-cog-6-tooth" class="text-buchl-green text-4xl" />
-                            </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">{{ $t('services.intro.features.treatment.title') }}</h3>
-                            <p class="text-gray-600 text-sm">{{ $t('services.intro.features.treatment.description') }}</p>
-                        </div>
-                        <div class="text-center">
-                            <div class="bg-buchl-blue/10 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <UIcon name="i-heroicons-cpu-chip" class="text-buchl-blue text-4xl" />
-                            </div>
-                            <h3 class="font-bold text-buchl-blue mb-2">{{ $t('services.intro.features.logistics.title') }}</h3>
-                            <p class="text-gray-600 text-sm">{{ $t('services.intro.features.logistics.description') }}</p>
+                            <h3 class="font-bold text-buchl-blue mb-2">{{ service.cim }}</h3>
+                            <p class="text-gray-600 text-sm">{{ service.leiras }}</p>
                         </div>
                     </div>
                 </div>
@@ -71,166 +63,42 @@
                     </p>
                 </div>
 
-                <div
-                    class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start"
-                >
-                    <!-- Hulladékgyűjtés és szállítás kategória -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="bg-buchl-blue text-white p-5">
-                            <h3
-                                class="text-xl font-bold flex items-center gap-3"
-                            >
-                                <UIcon
-                                    name="i-heroicons-truck"
-                                    class="w-7 h-7"
-                                />
-                                {{ $t('services.portfolio.categories.collection.title') }}
+                <div v-if="portfolioServices" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
+                    <div v-for="service in portfolioServices" :key="service.id" class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div :class="[
+                            'text-white p-5',
+                            service.szin === 'green' ? 'bg-buchl-green' : 'bg-buchl-blue'
+                        ]">
+                            <h3 class="text-xl font-bold flex items-center gap-3">
+                                <UIcon :name="service.ikon" class="w-7 h-7" />
+                                {{ service.cim }}
                             </h3>
                         </div>
                         <div class="p-6">
                             <p class="text-gray-700 mb-6">
-                                {{ $t('services.portfolio.categories.collection.description') }}
+                                {{ service.leiras }}
                             </p>
-                            <ul class="space-y-3 mb-6">
-                                <li class="flex items-start gap-3">
+                            <ul v-if="service.funkciok" class="space-y-3 mb-6">
+                                <li v-for="(funkcio, idx) in service.funkciok" :key="idx" class="flex items-start gap-3">
                                     <UIcon
                                         name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
+                                        :class="[
+                                            'w-6 h-6 shrink-0 mt-0.5',
+                                            service.szin === 'green' ? 'text-buchl-green' : 'text-buchl-blue'
+                                        ]"
                                     />
-                                    <span>{{ $t('services.portfolio.categories.collection.features.0') }}</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.collection.features.1') }}</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.collection.features.2') }}</span>
+                                    <span>{{ funkcio }}</span>
                                 </li>
                             </ul>
-                            <div>
+                            <div v-if="service.gomb_felirat && service.gomb_link">
                                 <UButton
                                     color="primary"
                                     variant="soft"
                                     size="lg"
                                     class="w-full rounded-none"
-                                    :to="localePath('/szolgaltatasok/szallitas')"
+                                    :to="localePath(service.gomb_link)"
                                 >
-                                    {{ $t('services.portfolio.detailsButton') }}
-                                </UButton>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Hulladékkezelés kategória -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="bg-buchl-blue text-white p-5">
-                            <h3
-                                class="text-xl font-bold flex items-center gap-3"
-                            >
-                                <UIcon
-                                    name="i-heroicons-cog-6-tooth"
-                                    class="w-7 h-7"
-                                />
-                                {{ $t('services.portfolio.categories.treatment.title') }}
-                            </h3>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-gray-700 mb-6">
-                                {{ $t('services.portfolio.categories.treatment.description') }}
-                            </p>
-                            <ul class="space-y-3 mb-6">
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.treatment.features.0') }}</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.treatment.features.1') }}</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-green shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.treatment.features.2') }}</span>
-                                </li>
-                            </ul>
-                            <div>
-                                <UButton
-                                    color="primary"
-                                    variant="soft"
-                                    size="lg"
-                                    class="w-full rounded-none"
-                                    :to="localePath('/szolgaltatasok/hulladekkezeles')"
-                                >
-                                    {{ $t('services.portfolio.detailsButton') }}
-                                </UButton>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Logisztika kategória -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="bg-buchl-blue text-white p-5">
-                            <h3
-                                class="text-xl font-bold flex items-center gap-3"
-                            >
-                                <UIcon
-                                    name="i-heroicons-cpu-chip"
-                                    class="w-7 h-7"
-                                />
-                                {{ $t('services.portfolio.categories.logistics.title') }}
-                            </h3>
-                        </div>
-                        <div class="p-6">
-                            <p class="text-gray-700 mb-6">
-                                {{ $t('services.portfolio.categories.logistics.description') }}
-                            </p>
-                            <ul class="space-y-3 mb-6">
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.logistics.features.0') }}</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.logistics.features.1') }}</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <UIcon
-                                        name="i-heroicons-check-circle"
-                                        class="w-6 h-6 text-buchl-blue shrink-0 mt-0.5"
-                                    />
-                                    <span>{{ $t('services.portfolio.categories.logistics.features.2') }}</span>
-                                </li>
-                            </ul>
-                            <div>
-                                <UButton
-                                    color="primary"
-                                    variant="soft"
-                                    size="lg"
-                                    class="w-full rounded-none"
-                                    :to="localePath('/szolgaltatasok/elog-system')"
-                                >
-                                    {{ $t('services.portfolio.detailsButton') }}
+                                    {{ service.gomb_felirat }}
                                 </UButton>
                             </div>
                         </div>
@@ -351,4 +219,10 @@ const localePath = useLocalePath()
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(3) // ID: 3 - Szolgáltatások
+
+// Bevezető funkciók lekérése
+const { services: bevezetoServices } = useServices('bevezeto')
+
+// Portfólió kártyák lekérése
+const { services: portfolioServices } = useServices('portfolio')
 </script>
