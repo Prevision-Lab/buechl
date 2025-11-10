@@ -30,115 +30,47 @@
             </div>
         </section>
 
-        <!-- Technológiák -->
-        <section class="py-16 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
-                    {{ $t('wasteManagement.technologies.title') }}
-                </h2>
+        <!-- Technológiák Directusból -->
+        <template v-if="szekciok">
+            <template v-for="szekc in szekciok" :key="szekc.id">
+                <section v-if="szekc.tipus === 'technologiak'" :class="[
+                    'py-16',
+                    szekc.bg_szin === 'gray' ? 'bg-gray-50' : szekc.bg_szin === 'blue' ? 'bg-buchl-blue text-white' : szekc.bg_szin === 'green' ? 'bg-buchl-green text-white' : 'bg-white'
+                ]">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-buchl-blue mb-12 text-center">
+                            {{ szekc.cim }}
+                        </h2>
 
-                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- Emulzió- és mosólúg-kezelő -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-beaker" class="text-buchl-green text-2xl" />
+                        <div v-if="szekc.technologiak?.length" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            <div v-for="tech in szekc.technologiak" :key="tech.id" class="bg-white rounded-lg shadow-md p-6">
+                                <div :class="[
+                                    'w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4',
+                                    tech.szin === 'green' ? 'bg-buchl-green/10' : '',
+                                    tech.szin === 'blue' ? 'bg-buchl-blue/10' : '',
+                                    tech.szin === 'orange' ? 'bg-orange-100' : '',
+                                    tech.szin === 'gray' ? 'bg-gray-100' : '',
+                                    tech.szin === 'red' ? 'bg-red-50' : '',
+                                    tech.szin === 'purple' ? 'bg-purple-100' : ''
+                                ]">
+                                    <UIcon v-if="tech.ikon" :name="tech.ikon" :class="[
+                                        'text-2xl',
+                                        tech.szin === 'green' ? 'text-buchl-green' : '',
+                                        tech.szin === 'blue' ? 'text-buchl-blue' : '',
+                                        tech.szin === 'orange' ? 'text-orange-500' : '',
+                                        tech.szin === 'gray' ? 'text-gray-600' : '',
+                                        tech.szin === 'red' ? 'text-red-500' : '',
+                                        tech.szin === 'purple' ? 'text-purple-600' : ''
+                                    ]" />
+                                </div>
+                                <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ tech.cim }}</h3>
+                                <p class="text-gray-700 text-sm text-center">{{ tech.leiras }}</p>
+                            </div>
                         </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.emulsion.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.emulsion.description') }}
-                        </p>
                     </div>
-
-                    <!-- Lakkozó berendezések szennyvíz -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-funnel" class="text-buchl-blue text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.wastewater.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.wastewater.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Másodlagos tüzelőanyagok -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-fire" class="text-orange-500 text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.fuel.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.fuel.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Olajtartalmú köszörűiszap -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-cog-6-tooth" class="text-gray-600 text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.grinding.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.grinding.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Válogató berendezés -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-buchl-green/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-funnel" class="text-buchl-green text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.sorting.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.sorting.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Bálázó berendezés -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-cube" class="text-buchl-blue text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.baling.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.baling.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Tömörítő berendezés -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-arrows-pointing-in" class="text-purple-600 text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.compacting.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.compacting.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Iratmegsemmisítő -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-document-minus" class="text-red-500 text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.shredding.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.shredding.description') }}
-                        </p>
-                    </div>
-
-                    <!-- Raktározás -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="bg-buchl-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <UIcon name="i-heroicons-building-storefront" class="text-buchl-blue text-2xl" />
-                        </div>
-                        <h3 class="font-bold text-buchl-blue text-lg mb-3 text-center">{{ $t('wasteManagement.technologies.items.storage.title') }}</h3>
-                        <p class="text-gray-700 text-sm text-center">
-                            {{ $t('wasteManagement.technologies.items.storage.description') }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
+            </template>
+        </template>
 
         <!-- Másodnyersanyagok -->
         <section class="py-16 bg-white">
@@ -351,6 +283,9 @@ const localePath = useLocalePath()
 
 // Hero banner Directusból (ID: 10 - Hulladékkezelés)
 const { banner: heroBanner } = useBanner(10)
+
+// Oldal szekciók Directusból (technológiák)
+const { szekciok } = useOldalSzekciok('hulladekkezeles')
 
 // CTA Directusból (ID: 6 - Szolgáltatások CTA)
 const { cta: wasteCta } = useCta(6)

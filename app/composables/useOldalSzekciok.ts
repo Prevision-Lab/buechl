@@ -13,7 +13,7 @@ export const useOldalSzekciok = (oldal: string) => {
             oldal: { _eq: oldal },
             status: { _eq: 'published' }
           },
-          fields: ['*', 'translations.*', 'kep.*'],
+          fields: ['*', 'translations.*', 'kep.*', 'technologiak.technologiak_id.*', 'technologiak.technologiak_id.translations.*'],
           sort: ['sorrend']
         })
       )
@@ -34,6 +34,24 @@ export const useOldalSzekciok = (oldal: string) => {
           (t: any) => t.languages_code === directusLangCode
         )
         
+        // Process technologies if present
+        const technologiak = szekc.technologiak?.map((tech: any) => {
+          const techData = tech.technologiak_id
+          if (!techData) return null
+          
+          const techTranslation = techData.translations?.find(
+            (t: any) => t.languages_code === directusLangCode
+          )
+          
+          return {
+            id: techData.id,
+            cim: techTranslation?.cim || techData.cim,
+            leiras: techTranslation?.leiras || techData.leiras,
+            ikon: techData.ikon,
+            szin: techData.szin
+          }
+        }).filter(Boolean) || []
+        
         return {
           id: szekc.id,
           oldal: szekc.oldal,
@@ -47,7 +65,8 @@ export const useOldalSzekciok = (oldal: string) => {
             ? `https://buchl-admin.previsionlab.hu/assets/${szekc.kep}?access_token=${config.public.directusToken}`
             : null,
           sorrend: szekc.sorrend,
-          bg_szin: szekc.bg_szin
+          bg_szin: szekc.bg_szin,
+          technologiak
         }
       })
     } catch (error) {
