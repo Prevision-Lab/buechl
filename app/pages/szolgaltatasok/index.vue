@@ -188,21 +188,6 @@
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
                     {{ serviceCta.leiras }}
                 </p>
-                
-                <!-- Kapcsolódó szolgáltatások megjelenítése -->
-                <div v-if="serviceCta.szolgaltatasok?.length" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-5xl mx-auto">
-                    <div v-for="service in serviceCta.szolgaltatasok" :key="service.id" class="bg-white/10 rounded-lg p-6 text-left">
-                        <div class="flex items-center gap-3 mb-3">
-                            <UIcon :name="service.ikon" :class="[
-                                'w-8 h-8',
-                                service.szin === 'green' ? 'text-buchl-green' : 'text-buchl-blue'
-                            ]" />
-                            <h3 class="font-bold text-lg">{{ service.cim }}</h3>
-                        </div>
-                        <p class="text-sm text-gray-300">{{ service.leiras }}</p>
-                    </div>
-                </div>
-                
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <UButton
                         v-if="serviceCta.gomb_felirat && serviceCta.gomb_link"
