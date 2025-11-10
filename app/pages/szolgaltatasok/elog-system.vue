@@ -211,7 +211,7 @@ const localePath = useLocalePath()
 
 // Fetch data from Directus
 const { banner } = await useBanner(11)
-const { sections } = await useOldalSzekciok('elog-system')
+const { szekciok: sections } = await useOldalSzekciok('elog-system')
 const { cta } = await useCta(6)
 
 // Helper functions for dynamic styling
