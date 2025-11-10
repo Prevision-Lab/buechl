@@ -226,16 +226,16 @@
     </section>
 
     <!-- Fenntarthatósági szekció Hero komponenssel -->
-    <section class="pb-0">
+    <section v-if="sustainabilityCta" class="pb-0">
       <div class="rounded-lg overflow-hidden">
         <BuchlHero
-          :title="$t('homepage.sustainability.title')"
-          :subtitle="$t('homepage.sustainability.subtitle')"
-          image="/media/images/elektromos autó.jpg"
+          :title="sustainabilityCta.cim"
+          :subtitle="sustainabilityCta.leiras"
+          :image="sustainabilityCta.kepUrl || '/media/images/elektromos autó.jpg'"
           bg-color="green"
           :primary-cta="{
-            label: $t('homepage.sustainability.cta'),
-            to: '/fenntarthatosag'
+            label: sustainabilityCta.gomb_felirat,
+            to: sustainabilityCta.gomb_link
           }"
         />
       </div>
@@ -367,6 +367,9 @@ const { banner: heroBanner } = useBanner(1) // ID: 1 - Főoldal hero
 
 // Company CTA adat lekérése Directusból useCta composable-lel
 const { cta: companyCta } = useCta(1) // ID: 1 - Company intro CTA
+
+// Sustainability CTA adat lekérése Directusból
+const { cta: sustainabilityCta } = useCta(2) // ID: 2 - Sustainability CTA
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null)
