@@ -156,24 +156,12 @@
         </section>
 
         <!-- Statisztikák szekció -->
-        <section class="py-16 bg-buchl-green">
+        <section v-if="serviceCta?.statisztikak?.length" class="py-16 bg-buchl-green">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-buchl-blue mb-2">320</div>
-                        <div class="text-buchl-blue/80">{{ $t('services.stats.employees') }}</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-buchl-blue mb-2">40+</div>
-                        <div class="text-buchl-blue/80">{{ $t('services.stats.vehicles') }}</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-buchl-blue mb-2">10</div>
-                        <div class="text-buchl-blue/80">{{ $t('services.stats.equipment') }}</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-buchl-blue mb-2">25</div>
-                        <div class="text-buchl-blue/80">{{ $t('services.stats.experience') }}</div>
+                    <div v-for="stat in serviceCta.statisztikak" :key="stat.id" class="text-center">
+                        <div class="text-4xl font-bold text-buchl-blue mb-2">{{ stat.szam }}</div>
+                        <div class="text-buchl-blue/80">{{ stat.cimke }}</div>
                     </div>
                 </div>
             </div>

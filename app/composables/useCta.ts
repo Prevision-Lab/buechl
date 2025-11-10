@@ -17,7 +17,9 @@ export const useCta = (ctaId: number) => {
             'translations.*', 
             'video.*',
             'szolgaltatasok.szolgaltatasok_id.*',
-            'szolgaltatasok.szolgaltatasok_id.translations.*'
+            'szolgaltatasok.szolgaltatasok_id.translations.*',
+            'statisztikak.statisztikak_id.*',
+            'statisztikak.statisztikak_id.translations.*'
           ],
           limit: 1
         })
@@ -61,6 +63,23 @@ export const useCta = (ctaId: number) => {
         }
       }) || []
       
+      // Process related statistics
+      const statisztikak = cta.statisztikak?.map((item: any) => {
+        const stat = item.statisztikak_id
+        const statTranslation = stat?.translations?.find(
+          (t: any) => t.languages_code === directusLangCode
+        )
+        
+        return {
+          id: stat?.id,
+          szam: stat?.szam,
+          cimke: statTranslation?.cimke || stat?.cimke,
+          ikon: stat?.ikon,
+          sorrend: stat?.sorrend,
+          hely: stat?.hely
+        }
+      }).sort((a: any, b: any) => (a.sorrend || 0) - (b.sorrend || 0)) || []
+      
       // Return translated or default content
       return {
         cim: translation?.cim || cta.cim,
@@ -79,7 +98,8 @@ export const useCta = (ctaId: number) => {
         kepUrl: cta.kep 
           ? `https://buchl-admin.previsionlab.hu/assets/${cta.kep}?access_token=${config.public.directusToken}`
           : null,
-        szolgaltatasok
+        szolgaltatasok,
+        statisztikak
       }
     } catch (error) {
       console.error(`Error fetching CTA ${ctaId}:`, error)
