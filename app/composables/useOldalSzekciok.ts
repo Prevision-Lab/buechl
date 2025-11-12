@@ -52,6 +52,21 @@ export const useOldalSzekciok = (oldal: string) => {
           }
         }).filter(Boolean) || []
         
+        // Merge elemek: use translation text but preserve images from original if missing
+        let elemek = translation?.elemek || szekc.elemek
+        
+        // If we have translation elemek and original elemek, merge images
+        if (translation?.elemek && szekc.elemek && Array.isArray(translation.elemek) && Array.isArray(szekc.elemek)) {
+          elemek = translation.elemek.map((elem: any, index: number) => {
+            const originalElem = szekc.elemek[index]
+            return {
+              ...elem,
+              // Use image from original if not present in translation
+              kep: elem.kep || originalElem?.kep
+            }
+          })
+        }
+        
         return {
           id: szekc.id,
           oldal: szekc.oldal,
@@ -59,7 +74,7 @@ export const useOldalSzekciok = (oldal: string) => {
           cim: translation?.cim || szekc.cim,
           alcim: translation?.alcim || szekc.alcim,
           leiras: translation?.leiras || szekc.leiras,
-          elemek: translation?.elemek || szekc.elemek,
+          elemek,
           kep: szekc.kep,
           kepUrl: szekc.kep
             ? `https://buchl-admin.previsionlab.hu/assets/${szekc.kep}?access_token=${config.public.directusToken}`
