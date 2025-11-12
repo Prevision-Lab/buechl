@@ -44,7 +44,7 @@
       "title": "By the numbers",
       "subtitle": "We provide a wide range of services for our clients.",
       "employees": "employees",
-      "fleet": "vehicle fleet",
+      "fleet": "about 40",
       "experience": "years on the market",
       "equipment": "modern waste treatment equipment"
     },
@@ -58,7 +58,7 @@
     "title": "By the numbers",
     "subtitle": "We provide a wide range of services for our clients.",
     "employees": "employees",
-    "fleet": "vehicle fleet",
+    "fleet": "vehicles",
     "experience": "years on the market",
     "equipment": "modern waste treatment equipment"
   },
@@ -391,7 +391,7 @@
         "stats": {
           "locations": "LOCATIONS",
           "employees": "EMPLOYEES",
-          "dailyTransport": "TONNES TRANSPORTED DAILY"
+          "dailyTransport": "YEARS EXPERIENCE"
         }
       },
       "newsSection": {

@@ -361,8 +361,8 @@ useSeoMeta({
 
 // Animált számok
 const telephelyCount = ref(0)
-const munkatarsCount = ref(0)
-const hulladekSzallitasCount = ref(0)
+const munkatarsCount = ref('0')
+const hulladekSzallitasCount = ref('0')
 // A hulladékelőkezelés változó már nem szükséges
 
 const telephelyRef = ref(null)
@@ -395,26 +395,24 @@ const startAnimations = () => {
   if (animationStarted) return
   animationStarted = true
   
-  // Telephelyek animálása (5 telephely, 3 másodperc alatt)
-  animateCounter(0, 5, 3000, (value) => {
+  // Telephelyek animálása (14 telephely, 3 másodperc alatt)
+  animateCounter(0, 14, 3000, (value) => {
     telephelyCount.value = value
   })
   
-  // Munkatársak animálása (320 fő, 2.5 másodperc alatt)
+  // Munkatársak animálása (600+ fő, 2.5 másodperc alatt)
   setTimeout(() => {
-    animateCounter(0, 320, 2500, (value) => {
-      munkatarsCount.value = value
+    animateCounter(0, 600, 2500, (value) => {
+      munkatarsCount.value = `${value}+`
     })
   }, 500)
   
-  // Hulladékszálítás animálása (615 tonna naponta, 2 másodperc alatt)
+  // Év tapasztalat animálása (74+ év, 2 másodperc alatt)
   setTimeout(() => {
-    animateCounter(0, 615, 2000, (value) => {
-      hulladekSzallitasCount.value = value
+    animateCounter(0, 74, 2000, (value) => {
+      hulladekSzallitasCount.value = `${value}+`
     })
   }, 1000)
-  
-  // Hulladékelőkezelés animáció eltávolítva - már csak szállítás
 }
 
 onMounted(() => {

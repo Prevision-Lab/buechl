@@ -58,7 +58,7 @@
     "title": "Számokban",
     "subtitle": "Széleskörű szolgáltatási spektrumot biztosítunk ügyfeleink számára.",
     "employees": "fő munkatárs",
-    "fleet": "gépjárműből álló flotta",
+    "fleet": "gépjármű",
     "experience": "év a piacon",
     "equipment": "korszerű hulladékkezelő berendezés"
   },
@@ -210,7 +210,7 @@
         "stats": {
           "locations": "TELEPHELY",
           "employees": "MUNKATÁRS",
-          "dailyTransport": "TONNA SZÁLLÍTÁSA NAPONTA"
+          "dailyTransport": "ÉV TAPASZTALAT"
         }
       },
       "newsSection": {

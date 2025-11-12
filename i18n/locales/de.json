@@ -20,9 +20,9 @@
       "readMore": "Mehr über das Unternehmen"
     },
     "services": {
-      "title": "Unsere Leistungen",
+      "title": "Unsere Dienstleistungen",
       "description": "Wir bieten umfassende Abfallwirtschaftslösungen in den Bereichen Abfallbehandlung, Abfallsammlung und -transport, Umweltdienstleistungen sowie Planung und Beratung.",
-      "viewAll": "Alle Leistungen",
+      "viewAll": "Alle Dienstleistungen",
       "wasteManagement": {
         "title": "Abfallbehandlung",
         "description": "Mit modernsten Technologien gewährleisten wir die umweltfreundliche Behandlung und Verarbeitung von Abfällen."
@@ -33,18 +33,18 @@
       },
       "environmental": {
         "title": "Umweltdienstleistungen",
-        "description": "Umfassende Umweltlösungen für nachhaltigen Betrieb."
+        "description": "Umfassende Umweltlösungen für einen nachhaltigen Betrieb."
       },
       "consulting": {
         "title": "Planung und Beratung",
-        "description": "Fachberatung und Planung für effiziente Abfallwirtschaft."
+        "description": "Fachberatung und Planung für eine effiziente Abfallwirtschaft."
       }
     },
     "stats": {
       "title": "In Zahlen",
       "subtitle": "Wir bieten unseren Kunden ein breites Dienstleistungsspektrum.",
       "employees": "Mitarbeiter",
-      "fleet": "Fahrzeugflotte",
+      "fleet": "rund 40",
       "experience": "Jahre am Markt",
       "equipment": "moderne Abfallbehandlungsanlagen"
     },
@@ -58,7 +58,7 @@
     "title": "In Zahlen",
     "subtitle": "Wir bieten unseren Kunden ein breites Dienstleistungsspektrum.",
     "employees": "Mitarbeiter",
-    "fleet": "Fahrzeugflotte",
+    "fleet": "Fahrzeuge",
     "experience": "Jahre am Markt",
     "equipment": "moderne Abfallbehandlungsanlagen"
   },
@@ -391,7 +391,7 @@
         "stats": {
           "locations": "STANDORTE",
           "employees": "MITARBEITER",
-          "dailyTransport": "TONNEN TÄGLICH TRANSPORTIERT"
+          "dailyTransport": "JAHRE ERFAHRUNG"
         }
       },
       "newsSection": {
