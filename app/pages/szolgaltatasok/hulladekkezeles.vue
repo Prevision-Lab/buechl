@@ -154,62 +154,6 @@
                     </p>
                 </div>
 
-                <div class="grid gap-8 md:grid-cols-2 items-center mb-12">
-                    <div>
-                        <div class="bg-buchl-blue/5 p-8 rounded-lg">
-                            <h3 class="text-xl font-bold text-buchl-blue mb-4 flex items-center gap-3">
-                                <UIcon name="i-heroicons-rectangle-stack" class="w-6 h-6" />
-                                {{ $t('wasteManagement.catalog.nonHazardous.title') }}
-                            </h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.plastic') }}</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.wood') }}</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.metal') }}</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-buchl-green" />
-                                    <span>{{ $t('wasteManagement.catalog.nonHazardous.items.packaging') }}</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div class="bg-red-50 p-8 rounded-lg border-l-4 border-red-400">
-                            <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center gap-3">
-                                <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6" />
-                                {{ $t('wasteManagement.catalog.hazardous.title') }}
-                            </h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.emulsions') }}</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.aerosols') }}</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.metalShavings') }}</span>
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <UIcon name="i-heroicons-check" class="w-4 h-4 text-red-500" />
-                                    <span>{{ $t('wasteManagement.catalog.hazardous.items.airbags') }}</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="bg-gray-50 rounded-lg p-8 text-center">
                     <h3 class="text-2xl font-bold text-buchl-blue mb-4">
                         {{ $t('wasteManagement.catalog.fullCatalog.title') }}
