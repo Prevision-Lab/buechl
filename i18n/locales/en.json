@@ -115,6 +115,9 @@
         "subtitle": "Follow BÜCHL Hungaria's latest developments, projects and events!"
       },
       "viewAllButton": "View all news",
+      "minRead": "min read",
+      "noNews": "No news available at the moment.",
+      "backToNews": "Back to News",
       "categories": {
         "all": "All categories",
         "technology": "Technology",
@@ -133,7 +136,11 @@
         "2024": "2024",
         "2023": "2023"
       },
-      "readMore": "Details"
+      "readMore": "Details",
+      "video": {
+        "title": "Video",
+        "notSupported": "Your browser does not support video playback."
+      }
     }
   },
   "cta": {

@@ -29,12 +29,29 @@
           <img 
             :src="hir.kepUrl"
             :alt="hir.cim"
-            class="w-full h-96 object-cover rounded-lg"
+            class="w-full h-96 object-cover"
           />
         </div>
         
         <!-- Tartalom -->
         <div class="prose prose-lg max-w-none" v-html="hir.tartalom"></div>
+        
+        <!-- Videó szekció -->
+        <div v-if="hir.videoUrl" class="my-12">
+          <h2 class="text-2xl font-bold text-buchl-blue mb-6">
+            {{ $t('news.page.video.title') }}
+          </h2>
+          <div class="relative w-full aspect-video bg-gray-900 overflow-hidden">
+            <video 
+              :src="hir.videoUrl" 
+              controls 
+              class="w-full h-full"
+              :poster="hir.kepUrl || ''"
+            >
+              {{ $t('news.page.video.notSupported') }}
+            </video>
+          </div>
+        </div>
         
         <!-- Képgaléria -->
         <HirekGallery v-if="hir.galeriaKepek && hir.galeriaKepek.length > 0" :images="hir.galeriaKepek" />

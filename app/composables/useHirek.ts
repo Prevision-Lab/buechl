@@ -57,8 +57,11 @@ export const useHirek = () => {
           kategoria: hir.kategoria,
           datum: hir.datum,
           olvasasi_ido: hir.olvasasi_ido,
-          kepUrl: hir.kep 
-            ? `https://buchl-admin.previsionlab.hu/assets/${hir.kep}?access_token=${config.public.directusToken}`
+          kepUrl: hir.kiemelt_kep 
+            ? `https://buchl-admin.previsionlab.hu/assets/${hir.kiemelt_kep}?access_token=${config.public.directusToken}`
+            : null,
+          videoUrl: hir.video
+            ? `https://buchl-admin.previsionlab.hu/assets/${hir.video}?access_token=${config.public.directusToken}`
             : null,
           galeriaKepek
         }

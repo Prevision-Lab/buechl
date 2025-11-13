@@ -3,12 +3,13 @@
     <UCard 
       class="h-full"
       :ui="{
-        root: 'h-full shadow-none ring-1 ring-neutral-300 hover:shadow-sm transition-all duration-300 relative cursor-pointer divide-y-0 group rounded-md',
+        root: 'h-full shadow-none ring-1 ring-neutral-300 hover:shadow-sm transition-all duration-300 relative cursor-pointer divide-y-0 group rounded-none',
         header: image ? 'p-0 sm:p-0' : undefined,
+        body: 'rounded-none',
       }"
     >
       <template v-if="image" #header>
-        <div class="overflow-hidden rounded-t-md">
+        <div class="overflow-hidden">
           <NuxtLink :to="to" class="block">
             <div class="aspect-[16/9] overflow-hidden">
               <img 
@@ -21,9 +22,9 @@
           </NuxtLink>
           <!-- Category Badge -->
           <div v-if="category" class="absolute top-4 left-4">
-            <UBadge :color="getBadgeColor(category)" variant="subtle" size="sm" class="rounded-full">
+            <span class="inline-block px-4 py-1.5 bg-buchl-blue text-white text-sm font-medium rounded-full">
               {{ category }}
-            </UBadge>
+            </span>
           </div>
         </div>
       </template>
@@ -129,18 +130,4 @@ const formattedDate = computed(() => {
   }
   return new Date(props.date).toLocaleDateString('en-US', options)
 })
-
-// Badge color mapping based on category
-const getBadgeColor = (category: string) => {
-  const colorMap: Record<string, string> = {
-    'Fenntarthatóság': 'green',
-    'Környezetvédelem': 'green',
-    'Karrier': 'primary',
-    'Innováció': 'purple',
-    'Technológia': 'blue',
-    'Cégcsoport': 'gray',
-    'Újrahasznosítás': 'teal'
-  }
-  return colorMap[category] || 'gray'
-}
 </script>

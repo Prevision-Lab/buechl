@@ -12,7 +12,7 @@
         <img 
           :src="image.src" 
           :alt="image.alt || `Galéria kép ${index + 1}`"
-          class="w-full h-32 object-cover rounded-lg group-hover:opacity-90 transition-opacity"
+          class="w-full h-32 object-cover group-hover:opacity-90 transition-opacity"
         />
       </div>
     </div>

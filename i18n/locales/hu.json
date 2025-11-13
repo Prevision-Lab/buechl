@@ -115,6 +115,9 @@
         "subtitle": "Kövesse nyomon a BÜCHL Hungaria legújabb fejlesztéseit, projektjeit és eseményeit!"
       },
       "viewAllButton": "Összes hír megtekintése",
+      "minRead": "perc olvasás",
+      "noNews": "Jelenleg nincsenek elérhető hírek.",
+      "backToNews": "Vissza a hírekhez",
       "categories": {
         "all": "Összes kategória",
         "technology": "Technológia",
@@ -133,7 +136,11 @@
         "2024": "2024",
         "2023": "2023"
       },
-      "readMore": "Részletek"
+      "readMore": "Részletek",
+      "video": {
+        "title": "Videó",
+        "notSupported": "A böngésződ nem támogatja a videó lejátszást."
+      }
     }
   },
   "cta": {

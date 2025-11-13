@@ -115,6 +115,9 @@
         "subtitle": "Verfolgen Sie die neuesten Entwicklungen, Projekte und Veranstaltungen von BÜCHL Hungaria!"
       },
       "viewAllButton": "Alle Nachrichten ansehen",
+      "minRead": "Min. Lesezeit",
+      "noNews": "Derzeit sind keine Nachrichten verfügbar.",
+      "backToNews": "Zurück zu den Nachrichten",
       "categories": {
         "all": "Alle Kategorien",
         "technology": "Technologie",
@@ -133,7 +136,11 @@
         "2024": "2024",
         "2023": "2023"
       },
-      "readMore": "Details"
+      "readMore": "Details",
+      "video": {
+        "title": "Video",
+        "notSupported": "Ihr Browser unterstützt die Videowiedergabe nicht."
+      }
     }
   },
   "cta": {
