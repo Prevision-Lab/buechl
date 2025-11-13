@@ -1,7 +1,5 @@
 <template>
   <div v-if="images && images.length > 0" class="mt-12 pt-8 border-t border-gray-200">
-    <h3 class="text-2xl font-bold text-buchl-blue mb-8 text-center">További képek</h3>
-    
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
       <div 
         v-for="(image, index) in images" 
