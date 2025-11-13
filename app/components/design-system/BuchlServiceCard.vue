@@ -39,7 +39,7 @@
         :href="cta.href"
         color="neutral"
         size="lg"
-        class="w-full sm:w-auto rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
+        class="w-full sm:w-auto rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors"
         :icon="cta.icon || 'i-heroicons-arrow-right'"
         :trailing="true"
       />

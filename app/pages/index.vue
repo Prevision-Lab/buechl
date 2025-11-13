@@ -265,7 +265,7 @@
                     <UButton
                         :to="localePath('szolgaltatasok')"
                         color="neutral"
-                        class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
+                        class="rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors"
                         icon="i-heroicons-arrow-right"
                         :trailing="true"
                         size="lg"
@@ -490,7 +490,7 @@
                         size="lg"
                         icon="i-heroicons-document-text"
                         :trailing="true"
-                        class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
+                        class="rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors"
                     >
                         {{ certificatesCta.gomb_felirat }}
                     </UButton>

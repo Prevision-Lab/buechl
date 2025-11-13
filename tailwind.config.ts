@@ -4,9 +4,11 @@ export default <Config>{
   theme: {
     extend: {
       colors: {
-        // Főszínek
-        'buchl-blue': '#002F5C',
-        'buchl-green': '#00F189',
+        // Főszínek - BÜCHL Design Specification
+        'buchl-blue': '#005EB8',        // Fő kék szín
+        'buchl-green': '#00F189',       // Akcent zöld
+        'buchl-dark-blue': '#03305D',   // Sötétkék (hover animációkhoz)
+        'buchl-gray': '#4E5556',        // Szöveg szürke
         
         // Semleges színek
         'gray-light': '#F5F5F5',
@@ -18,19 +20,19 @@ export default <Config>{
         'error': '#D9001B',
         'success': '#00D965',
 
-        // Alapszínek felülírása a Nuxt UI számára
+        // Alapszínek felülírása a Nuxt UI számára - BÜCHL blue #005EB8
         primary: {
-          '50': '#e6f0f7',
-          '100': '#cce0ef',
-          '200': '#99c2df',
-          '300': '#66a3cf',
-          '400': '#3385bf',
-          '500': '#0066af',
-          '600': '#00528c',
-          '700': '#003d69',
-          '800': '#002F5C', // Büchl Kék
-          '900': '#00101f',
-          '950': '#000810',
+          '50': '#e6f2fc',
+          '100': '#cce5f9',
+          '200': '#99cbf3',
+          '300': '#66b1ed',
+          '400': '#3397e7',
+          '500': '#005EB8', // BÜCHL Kék - FŐ SZÍN
+          '600': '#004b93',
+          '700': '#00386e',
+          '800': '#00254a',
+          '900': '#001225',
+          '950': '#000912',
         },
         secondary: {
           '50': '#e6feef',
@@ -56,9 +58,12 @@ export default <Config>{
     // Dinamikusan generált osztályok, amik mindenképp szükségesek
     'bg-buchl-blue',
     'bg-buchl-green',
+    'bg-buchl-dark-blue',
     'text-buchl-blue',
     'text-buchl-green',
+    'text-buchl-gray',
     'text-white',
+    'hover:bg-buchl-dark-blue',
     'grayscale',
     'grayscale-0',
   ]

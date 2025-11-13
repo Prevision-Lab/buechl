@@ -1,96 +1,105 @@
 @import 'tailwindcss';
 @import '@nuxt/ui-pro';
 
-/* Force primary color to be BÜCHL blue */
-:root {
-  /* Override blue color palette */
-  --ui-color-blue-50: #e6f0f8 !important;
-  --ui-color-blue-100: #cce1f1 !important;
-  --ui-color-blue-200: #99c3e3 !important;
-  --ui-color-blue-300: #66a5d5 !important;
-  --ui-color-blue-400: #3387c7 !important;
-  --ui-color-blue-500: #002F5C !important;
-  --ui-color-blue-600: #002549 !important;
-  --ui-color-blue-700: #001c38 !important;
-  --ui-color-blue-800: #001224 !important;
-  --ui-color-blue-900: #000912 !important;
-  
-  --color-blue-50: #e6f0f8 !important;
-  --color-blue-100: #cce1f1 !important;
-  --color-blue-200: #99c3e3 !important;
-  --color-blue-300: #66a5d5 !important;
-  --color-blue-400: #3387c7 !important;
-  --color-blue-500: #002F5C !important;
-  --color-blue-600: #002549 !important;
-  --color-blue-700: #001c38 !important;
-  --color-blue-800: #001224 !important;
-  --color-blue-900: #000912 !important;
-}
-
 /* BÜCHL Design System Base Styles */
 
-/* Override Nuxt UI default blue with BÜCHL blue */
+/* Override Nuxt UI default blue with BÜCHL blue (#005EB8) */
 :root {
   /* Primary color overrides for BÜCHL blue */
-  --color-primary-50: #f0f6ff;
-  --color-primary-100: #e0edff;
-  --color-primary-200: #b3d4ff;
-  --color-primary-300: #66a7ff;
-  --color-primary-400: #003f7f;
-  --color-primary-500: #002F5C;
-  --color-primary-600: #002549;
-  --color-primary-700: #001c38;
-  --color-primary-800: #001427;
-  --color-primary-900: #000d1a;
+  --color-primary-50: #e6f2fc;
+  --color-primary-100: #cce5f9;
+  --color-primary-200: #99cbf3;
+  --color-primary-300: #66b1ed;
+  --color-primary-400: #3397e7;
+  --color-primary-500: #005EB8;
+  --color-primary-600: #004b93;
+  --color-primary-700: #00386e;
+  --color-primary-800: #00254a;
+  --color-primary-900: #001225;
   
   /* UI primary overrides */
-  --ui-primary-50: #f0f6ff;
-  --ui-primary-100: #e0edff;
-  --ui-primary-200: #b3d4ff;
-  --ui-primary-300: #66a7ff;
-  --ui-primary-400: #003f7f;
-  --ui-primary-500: #002F5C;
-  --ui-primary-600: #002549;
-  --ui-primary-700: #001c38;
-  --ui-primary-800: #001427;
-  --ui-primary-900: #000d1a;
+  --ui-primary-50: #e6f2fc;
+  --ui-primary-100: #cce5f9;
+  --ui-primary-200: #99cbf3;
+  --ui-primary-300: #66b1ed;
+  --ui-primary-400: #3397e7;
+  --ui-primary-500: #005EB8;
+  --ui-primary-600: #004b93;
+  --ui-primary-700: #00386e;
+  --ui-primary-800: #00254a;
+  --ui-primary-900: #001225;
   
   /* Also override blue color scale */
-  --color-blue-50: #f0f6ff;
-  --color-blue-100: #e0edff;
-  --color-blue-200: #b3d4ff;
-  --color-blue-300: #66a7ff;
-  --color-blue-400: #003f7f;
-  --color-blue-500: #002F5C;
-  --color-blue-600: #002549;
-  --color-blue-700: #001c38;
-  --color-blue-800: #001427;
-  --color-blue-900: #000d1a;
+  --color-blue-50: #e6f2fc;
+  --color-blue-100: #cce5f9;
+  --color-blue-200: #99cbf3;
+  --color-blue-300: #66b1ed;
+  --color-blue-400: #3397e7;
+  --color-blue-500: #005EB8;
+  --color-blue-600: #004b93;
+  --color-blue-700: #00386e;
+  --color-blue-800: #00254a;
+  --color-blue-900: #001225;
   
-  --ui-blue-50: #f0f6ff;
-  --ui-blue-100: #e0edff;
-  --ui-blue-200: #b3d4ff;
-  --ui-blue-300: #66a7ff;
-  --ui-blue-400: #003f7f;
-  --ui-blue-500: #002F5C;
-  --ui-blue-600: #002549;
-  --ui-blue-700: #001c38;
-  --ui-blue-800: #001427;
-  --ui-blue-900: #000d1a;
+  --ui-blue-50: #e6f2fc;
+  --ui-blue-100: #cce5f9;
+  --ui-blue-200: #99cbf3;
+  --ui-blue-300: #66b1ed;
+  --ui-blue-400: #3397e7;
+  --ui-blue-500: #005EB8;
+  --ui-blue-600: #004b93;
+  --ui-blue-700: #00386e;
+  --ui-blue-800: #00254a;
+  --ui-blue-900: #001225;
   
   /* Override Nuxt UI primary variables */
-  --ui-color-primary-500: #002F5C;
-  --ui-color-primary-600: #002549;
-  --ui-color-primary-700: #001c38;
-  --ui-color-primary-400: #003f7f;
-  --ui-color-primary-300: #66a7ff;
+  --ui-color-primary-500: #005EB8;
+  --ui-color-primary-600: #004b93;
+  --ui-color-primary-700: #00386e;
+  --ui-color-primary-400: #3397e7;
+  --ui-color-primary-300: #66b1ed;
 }
 
-/* Typography */
+/* Typography - BÜCHL Design Specification */
 body {
   font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* H1 - Hero címek maradnak Permanent Marker (jelenlegi betűtípus) */
+h1 {
+  font-family: 'Permanent Marker', 'Fredoka One', 'Kalam', 'Caveat', cursive;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+/* H2 - Catamaran */
+h2 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+/* H3 - Catamaran, ALL CAPS */
+h3 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+button, .button {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* Font display with fallback for Hungarian characters */
@@ -106,21 +115,33 @@ h1.font-display,
   border-radius: 0 !important;
 }
 
-/* Utility classes */
+/* Utility classes - BÜCHL Design Specification */
 .text-buchl-blue {
-  color: #002F5C;
+  color: #005EB8;
 }
 
 .text-buchl-green {
   color: #00F189;
 }
 
+.text-buchl-dark-blue {
+  color: #03305D;
+}
+
+.text-buchl-gray {
+  color: #4E5556;
+}
+
 .bg-buchl-blue {
-  background-color: #002F5C;
+  background-color: #005EB8;
 }
 
 .bg-buchl-green {
   background-color: #00F189;
+}
+
+.bg-buchl-dark-blue {
+  background-color: #03305D;
 }
 
 .border-buchl-green {
@@ -129,6 +150,10 @@ h1.font-display,
 
 .hover\:bg-buchl-green:hover {
   background-color: #00F189;
+}
+
+.hover\:bg-buchl-dark-blue:hover {
+  background-color: #03305D;
 }
 
 .hover\:bg-green-400:hover {

@@ -49,7 +49,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                 color="neutral"
                 size="lg"
                 :class="bgColor === 'green' 
-                  ? 'rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90'
+                  ? 'rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors'
                   : 'rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50'"
               />
               
@@ -65,7 +65,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                 size="lg"
                 :class="bgColor === 'green' 
                   ? 'rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50'
-                  : 'rounded-none bg-buchl-blue text-white hover:bg-buchl-blue-dark'"
+                  : 'rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors'"
               />
             </div>
           </div>
@@ -152,7 +152,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                     color="neutral"
                     size="lg"
                     :class="bgColor === 'green' 
-                      ? 'rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90'
+                      ? 'rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors'
                       : 'rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50'"
                   />
                   
@@ -168,7 +168,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                     size="lg"
                     :class="bgColor === 'green' 
                       ? 'rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50'
-                      : 'rounded-none bg-buchl-blue text-white hover:bg-buchl-blue-dark'"
+                      : 'rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors'"
                   />
                 </div>
               </div>
@@ -257,7 +257,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                       color="neutral"
                       size="lg"
                       :class="bgColor === 'green' 
-                        ? 'rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90'
+                        ? 'rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors'
                         : 'rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50'"
                     />
                     
@@ -273,7 +273,7 @@ class="absolute inset-0" :class="bgColor === 'green'
                       size="lg"
                       :class="bgColor === 'green' 
                         ? 'rounded-none bg-white text-buchl-blue border border-gray-300 hover:bg-gray-50'
-                        : 'rounded-none bg-buchl-blue text-white hover:bg-buchl-blue-dark'"
+                        : 'rounded-none bg-buchl-blue text-white hover:bg-buchl-dark-blue transition-colors'"
                     />
                   </div>
                 </div>

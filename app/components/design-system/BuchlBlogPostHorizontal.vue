@@ -58,7 +58,7 @@
           <!-- Title & Description -->
           <div class="flex-1">
             <NuxtLink :to="to" class="block group/link">
-              <h3 class="text-2xl font-semibold text-gray-900 dark:text-white group-hover/link:text-primary-500 transition-colors">
+              <h3 class="text-2xl font-semibold text-gray-900 dark:text-white group-hover/link:text-buchl-blue transition-colors">
                 {{ title }}
               </h3>
             </NuxtLink>
@@ -74,7 +74,7 @@
               <NuxtLink 
                 v-if="showReadMore"
                 :to="to"
-                class="inline-flex items-center text-sm font-medium text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300 group/read"
+                class="inline-flex items-center text-sm font-medium text-buchl-blue hover:text-buchl-dark-blue dark:text-primary-400 dark:hover:text-buchl-dark-blue transition-colors group/read"
               >
                 {{ readMoreText }}
                 <Icon name="heroicons:arrow-right-20-solid" class="w-4 h-4 ml-1 group-hover/read:translate-x-0.5 transition-transform" />
