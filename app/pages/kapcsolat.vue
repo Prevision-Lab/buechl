@@ -312,12 +312,13 @@
             </div>
             
             <!-- Térkép - Győr Központ -->
-            <div class="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-              <div class="text-center text-gray-600">
-                <UIcon name="i-heroicons-map-pin" style="width: 32px; height: 32px;" class="mx-auto mb-2 text-buchl-blue" />
-                <p class="text-sm font-medium">Győr, Csörgőfa sor 8.</p>
-                <p class="text-xs text-gray-500">Központi iroda térképe</p>
-              </div>
+            <div class="h-48">
+              <OpenStreetMap
+                address="9027 Győr, Csörgőfa sor 8."
+                :latitude="47.6534"
+                :longitude="17.6241"
+                :zoom="15"
+              />
             </div>
           </div>
 
@@ -360,12 +361,13 @@
             </div>
             
             <!-- Térkép - Győr II-es telephely -->
-            <div class="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-              <div class="text-center text-gray-600">
-                <UIcon name="i-heroicons-map-pin" style="width: 32px; height: 32px;" class="mx-auto mb-2 text-buchl-blue" />
-                <p class="text-sm font-medium">Győr, Reptéri út 6.</p>
-                <p class="text-xs text-gray-500">II-es telephely térképe</p>
-              </div>
+            <div class="h-48">
+              <OpenStreetMap
+                address="9027 Győr, Reptéri út 6."
+                :latitude="47.6419"
+                :longitude="17.6845"
+                :zoom="15"
+              />
             </div>
           </div>
 
@@ -408,12 +410,13 @@
             </div>
             
             <!-- Térkép - Nyíregyháza -->
-            <div class="bg-gray-100 h-48 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-              <div class="text-center text-gray-600">
-                <UIcon name="i-heroicons-map-pin" style="width: 32px; height: 32px;" class="mx-auto mb-2 text-buchl-blue" />
-                <p class="text-sm font-medium">Nyíregyháza, Derkovits út 132-136.</p>
-                <p class="text-xs text-gray-500">Nyíregyháza telephely térképe</p>
-              </div>
+            <div class="h-48">
+              <OpenStreetMap
+                address="4400 Nyíregyháza, Derkovits út 132-136."
+                :latitude="47.9362"
+                :longitude="21.7597"
+                :zoom="15"
+              />
             </div>
           </div>
         </div>

@@ -100,7 +100,7 @@
         </div>
 
         <!-- Animált statisztikák -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12" ref="statsRef">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12" ref="statsRef" data-stats-section>
           <!-- Telephelyek száma -->
           <div class="text-center">
             <div class="mb-6">
@@ -340,8 +340,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-const localePath = useLocalePath()
+import { ref, onMounted, watch } from 'vue'
+
+const route = useRoute()
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(2) // ID: 2 - Rólunk
@@ -387,13 +388,26 @@ const animateCounter = (start: number, end: number, duration: number, callback: 
   animate()
 }
 
-// Intersection Observer a statisztikák szekció figyeléséhez
-let observer: IntersectionObserver | null = null
-let animationStarted = false
+// Animáció futtatás flag
+let animationTriggered = false
+
+// Számok nullázása
+const resetCounters = () => {
+  telephelyCount.value = 0
+  munkatarsCount.value = '0'
+  hulladekSzallitasCount.value = '0'
+  animationTriggered = false
+}
 
 const startAnimations = () => {
-  if (animationStarted) return
-  animationStarted = true
+  // Ha már lefutott, ne futtassuk újra
+  if (animationTriggered) return
+  animationTriggered = true
+  
+  // Először nullázzuk a számokat
+  telephelyCount.value = 0
+  munkatarsCount.value = '0'
+  hulladekSzallitasCount.value = '0'
   
   // Telephelyek animálása (14 telephely, 3 másodperc alatt)
   animateCounter(0, 14, 3000, (value) => {
@@ -415,31 +429,26 @@ const startAnimations = () => {
   }, 1000)
 }
 
+// Animáció triggerelése
+const triggerAnimations = () => {
+  resetCounters()
+  // Rövid késleltetés hogy a DOM frissüljön
+  nextTick(() => {
+    setTimeout(() => {
+      startAnimations()
+    }, 300)
+  })
+}
+
 onMounted(() => {
-  // Intersection Observer beállítása
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
-          startAnimations()
-        }
-      })
-    },
-    {
-      threshold: 0.3
-    }
-  )
-  
-  // Statisztikák szekció megfigyelése
-  if (statsRef.value) {
-    observer.observe(statsRef.value)
-  }
+  triggerAnimations()
 })
 
-// Cleanup
-onUnmounted(() => {
-  if (observer) {
-    observer.disconnect()
+// Figyeljük a route változásokat
+watch(() => route.fullPath, (newPath, oldPath) => {
+  // Ha a rólunk oldalra navigálunk
+  if (newPath.includes('rolunk') || newPath.includes('about') || newPath.includes('uber-uns')) {
+    triggerAnimations()
   }
 })
 </script>
