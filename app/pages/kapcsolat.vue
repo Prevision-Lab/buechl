@@ -5,7 +5,7 @@
       v-if="heroBanner"
       :title="heroBanner.cim"
       :subtitle="heroBanner.leiras"
-      :image="heroBanner.kepUrl || '/media/images/rolunk.jpeg'"
+      :image="'/media/images/rolunk.jpeg'"
       bg-color="blue"
     />
 
