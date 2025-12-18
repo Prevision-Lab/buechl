@@ -13722,27 +13722,27 @@ export const tabItems = [
   },
   {
     "key": "karitasz",
-    "label": "Kandó K. u 10.",
+    "label": "Győr, Kandó K. u 10.",
     "description": "KTJ: 102941318 | Engedély: GY/53/00906-16/2021"
   },
   {
     "key": "ati",
-    "label": "Kandó K. u 17.",
+    "label": "Győr, Kandó K. u 17.",
     "description": "KTJ: 102456074 | Engedély: GY/53/06936-28/2024"
   },
   {
     "key": "csorgfa",
-    "label": "Csörgőfa sor 8.",
+    "label": "Győr, Csörgőfa sor 8.",
     "description": "KTJ: 100882646 | Engedély: GY/40/05399-21,24/2021"
   },
   {
     "key": "nyiregyhaza",
-    "label": "Derkovits u. 132.",
+    "label": "Nyíregyháza, Derkovits út 132-136.",
     "description": "KTJ: 102962486 | Engedély: 1221-25/2025"
   },
   {
     "key": "repter",
-    "label": "Reptéri út 6.",
+    "label": "Győr, Reptéri út 6.",
     "description": "KTJ: 101696714 | Engedély: GY/53/06245-32,36/2024"
   }
 ];
