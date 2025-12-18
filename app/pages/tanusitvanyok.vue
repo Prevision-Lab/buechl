@@ -41,33 +41,6 @@
             </div>
           </div>
 
-          <!-- Language Toggle (only for certificates) -->
-          <div v-if="selectedCategory === 'tanusitvanyok'" class="flex justify-center mb-12">
-            <div class="bg-white rounded-lg p-1 shadow-lg">
-              <button 
-                @click="selectedLanguage = 'de'"
-                :class="[
-                  'px-6 py-3 rounded-md text-sm font-medium transition-all duration-200',
-                  selectedLanguage === 'de' 
-                    ? 'bg-buchl-blue text-white shadow-md' 
-                    : 'text-gray-600 hover:text-buchl-blue'
-                ]"
-              >
-                {{ $t('downloads.languages.german') }}
-              </button>
-              <button 
-                @click="selectedLanguage = 'en'"
-                :class="[
-                  'px-6 py-3 rounded-md text-sm font-medium transition-all duration-200',
-                  selectedLanguage === 'en' 
-                    ? 'bg-buchl-blue text-white shadow-md' 
-                    : 'text-gray-600 hover:text-buchl-blue'
-                ]"
-              >
-                {{ $t('downloads.languages.english') }}
-              </button>
-            </div>
-          </div>
 
           <!-- Certificates Grid -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -158,6 +131,7 @@ interface Certificate {
 
 // Composables
 const localePath = useLocalePath()
+const { locale } = useI18n()
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(7) // ID: 7 - Letöltések
@@ -169,8 +143,16 @@ useSeoMeta({
   keywords: 'BÜCHL HUNGARIA, ISO tanúsítványok, EMAS, letöltések, környezetédelmi tanúsítványok, minőségügyi rendszer'
 })
 
-// Reactive state
-const selectedLanguage = ref<'hu' | 'en' | 'de'>('hu')
+// Reactive state - use global locale instead of separate language selector
+const selectedLanguage = computed(() => {
+  // Map locale codes to certificate language codes
+  const localeMap: Record<string, 'hu' | 'en' | 'de'> = {
+    'hu': 'hu',
+    'en': 'en',
+    'de': 'de'
+  }
+  return localeMap[locale.value] || 'hu'
+})
 
 // Document categories
 const documentCategories = ref([
@@ -246,6 +228,34 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 45001_2018_angol.pdf',
     fileSize: '623 KB',
     language: 'en',
+    category: 'tanusitvanyok'
+  },
+  // Tanúsítványok - German
+  {
+    id: 'iso-9001-de',
+    name: 'ISO 9001:2015',
+    description: 'Qualitätsmanagementsystem',
+    filename: 'ISO 9001_2015_angol.pdf',
+    fileSize: '541 KB',
+    language: 'de',
+    category: 'tanusitvanyok'
+  },
+  {
+    id: 'iso-14001-de',
+    name: 'ISO 14001:2015',
+    description: 'Umweltmanagementsystem',
+    filename: 'ISO 14001_2015_angol.pdf',
+    fileSize: '541 KB',
+    language: 'de',
+    category: 'tanusitvanyok'
+  },
+  {
+    id: 'iso-45001-de',
+    name: 'ISO 45001:2018',
+    description: 'Arbeitsschutzmanagementsystem',
+    filename: 'ISO 45001_2018_angol.pdf',
+    fileSize: '623 KB',
+    language: 'de',
     category: 'tanusitvanyok'
   },
   // Engedélyek
