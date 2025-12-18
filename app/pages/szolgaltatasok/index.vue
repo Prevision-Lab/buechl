@@ -64,7 +64,7 @@
                 </div>
 
                 <div v-if="portfolioServices" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
-                    <div v-for="service in portfolioServices" :key="service.id" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div v-for="service in processedServices" :key="service.id" class="bg-white rounded-lg shadow-md overflow-hidden">
                         <div :class="[
                             'text-white p-5',
                             service.szin === 'green' ? 'bg-buchl-green' : 'bg-buchl-blue'
@@ -206,6 +206,7 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
+const { t } = useI18n()
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(3) // ID: 3 - Szolgáltatások
@@ -218,4 +219,30 @@ const { services: portfolioServices } = useServices('portfolio')
 
 // CTA adat lekérése Directusból (ID: 6 - Szolgáltatások CTA)
 const { cta: serviceCta } = useCta(6)
+
+// Hardkódolt logisztika funkciók (mivel nincs hozzáférés a Directushoz)
+const logisztikaSzolgaltatasFeatures = computed(() => {
+  return [
+    t('services.portfolio.categories.logistics.features.0'),
+    t('services.portfolio.categories.logistics.features.1')
+  ]
+})
+
+// Process services to override logistics features
+const processedServices = computed(() => {
+  if (!portfolioServices.value) return []
+  
+  return portfolioServices.value.map((service: any) => {
+    // Check if this is the logistics service (by title or ID)
+    if (service.cim?.toLowerCase().includes('logisztika') || 
+        service.cim?.toLowerCase().includes('logistics') || 
+        service.cim?.toLowerCase().includes('logistik')) {
+      return {
+        ...service,
+        funkciok: logisztikaSzolgaltatasFeatures.value
+      }
+    }
+    return service
+  })
+})
 </script>

@@ -215,7 +215,7 @@
         "mission": "Küldetésük: egy ötlettel előrébb – a körforgásos gazdaságot támogató hatékony és jövőorientált szolgáltatásokkal.",
         "companyList": "A BÜCHL cégcsoport tagjai",
         "stats": {
-          "locations": "TELEPHELY",
+          "locations": "VÁLLALAT",
           "employees": "MUNKATÁRS",
           "dailyTransport": "ÉV TAPASZTALAT"
         }
@@ -279,8 +279,7 @@
           "description": "Átfogó logisztikai megoldások az üzemen belüli hulladékkezelés optimalizálására, beleértve az ELOG SYSTEM® digitális platformot.",
           "features": [
             "Papírmentes, igényalapú elszállítás (GYLOG 1.0)",
-            "Teljes körű digitalizáció (CleverWaste®)",
-            "Rugalmas szakszemélyzet biztosítása"
+            "Teljes körű digitalizáció (CleverWaste®)"
           ]
         }
       },
@@ -626,7 +625,7 @@
   },
   "wasteCatalog": {
     "hero": {
-      "title": "Hulladékkatalögus",
+      "title": "Hulladékkatalógus",
       "subtitle": "Keresés az engedélyezett hulladéktípusaink között",
       "searchPlaceholder": "Keresés minden telephelyen...",
       "clearButton": "Törlés"
