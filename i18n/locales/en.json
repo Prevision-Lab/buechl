@@ -327,25 +327,25 @@
       "title": "Current Job Offers",
       "positions": {
         "driver": {
-          "title": "Driver (m/w)",
+          "title": "Driver",
           "description": "Waste transportation tasks, ADR certification is an advantage",
           "type": "Operational",
           "location": "Győr"
         },
         "forklift": {
-          "title": "Forklift Operator (m/w)",
+          "title": "Forklift Operator",
           "description": "Warehouse and yard material handling tasks",
           "type": "Operational",
           "location": "Győr"
         },
         "disabled": {
-          "title": "Colleague with Changed Work Capacity (m/w)",
+          "title": "Colleague with Changed Work Capacity",
           "description": "Administrative and support tasks",
           "type": "Administrative",
           "location": "Győr"
         },
         "security": {
-          "title": "Security Guard (m/w)",
+          "title": "Security Guard",
           "description": "Site security tasks, access control",
           "type": "Security",
           "location": "Győr"

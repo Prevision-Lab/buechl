@@ -588,25 +588,25 @@
       "title": "Aktuális állásajánlatok",
       "positions": {
         "driver": {
-          "title": "Gépkocsivezető (m/w)",
+          "title": "Gépkocsivezető",
           "description": "Hulladékszállítási feladatok ellátása, ADR képesítés előny",
           "type": "Operatív",
           "location": "Győr"
         },
         "forklift": {
-          "title": "Targoncavezető (m/w)",
+          "title": "Targoncavezető",
           "description": "Raktári és udvari anyagmozgatási feladatok",
           "type": "Operatív",
           "location": "Győr"
         },
         "disabled": {
-          "title": "Megváltozott munkaképességű kolléga (m/w)",
+          "title": "Megváltozott munkaképességű kolléga",
           "description": "Adminisztrációs és kisegítő feladatok",
           "type": "Adminisztrációs",
           "location": "Győr"
         },
         "security": {
-          "title": "Portás (m/e)",
+          "title": "Portás",
           "description": "Telephely biztonsági feladatai, beléptetés",
           "type": "Biztonsági",
           "location": "Győr"

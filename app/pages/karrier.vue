@@ -46,13 +46,13 @@
           <div class="grid grid-cols-1 divide-y divide-gray-200">
             
             <!-- Gépkocsivezető pozíció -->
-            <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Gépkocsivezető')">
+            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.driver.title') }}</h3>
-                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.driver.description') }}</p>
+                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.driver.title') }}</h3>
+                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.driver.description') }}</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
+                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
                   <div class="text-center">
                     <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
                     <span>{{ $t('careers.jobs.positions.driver.type') }}</span>
@@ -64,8 +64,9 @@
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
                       size="sm"
-                      color="primary"
+                      color="gray"
                       class="rounded-none"
+                      disabled
                     >
                       {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
@@ -75,13 +76,13 @@
             </div>
 
             <!-- Targoncavezető pozíció -->
-            <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Targoncavezető')">
+            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.forklift.title') }}</h3>
-                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.forklift.description') }}</p>
+                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.forklift.title') }}</h3>
+                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.forklift.description') }}</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
+                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
                   <div class="text-center">
                     <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
                     <span>{{ $t('careers.jobs.positions.forklift.type') }}</span>
@@ -93,8 +94,9 @@
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
                       size="sm"
-                      color="primary"
+                      color="gray"
                       class="rounded-none"
+                      disabled
                     >
                       {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
@@ -104,13 +106,13 @@
             </div>
 
             <!-- Megváltozott munkaképességű pozíció -->
-            <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Megváltozott munkaképességű kolléga')">
+            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.disabled.title') }}</h3>
-                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.disabled.description') }}</p>
+                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.disabled.title') }}</h3>
+                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.disabled.description') }}</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
+                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
                   <div class="text-center">
                     <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
                     <span>{{ $t('careers.jobs.positions.disabled.type') }}</span>
@@ -122,8 +124,9 @@
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
                       size="sm"
-                      color="primary"
+                      color="gray"
                       class="rounded-none"
+                      disabled
                     >
                       {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
@@ -133,13 +136,13 @@
             </div>
 
             <!-- Portás pozíció -->
-            <div class="p-6 hover:bg-gray-50 transition-colors cursor-pointer" @click="openJobApplication('Portás')">
+            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-buchl-blue mb-2">{{ $t('careers.jobs.positions.security.title') }}</h3>
-                  <p class="text-gray-600 text-sm">{{ $t('careers.jobs.positions.security.description') }}</p>
+                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.security.title') }}</h3>
+                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.security.description') }}</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-600">
+                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
                   <div class="text-center">
                     <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
                     <span>{{ $t('careers.jobs.positions.security.type') }}</span>
@@ -151,8 +154,9 @@
                   <div class="text-center lg:min-w-[100px]">
                     <UButton 
                       size="sm"
-                      color="primary"
+                      color="gray"
                       class="rounded-none"
+                      disabled
                     >
                       {{ $t('careers.jobs.labels.apply') }}
                     </UButton>

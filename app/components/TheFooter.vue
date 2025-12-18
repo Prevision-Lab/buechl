@@ -117,9 +117,6 @@
             © {{ new Date().getFullYear() }} BÜCHL Hungaria Kft. {{ $t('footer.copyright') }}
           </p>
           <nav class="flex gap-6">
-            <NuxtLink to="/design-system" class="text-sm text-white/60 hover:text-white transition-colors">
-              {{ $t('footer.legal.designSystem') }}
-            </NuxtLink>
             <NuxtLink to="/adatvedelem" class="text-sm text-white/60 hover:text-white transition-colors">
               {{ $t('footer.legal.privacy') }}
             </NuxtLink>

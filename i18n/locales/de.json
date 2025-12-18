@@ -327,25 +327,25 @@
       "title": "Aktuelle Stellenangebote",
       "positions": {
         "driver": {
-          "title": "Kraftfahrer (m/w)",
+          "title": "Kraftfahrer",
           "description": "Abfalltransportaufgaben, ADR-Zertifizierung von Vorteil",
           "type": "Operativ",
           "location": "Győr"
         },
         "forklift": {
-          "title": "Staplerfahrer (m/w)",
+          "title": "Staplerfahrer",
           "description": "Lager- und Hof-Materialhandhabungsaufgaben",
           "type": "Operativ",
           "location": "Győr"
         },
         "disabled": {
-          "title": "Kollege mit veränderter Arbeitsfähigkeit (m/w)",
+          "title": "Kollege mit veränderter Arbeitsfähigkeit",
           "description": "Administrative und unterstützende Aufgaben",
           "type": "Administrativ",
           "location": "Győr"
         },
         "security": {
-          "title": "Pförtner (m/w)",
+          "title": "Pförtner",
           "description": "Betriebsgelände Sicherheitsaufgaben, Zugangskontrile",
           "type": "Sicherheit",
           "location": "Győr"
