@@ -635,7 +635,7 @@
       "subtitle": "Válasszon telephelyet az engedélyezett hulladéktípusok megtekintéséhez"
     },
     "search": {
-      "localPlaceholder": "Keresés a {location} telephelyen...",
+      "localPlaceholder": "Keresés...",
       "resultsCount": "{found} találat {total} hulladéktípusból",
       "locationSuffix": "- {location} telephely"
     },

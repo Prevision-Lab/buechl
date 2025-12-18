@@ -55,7 +55,7 @@
                     <div class="mb-6 max-w-xl mx-auto">
                         <UInput
                             v-model="localSearchQuery"
-                            :placeholder="$t('wasteCatalog.search.localPlaceholder', { location: getCurrentTabName() })"
+                            :placeholder="$t('wasteCatalog.search.localPlaceholder')"
                             icon="i-heroicons-magnifying-glass"
                             size="md"
                             variant="outline"
@@ -327,7 +327,7 @@ const getCurrentTabKey = (): string => {
 }
 
 const getCurrentTabName = (): string => {
-    return tabItems[activeTab.value]?.label || 'Szállítás telephely'
+    return tabItems[activeTab.value]?.label || 'Szállítható hulladékok'
 }
 
 const getCurrentTabWastes = (): WasteItem[] => {

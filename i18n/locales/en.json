@@ -635,7 +635,7 @@
       "subtitle": "Choose a site to view authorized waste types"
     },
     "search": {
-      "localPlaceholder": "Search at {location} site...",
+      "localPlaceholder": "Search...",
       "resultsCount": "{found} results from {total} waste types",
       "locationSuffix": "- {location} site"
     },
