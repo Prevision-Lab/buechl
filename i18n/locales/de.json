@@ -689,6 +689,18 @@
         "name": "ISO 45001:2018",
         "description": "Occupational Health and Safety Management System"
       },
+      "iso9001De": {
+        "name": "ISO 9001:2015",
+        "description": "Qualitätsmanagementsystem"
+      },
+      "iso14001De": {
+        "name": "ISO 14001:2015",
+        "description": "Umweltmanagementsystem"
+      },
+      "iso45001De": {
+        "name": "ISO 45001:2018",
+        "description": "Arbeitsschutzmanagementsystem"
+      },
       "hulladekKatalogus": {
         "name": "Abfallkatalog",
         "description": "Nach AVV-Nummern gemäß Genehmigungen"

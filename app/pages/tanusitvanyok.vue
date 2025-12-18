@@ -59,10 +59,10 @@
                     </div>
                     <div>
                       <h3 class="font-bold text-gray-900 mb-1 group-hover:text-buchl-blue transition-colors duration-200">
-                        {{ certificate.name }}
+                        {{ $t(`downloads.documents.${certificate.id}.name`) }}
                       </h3>
                       <p class="text-sm text-gray-600">
-                        {{ certificate.description }}
+                        {{ $t(`downloads.documents.${certificate.id}.description`) }}
                       </p>
                     </div>
                   </div>
@@ -167,7 +167,7 @@ const selectedCategory = ref('tanusitvanyok')
 const allDocuments = ref<Certificate[]>([
   // Tanúsítványok - Hungarian
   {
-    id: 'emas-hu',
+    id: 'emasHu',
     name: 'EMAS Tanúsítvány',
     description: 'Eco-Management and Audit Scheme',
     filename: 'EMAS _20280622.pdf',
@@ -176,7 +176,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-9001-hu',
+    id: 'iso9001Hu',
     name: 'ISO 9001:2015',
     description: 'Minőségirányítási rendszer',
     filename: 'ISO 9001_2015_HU.pdf',
@@ -185,7 +185,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-14001-hu',
+    id: 'iso14001Hu',
     name: 'ISO 14001:2015',
     description: 'Környezetirányítási rendszer',
     filename: 'ISO 14001_2015_HU.pdf',
@@ -194,7 +194,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-45001-hu',
+    id: 'iso45001Hu',
     name: 'ISO 45001:2018',
     description: 'Munkavédelmi irányítási rendszer',
     filename: 'ISO 45001_2018_HU.pdf',
@@ -204,7 +204,7 @@ const allDocuments = ref<Certificate[]>([
   },
   // Tanúsítványok - English
   {
-    id: 'iso-9001-en',
+    id: 'iso9001En',
     name: 'ISO 9001:2015',
     description: 'Quality Management System',
     filename: 'ISO 9001_2015_angol.pdf',
@@ -213,7 +213,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-14001-en',
+    id: 'iso14001En',
     name: 'ISO 14001:2015',
     description: 'Environmental Management System',
     filename: 'ISO 14001_2015_angol.pdf',
@@ -222,7 +222,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-45001-en',
+    id: 'iso45001En',
     name: 'ISO 45001:2018',
     description: 'Occupational Health and Safety Management System',
     filename: 'ISO 45001_2018_angol.pdf',
@@ -232,7 +232,7 @@ const allDocuments = ref<Certificate[]>([
   },
   // Tanúsítványok - German
   {
-    id: 'iso-9001-de',
+    id: 'iso9001De',
     name: 'ISO 9001:2015',
     description: 'Qualitätsmanagementsystem',
     filename: 'ISO 9001_2015_angol.pdf',
@@ -241,7 +241,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-14001-de',
+    id: 'iso14001De',
     name: 'ISO 14001:2015',
     description: 'Umweltmanagementsystem',
     filename: 'ISO 14001_2015_angol.pdf',
@@ -250,7 +250,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'tanusitvanyok'
   },
   {
-    id: 'iso-45001-de',
+    id: 'iso45001De',
     name: 'ISO 45001:2018',
     description: 'Arbeitsschutzmanagementsystem',
     filename: 'ISO 45001_2018_angol.pdf',
@@ -260,7 +260,7 @@ const allDocuments = ref<Certificate[]>([
   },
   // Engedélyek
   {
-    id: 'hulladek-katalogus',
+    id: 'hulladekKatalogus',
     name: 'Hulladékkatalógus',
     description: 'AVV számok szerint a engedélyek alapján',
     filename: 'hulladékkatalógus.xlsx',
@@ -269,7 +269,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'engedélyek'
   },
   {
-    id: 'engedélyek-attekintese',
+    id: 'engedélyekAttekintese',
     name: 'Engedélyek áttekintése',
     description: 'Teljes engedélyek összefoglalása',
     filename: 'engedélyek_áttekintése.pdf',
@@ -279,7 +279,7 @@ const allDocuments = ref<Certificate[]>([
   },
   // Céginformációk
   {
-    id: 'emas-2007-elso',
+    id: 'emas2007Elso',
     name: 'EMAS 2007 – Első tanúsítvány',
     description: 'Első EMAS tanúsítvány 2007-ből',
     filename: 'EMAS_2007_első_tanúsítvány.pdf',
@@ -288,7 +288,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'emas-nyilatkozat-2020',
+    id: 'emasNyilatkozat2020',
     name: 'EMAS nyilatkozat 2020',
     description: 'Környezetvédelmi nyilatkozat 2020',
     filename: 'EMAS_nyilatkozat_2020.pdf',
@@ -297,7 +297,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'emas-nyilatkozat-2021',
+    id: 'emasNyilatkozat2021',
     name: 'EMAS nyilatkozat 2021',
     description: 'Környezetvédelmi nyilatkozat 2021',
     filename: 'EMAS_nyilatkozat_2021.pdf',
@@ -306,7 +306,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'emas-nyilatkozat-2022',
+    id: 'emasNyilatkozat2022',
     name: 'EMAS nyilatkozat 2022',
     description: 'Környezetvédelmi nyilatkozat 2022',
     filename: 'EMAS_nyilatkozat_2022.pdf',
@@ -315,7 +315,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'elog-system-prezentacio',
+    id: 'elogSystemPrezentacio',
     name: 'ELOG Rendszer prezentáció',
     description: 'ELOG rendszer bemutató prezentáció',
     filename: 'ELOG_System_prezentáció.pdf',
@@ -324,7 +324,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'fenntarthatosagi-jelentes',
+    id: 'fenntarthatosagiJelentes',
     name: 'Fenntarthatósági jelentés',
     description: 'Vállalati fenntarthatósági jelentés',
     filename: 'Fenntarthatósági_jelentés.pdf',
@@ -333,7 +333,7 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'energetikai-jelentes-2023',
+    id: 'energetikaiJelentes2023',
     name: 'Energetikai szakreferens éves jelentés 2023',
     description: 'Energetikai szakreferens éves jelentése 2023',
     filename: 'Energetikai_szakreferens_éves_jelentés_2023.pdf',
