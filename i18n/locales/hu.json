@@ -551,9 +551,9 @@
           "hours": {
             "title": "Nyitvatartás",
             "weekdays": "Hétfő – Csütörtök",
-            "weekdaysTimes": "7:00 - 15:30",
+            "weekdaysTimes": "6:00 - 22:00",
             "friday": "Péntek",
-            "fridayTimes": "7:00 - 14:30",
+            "fridayTimes": "6:00 - 22:00",
             "weekend": "Szombat – Vasárnap",
             "closed": "Zárva"
           }

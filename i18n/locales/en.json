@@ -602,9 +602,9 @@
           "hours": {
             "title": "Opening hours",
             "weekdays": "Monday – Thursday",
-            "weekdaysTimes": "7:00 - 15:30",
+            "weekdaysTimes": "6:00 - 22:00",
             "friday": "Friday",
-            "fridayTimes": "7:00 - 14:30",
+            "fridayTimes": "6:00 - 22:00",
             "weekend": "Saturday – Sunday",
             "closed": "Closed"
           }
