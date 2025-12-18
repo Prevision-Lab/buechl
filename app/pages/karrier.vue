@@ -5,7 +5,7 @@
       v-if="heroBanner"
       :title="heroBanner.cim"
       :subtitle="heroBanner.leiras"
-      :image="heroBanner.kepUrl || 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&h=800&fit=crop'"
+      :image="'/media/images/hulladekgyujtes-szallitas.jpg'"
       bg-color="blue"
       :primary-cta="heroBanner.gombok?.[0] ? {
         label: heroBanner.gombok[0].cim,
