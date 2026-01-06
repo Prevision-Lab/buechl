@@ -199,6 +199,17 @@
             </a>
           </div>
           
+          <!-- BÜCHL Ingatlan -->
+          <div class="flex justify-center">
+            <div class="flex items-center justify-center">
+              <img 
+                src="/media/logos/buchl-ingatlan.jpg" 
+                alt="BÜCHL Ingatlan"
+                class="max-h-16 object-contain hover:opacity-80 transition-opacity"
+              />
+            </div>
+          </div>
+          
           <!-- PRIOREC -->
           <div class="flex justify-center">
             <a href="https://priorec.de/" target="_blank">
@@ -308,6 +319,7 @@
               />
             </a>
           </div>
+
         </div>
       </div>
     </section>
