@@ -54,29 +54,19 @@
           </ul>
         </div>
 
-        <!-- Company -->
+        <!-- Data Management -->
         <div>
-          <h3 class="font-semibold text-lg mb-4">{{ $t('footer.companyTitle') }}</h3>
+          <h3 class="font-semibold text-lg mb-4">Adatkezelés</h3>
           <ul class="space-y-2">
             <li>
-              <NuxtLink :to="localePath('rolunk')" class="text-white/80 hover:text-white transition-colors text-sm">
-                {{ $t('footer.companyLinks.about') }}
-              </NuxtLink>
+              <a href="/dokumentumok/new/buchl_adatkezelesi.pdf" download target="_blank" class="text-white/80 hover:text-white transition-colors text-sm">
+                Adatkezelési nyilatkozat
+              </a>
             </li>
             <li>
-              <NuxtLink :to="localePath('fenntarthatosag')" class="text-white/80 hover:text-white transition-colors text-sm">
-                {{ $t('footer.companyLinks.sustainability') }}
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink :to="localePath('karrier')" class="text-white/80 hover:text-white transition-colors text-sm">
-                {{ $t('footer.companyLinks.careers') }}
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink :to="localePath('hirek')" class="text-white/80 hover:text-white transition-colors text-sm">
-                {{ $t('footer.companyLinks.news') }}
-              </NuxtLink>
+              <a href="/dokumentumok/new/buchl-impresszum.pdf" download target="_blank" class="text-white/80 hover:text-white transition-colors text-sm">
+                Impresszum
+              </a>
             </li>
           </ul>
         </div>

@@ -769,6 +769,18 @@
       "energetikaiJelentes2023": {
         "name": "Energetikai szakreferens éves jelentés 2023",
         "description": "Energetikai szakreferens éves jelentése 2023"
+      },
+      "emasNyilatkozat2023": {
+        "name": "EMAS nyilatkozat 2023",
+        "description": "Környezetvédelmi nyilatkozat 2023"
+      },
+      "emasNyilatkozat2024": {
+        "name": "EMAS nyilatkozat 2024",
+        "description": "Környezetvédelmi nyilatkozat 2024"
+      },
+      "emasOkirat": {
+        "name": "EMAS Okirat",
+        "description": "EMAS Okirat 2025"
       }
     }
   },

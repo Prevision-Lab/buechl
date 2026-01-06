@@ -127,6 +127,7 @@ interface Certificate {
   fileSize: string
   language: 'hu' | 'en' | 'de'
   category: string
+  customPath?: string
 }
 
 // Composables
@@ -166,6 +167,16 @@ const selectedCategory = ref('tanusitvanyok')
 // Certificate and document data with hardcoded content (will be displayed via locale translations)
 const allDocuments = ref<Certificate[]>([
   // Tanúsítványok - Hungarian
+  {
+    id: 'emasOkirat',
+    name: 'EMAS Okirat',
+    description: 'EMAS Okirat 2025',
+    filename: 'PE_KTFO_03139_5_2025_BesA Melleklet.pdf',
+    fileSize: '129 KB',
+    language: 'hu',
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/new/PE_KTFO_03139_5_2025_BesA Melleklet.pdf'
+  },
   {
     id: 'emasHu',
     name: 'EMAS Tanúsítvány',
@@ -288,6 +299,26 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
+    id: 'emasNyilatkozat2024',
+    name: 'EMAS nyilatkozat 2024',
+    description: 'Környezetvédelmi nyilatkozat 2024',
+    filename: 'Buchl_NYILATKOZAT_2024.pdf',
+    fileSize: '1.7 MB',
+    language: 'hu',
+    category: 'céginformációk',
+    customPath: '/dokumentumok/new/Buchl_NYILATKOZAT_2024.pdf'
+  },
+  {
+    id: 'emasNyilatkozat2023',
+    name: 'EMAS nyilatkozat 2023',
+    description: 'Környezetvédelmi nyilatkozat 2023',
+    filename: 'Büchl_NYILATKOZAT_2023.pdf',
+    fileSize: '1.2 MB',
+    language: 'hu',
+    category: 'céginformációk',
+    customPath: '/dokumentumok/new/Büchl_NYILATKOZAT_2023.pdf'
+  },
+  {
     id: 'emasNyilatkozat2020',
     name: 'EMAS nyilatkozat 2020',
     description: 'Környezetvédelmi nyilatkozat 2020',
@@ -363,7 +394,9 @@ const currentCertificates = computed(() => {
 const downloadCertificate = (certificate: Certificate) => {
   let path: string
   
-  if (certificate.category === 'tanusitvanyok') {
+  if (certificate.customPath) {
+    path = certificate.customPath
+  } else if (certificate.category === 'tanusitvanyok') {
     path = `/certificates/${certificate.language}/${certificate.filename}`
   } else {
     path = `/certificates/hu/${certificate.category}/${certificate.filename}`
