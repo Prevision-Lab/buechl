@@ -181,21 +181,21 @@ const allDocuments = ref<Certificate[]>([
     id: 'emasHu',
     name: 'EMAS Tanúsítvány',
     description: 'Eco-Management and Audit Scheme',
-    filename: 'EMAS _20280622.pdf',
+    filename: 'emas-20280622.pdf',
     fileSize: '131 KB',
     language: 'hu',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/EMAS _20280622.pdf'
+    customPath: '/dokumentumok/emas-20280622.pdf'
   },
   {
     id: 'iso9001Hu',
     name: 'ISO 9001:2015',
     description: 'Minőségirányítási rendszer',
-    filename: 'ISO 9001_2015_HU.pdf',
+    filename: 'iso-9001-2015-hu.pdf',
     fileSize: '544 KB',
     language: 'hu',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/ISO 9001_2015_HU.pdf'
+    customPath: '/dokumentumok/iso-9001-2015-hu.pdf'
   },
   {
     id: 'iso14001Hu',
@@ -210,32 +210,32 @@ const allDocuments = ref<Certificate[]>([
     id: 'iso45001Hu',
     name: 'ISO 45001:2018',
     description: 'Munkavédelmi irányítási rendszer',
-    filename: 'ISO 45001_2018_HU.pdf',
+    filename: 'iso-45001-2018-hu.pdf',
     fileSize: '625 KB',
     language: 'hu',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/ISO 45001_2018_HU.pdf'
+    customPath: '/dokumentumok/iso-45001-2018-hu.pdf'
   },
   // Tanúsítványok - English
   {
     id: 'iso9001En',
     name: 'ISO 9001:2015',
     description: 'Quality Management System',
-    filename: 'ISO 9001_2015_angol.pdf',
+    filename: 'iso-9001-2015-en.pdf',
     fileSize: '541 KB',
     language: 'en',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/ISO 9001_2015_angol.pdf'
+    customPath: '/dokumentumok/iso-9001-2015-en.pdf'
   },
   {
     id: 'iso14001En',
     name: 'ISO 14001:2015',
     description: 'Environmental Management System',
-    filename: 'ISO 14001_2015_angol.pdf',
+    filename: 'iso-14001-2015-en.pdf',
     fileSize: '541 KB',
     language: 'en',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/ISO 14001_2015_angol.pdf'
+    customPath: '/dokumentumok/iso-14001-2015-en.pdf'
   },
   {
     id: 'iso45001En',
@@ -251,21 +251,21 @@ const allDocuments = ref<Certificate[]>([
     id: 'iso9001De',
     name: 'ISO 9001:2015',
     description: 'Qualitätsmanagementsystem',
-    filename: 'ISO 9001_2015_angol.pdf',
+    filename: 'iso-9001-2015-en.pdf',
     fileSize: '541 KB',
     language: 'de',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/ISO 9001_2015_angol.pdf'
+    customPath: '/dokumentumok/iso-9001-2015-en.pdf'
   },
   {
     id: 'iso14001De',
     name: 'ISO 14001:2015',
     description: 'Umweltmanagementsystem',
-    filename: 'ISO 14001_2015_angol.pdf',
+    filename: 'iso-14001-2015-en.pdf',
     fileSize: '541 KB',
     language: 'de',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/ISO 14001_2015_angol.pdf'
+    customPath: '/dokumentumok/iso-14001-2015-en.pdf'
   },
   {
     id: 'iso45001De',
@@ -281,11 +281,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'hulladekKatalogus',
     name: 'Hulladékkatalógus',
     description: 'AVV számok szerint a engedélyek alapján',
-    filename: 'Hulladék lista_honlapra_2507.xlsx',
+    filename: 'hulladek-lista-2507.xlsx',
     fileSize: '54 KB',
     language: 'hu',
     category: 'engedélyek',
-    customPath: '/dokumentumok/Hulladék lista_honlapra_2507.xlsx'
+    customPath: '/dokumentumok/hulladek-lista-2507.xlsx'
   },
   {
     id: 'engedélyekAttekintese',
