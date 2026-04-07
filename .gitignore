@@ -6,6 +6,7 @@
 .cache
 .claude
 dist
+dist-package
 Dokumentáció
 # Node dependencies
 node_modules
@@ -18,8 +19,10 @@ logs
 .DS_Store
 .fleet
 .idea
+*.zip
 
 # Local env files
 .env
 .env.*
 #!.env.example
+.env

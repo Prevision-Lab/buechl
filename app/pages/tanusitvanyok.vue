@@ -184,7 +184,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'EMAS _20280622.pdf',
     fileSize: '131 KB',
     language: 'hu',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/EMAS _20280622.pdf'
   },
   {
     id: 'iso9001Hu',
@@ -193,7 +194,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 9001_2015_HU.pdf',
     fileSize: '544 KB',
     language: 'hu',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/ISO 9001_2015_HU.pdf'
   },
   {
     id: 'iso14001Hu',
@@ -211,7 +213,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 45001_2018_HU.pdf',
     fileSize: '625 KB',
     language: 'hu',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/ISO 45001_2018_HU.pdf'
   },
   // Tanúsítványok - English
   {
@@ -221,7 +224,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 9001_2015_angol.pdf',
     fileSize: '541 KB',
     language: 'en',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/ISO 9001_2015_angol.pdf'
   },
   {
     id: 'iso14001En',
@@ -230,7 +234,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 14001_2015_angol.pdf',
     fileSize: '541 KB',
     language: 'en',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/ISO 14001_2015_angol.pdf'
   },
   {
     id: 'iso45001En',
@@ -249,7 +254,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 9001_2015_angol.pdf',
     fileSize: '541 KB',
     language: 'de',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/ISO 9001_2015_angol.pdf'
   },
   {
     id: 'iso14001De',
@@ -258,7 +264,8 @@ const allDocuments = ref<Certificate[]>([
     filename: 'ISO 14001_2015_angol.pdf',
     fileSize: '541 KB',
     language: 'de',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/ISO 14001_2015_angol.pdf'
   },
   {
     id: 'iso45001De',
@@ -274,10 +281,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'hulladekKatalogus',
     name: 'Hulladékkatalógus',
     description: 'AVV számok szerint a engedélyek alapján',
-    filename: 'hulladékkatalógus.xlsx',
-    fileSize: '71 KB',
+    filename: 'Hulladék lista_honlapra_2507.xlsx',
+    fileSize: '54 KB',
     language: 'hu',
-    category: 'engedélyek'
+    category: 'engedélyek',
+    customPath: '/dokumentumok/Hulladék lista_honlapra_2507.xlsx'
   },
   {
     id: 'engedélyekAttekintese',

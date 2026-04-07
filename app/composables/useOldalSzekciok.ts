@@ -4,7 +4,7 @@ export const useOldalSzekciok = (oldal: string) => {
   const { $directus } = useNuxtApp()
   const { locale } = useI18n()
   const config = useRuntimeConfig()
-  
+
   const fetchSzekciok = async () => {
     try {
       const szekciok = await $directus.request(
@@ -17,9 +17,9 @@ export const useOldalSzekciok = (oldal: string) => {
           sort: ['sorrend']
         })
       )
-      
+
       if (!szekciok || szekciok.length === 0) return []
-      
+
       // Map locale to Directus language codes
       const languageMap: Record<string, string> = {
         'hu': 'hu-HU',
@@ -27,22 +27,22 @@ export const useOldalSzekciok = (oldal: string) => {
         'de': 'de-DE'
       }
       const directusLangCode = languageMap[locale.value] || 'hu-HU'
-      
+
       // Process each section with translations
       return szekciok.map((szekc: any) => {
         const translation = szekc.translations?.find(
           (t: any) => t.languages_code === directusLangCode
         )
-        
+
         // Process technologies if present
         const technologiak = szekc.technologiak?.map((tech: any) => {
           const techData = tech.technologiak_id
           if (!techData) return null
-          
+
           const techTranslation = techData.translations?.find(
             (t: any) => t.languages_code === directusLangCode
           )
-          
+
           return {
             id: techData.id,
             cim: techTranslation?.cim || techData.cim,
@@ -51,10 +51,10 @@ export const useOldalSzekciok = (oldal: string) => {
             szin: techData.szin
           }
         }).filter(Boolean) || []
-        
+
         // Merge elemek: use translation text but preserve images from original if missing
         let elemek = translation?.elemek || szekc.elemek
-        
+
         // If we have translation elemek and original elemek, merge images
         if (translation?.elemek && szekc.elemek && Array.isArray(translation.elemek) && Array.isArray(szekc.elemek)) {
           elemek = translation.elemek.map((elem: any, index: number) => {
@@ -66,7 +66,7 @@ export const useOldalSzekciok = (oldal: string) => {
             }
           })
         }
-        
+
         return {
           id: szekc.id,
           oldal: szekc.oldal,
@@ -77,7 +77,7 @@ export const useOldalSzekciok = (oldal: string) => {
           elemek,
           kep: szekc.kep,
           kepUrl: szekc.kep
-            ? `https://buchl-admin.previsionlab.hu/assets/${szekc.kep}?access_token=${config.public.directusToken}`
+            ? `${config.public.directusUrl}/assets/${szekc.kep}?access_token=${config.public.directusToken}`
             : null,
           sorrend: szekc.sorrend,
           bg_szin: szekc.bg_szin,
@@ -89,16 +89,16 @@ export const useOldalSzekciok = (oldal: string) => {
       return []
     }
   }
-  
+
   // Reactive sections data with automatic refresh on locale change
   const { data: szekciok, refresh } = useAsyncData(
-    `oldal-szekciok-${oldal}`,
+    `oldal-szekciok-${oldal}-${locale.value}`,
     fetchSzekciok,
     {
       watch: [locale]
     }
   )
-  
+
   return {
     szekciok,
     refresh

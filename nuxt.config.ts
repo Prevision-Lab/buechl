@@ -203,7 +203,26 @@ export default defineNuxtConfig({
     
     // Exclude directories from file watching to prevent ENFILE errors
     nitro: {
-        ignore: ['venv/**', '**/.venv/**', '**/node_modules/**']
+        ignore: ['venv/**', '**/.venv/**', '**/node_modules/**'],
+        prerender: {
+            failOnError: false,
+            crawlLinks: true,
+            routes: [
+                '/',
+                '/rolunk',
+                '/szolgaltatasok',
+                '/szolgaltatasok/hulladekkezeles',
+                '/szolgaltatasok/szallitas',
+                '/szolgaltatasok/elog-system',
+                '/fenntarthatosag',
+                '/karrier',
+                '/hirek',
+                '/kapcsolat',
+                '/tanusitvanyok',
+                '/hulladek-katalogus',
+                '/kuldetes'
+            ]
+        }
     },
     
     // Additional watcher configuration

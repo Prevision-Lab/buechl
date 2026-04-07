@@ -4,7 +4,7 @@ export const useBanner = (bannerId: number) => {
   const { $directus } = useNuxtApp()
   const { locale } = useI18n()
   const config = useRuntimeConfig()
-  
+
   const fetchBanner = async () => {
     try {
       const banners = await $directus.request(
@@ -16,11 +16,11 @@ export const useBanner = (bannerId: number) => {
           limit: 1
         })
       )
-      
+
       if (!banners || banners.length === 0) return null
-      
+
       const banner = banners[0]
-      
+
       // Map locale to Directus language codes
       const languageMap: Record<string, string> = {
         'hu': 'hu-HU',
@@ -28,20 +28,20 @@ export const useBanner = (bannerId: number) => {
         'de': 'de-DE'
       }
       const directusLangCode = languageMap[locale.value] || 'hu-HU'
-      
+
       // Find translation for current language
       const translation = banner.translations?.find(
         (t: any) => t.languages_code === directusLangCode
       )
-      
+
       // Return translated or default content
       return {
         cim: translation?.cim || banner.cim,
         leiras: translation?.leiras || banner.leiras,
         gombok: translation?.gombok || banner.gombok,
         kep: banner.kep,
-        kepUrl: banner.kep 
-          ? `https://buchl-admin.previsionlab.hu/assets/${banner.kep}?access_token=${config.public.directusToken}`
+        kepUrl: banner.kep
+          ? `${config.public.directusUrl}/assets/${banner.kep}?access_token=${config.public.directusToken}`
           : null
       }
     } catch (error) {
@@ -49,16 +49,16 @@ export const useBanner = (bannerId: number) => {
       return null
     }
   }
-  
+
   // Reactive banner data with automatic refresh on locale change
   const { data: banner, refresh } = useAsyncData(
-    `banner-${bannerId}`,
+    `banner-${bannerId}-${locale.value}`,
     fetchBanner,
     {
       watch: [locale]
     }
   )
-  
+
   return {
     banner,
     refresh

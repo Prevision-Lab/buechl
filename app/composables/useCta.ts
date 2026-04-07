@@ -4,7 +4,7 @@ export const useCta = (ctaId: number) => {
   const { $directus } = useNuxtApp()
   const { locale } = useI18n()
   const config = useRuntimeConfig()
-  
+
   const fetchCta = async () => {
     try {
       const ctas = await $directus.request(
@@ -13,8 +13,8 @@ export const useCta = (ctaId: number) => {
             id: { _eq: ctaId }
           },
           fields: [
-            '*', 
-            'translations.*', 
+            '*',
+            'translations.*',
             'video.*',
             'szolgaltatasok.szolgaltatasok_id.*',
             'szolgaltatasok.szolgaltatasok_id.translations.*',
@@ -24,11 +24,11 @@ export const useCta = (ctaId: number) => {
           limit: 1
         })
       )
-      
+
       if (!ctas || ctas.length === 0) return null
-      
+
       const cta = ctas[0]
-      
+
       // Map locale to Directus language codes
       const languageMap: Record<string, string> = {
         'hu': 'hu-HU',
@@ -36,19 +36,19 @@ export const useCta = (ctaId: number) => {
         'de': 'de-DE'
       }
       const directusLangCode = languageMap[locale.value] || 'hu-HU'
-      
+
       // Find translation for current language
       const translation = cta.translations?.find(
         (t: any) => t.languages_code === directusLangCode
       )
-      
+
       // Process related services
       const szolgaltatasok = cta.szolgaltatasok?.map((item: any) => {
         const service = item.szolgaltatasok_id
         const serviceTranslation = service?.translations?.find(
           (t: any) => t.languages_code === directusLangCode
         )
-        
+
         return {
           id: service?.id,
           cim: serviceTranslation?.cim || service?.cim,
@@ -62,14 +62,14 @@ export const useCta = (ctaId: number) => {
           sorrend: service?.sorrend
         }
       }) || []
-      
+
       // Process related statistics
       const statisztikak = cta.statisztikak?.map((item: any) => {
         const stat = item.statisztikak_id
         const statTranslation = stat?.translations?.find(
           (t: any) => t.languages_code === directusLangCode
         )
-        
+
         return {
           id: stat?.id,
           szam: stat?.szam,
@@ -79,7 +79,7 @@ export const useCta = (ctaId: number) => {
           hely: stat?.hely
         }
       }).sort((a: any, b: any) => (a.sorrend || 0) - (b.sorrend || 0)) || []
-      
+
       // Return translated or default content
       return {
         cim: translation?.cim || cta.cim,
@@ -91,12 +91,12 @@ export const useCta = (ctaId: number) => {
         gomb2_felirat: translation?.gomb2_felirat || cta.gomb2_felirat,
         gomb2_link: translation?.gomb2_link || cta.gomb2_link,
         video: cta.video,
-        videoUrl: cta.video 
-          ? `https://buchl-admin.previsionlab.hu/assets/${cta.video.id}?access_token=${config.public.directusToken}`
+        videoUrl: cta.video
+          ? `${config.public.directusUrl}/assets/${cta.video.id}?access_token=${config.public.directusToken}`
           : null,
         kep: cta.kep,
-        kepUrl: cta.kep 
-          ? `https://buchl-admin.previsionlab.hu/assets/${cta.kep}?access_token=${config.public.directusToken}`
+        kepUrl: cta.kep
+          ? `${config.public.directusUrl}/assets/${cta.kep}?access_token=${config.public.directusToken}`
           : null,
         szolgaltatasok,
         statisztikak
@@ -106,16 +106,16 @@ export const useCta = (ctaId: number) => {
       return null
     }
   }
-  
+
   // Reactive CTA data with automatic refresh on locale change
   const { data: cta, refresh } = useAsyncData(
-    `cta-${ctaId}`,
+    `cta-${ctaId}-${locale.value}`,
     fetchCta,
     {
       watch: [locale]
     }
   )
-  
+
   return {
     cta,
     refresh

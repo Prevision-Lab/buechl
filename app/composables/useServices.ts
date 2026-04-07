@@ -3,7 +3,7 @@ import { readItems } from '@directus/sdk'
 export const useServices = (tipus?: string) => {
   const { $directus } = useNuxtApp()
   const { locale } = useI18n()
-  
+
   const fetchServices = async () => {
     try {
       const filter: any = { status: { _eq: 'published' } }
@@ -18,9 +18,9 @@ export const useServices = (tipus?: string) => {
           sort: ['sorrend']
         })
       )
-      
+
       if (!services || services.length === 0) return []
-      
+
       // Map locale to Directus language codes
       const languageMap: Record<string, string> = {
         'hu': 'hu-HU',
@@ -28,13 +28,13 @@ export const useServices = (tipus?: string) => {
         'de': 'de-DE'
       }
       const directusLangCode = languageMap[locale.value] || 'hu-HU'
-      
+
       // Map services with translations
       return services.map((service: any) => {
         const translation = service.translations?.find(
           (t: any) => t.languages_code === directusLangCode
         )
-        
+
         return {
           id: service.id,
           cim: translation?.cim || service.cim,
@@ -53,16 +53,16 @@ export const useServices = (tipus?: string) => {
       return []
     }
   }
-  
+
   // Reactive services data with automatic refresh on locale change
   const { data: services, refresh } = useAsyncData(
-    `services-${tipus || 'all'}`,
+    `services-${tipus || 'all'}-${locale.value}`,
     fetchServices,
     {
       watch: [locale]
     }
   )
-  
+
   return {
     services,
     refresh
