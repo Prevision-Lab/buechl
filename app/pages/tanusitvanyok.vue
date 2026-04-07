@@ -171,11 +171,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'emasOkirat',
     name: 'EMAS Okirat',
     description: 'EMAS Okirat 2025',
-    filename: 'PE_KTFO_03139_5_2025_BesA Melleklet.pdf',
+    filename: 'emas-okirat-2025.pdf',
     fileSize: '129 KB',
     language: 'hu',
     category: 'tanusitvanyok',
-    customPath: '/dokumentumok/new/PE_KTFO_03139_5_2025_BesA Melleklet.pdf'
+    customPath: '/dokumentumok/emas-okirat-2025.pdf'
   },
   {
     id: 'emasHu',
@@ -201,10 +201,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'iso14001Hu',
     name: 'ISO 14001:2015',
     description: 'Környezetirányítási rendszer',
-    filename: 'ISO 14001_2015_HU.pdf',
+    filename: 'iso-14001-2015-hu.pdf',
     fileSize: '544 KB',
     language: 'hu',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/iso-14001-2015-hu.pdf'
   },
   {
     id: 'iso45001Hu',
@@ -241,10 +242,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'iso45001En',
     name: 'ISO 45001:2018',
     description: 'Occupational Health and Safety Management System',
-    filename: 'ISO 45001_2018_angol.pdf',
+    filename: 'iso-45001-2018-en.pdf',
     fileSize: '623 KB',
     language: 'en',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/iso-45001-2018-en.pdf'
   },
   // Tanúsítványok - German
   {
@@ -271,10 +273,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'iso45001De',
     name: 'ISO 45001:2018',
     description: 'Arbeitsschutzmanagementsystem',
-    filename: 'ISO 45001_2018_angol.pdf',
+    filename: 'iso-45001-2018-en.pdf',
     fileSize: '623 KB',
     language: 'de',
-    category: 'tanusitvanyok'
+    category: 'tanusitvanyok',
+    customPath: '/dokumentumok/iso-45001-2018-en.pdf'
   },
   // Engedélyek
   {
@@ -310,21 +313,21 @@ const allDocuments = ref<Certificate[]>([
     id: 'emasNyilatkozat2024',
     name: 'EMAS nyilatkozat 2024',
     description: 'Környezetvédelmi nyilatkozat 2024',
-    filename: 'Buchl_NYILATKOZAT_2024.pdf',
+    filename: 'emas-nyilatkozat-2024.pdf',
     fileSize: '1.7 MB',
     language: 'hu',
     category: 'céginformációk',
-    customPath: '/dokumentumok/new/Buchl_NYILATKOZAT_2024.pdf'
+    customPath: '/dokumentumok/emas-nyilatkozat-2024.pdf'
   },
   {
     id: 'emasNyilatkozat2023',
     name: 'EMAS nyilatkozat 2023',
     description: 'Környezetvédelmi nyilatkozat 2023',
-    filename: 'Büchl_NYILATKOZAT_2023.pdf',
+    filename: 'emas-nyilatkozat-2023.pdf',
     fileSize: '1.2 MB',
     language: 'hu',
     category: 'céginformációk',
-    customPath: '/dokumentumok/new/Büchl_NYILATKOZAT_2023.pdf'
+    customPath: '/dokumentumok/emas-nyilatkozat-2023.pdf'
   },
   {
     id: 'emasNyilatkozat2020',
