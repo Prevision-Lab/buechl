@@ -304,10 +304,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'emas2007Elso',
     name: 'EMAS 2007 – Első tanúsítvány',
     description: 'Első EMAS tanúsítvány 2007-ből',
-    filename: 'EMAS_2007_első_tanúsítvány.pdf',
-    fileSize: '6.2 MB',
+    filename: 'emas-2007.jpg',
+    fileSize: '231 KB',
     language: 'hu',
-    category: 'céginformációk'
+    category: 'céginformációk',
+    customPath: '/dokumentumok/emas-2007.jpg'
   },
   {
     id: 'emasNyilatkozat2024',
@@ -333,28 +334,31 @@ const allDocuments = ref<Certificate[]>([
     id: 'emasNyilatkozat2020',
     name: 'EMAS nyilatkozat 2020',
     description: 'Környezetvédelmi nyilatkozat 2020',
-    filename: 'EMAS_nyilatkozat_2020.pdf',
+    filename: 'emas-nyilatkozat-2020.pdf',
     fileSize: '709 KB',
     language: 'hu',
-    category: 'céginformációk'
+    category: 'céginformációk',
+    customPath: '/dokumentumok/emas-nyilatkozat-2020.pdf'
   },
   {
     id: 'emasNyilatkozat2021',
     name: 'EMAS nyilatkozat 2021',
     description: 'Környezetvédelmi nyilatkozat 2021',
-    filename: 'EMAS_nyilatkozat_2021.pdf',
+    filename: 'emas-nyilatkozat-2021.pdf',
     fileSize: '749 KB',
     language: 'hu',
-    category: 'céginformációk'
+    category: 'céginformációk',
+    customPath: '/dokumentumok/emas-nyilatkozat-2021.pdf'
   },
   {
     id: 'emasNyilatkozat2022',
     name: 'EMAS nyilatkozat 2022',
     description: 'Környezetvédelmi nyilatkozat 2022',
-    filename: 'EMAS_nyilatkozat_2022.pdf',
+    filename: 'emas-nyilatkozat-2022.pdf',
     fileSize: '1.1 MB',
     language: 'hu',
-    category: 'céginformációk'
+    category: 'céginformációk',
+    customPath: '/dokumentumok/emas-nyilatkozat-2022.pdf'
   },
   {
     id: 'elogSystemPrezentacio',
@@ -378,10 +382,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'energetikaiJelentes2023',
     name: 'Energetikai szakreferens éves jelentés 2023',
     description: 'Energetikai szakreferens éves jelentése 2023',
-    filename: 'Energetikai_szakreferens_éves_jelentés_2023.pdf',
+    filename: 'energetikai-szakreferens-eves-jelentes-2023.pdf',
     fileSize: '6.1 MB',
     language: 'hu',
-    category: 'céginformációk'
+    category: 'céginformációk',
+    customPath: '/dokumentumok/energetikai-szakreferens-eves-jelentes-2023.pdf'
   }
 ])
 

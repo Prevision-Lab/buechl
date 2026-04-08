@@ -26,3 +26,6 @@ logs
 .env.*
 #!.env.example
 .env
+.env
+.gitignore
+.env
