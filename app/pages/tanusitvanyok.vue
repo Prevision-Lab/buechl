@@ -294,10 +294,11 @@ const allDocuments = ref<Certificate[]>([
     id: 'engedélyekAttekintese',
     name: 'Engedélyek áttekintése',
     description: 'Teljes engedélyek összefoglalása',
-    filename: 'engedélyek_áttekintése.pdf',
-    fileSize: '198 KB',
+    filename: 'hatosagi-engedelyek-listaja-2026.pdf',
+    fileSize: '293 KB',
     language: 'hu',
-    category: 'engedélyek'
+    category: 'engedélyek',
+    customPath: '/dokumentumok/hatosagi-engedelyek-listaja-2026.pdf'
   },
   // Céginformációk
   {
