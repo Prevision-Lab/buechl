@@ -380,14 +380,14 @@ const allDocuments = ref<Certificate[]>([
     category: 'céginformációk'
   },
   {
-    id: 'energetikaiJelentes2023',
-    name: 'Energetikai szakreferens éves jelentés 2023',
-    description: 'Energetikai szakreferens éves jelentése 2023',
-    filename: 'energetikai-szakreferens-eves-jelentes-2023.pdf',
-    fileSize: '6.1 MB',
+    id: 'energetikaiJelentes2024',
+    name: 'Energetikai szakreferens éves jelentés 2024',
+    description: 'Energetikai szakreferens éves jelentése 2024',
+    filename: 'energetikai-szakreferens-eves-jelentes-2024.pdf',
+    fileSize: '6.2 MB',
     language: 'hu',
     category: 'céginformációk',
-    customPath: '/dokumentumok/energetikai-szakreferens-eves-jelentes-2023.pdf'
+    customPath: '/dokumentumok/energetikai-szakreferens-eves-jelentes-2024.pdf'
   }
 ])
 
