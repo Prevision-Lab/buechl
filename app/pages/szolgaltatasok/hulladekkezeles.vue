@@ -161,7 +161,7 @@
                     <p class="text-gray-700 mb-6 max-w-2xl mx-auto">
                         {{ $t('wasteManagement.catalog.fullCatalog.description') }}
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div class="flex justify-center">
                         <UButton
                             to="/hulladek-katalogus"
                             size="lg"
@@ -169,16 +169,6 @@
                             class="rounded-none bg-buchl-blue text-white hover:bg-buchl-blue/90"
                         >
                             {{ $t('wasteManagement.catalog.fullCatalog.searchButton') }}
-                        </UButton>
-                        <UButton
-                            href="/media/documents/hulladek-katalogus.pdf"
-                            variant="outline"
-                            size="lg"
-                            icon="i-heroicons-arrow-down-tray"
-                            class="rounded-none border-buchl-blue text-buchl-blue hover:bg-buchl-blue hover:text-white"
-                            target="_blank"
-                        >
-                            {{ $t('wasteManagement.catalog.fullCatalog.downloadButton') }}
                         </UButton>
                     </div>
                 </div>

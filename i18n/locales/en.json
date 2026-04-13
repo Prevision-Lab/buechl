@@ -769,6 +769,10 @@
       "energetikaiJelentes2023": {
         "name": "Energy Specialist Annual Report 2023",
         "description": "Energy specialist annual report 2023"
+      },
+      "energetikaiJelentes2024": {
+        "name": "Energy Specialist Annual Report 2024",
+        "description": "Energy specialist annual report 2024"
       }
     }
   },

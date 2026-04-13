@@ -736,7 +736,7 @@
       },
       "hulladekKatalogus": {
         "name": "Hulladékkatalógus",
-        "description": "AVV számok szerint a engedélyek alapján"
+        "description": "HAK kódok szerint"
       },
       "engedélyekAttekintese": {
         "name": "Engedélyek áttekintése",
@@ -781,6 +781,10 @@
       "emasOkirat": {
         "name": "EMAS Okirat",
         "description": "EMAS Okirat 2025"
+      },
+      "energetikaiJelentes2024": {
+        "name": "Energetikai szakreferens éves jelentés 2024",
+        "description": "Energetikai szakreferens éves jelentése 2024"
       }
     }
   },

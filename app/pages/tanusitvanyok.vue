@@ -66,6 +66,9 @@
                       </p>
                     </div>
                   </div>
+                  <div v-if="certificate.id === 'hulladekKatalogus'" class="bg-buchl-blue/10 p-2 rounded-lg">
+                    <UIcon name="i-heroicons-magnifying-glass" class="w-5 h-5 text-buchl-blue" />
+                  </div>
                 </div>
                 
                 <div class="flex items-center justify-between pt-4 border-t border-gray-100">
@@ -73,8 +76,8 @@
                     {{ $t('downloads.status.valid') }}
                   </span>
                   <div class="flex items-center text-sm text-gray-500">
-                    <span class="mr-3">{{ certificate.fileSize }}</span>
-                    <UIcon name="i-lucide-download" class="w-4 h-4 group-hover:text-buchl-blue transition-colors" />
+                    <span class="mr-3">{{ certificate.id === 'hulladekKatalogus' ? $t('wasteManagement.catalog.fullCatalog.searchButton') : certificate.fileSize }}</span>
+                    <UIcon :name="certificate.id === 'hulladekKatalogus' ? 'i-lucide-external-link' : 'i-lucide-download'" class="w-4 h-4 group-hover:text-buchl-blue transition-colors" />
                   </div>
                 </div>
               </div>
@@ -283,12 +286,11 @@ const allDocuments = ref<Certificate[]>([
   {
     id: 'hulladekKatalogus',
     name: 'Hulladékkatalógus',
-    description: 'AVV számok szerint a engedélyek alapján',
-    filename: 'hulladek-lista-2507.xlsx',
-    fileSize: '54 KB',
+    description: 'HAK kódok szerint',
+    filename: '',
+    fileSize: 'Kereső',
     language: 'hu',
-    category: 'engedélyek',
-    customPath: '/dokumentumok/hulladek-lista-2507.xlsx'
+    category: 'engedélyek'
   },
   {
     id: 'engedélyekAttekintese',
@@ -409,6 +411,11 @@ const currentCertificates = computed(() => {
 
 // Download function
 const downloadCertificate = (certificate: Certificate) => {
+  if (certificate.id === 'hulladekKatalogus') {
+    navigateTo(localePath('/hulladek-katalogus'))
+    return
+  }
+  
   let path: string
   
   if (certificate.customPath) {

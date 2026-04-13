@@ -243,12 +243,12 @@
             </a>
           </div>
           
-          <!-- TADAK NETT -->
+          <!-- PRIOVEL -->
           <div class="flex justify-center">
-            <a href="https://tadaknett.hu/" target="_blank">
+            <a href="https://priovel.de/" target="_blank">
               <img 
-                src="/media/logos/Logo-TADAK-NETT-Kft._weisser-Hintergrund_Firmenstruktur-546x209-1.jpg" 
-                alt="TADAK NETT"
+                src="/media/logos/priovel-logo.png" 
+                alt="PRIOVEL"
                 class="max-h-16 object-contain hover:opacity-80 transition-opacity"
               />
             </a>
@@ -309,12 +309,12 @@
             </a>
           </div>
           
-          <!-- ELOGplan -->
+          <!-- Clever Systems -->
           <div class="flex justify-center">
-            <a href="https://www.elogplan.com/" target="_blank">
+            <a href="https://cleversystems.de/" target="_blank">
               <img 
-                src="/media/logos/BH-11.jpg" 
-                alt="ELOGplan"
+                src="/media/logos/clever-systems-logo.png" 
+                alt="Clever Systems"
                 class="max-h-16 object-contain hover:opacity-80 transition-opacity"
               />
             </a>

@@ -736,6 +736,10 @@
       "energetikaiJelentes2023": {
         "name": "Jahresbericht Energiebeauftragter 2023",
         "description": "Jahresbericht des Energiebeauftragten 2023"
+      },
+      "energetikaiJelentes2024": {
+        "name": "Jahresbericht Energiebeauftragter 2024",
+        "description": "Jahresbericht des Energiebeauftragten 2024"
       }
     }
   },
