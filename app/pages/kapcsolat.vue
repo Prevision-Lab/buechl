@@ -118,7 +118,7 @@
               </div>
             </div>
 
-            <!-- Hulladékadat-szolgáltatás -->
+            <!-- Hulladék-adatszolgáltatás -->
             <div class="mb-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold text-buchl-blue mb-4 flex items-center">
                 <UIcon name="i-heroicons-document-text" class="text-buchl-green mr-2" style="width: 24px; height: 24px;" />
@@ -315,8 +315,8 @@
             <div class="h-48">
               <OpenStreetMap
                 address="9027 Győr, Csörgőfa sor 8."
-                :latitude="47.6534"
-                :longitude="17.6241"
+                :latitude="47.6828"
+                :longitude="17.6955"
                 :zoom="15"
               />
             </div>
@@ -364,8 +364,8 @@
             <div class="h-48">
               <OpenStreetMap
                 address="9027 Győr, Reptéri út 6."
-                :latitude="47.6419"
-                :longitude="17.6845"
+                :latitude="47.6868"
+                :longitude="17.6810"
                 :zoom="15"
               />
             </div>
@@ -413,8 +413,8 @@
             <div class="h-48">
               <OpenStreetMap
                 address="4400 Nyíregyháza, Derkovits út 132-136."
-                :latitude="47.9362"
-                :longitude="21.7597"
+                :latitude="47.9428"
+                :longitude="21.6949"
                 :zoom="15"
               />
             </div>

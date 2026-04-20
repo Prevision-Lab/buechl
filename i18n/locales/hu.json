@@ -480,7 +480,7 @@
           "title": "Környezetvédelem"
         },
         "wasteData": {
-          "title": "Hulladékadat-szolgáltatás",
+          "title": "Hulladék-adatszolgáltatás",
           "description": "Hulladékkezelési nyilvántartások, jelentések"
         },
         "logistics": {
@@ -489,7 +489,7 @@
         "technical": {
           "title": "Műszaki vezetés",
           "contact": "Lövész Tamás",
-          "position": "Operatív vezető"
+          "position": "Stratégiai referens"
         },
         "accounting": {
           "title": "Könyvelés",
