@@ -411,43 +411,17 @@
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
-                    <!-- 1. Blog poszt -->
+                    <!-- Dinamikus hírek Directusból -->
                     <BuchlBlogPost
-                        :title="$t('news.posts.vbs.title')"
-                        :description="$t('news.posts.vbs.description')"
-                        image="/media/images/hirek/vbs-junior.jpeg"
-                        to="/hirek/vbs-junior-kor-latogatas"
-                        :category="$t('news.posts.vbs.category')"
-                        date="2025-09-12"
-                        :reading-time="$t('news.posts.vbs.readingTime')"
-                        :read-more-text="$t('news.readMore')"
-                    />
-
-                    <!-- 2. Blog poszt -->
-                    <BuchlBlogPost
-                        :title="$t('news.posts.reszett.title')"
-                        :description="$t('news.posts.reszett.description')"
-                        image="/media/images/hirek/reszett-program.jpeg"
-                        to="/hirek/reszett-program"
-                        :category="$t('news.posts.reszett.category')"
-                        date="2025-08-28"
-                        :reading-time="$t('news.posts.reszett.readingTime')"
-                        :read-more-text="$t('news.readMore')"
-                    />
-
-                    <!-- 3. Blog poszt -->
-                    <BuchlBlogPost
-                        :title="$t('news.posts.gyerekegyetem.title')"
-                        :description="
-                            $t('news.posts.gyerekegyetem.description')
-                        "
-                        image="/media/images/hirek/gyerekegyetem.jpeg"
-                        to="/hirek/viii-gyori-gyerekegyetem"
-                        :category="$t('news.posts.gyerekegyetem.category')"
-                        date="2025-08-24"
-                        :reading-time="
-                            $t('news.posts.gyerekegyetem.readingTime')
-                        "
+                        v-for="hir in hirek?.slice(0, 3)"
+                        :key="hir.id"
+                        :title="hir.cim"
+                        :description="hir.leiras"
+                        :image="hir.kepUrl"
+                        :to="localePath(`/hirek/${hir.slug}`)"
+                        :category="hir.kategoriaLabel"
+                        :date="hir.datum"
+                        :reading-time="hir.olvasasiIdoLabel"
                         :read-more-text="$t('news.readMore')"
                     />
                 </div>
@@ -530,6 +504,9 @@ const { cta: sustainabilityCta } = useCta(2); // ID: 2 - Sustainability CTA
 
 // Certificates CTA adat lekérése Directusból
 const { cta: certificatesCta } = useCta(3); // ID: 3 - Certificates/Downloads CTA
+
+// Hírek lekérése Directusból a főoldalra
+const { hirek } = useHirek();
 
 // Videó elemek referenciái
 const videoElement = ref<HTMLVideoElement | null>(null);

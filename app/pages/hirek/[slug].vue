@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
           <span class="inline-block px-3 py-1 rounded-full text-sm font-medium bg-white/20 mb-4">
-            {{ getCategoryLabel(hir.kategoria) }}
+            {{ hir.kategoriaLabel }}
           </span>
           <h1 class="text-4xl font-bold mb-4">
             {{ hir.cim }}
@@ -15,7 +15,7 @@
             <span>{{ formatDate(hir.datum) }}</span>
             <span v-if="hir.olvasasi_ido" class="mx-3">•</span>
             <UIcon v-if="hir.olvasasi_ido" name="i-heroicons-clock" class="w-4 h-4 mr-2" />
-            <span v-if="hir.olvasasi_ido">{{ getReadingTime(hir.olvasasi_ido) }}</span>
+            <span v-if="hir.olvasasi_ido">{{ hir.olvasasiIdoLabel }}</span>
           </div>
         </div>
       </div>
@@ -102,19 +102,6 @@ if (!hir.value) {
   })
 }
 
-// Kategória label lekérése
-const getCategoryLabel = (kategoria: string) => {
-  const categoryMap: Record<string, string> = {
-    'events': t('news.page.categories.events'),
-    'education': t('news.page.categories.education'),
-    'sustainability': t('news.page.categories.sustainability'),
-    'technology': t('news.page.categories.technology'),
-    'community': t('news.page.categories.community'),
-    'recognition': t('news.page.categories.recognition')
-  }
-  return categoryMap[kategoria] || kategoria
-}
-
 // Dátum formázása
 const formatDate = (datum: string) => {
   const date = new Date(datum)
@@ -123,11 +110,6 @@ const formatDate = (datum: string) => {
     month: 'long',
     day: 'numeric'
   }).format(date)
-}
-
-// Olvasási idő formázása
-const getReadingTime = (minutes: number) => {
-  return `${minutes} ${t('news.page.minRead')}`
 }
 
 // SEO

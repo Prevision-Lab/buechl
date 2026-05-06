@@ -30,9 +30,9 @@
             :description="hir.leiras"
             :image="hir.kepUrl"
             :to="localePath(`/hirek/${hir.slug}`)"
-            :category="getCategoryLabel(hir.kategoria)"
+            :category="hir.kategoriaLabel"
             :date="hir.datum"
-            :reading-time="getReadingTime(hir.olvasasi_ido)"
+            :reading-time="hir.olvasasiIdoLabel"
             :read-more-text="$t('news.page.readMore')"
           />
         </div>
@@ -46,7 +46,6 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
 const localePath = useLocalePath()
 
 // Hero banner adat lekérése Directusból
@@ -54,24 +53,6 @@ const { banner: heroBanner } = useBanner(8) // ID: 8 - Hírek
 
 // Hírek lekérése Directusból
 const { hirek } = useHirek()
-
-// Kategória label lekérése
-const getCategoryLabel = (kategoria: string) => {
-  const categoryMap: Record<string, string> = {
-    'events': t('news.page.categories.events'),
-    'education': t('news.page.categories.education'),
-    'sustainability': t('news.page.categories.sustainability'),
-    'technology': t('news.page.categories.technology'),
-    'community': t('news.page.categories.community'),
-    'recognition': t('news.page.categories.recognition')
-  }
-  return categoryMap[kategoria] || kategoria
-}
-
-// Olvasási idő formázása
-const getReadingTime = (minutes: number) => {
-  return `${minutes} ${t('news.page.minRead')}`
-}
 
 useSeoMeta({
   title: 'Hírek - BÜCHL HUNGARIA',
