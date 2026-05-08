@@ -43,30 +43,34 @@
 
         <!-- Aktuális állásajánlatok - Táblázatos megjelenés -->
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <div class="grid grid-cols-1 divide-y divide-gray-200">
+          <div v-if="allasok && allasok.length > 0" class="grid grid-cols-1 divide-y divide-gray-200">
             
-            <!-- Gépkocsivezető pozíció -->
-            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
+            <!-- Dinamikus pozíciók -->
+            <div v-for="allas in allasok" :key="allas.id" :class="[
+              'p-6 transition-colors',
+              allas.lejart ? 'bg-gray-100 opacity-60 cursor-not-allowed' : 'bg-white hover:bg-gray-50'
+            ]">
               <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.driver.title') }}</h3>
-                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.driver.description') }}</p>
+                  <h3 :class="['text-lg font-semibold mb-2', allas.lejart ? 'text-gray-500' : 'text-buchl-blue']">{{ allas.cim }}</h3>
+                  <p :class="['text-sm', allas.lejart ? 'text-gray-400' : 'text-gray-600']">{{ allas.leiras }}</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
+                <div :class="['flex flex-col sm:flex-row gap-8 text-sm', allas.lejart ? 'text-gray-400' : 'text-gray-700']">
                   <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
-                    <span>{{ $t('careers.jobs.positions.driver.type') }}</span>
+                    <span :class="['block font-medium', allas.lejart ? '' : 'text-buchl-blue']">{{ $t('careers.jobs.labels.type') }}</span>
+                    <span>{{ allas.munkaido_tipus }}</span>
                   </div>
                   <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
-                    <span>{{ $t('careers.jobs.positions.driver.location') }}</span>
+                    <span :class="['block font-medium', allas.lejart ? '' : 'text-buchl-blue']">{{ $t('careers.jobs.labels.location') }}</span>
+                    <span>{{ allas.munkavegzes_helye }}</span>
                   </div>
-                  <div class="text-center lg:min-w-[100px]">
+                  <div class="text-center lg:min-w-[100px] flex items-center justify-center">
                     <UButton 
                       size="sm"
-                      color="gray"
-                      class="rounded-none"
-                      disabled
+                      :color="allas.lejart ? 'gray' : 'neutral'"
+                      :class="['rounded-none', allas.lejart ? '' : 'bg-buchl-green text-white hover:bg-buchl-green/90']"
+                      :disabled="allas.lejart"
+                      @click="!allas.lejart && openJobApplication(allas.cim)"
                     >
                       {{ $t('careers.jobs.labels.apply') }}
                     </UButton>
@@ -74,96 +78,11 @@
                 </div>
               </div>
             </div>
-
-            <!-- Targoncavezető pozíció -->
-            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
-              <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.forklift.title') }}</h3>
-                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.forklift.description') }}</p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
-                  <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
-                    <span>{{ $t('careers.jobs.positions.forklift.type') }}</span>
-                  </div>
-                  <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
-                    <span>{{ $t('careers.jobs.positions.forklift.location') }}</span>
-                  </div>
-                  <div class="text-center lg:min-w-[100px]">
-                    <UButton 
-                      size="sm"
-                      color="gray"
-                      class="rounded-none"
-                      disabled
-                    >
-                      {{ $t('careers.jobs.labels.apply') }}
-                    </UButton>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Megváltozott munkaképességű pozíció -->
-            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
-              <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.disabled.title') }}</h3>
-                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.disabled.description') }}</p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
-                  <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
-                    <span>{{ $t('careers.jobs.positions.disabled.type') }}</span>
-                  </div>
-                  <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
-                    <span>{{ $t('careers.jobs.positions.disabled.location') }}</span>
-                  </div>
-                  <div class="text-center lg:min-w-[100px]">
-                    <UButton 
-                      size="sm"
-                      color="gray"
-                      class="rounded-none"
-                      disabled
-                    >
-                      {{ $t('careers.jobs.labels.apply') }}
-                    </UButton>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Portás pozíció -->
-            <div class="p-6 bg-gray-100 opacity-60 cursor-not-allowed">
-              <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-gray-500 mb-2">{{ $t('careers.jobs.positions.security.title') }}</h3>
-                  <p class="text-gray-400 text-sm">{{ $t('careers.jobs.positions.security.description') }}</p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-8 text-sm text-gray-400">
-                  <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.type') }}</span>
-                    <span>{{ $t('careers.jobs.positions.security.type') }}</span>
-                  </div>
-                  <div class="text-center">
-                    <span class="block font-medium">{{ $t('careers.jobs.labels.location') }}</span>
-                    <span>{{ $t('careers.jobs.positions.security.location') }}</span>
-                  </div>
-                  <div class="text-center lg:min-w-[100px]">
-                    <UButton 
-                      size="sm"
-                      color="gray"
-                      class="rounded-none"
-                      disabled
-                    >
-                      {{ $t('careers.jobs.labels.apply') }}
-                    </UButton>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+          
+          <div v-else class="p-12 text-center text-gray-500">
+            <UIcon name="i-heroicons-briefcase" class="w-12 h-12 mx-auto text-gray-300 mb-4" />
+            <p class="text-lg">Jelenleg nincsenek nyitott pozícióink, de várjuk jelentkezésed adatbázisunkba!</p>
           </div>
         </div>
 
@@ -191,6 +110,9 @@
 <script setup lang="ts">
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(6) // ID: 6 - Karrier
+
+// Állások lekérése
+const { allasok } = useAllasok()
 
 // Jelentkezés kezelése
 const openJobApplication = (position: string) => {
