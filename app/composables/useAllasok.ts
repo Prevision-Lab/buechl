@@ -19,7 +19,7 @@ export const useAllasok = () => {
       const rawAllasok = Array.isArray(response) ? response : []
       if (rawAllasok.length === 0) return []
 
-      return rawAllasok.map((allas: any) => {
+      const mappedAllasok = rawAllasok.map((allas: any) => {
         return {
           id: allas.id,
           cim: allas.cim,
@@ -28,6 +28,12 @@ export const useAllasok = () => {
           munkavegzes_helye: allas.munkavegzes_helye,
           lejart: allas.lejart || false
         }
+      })
+
+      // Sort: active (lejart: false) first, then expired (lejart: true)
+      return mappedAllasok.sort((a, b) => {
+        if (a.lejart === b.lejart) return 0
+        return a.lejart ? 1 : -1
       })
     } catch (error: any) {
       console.error('[useAllasok] Error fetching allasok:', error.message)

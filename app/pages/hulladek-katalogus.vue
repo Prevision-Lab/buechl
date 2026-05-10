@@ -290,12 +290,12 @@
 </template>
 
 <script setup lang="ts">
-// Import complete waste data from external file
-import { allWasteData, tabItems as importedTabItems } from '~/utils/wasteData.js'
+// Importáltuk a statikus adatokat eddig, most API-ból kérjük
+const { data: hulladekData } = useHulladek()
 
 // SEO meta adatok
 useSeoMeta({
-    title: 'Hulladékkatalögus - BÜCHL HUNGARIA',
+    title: 'Hulladékkatalógus - BÜCHL HUNGARIA',
     description: 'Keresés a BÜCHL HUNGARIA engedélyezett hulladéktípusai között telephelyek szerint. Fejlett keresőfunkció hulladékkódok és megnevezések alapján.',
     keywords: 'hulladékkatalógus, hulladékkód, hulladékkezelés, veszélyes hulladék, nem veszélyes hulladék, telephely, engedély'
 })
@@ -318,20 +318,24 @@ const showDetailsModal = ref(false)
 const selectedWaste = ref<WasteItem | null>(null)
 const activeTab = ref(0)
 
-// Use imported tab items
-const tabItems = importedTabItems
+// Computed for dynamic data
+const tabItems = computed(() => hulladekData.value?.tabItems || [])
+const allWasteData = computed(() => hulladekData.value?.allWasteData || {})
 
 // Computed properties
 const getCurrentTabKey = (): string => {
-    return tabItems[activeTab.value]?.key || 'szallitas'
+    if (!tabItems.value || tabItems.value.length === 0) return 'szallitas'
+    return tabItems.value[activeTab.value]?.key || 'szallitas'
 }
 
 const getCurrentTabName = (): string => {
-    return tabItems[activeTab.value]?.label || 'Szállítható hulladékok'
+    if (!tabItems.value || tabItems.value.length === 0) return 'Szállítható hulladékok'
+    return tabItems.value[activeTab.value]?.label || 'Szállítható hulladékok'
 }
 
 const getCurrentTabWastes = (): WasteItem[] => {
-    return allWasteData[getCurrentTabKey()] || []
+    if (!allWasteData.value) return []
+    return allWasteData.value[getCurrentTabKey()] || []
 }
 
 const getCurrentFilteredWastes = (): WasteItem[] => {
