@@ -7,6 +7,8 @@
       :subtitle="heroBanner.leiras"
       :image="'/media/images/hulladekgyujtes-szallitas.jpg'"
       bg-color="blue"
+      title-font="permanent-marker"
+      :skewed="true"
       :primary-cta="heroBanner.gombok?.[0] ? {
         label: heroBanner.gombok[0].cim,
         to: heroBanner.gombok[0].link
