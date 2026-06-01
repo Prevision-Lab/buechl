@@ -54,10 +54,32 @@
                         </div>
                     </div>
 
+                    <!-- Loading State -->
+                    <div
+                        v-if="pending"
+                        class="flex justify-center py-12"
+                    >
+                        <UIcon
+                            name="i-lucide-loader-2"
+                            class="w-8 h-8 animate-spin text-buchl-blue"
+                        />
+                    </div>
+
+                    <!-- Error State -->
+                    <div
+                        v-else-if="error"
+                        class="text-center py-12"
+                    >
+                        <p class="text-red-500">{{ $t('common.error') }}</p>
+                    </div>
+
                     <!-- Certificates Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        v-else
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    >
                         <div
-                            v-for="certificate in currentCertificates"
+                            v-for="certificate in displayCertificates"
                             :key="certificate.id"
                             class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer border hover:border-buchl-blue"
                             @click="downloadCertificate(certificate)"
@@ -76,10 +98,10 @@
                                             <h3
                                                 class="font-bold text-gray-900 mb-1 group-hover:text-buchl-blue transition-colors duration-200"
                                             >
-                                                {{ $t(`downloads.documents.${certificate.id}.name`) }}
+                                                {{ certificate.cim }}
                                             </h3>
                                             <p class="text-sm text-gray-600">
-                                                {{ $t(`downloads.documents.${certificate.id}.description`) }}
+                                                {{ certificate.alcim }}
                                             </p>
                                         </div>
                                     </div>
@@ -104,7 +126,7 @@
                                         <span class="mr-3">{{
                                             certificate.id === 'hulladekKatalogus'
                                                 ? $t('wasteManagement.catalog.fullCatalog.searchButton')
-                                                : certificate.fileSize
+                                                : certificate.meret
                                         }}</span>
                                         <UIcon
                                             :name="
@@ -171,25 +193,24 @@
 </template>
 
 <script setup lang="ts">
-interface Certificate {
-    id: string;
-    name: string;
-    description: string;
-    filename: string;
-    fileSize: string;
-    language: 'hu' | 'en' | 'de';
-    category: string;
-    customPath?: string;
+interface DisplayCertificate {
+    id: string | number;
+    cim: string;
+    alcim: string;
+    meret: string;
+    fileUrl?: string | null;
+    filename?: string | null;
 }
 
 // Composables
 const localePath = useLocalePath();
 const { locale } = useI18n();
+const { dokumentumok, pending, error, getFileUrl } = useDokumentumok();
 
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(7); // ID: 7 - Letöltések
 
-// SEO meta adatok - using static content like rolunk.vue
+// SEO meta adatok
 useSeoMeta({
     title: 'Letöltések - BÜCHL HUNGARIA',
     description:
@@ -200,7 +221,6 @@ useSeoMeta({
 
 // Reactive state - use global locale instead of separate language selector
 const selectedLanguage = computed(() => {
-    // Map locale codes to certificate language codes
     const localeMap: Record<string, 'hu' | 'en' | 'de'> = {
         hu: 'hu',
         en: 'en',
@@ -218,271 +238,64 @@ const documentCategories = ref([
 
 const selectedCategory = ref('tanusitvanyok');
 
-// Certificate and document data with hardcoded content (will be displayed via locale translations)
-const allDocuments = ref<Certificate[]>([
-    // Tanúsítványok - Hungarian
-    {
-        id: 'emasOkirat',
-        name: 'EMAS Okirat',
-        description: 'EMAS Okirat 2025',
-        filename: 'emas-okirat-2025.pdf',
-        fileSize: '129 KB',
-        language: 'hu',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/emas-okirat-2025.pdf',
-    },
-    {
-        id: 'emasHu',
-        name: 'EMAS Tanúsítvány',
-        description: 'Eco-Management and Audit Scheme',
-        filename: 'emas-20280622.pdf',
-        fileSize: '131 KB',
-        language: 'hu',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/emas-20280622.pdf',
-    },
-    {
-        id: 'iso9001Hu',
-        name: 'ISO 9001:2015',
-        description: 'Minőségirányítási rendszer',
-        filename: 'iso-9001-2015-hu.pdf',
-        fileSize: '1.8 MB',
-        language: 'hu',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-9001-2015-hu.pdf',
-    },
-    {
-        id: 'iso14001Hu',
-        name: 'ISO 14001:2015',
-        description: 'Környezetirányítási rendszer',
-        filename: 'iso-14001-2015-hu.pdf',
-        fileSize: '1.7 MB',
-        language: 'hu',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-14001-2015-hu.pdf',
-    },
-    {
-        id: 'iso45001Hu',
-        name: 'ISO 45001:2018',
-        description: 'Munkavédelmi irányítási rendszer',
-        filename: 'iso-45001-2018-hu.pdf',
-        fileSize: '625 KB',
-        language: 'hu',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-45001-2018-hu.pdf',
-    },
-    // Tanúsítványok - English
-    {
-        id: 'iso9001En',
-        name: 'ISO 9001:2015',
-        description: 'Quality Management System',
-        filename: 'iso-9001-2015-en.pdf',
-        fileSize: '1.8 MB',
-        language: 'en',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-9001-2015-en.pdf',
-    },
-    {
-        id: 'iso14001En',
-        name: 'ISO 14001:2015',
-        description: 'Environmental Management System',
-        filename: 'iso-14001-2015-en.pdf',
-        fileSize: '1.8 MB',
-        language: 'en',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-14001-2015-en.pdf',
-    },
-    {
-        id: 'iso45001En',
-        name: 'ISO 45001:2018',
-        description: 'Occupational Health and Safety Management System',
-        filename: 'iso-45001-2018-en.pdf',
-        fileSize: '623 KB',
-        language: 'en',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-45001-2018-en.pdf',
-    },
-    // Tanúsítványok - German
-    {
-        id: 'iso9001De',
-        name: 'ISO 9001:2015',
-        description: 'Qualitätsmanagementsystem',
-        filename: 'iso-9001-2015-en.pdf',
-        fileSize: '1.8 MB',
-        language: 'de',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-9001-2015-en.pdf',
-    },
-    {
-        id: 'iso14001De',
-        name: 'ISO 14001:2015',
-        description: 'Umweltmanagementsystem',
-        filename: 'iso-14001-2015-en.pdf',
-        fileSize: '1.8 MB',
-        language: 'de',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-14001-2015-en.pdf',
-    },
-    {
-        id: 'iso45001De',
-        name: 'ISO 45001:2018',
-        description: 'Arbeitsschutzmanagementsystem',
-        filename: 'iso-45001-2018-en.pdf',
-        fileSize: '623 KB',
-        language: 'de',
-        category: 'tanusitvanyok',
-        customPath: '/dokumentumok/iso-45001-2018-en.pdf',
-    },
-    // Engedélyek
-    {
-        id: 'hulladekKatalogus',
-        name: 'Hulladékkatalógus',
-        description: 'HAK kódok szerint',
-        filename: '',
-        fileSize: 'Kereső',
-        language: 'hu',
-        category: 'engedélyek',
-    },
-    {
-        id: 'engedélyekAttekintese',
-        name: 'Engedélyek áttekintése',
-        description: 'Teljes engedélyek összefoglalása',
-        filename: 'hatosagi-engedelyek-listaja-2026.pdf',
-        fileSize: '293 KB',
-        language: 'hu',
-        category: 'engedélyek',
-        customPath: '/dokumentumok/hatosagi-engedelyek-listaja-2026.pdf',
-    },
-    // Céginformációk
-    {
-        id: 'emas2007Elso',
-        name: 'EMAS 2007 – Első tanúsítvány',
-        description: 'Első EMAS tanúsítvány 2007-ből',
-        filename: 'emas-2007.jpg',
-        fileSize: '231 KB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/emas-2007.jpg',
-    },
-    {
-        id: 'emasNyilatkozat2024',
-        name: 'EMAS nyilatkozat 2024',
-        description: 'Környezetvédelmi nyilatkozat 2024',
-        filename: 'emas-nyilatkozat-2024.pdf',
-        fileSize: '1.7 MB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/emas-nyilatkozat-2024.pdf',
-    },
-    {
-        id: 'emasNyilatkozat2023',
-        name: 'EMAS nyilatkozat 2023',
-        description: 'Környezetvédelmi nyilatkozat 2023',
-        filename: 'emas-nyilatkozat-2023.pdf',
-        fileSize: '1.2 MB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/emas-nyilatkozat-2023.pdf',
-    },
-    {
-        id: 'emasNyilatkozat2020',
-        name: 'EMAS nyilatkozat 2020',
-        description: 'Környezetvédelmi nyilatkozat 2020',
-        filename: 'emas-nyilatkozat-2020.pdf',
-        fileSize: '709 KB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/emas-nyilatkozat-2020.pdf',
-    },
-    {
-        id: 'emasNyilatkozat2021',
-        name: 'EMAS nyilatkozat 2021',
-        description: 'Környezetvédelmi nyilatkozat 2021',
-        filename: 'emas-nyilatkozat-2021.pdf',
-        fileSize: '749 KB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/emas-nyilatkozat-2021.pdf',
-    },
-    {
-        id: 'emasNyilatkozat2022',
-        name: 'EMAS nyilatkozat 2022',
-        description: 'Környezetvédelmi nyilatkozat 2022',
-        filename: 'emas-nyilatkozat-2022.pdf',
-        fileSize: '1.1 MB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/emas-nyilatkozat-2022.pdf',
-    },
-    {
-        id: 'elogSystemPrezentacio',
-        name: 'ELOG Rendszer prezentáció',
-        description: 'ELOG rendszer bemutató prezentáció',
-        filename: 'ELOG_System_prezentáció.pdf',
-        fileSize: '69 KB',
-        language: 'hu',
-        category: 'céginformációk',
-    },
-    {
-        id: 'fenntarthatosagiJelentes',
-        name: 'Fenntarthatósági jelentés',
-        description: 'Vállalati fenntarthatósági jelentés',
-        filename: 'Fenntarthatósági_jelentés.pdf',
-        fileSize: '7.6 MB',
-        language: 'hu',
-        category: 'céginformációk',
-    },
-    {
-        id: 'energetikaiJelentes2024',
-        name: 'Energetikai szakreferens éves jelentés 2024',
-        description: 'Energetikai szakreferens éves jelentése 2024',
-        filename: 'energetikai-szakreferens-eves-jelentes-2024.pdf',
-        fileSize: '6.2 MB',
-        language: 'hu',
-        category: 'céginformációk',
-        customPath: '/dokumentumok/energetikai-szakreferens-eves-jelentes-2024.pdf',
-    },
-]);
-
-// Legacy certificate data for backward compatibility
-const certificates = computed(() => allDocuments.value.filter((doc) => doc.category === 'tanusitvanyok'));
+// Map category to tipus values
+const tipusMap: Record<string, string> = {
+    tanusitvanyok: 'tanusitvany',
+    engedélyek: 'engedely',
+    céginformációk: 'ceginformacio',
+};
 
 // Computed property to filter documents by category and language
-const currentCertificates = computed(() => {
-    const documentsInCategory = allDocuments.value.filter((doc) => doc.category === selectedCategory.value);
+const displayCertificates = computed((): DisplayCertificate[] => {
+    const documentsInCategory = (dokumentumok.value || []).filter(
+        (doc) => doc.tipus === tipusMap[selectedCategory.value],
+    );
+
+    let result: DisplayCertificate[] = documentsInCategory.map((doc) => ({
+        id: doc.id,
+        cim: doc.cim,
+        alcim: doc.alcim,
+        meret: doc.meret,
+        fileUrl: getFileUrl(doc.file, doc.filename),
+        filename: doc.filename,
+    }));
 
     // For certificates, also filter by language
     if (selectedCategory.value === 'tanusitvanyok') {
-        return documentsInCategory.filter((doc) => doc.language === selectedLanguage.value);
+        result = result.filter((doc) => {
+            const docItem = dokumentumok.value?.find((d) => d.id === doc.id);
+            const docNyelv = docItem?.nyelv || 'hu';
+            return docNyelv === selectedLanguage.value;
+        });
     }
 
-    // For other categories, return all documents (they're only in Hungarian)
-    return documentsInCategory;
+    // Add special hulladekKatalogus card for engedélyek
+    if (selectedCategory.value === 'engedélyek') {
+        result.unshift({
+            id: 'hulladekKatalogus',
+            cim: 'Hulladékkatalógus',
+            alcim: 'HAK kódok szerint',
+            meret: 'Kereső',
+        });
+    }
+
+    return result;
 });
 
 // Download function
-const downloadCertificate = (certificate: Certificate) => {
+const downloadCertificate = (certificate: DisplayCertificate) => {
     if (certificate.id === 'hulladekKatalogus') {
         navigateTo(localePath('/hulladek-katalogus'));
         return;
     }
 
-    let path: string;
-
-    if (certificate.customPath) {
-        path = certificate.customPath;
-    } else if (certificate.category === 'tanusitvanyok') {
-        path = `/certificates/${certificate.language}/${certificate.filename}`;
-    } else {
-        path = `/certificates/hu/${certificate.category}/${certificate.filename}`;
+    if (certificate.fileUrl) {
+        const link = document.createElement('a');
+        link.href = certificate.fileUrl;
+        link.download = certificate.filename || '';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
-
-    // Create a link element and trigger download
-    const link = document.createElement('a');
-    link.href = path;
-    link.download = certificate.filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
 };
 </script>
