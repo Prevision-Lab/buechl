@@ -245,10 +245,10 @@
                         variant="outline"
                         color="primary"
                         icon="i-heroicons-phone"
-                        href="tel:+36965321100"
+                        href="tel:+3696516620"
                         class="w-full justify-center"
                     >
-                        Hívás: +36 96 532 1100
+                        Hívás: +36 96 516 620
                     </UButton>
                 </div>
             </template>
@@ -275,13 +275,13 @@
                         Kapcsolatfelvétel
                     </UButton>
                     <UButton
-                        href="tel:+36965321100"
+                        href="tel:+3696516620"
                         size="lg"
                         variant="outline"
                         color="white"
                         icon="i-heroicons-phone"
                     >
-                        +36 96 532 1100
+                        +36 96 516 620
                     </UButton>
                 </div>
             </div>
