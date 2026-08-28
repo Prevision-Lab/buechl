@@ -46,10 +46,10 @@
             </div>
         </section>
 
-        <!-- Kapcsolat információk és űrlap szekció -->
+        <!-- Kapcsolat információk szekció -->
         <section class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="grid grid-cols-1 gap-12">
                     <!-- Kapcsolat információk -->
                     <div>
                         <h2 class="text-3xl font-bold text-buchl-blue mb-8">{{ $t('contact.directContact.title') }}</h2>
@@ -372,128 +372,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Kapcsolatfelvételi űrlap -->
-                    <div class="bg-gray-50 p-8 rounded-lg h-fit">
-                        <h2 class="text-3xl font-bold text-buchl-blue mb-8">{{ $t('contact.form.title') }}</h2>
-
-                        <form
-                            @submit.prevent="submitForm"
-                            class="space-y-6"
-                        >
-                            <div
-                                v-if="successMessage"
-                                class="p-4 bg-green-50 text-green-700 rounded-lg"
-                            >
-                                {{ successMessage }}
-                            </div>
-                            <div
-                                v-if="errorMessage"
-                                class="p-4 bg-red-50 text-red-700 rounded-lg"
-                            >
-                                {{ errorMessage }}
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2"
-                                        >{{ $t('contact.form.fields.name.label') }}
-                                        {{ $t('contact.form.required') }}</label
-                                    >
-                                    <UInput
-                                        v-model="form.name"
-                                        :placeholder="$t('contact.form.fields.name.placeholder')"
-                                        size="lg"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2">{{
-                                        $t('contact.form.fields.company.label')
-                                    }}</label>
-                                    <UInput
-                                        v-model="form.company"
-                                        :placeholder="$t('contact.form.fields.company.placeholder')"
-                                        size="lg"
-                                    />
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2"
-                                        >{{ $t('contact.form.fields.email.label') }}
-                                        {{ $t('contact.form.required') }}</label
-                                    >
-                                    <UInput
-                                        v-model="form.email"
-                                        :placeholder="$t('contact.form.fields.email.placeholder')"
-                                        type="email"
-                                        size="lg"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2">{{
-                                        $t('contact.form.fields.phone.label')
-                                    }}</label>
-                                    <UInput
-                                        v-model="form.phone"
-                                        :placeholder="$t('contact.form.fields.phone.placeholder')"
-                                        type="tel"
-                                        size="lg"
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2"
-                                    >{{ $t('contact.form.fields.message.label') }}
-                                    {{ $t('contact.form.required') }}</label
-                                >
-                                <UTextarea
-                                    v-model="form.message"
-                                    :placeholder="$t('contact.form.fields.message.placeholder')"
-                                    :rows="5"
-                                    size="lg"
-                                    class="w-full"
-                                    required
-                                />
-                            </div>
-
-                            <div class="flex items-start">
-                                <UCheckbox
-                                    v-model="form.privacy"
-                                    class="mt-1"
-                                    required
-                                />
-                                <div class="ml-3">
-                                    <label class="text-sm text-gray-700">
-                                        {{ $t('contact.form.fields.privacy.text') }}
-                                        <a
-                                            href="/adatvedelem"
-                                            class="text-buchl-blue hover:text-buchl-green underline"
-                                            >{{ $t('contact.form.fields.privacy.link') }}</a
-                                        >
-                                        {{ $t('contact.form.fields.privacy.consent') }}
-                                        {{ $t('contact.form.required') }}
-                                    </label>
-                                </div>
-                            </div>
-
-                            <UButton
-                                type="submit"
-                                size="lg"
-                                color="neutral"
-                                class="w-full bg-buchl-blue text-white hover:bg-buchl-blue/90 rounded-none flex items-center justify-center"
-                                icon="i-heroicons-paper-airplane"
-                                :trailing="true"
-                                :loading="isSubmitting"
-                            >
-                                {{ $t('contact.form.submit') }}
-                            </UButton>
-                        </form>
-                    </div>
                 </div>
             </div>
         </section>
@@ -748,58 +626,6 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
-
 // Hero banner adat lekérése Directusból
 const { banner: heroBanner } = useBanner(5); // ID: 5 - Kapcsolat
-
-// Form state
-const form = ref({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    message: '',
-    privacy: false,
-});
-
-const isSubmitting = ref(false);
-const successMessage = ref('');
-const errorMessage = ref('');
-
-const submitForm = async () => {
-    if (!form.value.privacy) {
-        errorMessage.value = t('contact.form.fields.privacy.consent');
-        return;
-    }
-
-    isSubmitting.value = true;
-    errorMessage.value = '';
-    successMessage.value = '';
-
-    try {
-        const response = await $fetch('/api/contact', {
-            method: 'POST',
-            body: form.value,
-        });
-
-        if (response.success) {
-            successMessage.value = 'Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.';
-            // Reset form
-            form.value = {
-                name: '',
-                company: '',
-                email: '',
-                phone: '',
-                message: '',
-                privacy: false,
-            };
-        }
-    } catch (error: any) {
-        errorMessage.value =
-            error.data?.statusMessage || 'Hiba történt az üzenet elküldése során. Kérjük, próbálja újra később.';
-    } finally {
-        isSubmitting.value = false;
-    }
-};
 </script>

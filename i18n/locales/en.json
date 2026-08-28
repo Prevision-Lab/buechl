@@ -548,38 +548,6 @@
         }
       }
     },
-    "form": {
-      "title": "Write to us",
-      "fields": {
-        "name": {
-          "label": "Name",
-          "placeholder": "Your name"
-        },
-        "company": {
-          "label": "Company name",
-          "placeholder": "Company name"
-        },
-        "email": {
-          "label": "Email address",
-          "placeholder": "example{'@'}email.com"
-        },
-        "phone": {
-          "label": "Phone number",
-          "placeholder": "+36 30 123 4567"
-        },
-        "message": {
-          "label": "Message",
-          "placeholder": "Describe your question or request in detail..."
-        },
-        "privacy": {
-          "text": "I accept the",
-          "link": "privacy policy",
-          "consent": "and consent to the processing of my data."
-        }
-      },
-      "required": "*",
-      "submit": "Send message"
-    },
     "locations": {
       "title": "Our locations",
       "description": "Visit one of our locations where our expert team awaits you.",

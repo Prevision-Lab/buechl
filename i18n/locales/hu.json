@@ -497,38 +497,6 @@
         }
       }
     },
-    "form": {
-      "title": "Írjon nekünk",
-      "fields": {
-        "name": {
-          "label": "Név",
-          "placeholder": "Az Ön neve"
-        },
-        "company": {
-          "label": "Cég neve",
-          "placeholder": "Vállalat neve"
-        },
-        "email": {
-          "label": "E-mail cím",
-          "placeholder": "pelda{'@'}email.com"
-        },
-        "phone": {
-          "label": "Telefonszám",
-          "placeholder": "+36 30 123 4567"
-        },
-        "message": {
-          "label": "Üzenet",
-          "placeholder": "Írja le kérdését vagy kérését részletesen..."
-        },
-        "privacy": {
-          "text": "Elfogadom az",
-          "link": "adatvédelmi szabályzatot",
-          "consent": "és hozzájárulok adataim kezeléséhez."
-        }
-      },
-      "required": "*",
-      "submit": "Üzenet elküldése"
-    },
     "locations": {
       "title": "Telephelyeink",
       "description": "Látogasson el valamelyik telephelyünkre, ahol szakértő csapatunk várja Önt.",

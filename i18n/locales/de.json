@@ -548,38 +548,6 @@
         }
       }
     },
-    "form": {
-      "title": "Schreiben Sie uns",
-      "fields": {
-        "name": {
-          "label": "Name",
-          "placeholder": "Ihr Name"
-        },
-        "company": {
-          "label": "Firmenname",
-          "placeholder": "Unternehmen"
-        },
-        "email": {
-          "label": "E-Mail-Adresse",
-          "placeholder": "beispiel{'@'}email.de"
-        },
-        "phone": {
-          "label": "Telefonnummer",
-          "placeholder": "+49 123 456 789"
-        },
-        "message": {
-          "label": "Nachricht",
-          "placeholder": "Beschreiben Sie Ihre Frage oder Anfrage im Detail..."
-        },
-        "privacy": {
-          "text": "Ich akzeptiere die",
-          "link": "Datenschutzrichtlinie",
-          "consent": "und stimme der Verarbeitung meiner Daten zu."
-        }
-      },
-      "required": "*",
-      "submit": "Nachricht senden"
-    },
     "locations": {
       "title": "Unsere Standorte",
       "description": "Besuchen Sie einen unserer Standorte, wo unser Expertenteam Sie erwartet.",

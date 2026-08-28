@@ -45,14 +45,6 @@ export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
 
     runtimeConfig: {
-        smtp: {
-            host: process.env.SMTP_HOST,
-            port: process.env.SMTP_PORT,
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
-            from: process.env.SMTP_FROM,
-            fromName: process.env.SMTP_FROM_NAME
-        },
         public: {
             directusUrl: process.env.NUXT_PUBLIC_DIRECTUS_URL,
             directusToken: process.env.NUXT_PUBLIC_DIRECTUS_TOKEN,
